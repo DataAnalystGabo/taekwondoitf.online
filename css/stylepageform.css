@@ -445,7 +445,6 @@ select[name="peso[]"]{
 
 .div_alerta, .div_alerta_dni, .div_exitoso{
     display: flex;
-    justify-content: center;
     margin: auto;
     max-width: 80%;
     height: 75px;
@@ -454,34 +453,27 @@ select[name="peso[]"]{
     border: 1px solid #fffdf7;
 }
 
+.div_alerta_dni{
+    height: 100px;
+}
+
 .div_exitoso{
     background: #90be6d;
 }
 
-.div_alerta_p, .div_exitoso_p, .div_alerta_dni_p{
+.div_alerta_p, .div_alerta_dni_p, .div_exitoso_p{
     color: #fffdf7;
     font-size: 16px;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
 }
 
-.div_alerta_icon{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.div_exitoso_icon{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+.div_alerta_p i, .div_alerta_dni_p i, .div_exitoso_p i{
+    margin-right: 20px;
+    font-size: 22px;
 }
 
 /*-------------------------------------------------------------------------------------------*/

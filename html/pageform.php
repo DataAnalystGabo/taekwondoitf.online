@@ -55,25 +55,19 @@
 
         <?php if(!empty($error)): ?>
             <div class="div_alerta">
-                <div class="div_alerta_icon">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
-                </div>
-                <div class="div_alerta_p"><?php echo $error; ?></div>
+                <div class="div_alerta_p"><i class="fa-solid fa-triangle-exclamation"></i><?php echo $error; ?></div>
             </div>
         <?php endif; ?>
 
         <?php if(!empty($exitoso)): ?>
             <div class="div_exitoso">
-                <div class="div_exitoso_icon">
-                    <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <div class="div_exitoso_p"><?php echo $exitoso; ?></div>
+                <div class="div_exitoso_p"><i class="fa-solid fa-circle-check"></i><?php echo $exitoso; ?></div>
             </div>
         <?php endif; ?>
 
         <?php if(!empty($alerta_dni)): ?>
             <div class="div_alerta_dni">
-                <div class="div_alerta_dni_p"><?php echo $alerta_dni; ?></div>
+                <div class="div_alerta_dni_p"><i class="fa-solid fa-triangle-exclamation"></i><?php echo $alerta_dni; ?></div>
             </div>
         <?php endif; ?>
 
