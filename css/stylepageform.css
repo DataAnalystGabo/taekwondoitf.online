@@ -464,7 +464,7 @@ select[name="peso[]"]{
         max-width: 1000px;
     }
 
-    .div_buttons, .contenedorClonado{
+    .div_buttons{
         max-width: 900px;
     }
 
@@ -486,26 +486,24 @@ select[name="peso[]"]{
     }
 }
 
-@media screen and (max-width: 1120px){
-    .div_buttons{
-        max-width: 843.78px;;
+@media screen and (max-width: 1160px){
+
+    .div_A, .div_nombre_dni{
+        max-width: 350px;
     }
 }
 
-@media screen and(max-width: 1060px){
-    .leyendaNoAplica{
-        max-width: 50%;
+@media screen and (max-width: 1139px){
+
+    .div_A, .div_nombre_dni{
+        max-width: 300px;
     }
 }
 
-@media screen and (max-width: 1020px){
-    .div_buttons{
-        max-width: 780px;
-        margin-right: 24px;
-    }
+@media screen and (max-width: 1016px){
 
-    .div_alerta, .div_alerta_dni, .div_exitoso{
-        margin-right: 70px;
+    .div_A, .div_nombre_dni{
+        max-width: 300px;
     }
 }
 
@@ -525,7 +523,7 @@ select[name="peso[]"]{
         width: 300px;
         height: 100vh;
         background: #ffd60a;
-        margin-top: 643px;
+        margin-top: 599px;
         margin-right: -79px;
         box-shadow: 10px 0 20px -25px black;
         transform: translateX(300px);
@@ -582,5 +580,64 @@ select[name="peso[]"]{
         justify-content: center;
         width: 40px;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 950px){
+
+    .cont_form{
+        grid-template-rows: 700px 800px;
+    }
+
+    .filaB{
+        height: 800px;
+    }
+
+    .columnaA, .cont_nombre_dni{
+        flex-direction: column;
+    }
+
+    .div_A, .div_nombre_dni{
+        margin: auto;
+    }
+
+    .cont_titulo_filaA span h3, .cont_titulo_filaB h3{
+        max-width: 300px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .div_B{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+        gap: 10px;
+    }
+
+    .div_B select{
+        width: 100%;
+    }
+
+    .div_B span{
+        flex: auto;
+        margin: auto;
+    }
+
+    .div_buttons{
+        width: 90%;
+        height: 200px;
+        border-top: 1px solid #FFC300;
+    }
+
+    .cont_buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button_agregar, .button_enviar{
+        width: 300px;
+        box-sizing: border-box;
     }
 }
