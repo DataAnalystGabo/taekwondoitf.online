@@ -523,7 +523,7 @@ select[name="peso[]"]{
         width: 300px;
         height: 100vh;
         background: #ffd60a;
-        margin-top: 599px;
+        margin-top: 676px;
         margin-right: -79px;
         box-shadow: 10px 0 20px -25px black;
         transform: translateX(300px);
@@ -639,5 +639,14 @@ select[name="peso[]"]{
     .button_agregar, .button_enviar{
         width: 300px;
         box-sizing: border-box;
+    }
+}
+
+/*---------Media query Tablet Samsung A7---------*/
+
+@media screen and (max-width : 800px), screen and (max-height : 1340){
+
+    .cont_links{
+        margin-top: 1400px;
     }
 }
