@@ -51,7 +51,7 @@
 
 
     <div class="background_form1" id="move_background_form1">
-        <span class="tittle_form"><h1>Torneo Nacional 2023- Inscripciones</h1></span>
+        <span class="titulo_form"><h1>Torneo Nacional 2023- Inscripciones</h1></span>
 
         <?php if(!empty($error)): ?>
             <div class="div_alerta">
@@ -72,58 +72,60 @@
         <?php endif; ?>
 
         <form name="form1" action="../../infotkd_web_site/php/form.php" method="POST">
-            <div class="container_form">
-                <div class="rows_inputsA">
-                    <div class="contenedor_spanTittleRow">
+            <div class="cont_form">
+                <div class="filaA">
+                    <div class="cont_titulo_filaA">
                         <span><h3>Datos del Coach/Instructor</h3></span>
                     </div>
 
-                    <div class="columns_inputA">
-                        <div class="div_inputsA">
+                    <div class="columnaA">
+                        <div class="div_A">
                             <input type="text" name="escuela" id="" placeholder="Escuela" require>
                         </div>
     
-                        <div class="div_inputsA">
+                        <div class="div_A">
                             <input type="text" name="instructor" id="" placeholder="Instructor (Nombre y Apellido)" require> 
                         </div>
     
-                        <div class="div_inputsA">
+                        <div class="div_A">
                             <input type="text" name="coach" id="" placeholder="Coach (Nombre y Apellido)" require>
                         </div>
                  
-                        <div class="div_inputsA">
+                        <div class="div_A">
                             <input type="text" name="email" id="" placeholder="E-mail: xxxxxxx@gmail.com" require>
                         </div>
     
-                        <div class="div_inputsA">
+                        <div class="div_A">
                             <input type="tel" name="celular" id="" placeholder="Celular/Whatsapp" require>
                         </div>
 
-                        <div class="div_inputsA">
+                        <div class="div_A">
                             <input type="text" name="othercamp" id="" placeholder="Othercamp">
                         </div>
                     </div>
                 </div>
                 
     
-                <div class="rows_inputsB clonar">
-                    <div class="columns_inputsB">
-                        <div class="contenedor_spanTittleRowB">
-                            <h3>Datos del Competidor</h3>
-                            <span class="puntero ocultar">Eliminar</span>
-                        </div>
+                <div class="filaB clonar">
 
-                        <div class="contenedor_nombre_dni">
-                            <div class="div_inputsB div_inputsB_competidor">
+                    <div class="cont_titulo_filaB">
+                        <h3>Datos del Competidor</h3>
+                        <span class="puntero ocultar">Eliminar</span>
+                    </div>
+
+                    <div class="columnaB">
+        
+                        <div class="cont_nombre_dni">
+                            <div class="div_nombre_dni">
                                 <input type="text" name="competidor[]" id="" placeholder="Nombre y Apellido del competidor" require>
                             </div>
     
-                            <div class="div_inputsB div_inputsB_dni">
+                            <div class="div_nombre_dni">
                                 <input type="tel" name="dni[]" id="" placeholder="DNI (sin puntos ni comas)" require>
                             </div>
                         </div>
 
-                        <div class="div_inputsB div_genero">
+                        <div class="div_B">
                             <span><p>Género</p></span>
                             <select name="genero[]" id="">
                                 <option value="-">-</option>
@@ -132,7 +134,7 @@
                             </select>  
                         </div>
         
-                        <div class="div_inputsB div_categoria">
+                        <div class="div_B">
                             <span><p>Categoría</p></span>
                             <select name="categoria[]" id="">
                                 <option value="-">-</option>
@@ -153,7 +155,7 @@
                             </select>
                         </div> 
                     
-                        <div class="div_inputsB div_edad">
+                        <div class="div_B">
                             <span><p>Edad</p></span>
                             <select name="edad[]" id="inputEdad">
                                 <option value="-">-</option>
@@ -166,7 +168,7 @@
                             </select>                        
                         </div>
         
-                        <div class="div_inputsB div_peso">
+                        <div class="div_B">
                             <span><p>Peso*</p></span>
                             <select name="peso[]" id="">
                                 <option value="-">-</option>
@@ -177,17 +179,20 @@
                                 <option value="No Aplica">No Aplica</option>
                             </select>
                         </div> 
-                        <span class="leyendaNoAplica"><p>*Tenga en cuenta que aquellos competidores menores a 13 años
+                        <div class="div_B"><p>*Tenga en cuenta que aquellos competidores menores a 13 años
                             deben elegir la opción 'No Aplica' para su peso.
-                        </p></span>
+                        </p></div>
                     </div>
                 </div>
+
+                <div class="contenedorClonado" id="contenedorClonado"></div>
             </div>
-            <div class="contenedorClonado" id="contenedorClonado"></div>
 
             <div class="div_buttons" id="div_btn_agregar">
-                <button class="button_agregar" id="agregar">Agregar competidor</button>
-                <button class="button_enviar" id="enviar" name="enviar">Enviar</button>
+                <div class="cont_buttons">
+                    <button class="button_agregar" id="agregar">Agregar competidor</button>
+                    <button class="button_enviar" id="enviar" name="enviar">Enviar</button>
+                </div>
             </div>
         </form>
     </div>
@@ -217,7 +222,7 @@
 
             if(e.target.classList.contains("puntero")){
 
-                let contenedor = e.target.parentNode.parentNode.parentNode;
+                let contenedor = e.target.parentNode.parentNode;
 
                 contenedor.parentNode.removeChild(contenedor);
             }
