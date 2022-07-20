@@ -10,39 +10,40 @@
     <title>Infotkd</title>
 </head>
 <body>
-    <header class="nav__background">
-        <nav class="nav__contenedor container">
+    <header class="nav_background">
+        <nav class="nav_contenedor container">
 
-            <div class="nav__logo logo__order">
-                <a class="nav-logo-png" href="../../infotkd_web_site/html/index.html">
+            <div class="nav_logo">
+                <a class="logo_png" href="../../infotkd_web_site/html/index.html">
                     <img src="../../infotkd_web_site/image/infotkd-logo.png" >
                 </a>
             </div>
 
             <div class="cont_links" id="cont_links">
                 
-                <ul class="nav__link nav__order">
-                    <li class="nav__items">
+                <ul class="nav_links">
+                    <li class="nav_items">
                         <a href="../../infotkd_web_site/html/index.html" class="nav__links"><i class="fa-solid fa-house"></i>Home</a>
                     </li>
 
-                    <li class="nav__items">
+                    <li class="nav_items">
                         <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links"><i class="fa-solid fa-newspaper"></i>Noticias</a>
                     </li>
 
-                    <li class="nav__items">
+                    <li class="nav_items">
                         <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links"><i class="fa-solid fa-calendar-check"></i>Eventos</a>
                     </li>
                     
-                    <li class="nav__items">
+                    <li class="nav_items">
                         <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links"><i class="fa-solid fa-barcode"></i>BBL</a>
                     </li>
 
-                    <li class="nav__items">
+                    <li class="nav_items">
                         <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links"><i class="fa-solid fa-paper-plane"></i>Contacto</a>
                     </li>
                 </ul> 
             </div>  
+
             <div id="menu_hamburguesa">
                 <i class="fa-solid fa-bars"></i>
             </div>  
