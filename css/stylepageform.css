@@ -44,7 +44,7 @@ body{
 }
 
 .nav_contenedor{
-    width: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -108,10 +108,17 @@ body{
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 .background_form1{
+    position: relative;
     max-width: 65.62em;
     width: 85%;
     margin: 0 auto;
     overflow: hidden;
+    transition: all 500ms;
+}
+
+.form, .cont_titulo_form{
+    max-width: 95%;
+    margin: auto;
 }
 
 .titulo_form{
@@ -122,11 +129,9 @@ body{
 }
 
 .cont_form{
-    width: 90%;
     display: grid;
-    grid-template-rows: 25em 37.5em;
+    grid-template-rows: 15em 25em 37.5em;
     position: relative;
-    margin: auto;
 }
 
 .cont_titulo_filaA{
@@ -317,7 +322,7 @@ select[name="peso[]"]{
     box-sizing: border-box;
     padding: 1px 1px;
     align-content: center;
-    font-size: 15px;
+    font-size: 1em;
     background: #000814;
     color: #fffdf7;
 }
@@ -377,8 +382,59 @@ select[name="peso[]"]{
 @media (max-width: 576px) {
 }*/
 
-@media (max-width: 1160px) {
+@media screen and (max-width: 1220px){
+    .form, .cont_titulo_form{
+        max-width: 85%;
+    }
+
     .div_A, .div_nombre_dni{
-        width: 20em;
+        max-width: 20em;
     }
 }
+
+@media screen and (max-width: 1180px){
+    .div_A, .div_nombre_dni{
+        max-width: 18em;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .div_A, .div_nombre_dni{
+        max-width: 14em;
+    }
+
+    .titulo_form{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 769px){
+    .cont_form{
+        grid-template-rows: 15em 40em 45em;
+    }
+
+    .filaB{
+        min-height: 45em;
+    }
+
+    .columnaA, .cont_nombre_dni{
+        flex-direction: column;
+    }
+
+    .div_A, .div_nombre_dni{
+        min-width: 100%;
+    }
+
+    .cont_buttons{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .cont_buttons button{
+        width: 27.5em;
+    }
+}
+
+

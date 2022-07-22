@@ -20,7 +20,6 @@
             </div>
 
             <div class="cont_links" id="cont_links">
-                
                 <ul class="nav_links">
                     <li class="nav_items">
                         <a href="../../infotkd_web_site/html/index.html" class="nav__links"><i class="fa-solid fa-house"></i>Home</a>
@@ -52,7 +51,6 @@
 
 
     <div class="background_form1" id="move_background_form1">
-        <span class="titulo_form"><h1>Torneo Nacional 2023- Inscripciones</h1></span>
 
         <?php if(!empty($error)): ?>
             <div class="div_alerta">
@@ -72,9 +70,13 @@
             </div>
         <?php endif; ?>
 
-        <form name="form1" action="../../infotkd_web_site/php/form.php" method="POST">
+        <form class="form" name="form1" action="../../infotkd_web_site/php/form.php" method="POST">
             <div class="cont_form">
+
+                <div class="cont_titulo_form"><span class="titulo_form"><h1>Torneo Nacional 2023- Inscripciones</h1></span></div>
+
                 <div class="filaA">
+
                     <div class="cont_titulo_filaA">
                         <span><h3>Datos del Coach/Instructor</h3></span>
                     </div>
