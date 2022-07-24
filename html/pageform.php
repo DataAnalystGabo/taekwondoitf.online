@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,27 +24,43 @@
             </figure>
 
             <div class="cont_links" id="cont_links">
-                <ul>
-                    <li>
-                        <a href="../../infotkd_web_site/html/index.html" class="nav__links">Home<i class="fa-solid fa-house"></i></a>
-                    </li>
+                <div class="cont_menu">
+                    <h3>Infotkd</h3>
+                    <ul class="nav_links">
+                        <li>
+                            <a href="../../infotkd_web_site/html/index.html" class="nav__links">Home<i class="fa-solid fa-house"></i></a>
+                        </li>
 
-                    <li>
-                        <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">Noticias<i class="fa-solid fa-newspaper"></i></a>
-                    </li>
+                        <li>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">Noticias<i class="fa-solid fa-newspaper"></i></a>
+                        </li>
 
-                    <li>
-                        <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">Eventos<i class="fa-solid fa-calendar-check"></i></a>
-                    </li>
-                    
-                    <li>
-                        <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">BBL<i class="fa-solid fa-barcode"></i></a>
-                    </li>
+                        <li>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">Eventos<i class="fa-solid fa-calendar-check"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">BBL<i class="fa-solid fa-barcode"></i></a>
+                        </li>
 
-                    <li>
-                        <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">Contacto<i class="fa-solid fa-paper-plane"></i></a>
-                    </li>
-                </ul> 
+                        <li>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="nav__links">Contacto<i class="fa-solid fa-paper-plane"></i></a>
+                        </li>
+                    </ul>
+                    <div class="cont_redes">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                    </div>
+                </div> 
             </div>  
 
             <div id="menu_hamburguesa">
