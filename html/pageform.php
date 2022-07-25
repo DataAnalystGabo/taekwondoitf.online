@@ -211,10 +211,10 @@
                     <div class="contenedorClonado" id="contenedorClonado"></div>
 
                     <div class="div_buttons" id="div_btn_agregar">
-                            <div class="cont_buttons">
-                                <button class="button_agregar" id="agregar">Agregar competidor</button>
-                                <button class="button_enviar" id="enviar" name="enviar">Enviar</button>
-                            </div>
+                        <div class="cont_buttons">
+                            <button class="button_agregar" id="agregar">Agregar competidor</button>
+                            <button class="button_enviar" id="enviar" name="enviar">Enviar</button>
+                        </div>
                     </div>
                 </form>
         </section>
