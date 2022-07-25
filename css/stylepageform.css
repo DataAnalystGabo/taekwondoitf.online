@@ -74,10 +74,11 @@ body{
     position: absolute;
     background: var(--yellow-dark);
     transition: all 500ms ease;
+    transform: translateX(800px);
 }
 
 .move_cont_links{
-    transform: translateX(400px);
+    transform: translateX(0px);
 }
 
 .cont_menu{
@@ -131,19 +132,24 @@ body{
     color: var(--blue-dark);
 }
 
-#menu_hamburguesa{
+#menu_hamburguesa, #menu_close{
+    cursor: pointer;
     margin: 0;
     display: flex;
     width: 2.17em;
     height: 2.17em;
     border-radius: 100%;
     align-items: center;
-    z-index: 90;
+    z-index: 90;    
 }
 
-#menu_hamburguesa i{
+#menu_hamburguesa i, #menu_close i{
     font-size: 1.5em;
     color: var(--blue-dark);
+}
+
+#menu_close{
+    display: none;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -157,7 +163,7 @@ body{
 
 .form{
     display: grid;
-    grid-template-rows: 7em 35em 20em 5em;
+    grid-template-rows: 7em 35em 35em 5em;
 }
 
 .contenedor_titulo_princ{
@@ -168,20 +174,35 @@ body{
     text-align: center;
 }
 
-.fila_A{
+.fila_A, .fila_B{
     width: 80%;
 }
 
-.div_A{
-    padding-bottom: 1em;
+.div_A, .div_nombre_dni, .div_B{
+    padding-bottom: 1.5em;
 }
 
 .cont_titulo_filaA{
-    padding: 2em 0 1em 0;
+    padding: 2em 0 2em 0;
+}
+
+.cont_titulo_filaB{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    gap: .8em;
+}
+
+.cont_titulo_filaB h3, span {
+    margin: 0;   
+}
+
+.puntero{
+    color: var(--yellow-dark);
 }
 
 input[type = "text"], input[type="tel"]{
-    color: #fffdf7;
+    color: var(--white);
     display: flex;
     width: 100%;
     padding: 0.625em 0;
@@ -191,6 +212,19 @@ input[type = "text"], input[type="tel"]{
     box-sizing: border-box;
     margin-bottom: 0.625em;
     font-size: 1em;
+    outline: none;
+}
+
+select {
+    width: 100%;
+    background: var(--blue-dark);
+    color: var(--white);
+    outline: none;
+    font-size: 1em;
+}
+
+.div_B span p{
+    margin-bottom: 1em;
 }
 
 

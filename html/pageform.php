@@ -125,7 +125,7 @@
                             </div>  
                     </div>
                         
-                    <div class="filaB clonar">
+                    <div class="fila_B clonar">
 
                             <div class="cont_titulo_filaB">
                                 <h3>Datos del Competidor</h3>
