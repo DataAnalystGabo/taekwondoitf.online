@@ -66,6 +66,10 @@
             <div id="menu_hamburguesa">
                 <i class="fa-solid fa-bars"></i>
             </div>  
+
+            <div id="menu_close">
+                <i class="fa-solid fa-xmark"></i>
+            </div> 
         </nav>
     </header>
 
@@ -251,10 +255,23 @@
 
     <script>
         document.getElementById("menu_hamburguesa").addEventListener("click", mostrarMenu);
+        document.getElementById("menu_close").addEventListener("click", ocultarMenu);
 
-        function mostrarMenu (){
+        const hamburguesa = document.getElementById("menu_hamburguesa");
+        const close = document.getElementById("menu_close");
+        const contenedor = document.getElementById("cont_links");
+
+        function mostrarMenu(){
             //document.getElementById("move_background_form1").classList.toggle('move_background_form1');//
-            document.getElementById("cont_links").classList.toggle('move_cont_links');
+            contenedor.classList.add('move_cont_links');
+            hamburguesa.style.display = "none";
+            close.style.display = "flex";
+        };
+
+        function ocultarMenu(){
+            contenedor.classList.remove('move_cont_links');
+            hamburguesa.style.display = "flex";
+            close.style.display = "none";
         };
     </script>
 

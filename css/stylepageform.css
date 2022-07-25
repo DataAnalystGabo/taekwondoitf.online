@@ -166,6 +166,10 @@ body{
     grid-template-rows: 7em 35em 35em 5em;
 }
 
+.contenedorClonado{
+    height: 35em;
+}
+
 .contenedor_titulo_princ{
     display: flex;
     flex-direction: column;
