@@ -168,6 +168,9 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 2em;
+    border: 1px solid var(--white);
+    border-radius: .5em;
+    margin-bottom: 1em;
 }
 
 .contenedorClonado{
@@ -175,7 +178,6 @@ body{
     flex-direction: column;
     gap: 5em;
 }
-/*Error, el contenedor clonado toma las dimensiones correctas*/
 
 .contenedor_titulo_princ{
     display: flex;
@@ -184,6 +186,7 @@ body{
     height: 7em;
     justify-content: space-evenly;
     text-align: center;
+    margin: 1em auto 1em auto;
 }
 
 .fila_A{
@@ -193,7 +196,7 @@ body{
 
 .fila_B{
     width: 80%;
-    height: 37em;
+    height: 39em;
 }
 
 .div_A, .div_nombre_dni, .div_B{
@@ -201,13 +204,13 @@ body{
 }
 
 .cont_titulo_filaA{
-    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .cont_titulo_filaB{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     gap: .8em;
 }
 
@@ -240,6 +243,7 @@ input[type = "text"], input[type="tel"]{
 
 select {
     width: 100%;
+    height: 1.8em;
     background: var(--blue-dark);
     color: var(--white);
     outline: none;

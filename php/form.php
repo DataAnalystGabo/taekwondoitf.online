@@ -21,6 +21,7 @@ $peso = $_POST['peso'];
 $error = '';
 $exitoso = '';
 $alerta_dni = '';
+$cont = 10;
 
 if(empty($escuela) or empty($instructor) or empty($coach) or empty($email) or empty ($celular)
 or empty($competidor) or empty($dni) or empty($genero) or empty($categoria) or empty($edad)
@@ -32,6 +33,7 @@ or empty($peso)){
 }else{
 
     for ($i=0; $i < count($competidor); $i++){
+
 
         $InserData =("INSERT INTO competidores (escuela, instructor, coach, email, celular, othercamp,
         competidor, dni, genero, categoria, edad, peso) VALUES ('".$escuela."','".$instructor."','".$coach."','".$email."','".$celular."',

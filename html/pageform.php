@@ -151,7 +151,7 @@
                                 <div class="div_B">
                                     <span><p>Género</p></span>
                                     <select name="genero[]" id="">
-                                        <option value="-">-</option>
+                                        <option value=""></option>
                                         <option value="M">Masculino</option>
                                         <option value="F">Femenino</option>
                                     </select>  
@@ -160,7 +160,7 @@
                                 <div class="div_B">
                                     <span><p>Categoría</p></span>
                                     <select name="categoria[]" id="">
-                                        <option value="-">-</option>
+                                        <option value=""></option>
                                         <option value="Blanco - Blanco P. Amarilla">Blanco - Blanco P. Amarilla</option>
                                         <option value="Verde - Verde P. Azul">Verde - Verde P. Azul</option>  
                                         <option value="Amarillo - Amarillo P. Verde">Amarillo - Amarillo P. Verde</option>
@@ -181,7 +181,7 @@
                                 <div class="div_B">
                                     <span><p>Edad</p></span>
                                     <select name="edad[]" id="inputEdad">
-                                        <option value="-">-</option>
+                                        <option value=""></option>
                                         <option value="2-5 años">2 a 5 años</option>
                                         <option value="6-9 años">6 a 9 años</option>
                                         <option value="10-13 años">10 a 13 años</option>
@@ -194,11 +194,14 @@
                                 <div class="div_B">
                                     <span><p>Peso*</p></span>
                                     <select name="peso[]" id="">
-                                        <option value="-">-</option>
-                                        <option value="60-65kg">60-65kg</option>
-                                        <option value="66-70kg">66-70kg</option>
-                                        <option value="71-80kg">71-80kg</option>
-                                        <option value="+80kg">+80kg</option>
+                                        <option value=""></option>
+                                        <option value="hasta 45kg">hasta 45kg</option>
+                                        <option value="hasta 50kg">hasta 50kg</option>
+                                        <option value="hasta 55kg">hasta 55kg</option>
+                                        <option value="hasta 60kg">hasta 60kg</option>
+                                        <option value="hasta 70kg">hasta 70kg</option>
+                                        <option value="hasta 80kg">hasta 80kg</option>
+                                        <option value="+80kg">+ 80kg</option>
                                         <option value="No Aplica">No Aplica</option>
                                     </select>
                                 </div> 
@@ -226,6 +229,7 @@
     <script>
         let agregar = document.getElementById("agregar");
         let contenido = document.getElementById("contenedorClonado");
+        let contador = 1;
 
         agregar.addEventListener("click", e =>{
             e.preventDefault();
