@@ -132,7 +132,7 @@
                     <div class="fila_B clonar">
 
                             <div class="cont_titulo_filaB">
-                                <h3>Datos del Competidor</h3>
+                                <h3>Datos del competidor</h3>
                                 <span class="puntero ocultar">Eliminar</span>
                             </div>
 
@@ -222,64 +222,8 @@
                 </form>
         </section>
     </main>
-
     
-
-
-    <script>
-        let agregar = document.getElementById("agregar");
-        let contenido = document.getElementById("contenedorClonado");
-        let contador = 1;
-
-        agregar.addEventListener("click", e =>{
-            e.preventDefault();
-
-            let clonado = document.querySelector(".clonar");
-            let clon = clonado.cloneNode(true);
-
-            contenido.appendChild(clon).classList.remove("clonar");
-
-            let remover = contenido.lastChild.childNodes[1].querySelectorAll("span");
-            remover[0].classList.remove("ocultar");
-        });
-
-        contenido.addEventListener("click", e=>{
-            e.preventDefault();
-
-            if(e.target.classList.contains("puntero")){
-
-                let contenedor = e.target.parentNode.parentNode;
-
-                contenedor.parentNode.removeChild(contenedor);
-            }
-        });
-    </script>
-
-    <!-- Función mostrar menú -->
-
-    <script>
-        document.getElementById("menu_hamburguesa").addEventListener("click", mostrarMenu);
-        document.getElementById("menu_close").addEventListener("click", ocultarMenu);
-
-        const hamburguesa = document.getElementById("menu_hamburguesa");
-        const close = document.getElementById("menu_close");
-        const contenedor = document.getElementById("cont_links");
-
-        function mostrarMenu(){
-            //document.getElementById("move_background_form1").classList.toggle('move_background_form1');//
-            contenedor.classList.add('move_cont_links');
-            hamburguesa.style.display = "none";
-            close.style.display = "flex";
-        };
-
-        function ocultarMenu(){
-            contenedor.classList.remove('move_cont_links');
-            hamburguesa.style.display = "flex";
-            close.style.display = "none";
-        };
-    </script>
-
-    <!-- <script src="../infotkd_web_site/js/script.js"></script> -->
+    <script src="../js/appForm.js"></script>
 
 </body>
 </html>
