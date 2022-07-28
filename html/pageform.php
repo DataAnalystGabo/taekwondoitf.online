@@ -76,8 +76,14 @@
     <main class="main container">
         <section class="section">   
                 <?php if(!empty($error)): ?>
-                    <div class="div_alerta">
-                        <div class="div_alerta_p"><i class="fa-solid fa-triangle-exclamation"></i><?php echo $error; ?></div>
+                    <div class="cont_modal" id="cont_modal">
+                        <div class="ventana_modal">
+                            <div class="mensaje_modal">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                <?php echo $error; ?>
+                            </div>
+                            <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
+                        </div>    
                     </div>
                 <?php endif; ?>
 

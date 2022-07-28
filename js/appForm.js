@@ -1,4 +1,5 @@
 //Función clonar contenedor//
+
 const agregar = document.getElementById("agregar");
 const contenido = document.getElementById("contenedorClonado");
         
@@ -20,14 +21,15 @@ contenido.addEventListener("click", e=>{
 
     if(e.target.classList.contains("puntero")){
 
-                const contenedor = e.target.parentNode.parentNode;
+        const contenedor = e.target.parentNode.parentNode;
 
-                contenedor.parentNode.removeChild(contenedor);
+        contenedor.parentNode.removeChild(contenedor);
     }
 });
 
 //------------------------------------------------------------------------------------------------------------------//
 //Función mostrar menú responsive//
+
 document.getElementById("menu_hamburguesa").addEventListener("click", mostrarMenu);
 document.getElementById("menu_close").addEventListener("click", ocultarMenu);
 
@@ -45,4 +47,15 @@ function ocultarMenu(){
     contenedor.classList.remove('move_cont_links');
     hamburguesa.style.display = "flex";
     close.style.display = "none";
+};
+
+//------------------------------------------------------------------------------------------------------------------//
+//Función ventan modal//
+document.getElementById("aceptar_modal").addEventListener("click", ocultarModal);
+
+const aceptar_modal = document.getElementById("aceptar_modal");
+const cont_modal = document.getElementById("cont_modal");
+
+function ocultarModal(){
+    cont_modal.style.display = "none";
 };

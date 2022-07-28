@@ -3,12 +3,14 @@
     --poppins: 'Poppins', sans-serif;
     --open-sans: 'Open-Sans', sans-serif;
     --roboto: 'Roboto', sans-serif;
-    --black: #000814;
-    --blue-dark: #001832;
-    --blue-light: #003566;
+    --black: #030E1A;
+    --black2: #051626;
+    --black3: #071D33;
+    --blue-light: #0A2B4D;
     --yellow-dark: #FFC300;
     --yellow-light: #FFD60A;
     --white: #fffdf7;
+    --red: #d90429;
 }
 
 *{
@@ -20,7 +22,7 @@ body{
     color: var(--white);
     font-family: var(--roboto);
     font-size: 16px;
-    background: linear-gradient(90deg, rgba(0,8,20,1) 0%, rgba(0,24,50,1) 35%);
+    background: linear-gradient(90deg, hsla(211, 79%, 6%, 1) 0%, hsla(210, 76%, 11%, 1) 70%);
 }
 
 .container{
@@ -86,16 +88,16 @@ body{
     flex-direction: column;
     position: relative;
     justify-content: space-between;
-    top: 10em;
+    top: 5em;
     width: 70%;
-    height: 50%;
+    height: 70%;
 }
 
 .cont_menu h3{
     font-size: 2.5em;
     font-family: var(--poppins);
     font-style: italic;
-    -webkit-text-stroke: 1.5px var(--blue-dark);
+    -webkit-text-stroke: 1.5px var(--black3);
     color: transparent;
 }
 
@@ -112,7 +114,7 @@ body{
 
 .nav_links > li > a{
     text-decoration: none;
-    color: var(--blue-dark);
+    color: var(--black3);
     font-size: 1.3em;
 }
 
@@ -129,7 +131,7 @@ body{
 }
 
 .cont_redes > li > a{
-    color: var(--blue-dark);
+    color: var(--black3);
 }
 
 #menu_hamburguesa, #menu_close{
@@ -145,7 +147,7 @@ body{
 
 #menu_hamburguesa i, #menu_close i{
     font-size: 1.5em;
-    color: var(--blue-dark);
+    color: var(--black3);
 }
 
 #menu_close{
@@ -244,7 +246,7 @@ input[type = "text"], input[type="tel"]{
 select {
     width: 100%;
     height: 1.8em;
-    background: var(--blue-dark);
+    background: var(--black3);
     color: var(--white);
     outline: none;
     font-size: 1em;
@@ -277,6 +279,63 @@ select {
     cursor: pointer;
 }
 
+.cont_buttons > button:hover{
+    background: var(--blue-light);
+}
+
+
+/*Ventan modal*/
+.cont_modal{
+    width: 100%;
+    height: 100vh;
+    background: rgb(3, 14, 26, .299);
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.ventana_modal{
+    width: 15em;
+    height: 20em;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+    color: #030E1A;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: .5em;
+}
+
+.mensaje_modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mensaje_modal p{
+    width: 8em;
+}
+
+.mensaje_modal i{
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: var(--red);
+}
+
+.button_modal button{
+    width: 10em;
+    height: 2.2em;
+    background: transparent;
+    color: var(--black3);
+    border: 1px solid var(--black3);
+    cursor: pointer;
+}
+
+.button_modal > button:hover{
+    background: var(--blue-light);
+    color: var(--white);
+}
 
 
 
