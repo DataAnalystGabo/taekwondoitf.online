@@ -51,11 +51,15 @@ function ocultarMenu(){
 
 //------------------------------------------------------------------------------------------------------------------//
 //Función ventan modal//
-document.getElementById("aceptar_modal").addEventListener("click", ocultarModal);
 
 const aceptar_modal = document.getElementById("aceptar_modal");
 const cont_modal = document.getElementById("cont_modal");
+const ventana_modal = document.getElementById("ventana_modal");
 
-function ocultarModal(){
+
+aceptar_modal.addEventListener("click", function ocultarModal(){
     cont_modal.style.display = "none";
-};
+    }
+);
+
+

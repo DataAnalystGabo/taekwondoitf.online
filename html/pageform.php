@@ -88,14 +88,26 @@
                 <?php endif; ?>
 
                 <?php if(!empty($exitoso)): ?>
-                    <div class="div_exitoso">
-                                <div class="div_exitoso_p"><i class="fa-solid fa-circle-check"></i><?php echo $exitoso; ?></div>
+                    <div class="cont_modal" id="cont_modal">
+                        <div class="ventana_modal">
+                            <div class="mensaje_modal">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <?php echo $exitoso; ?>
+                            </div>
+                            <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
+                        </div>    
                     </div>
                 <?php endif; ?>
 
                 <?php if(!empty($alerta_dni)): ?>
-                    <div class="div_alerta_dni">
-                        <div class="div_alerta_dni_p"><i class="fa-solid fa-triangle-exclamation"></i><?php echo $alerta_dni; ?></div>
+                    <div class="cont_modal" id="cont_modal">
+                        <div class="ventana_modal">
+                            <div class="mensaje_modal">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                <?php echo $alerta_dni; ?>
+                            </div>
+                            <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
+                        </div>    
                     </div>
                 <?php endif; ?>
 
