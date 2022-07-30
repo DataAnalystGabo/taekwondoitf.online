@@ -358,10 +358,10 @@ select {
 }
 
 .contenedor_footer{
-    height: 15em;
+    height: 17em;
     width: 90%;
     *background: var(--white);
-    margin-top: 2.5em;
+    margin-top: 2em;
 }
 
 .cabecera_footer{
@@ -392,6 +392,7 @@ select {
     margin-top: 1em;
     opacity: .5;
     cursor: pointer;
+    text-align: center;
 }
 
 .contenedor_links ul{
@@ -403,6 +404,13 @@ select {
     padding-bottom: .4em;
 }
 
+.copyright{
+    display: flex;
+    opacity: .5;
+    justify-content: center;
+    padding-top: 2em;
+    font-size: 14px;
+}
 
 
 /*-------------------------------------------------------------------------------------------*/

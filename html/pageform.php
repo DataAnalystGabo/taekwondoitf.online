@@ -245,19 +245,20 @@
             </div>
             <div class="contenedor_links">
                 <ul>
-                    <li>Ayuda</li>
-                    <li>Cookies</li>
-                    <li>Eventos 2023</li>
-                    <li>Terminos y condiciones</li>
+                    <li>Home</li>
+                    <li>Contacto</li>
+                    <li>Seguridad</li>
+                    <li>Promoción</li> 
                 </ul>
 
                 <ul>
-                    <li>Home</li>
-                    <li>Contacto</li>
-                    <li>Promoción</li>
-                    <li>Seguridad</li>
+                    <li>Ayuda</li>
+                    <li>Cookies</li>
+                    <li>Terminos</li>
+                    <li>Eventos 2023</li>
                 </ul>
             </div>
+            <span class="copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</span>
         </div>
     </footer>
     
