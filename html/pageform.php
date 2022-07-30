@@ -25,7 +25,7 @@
 
             <div class="cont_links" id="cont_links">
                 <div class="cont_menu">
-                    <h3>Infotkd</h3>
+                    <h3>infotkd</h3>
                     <ul class="nav_links">
                         <li>
                             <a href="../../infotkd_web_site/html/index.html" class="nav__links">Home<i class="fa-solid fa-house"></i></a>
@@ -48,17 +48,9 @@
                         </li>
                     </ul>
                     <div class="cont_redes">
-                        <li>
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        
-                        <li>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        </li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div> 
             </div>  
@@ -240,6 +232,34 @@
                 </form>
         </section>
     </main>
+
+    <footer class="cover_footer">
+        <div class="contenedor_footer">
+            <div class="cabecera_footer">
+                <h2>infotkd</h2>
+                <div class="contenedor_iconos">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contenedor_links">
+                <ul>
+                    <li>Ayuda</li>
+                    <li>Cookies</li>
+                    <li>Eventos 2023</li>
+                    <li>Terminos y condiciones</li>
+                </ul>
+
+                <ul>
+                    <li>Home</li>
+                    <li>Contacto</li>
+                    <li>Promoción</li>
+                    <li>Seguridad</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
     <script src="../js/appForm.js"></script>
 

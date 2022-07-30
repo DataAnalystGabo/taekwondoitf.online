@@ -29,13 +29,12 @@ contenido.addEventListener("click", e=>{
 
 //------------------------------------------------------------------------------------------------------------------//
 //Función mostrar menú responsive//
-
-document.getElementById("menu_hamburguesa").addEventListener("click", mostrarMenu);
-document.getElementById("menu_close").addEventListener("click", ocultarMenu);
-
 const hamburguesa = document.getElementById("menu_hamburguesa");
 const close = document.getElementById("menu_close");
 const contenedor = document.getElementById("cont_links");
+
+hamburguesa.addEventListener("click", mostrarMenu);
+close.addEventListener("click", ocultarMenu);
 
 function mostrarMenu(){
     contenedor.classList.add('move_cont_links');
