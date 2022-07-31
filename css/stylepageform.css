@@ -11,6 +11,7 @@
     --yellow-light: #FFD60A;
     --white: #fffdf7;
     --red: #d90429;
+    --green: #83e377;
 }
 
 *{
@@ -88,9 +89,9 @@ body{
     flex-direction: column;
     position: relative;
     justify-content: space-between;
-    top: 5em;
-    width: 70%;
-    height: 70%;
+    top: 7em;
+    width: 75%;
+    height: 60%;
 }
 
 .cont_menu h3{
@@ -303,8 +304,8 @@ select {
 }
 
 .ventana_modal{
-    width: 15em;
-    height: 20em;
+    width: 23em;
+    height: 15em;
     background: var(--white);
     display: flex;
     flex-direction: column;
@@ -323,7 +324,8 @@ select {
 }
 
 .mensaje_modal p{
-    width: 8em;
+    width: 90%;
+    line-height: 1.5em;
 }
 
 .mensaje_modal i{
@@ -332,11 +334,15 @@ select {
     color: var(--red);
 }
 
+.fa-circle-check{
+    color: var(--green) !important;
+}
+
 .button_modal button{
     width: 10em;
     height: 2.2em;
     background: transparent;
-    color: var(--black3);
+    color: var(--black2);
     border: 1px solid var(--black3);
     cursor: pointer;
 }
@@ -389,26 +395,28 @@ select {
     width: 80%;
     display: flex;
     flex-direction: row;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     opacity: .5;
     cursor: pointer;
     text-align: center;
+    font-size: 15px;
 }
 
 .contenedor_links ul{
     list-style: none;
-    padding: 0;
+    padding: 0 .4rem 0 .4rem;
 }
 
 .contenedor_links ul li{
-    padding-bottom: .4em;
+    padding-bottom: .4rem;
 }
 
 .copyright{
     display: flex;
     opacity: .5;
     justify-content: center;
-    padding-top: 2em;
+    padding-top: 2rem;
     font-size: 14px;
 }
 

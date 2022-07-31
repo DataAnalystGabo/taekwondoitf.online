@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
 </head>
 
 <body>
@@ -142,7 +146,7 @@
                     <div class="fila_B clonar">
 
                             <div class="cont_titulo_filaB">
-                                <h3>Datos del competidor</h3>
+                                <h3>Datos del competidor </h3>
                                 <span class="puntero ocultar">Eliminar</span>
                             </div>
 
@@ -246,14 +250,20 @@
             <div class="contenedor_links">
                 <ul>
                     <li>Home</li>
-                    <li>Contacto</li>
+                    <li>Contacto</li>   
+                </ul>
+
+                <ul>
                     <li>Seguridad</li>
-                    <li>Promoción</li> 
+                    <li>Promoción</li>
                 </ul>
 
                 <ul>
                     <li>Ayuda</li>
                     <li>Cookies</li>
+                </ul>
+
+                <ul>
                     <li>Terminos</li>
                     <li>Eventos 2023</li>
                 </ul>

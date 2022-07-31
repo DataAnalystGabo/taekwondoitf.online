@@ -11,8 +11,8 @@ agregar.addEventListener("click", e =>{
 
     contenido.appendChild(clon).classList.remove("clonar"); 
 
-    const remover = contenido.lastChild.childNodes[1].querySelectorAll("span");
-    remover[0].classList.remove("ocultar"); 
+    const removerPuntero = contenido.lastChild.childNodes[1].querySelectorAll("span");
+    removerPuntero[0].classList.remove("ocultar"); 
              
 });
 
@@ -49,16 +49,19 @@ function ocultarMenu(){
 };
 
 //------------------------------------------------------------------------------------------------------------------//
-//Función ventan modal//
+//Función ventana modal//
 
-const aceptar_modal = document.getElementById("aceptar_modal");
-const cont_modal = document.getElementById("cont_modal");
-const ventana_modal = document.getElementById("ventana_modal");
+const aceptarModal = document.getElementById("aceptar_modal");
+const contModal = document.getElementById("cont_modal");
+const ventanaModal = document.getElementById("ventana_modal");
 
 
-aceptar_modal.addEventListener("click", function ocultarModal(){
+aceptarModal.addEventListener("click", () => contModal.style.display  = "none");
+
+
+/*aceptar_modal.addEventListener("click", function ocultarModal(){
     cont_modal.style.display = "none";
     }
-);
+);*/
 
 

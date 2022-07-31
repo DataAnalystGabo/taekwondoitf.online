@@ -21,7 +21,7 @@ $peso = $_POST['peso'];
 $error = '';
 $exitoso = '';
 $alerta_dni = '';
-
+                                                                                   
 
 if(empty($escuela) or empty($instructor) or empty($coach) or empty($email) or empty ($celular)
 or empty($competidor) or empty($dni) or empty($genero) or empty($categoria) or empty($edad)
