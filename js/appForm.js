@@ -9,7 +9,7 @@ agregar.addEventListener("click", e =>{
     const clonado = document.querySelector(".clonar");
     const clon = clonado.cloneNode(true);
 
-    contenido.appendChild(clon).classList.remove("clonar"); 
+    contenido.appendChild(clon).classList.remove("clonar");
 
     const removerPuntero = contenido.lastChild.childNodes[1].querySelectorAll("span");
     removerPuntero[0].classList.remove("ocultar"); 
@@ -55,8 +55,9 @@ const aceptarModal = document.getElementById("aceptar_modal");
 const contModal = document.getElementById("cont_modal");
 const ventanaModal = document.getElementById("ventana_modal");
 
-
 aceptarModal.addEventListener("click", () => contModal.style.display  = "none");
+
+
 
 
 /*aceptar_modal.addEventListener("click", function ocultarModal(){

@@ -165,12 +165,9 @@ body{
 }
 
 .form{
-    /*display: grid;
-    grid-template-rows: 7em 32em 37em 8em;
-    row-gap: 2em;*/
     display: flex;
     flex-direction: column;
-    row-gap: 2em;
+    *row-gap: 2em;
     border: 1px solid var(--white);
     border-radius: .5em;
     margin: 1.5em 0 3em 0;
@@ -180,7 +177,6 @@ body{
 .contenedorClonado{
     display: flex;
     flex-direction: column;
-    gap: 5em;
 }
 
 .contenedor_titulo_princ{
@@ -195,12 +191,16 @@ body{
 
 .fila_A{
     width: 80%;
-    height: 35em;
+    height: 32em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .fila_B{
     width: 80%;
-    height: 39em;
+    height: 40em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .div_A, .div_nombre_dni, .div_B{
@@ -262,6 +262,7 @@ select {
     display: flex;
     width: 80%;
     margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 .cont_buttons{
@@ -296,6 +297,7 @@ select {
     position: fixed;
     top:0;
     left: 0;
+    z-index: 80;
 }
 
 @keyframes modal{
@@ -382,6 +384,7 @@ select {
     font-size: 1.7em;
     justify-content: space-evenly;
     opacity: .5;
+    z-index: 70;
 }
 
 .contenedor_iconos i{
@@ -418,6 +421,7 @@ select {
     justify-content: center;
     padding-top: 2rem;
     font-size: 14px;
+    z-index: 70;
 }
 
 

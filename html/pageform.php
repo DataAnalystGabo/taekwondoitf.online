@@ -69,44 +69,47 @@
         </nav>
     </header>
 
+    <div class="cover_alertas">
+        <?php if(!empty($error)): ?>
+            <div class="cont_modal" id="cont_modal">
+                <div class="ventana_modal">
+                    <div class="mensaje_modal">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <?php echo $error; ?>
+                    </div>
+                    <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
+                </div>    
+            </div>
+        <?php endif; ?>
+
+        <?php if(!empty($exitoso)): ?>
+            <div class="cont_modal" id="cont_modal">
+                <div class="ventana_modal">
+                    <div class="mensaje_modal">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <?php echo $exitoso; ?>
+                    </div>
+                    <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
+                </div>    
+            </div>
+        <?php endif; ?>
+                
+        <?php if(!empty($alerta_dni)): ?>
+            <div class="cont_modal" id="cont_modal">
+                <div class="ventana_modal">
+                    <div class="mensaje_modal">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <?php echo $alerta_dni; ?>
+                    </div>
+                    <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
+                </div>    
+            </div>
+        <?php endif; ?>
+    </div>
+
+                
     <main class="main container">
         <section class="section">   
-                <?php if(!empty($error)): ?>
-                    <div class="cont_modal" id="cont_modal">
-                        <div class="ventana_modal">
-                            <div class="mensaje_modal">
-                                <i class="fa-solid fa-triangle-exclamation"></i>
-                                <?php echo $error; ?>
-                            </div>
-                            <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
-                        </div>    
-                    </div>
-                <?php endif; ?>
-
-                <?php if(!empty($exitoso)): ?>
-                    <div class="cont_modal" id="cont_modal">
-                        <div class="ventana_modal">
-                            <div class="mensaje_modal">
-                                <i class="fa-solid fa-circle-check"></i>
-                                <?php echo $exitoso; ?>
-                            </div>
-                            <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
-                        </div>    
-                    </div>
-                <?php endif; ?>
-
-                <?php if(!empty($alerta_dni)): ?>
-                    <div class="cont_modal" id="cont_modal">
-                        <div class="ventana_modal">
-                            <div class="mensaje_modal">
-                                <i class="fa-solid fa-triangle-exclamation"></i>
-                                <?php echo $alerta_dni; ?>
-                            </div>
-                            <div class="button_modal"><button id="aceptar_modal">Aceptar</button></div>
-                        </div>    
-                    </div>
-                <?php endif; ?>
-
                 <form class="form" name="form1" action="../../infotkd_web_site/php/form.php" method="POST">
                     <div class="contenedor_titulo_princ">
                         <h1>Torneo Nacional</h1>
@@ -264,8 +267,8 @@
                 </ul>
 
                 <ul>
+                    <li>Eventos</li>
                     <li>Terminos</li>
-                    <li>Eventos 2023</li>
                 </ul>
             </div>
             <span class="copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</span>

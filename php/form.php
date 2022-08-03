@@ -1,10 +1,6 @@
-<?php
-$usuario        = "root";
-$password       = "";
-$servidor       = "localhost";
-$basededatos    = "circuitofschool";
-$con            = mysqli_connect($servidor, $usuario, $password) or die("No se ha podido conectar al Servidor");
-$db             = mysqli_select_db($con, $basededatos) or die("Upps! Error en conectar a la Base de Datos");
+<?php 
+
+include('conexion.php');
 
 $escuela = $_POST['escuela'];
 $instructor = $_POST['instructor'];
