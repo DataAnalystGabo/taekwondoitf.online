@@ -23,7 +23,7 @@ if(empty($escuela) or empty($instructor) or empty($coach) or empty($email) or em
 or empty($competidor) or empty($dni) or empty($genero) or empty($categoria) or empty($edad)
 or empty($peso)){
 
-    $error .= '<p>¡Se deben completar todos los campos!</p>';
+    $error .= '<p class="modal__parrafo">¡Se deben completar todos los campos!</p>';
     require '../../infotkd_web_site/html/pageform.php';
 
 }else{
@@ -42,7 +42,7 @@ or empty($peso)){
         $verificador_dni = mysqli_query($con, "SELECT * FROM competidores WHERE dni='".$dni[$i]."' ");
         
         if(mysqli_num_rows($verificador_dni) > 0){   
-            $alerta_dni .= '<p>Error: ¡El dni '.$dni[$i].' ya se encuentra registrado! Contáctese a infotkd@gmail.com</p>';
+            $alerta_dni .= '<p class="modal__parrafo">Error: ¡El dni '.$dni[$i].' ya se encuentra registrado! Contáctese a infotkd@gmail.com</p>';
             require '../../infotkd_web_site/html/pageform.php';
             exit();
             mysqli_close($con);
@@ -52,7 +52,7 @@ or empty($peso)){
     };
      
     if($ejecutar){
-        $exitoso .= '<p>¡Todos los datos se han enviado exitosamente!</p>';
+        $exitoso .= '<p class="modal__parrafo">¡Todos los datos se han enviado exitosamente!</p>';
         require '../../infotkd_web_site/html/pageform.php';
     };
         
