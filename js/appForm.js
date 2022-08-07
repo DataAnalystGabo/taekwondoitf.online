@@ -28,25 +28,6 @@ contenido.addEventListener("click", e=>{
 });
 
 //------------------------------------------------------------------------------------------------------------------//
-//Función mostrar menú responsive//
-/*const hamburguesa = document.getElementById("menu__hamburguesa");
-const cerrar       = document.getElementById("menu__cerrar");
-const contenedor  = document.getElementById("nav__menu");
-
-hamburguesa.addEventListener("click", mostrarMenu);
-cerrar.addEventListener("click", ocultarMenu);
-
-function mostrarMenu(){
-    contenedor.classList.add('nav__menu--transladar');
-    hamburguesa.style.display = "none";
-    cerrar.style.display = "flex";
-};
-
-function ocultarMenu(){
-    contenedor.classList.remove('nav__menu--transladar');
-    hamburguesa.style.display = "flex";
-    cerrar.style.display = "none";
-};*/
 
 const menuHambur = document.getElementById("menu__hamb");
 const navMenu = document.getElementById("nav__menu");

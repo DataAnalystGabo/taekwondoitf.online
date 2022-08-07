@@ -28,29 +28,29 @@
                     <h3 class="menu__titulo">infotkd</h3>
                     <ul class="menu__links">
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/index.html" class="menu__link">Home<i class="menu__i fa-solid fa-house"></i></a>
+                            <a href="../../infotkd_web_site/html/index.html" class="menu__a" title="Home">Home<i class="menu__i fa-solid fa-house"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__link">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Noticias">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__link">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Eventos">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
                         </li>
                         
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__link">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Base de datos">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__link">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Contacto">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                         </li>
                     </ul>
                     <div class="menu__redes">
-                        <a class="redes__link" href="#"><i class="redes__i fa-brands fa-facebook"></i></a>
-                        <a class="redes__link" href="#"><i class="redes__i fa-brands fa-instagram"></i></a>
-                        <a class="redes__link" href="#"><i class="redes__i fa-brands fa-twitter"></i></a>
+                        <a class="menu__redes__link" href="#" title="Facebook"><i class="redes__i fa-brands fa-facebook"></i></a>
+                        <a class="menu__redes__link" href="#" title="Instagram"><i class="redes__i fa-brands fa-instagram"></i></a>
+                        <a class="menu__redes__link" href="#" title="Twitter"><i class="redes__i fa-brands fa-twitter"></i></a>
                     </div>
                 </div> 
             </div>  
@@ -238,11 +238,11 @@
     <footer class="footer__cover">
         <div class="footer">
             <div class="footer__cabecera">
-                <h2 class="footer_logo">infotkd</h2>
+                <h2 class="footer__logo">infotkd</h2>
                 <div class="footer__iconos">
-                    <a href="#"><i class="footer__i fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="footer__i fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="footer__i fa-brands fa-twitter"></i></a>
+                    <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
+                    <a href="#"title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Twitter" class="footer__a"><i class="footer__i fa-brands fa-twitter"></i></a>
                 </div>
             </div>
             <div class="footer__links">
