@@ -159,7 +159,6 @@ body{
 
 .redes__i:hover{
     transform: translateY(-.7em);
-
 }
 
 .menu__hamb{
@@ -521,10 +520,11 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
   }
 
   .fila1__inputs, .fila2__inputs{
-    width: 95%;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -538,6 +538,7 @@ body{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 3em;
+    gap: 1.5em;
   }
 
   .contenedorClonado{
@@ -579,7 +580,11 @@ body{
  }
 
  .menu__redes{
-    display: none;
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    width: max-content;
+    gap: .5em;
  }
 
  .menu__i{
@@ -597,12 +602,20 @@ body{
  .menu__contenedor{
     height: max-content;
     width: max-content;
+    flex-direction: row-reverse;
     position: initial;
+    gap: 3em;
  }
 
  .menu__links{
     display: flex;
     gap: 1.5em;
  }
+
+ .redes__i:hover{
+    transform: translateY(-.2em);
+    color: var(--white);
+    opacity: .9;
+}
  
 }
