@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
@@ -23,7 +23,7 @@
                 <img class="nav__logo__img" src="../../infotkd_web_site/image/infotkd-logo.png" href="../../infotkd_web_site/html/index.html">
             </figure>
 
-            <div class="nav__menu" id="nav__menu">
+            <div class="menu" id="menu">
                 <div class="menu__contenedor">
                     <h3 class="menu__titulo">infotkd</h3>
                     <ul class="menu__links">
@@ -116,29 +116,33 @@
                                 <h3 class="fila1_titulo_princ">Datos del Coach/Instructor</h3>
                             </div>
 
-                            <div class="fila1__inputs">
-                                <input class="inputs__texto" type="text" name="escuela" id="" placeholder="Escuela" require>
-                            </div>
+                            <div class="fila1__inputs__cont">
+                                <div class="fila1__inputs">
+                                    <input class="inputs__texto" type="text" name="escuela" id="" placeholder="Escuela" require>
+                                </div>
             
-                            <div class="fila1__inputs">
-                                <input class="inputs__texto" type="text" name="instructor" id="" placeholder="Instructor (Nombre y Apellido)" require> 
-                            </div>
+                                <div class="fila1__inputs">
+                                    <input class="inputs__texto" type="text" name="instructor" id="" placeholder="Instructor (Nombre y Apellido)" require> 
+                                </div>
             
-                            <div class="fila1__inputs">
-                                <input class="inputs__texto" type="text" name="coach" id="" placeholder="Coach (Nombre y Apellido)" require>
-                            </div>
+                                <div class="fila1__inputs">
+                                    <input class="inputs__texto" type="text" name="coach" id="" placeholder="Coach (Nombre y Apellido)" require>
+                                </div>
                         
-                            <div class="fila1__inputs">
-                                <input class="inputs__texto" type="text" name="email" id="" placeholder="E-mail: xxxxxxx@gmail.com" require>
-                            </div>
+                                <div class="fila1__inputs">
+                                    <input class="inputs__texto" type="text" name="email" id="" placeholder="E-mail: xxxxxxx@gmail.com" require>
+                                </div>
             
-                            <div class="fila1__inputs">
-                                <input class="inputs__texto" type="tel" name="celular" id="" placeholder="Celular/Whatsapp" require>
+                                <div class="fila1__inputs">
+                                    <input class="inputs__texto" type="tel" name="celular" id="" placeholder="Celular/Whatsapp" require>
+                                </div>
+
+                                <div class="fila1__inputs">
+                                    <input class="inputs__texto" type="text" name="othercamp" id="" placeholder="Othercamp">
+                                </div>  
                             </div>
 
-                            <div class="div_A">
-                                <input class="inputs__texto" type="text" name="othercamp" id="" placeholder="Othercamp">
-                            </div>  
+                            
                     </div>
                         
                     <div class="fila2 clonar">
@@ -150,12 +154,12 @@
 
                             <div class="fila2__columna">
                 
-                                <div class="fila2__inputs">
-                                    <div class="fila2__input">
+                                <div class="fila2__inputs__cont">
+                                    <div class="fila2__inputs">
                                         <input class="inputs__texto" type="text" name="competidor[]" id="" placeholder="Nombre y Apellido del competidor" require>
                                     </div>
             
-                                    <div class="fila2__input">
+                                    <div class="fila2__inputs">
                                         <input class="inputs__texto" type="tel" name="dni[]" id="" placeholder="DNI (sin puntos ni comas)" require>
                                     </div>
                                 </div>
@@ -245,28 +249,35 @@
                     <a href="#" title="Twitter" class="footer__a"><i class="footer__i fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="footer__links">
-                <ul class="footer__menu">
-                    <li class="footer__menu__li">Home</li>
-                    <li class="footer__menu__li">Contacto</li>   
-                </ul>
+            <div class="footer__conten__links">
+                <div class="footer__links">
+                    <ul class="footer__menu">
+                        <li class="footer__menu__li">Home</li>
+                        <li class="footer__menu__li">Contacto</li>   
+                    </ul>
 
-                <ul class="footer__menu">
-                    <li class="footer__menu__li">Seguridad</li>
-                    <li class="footer__menu__li">Promoción</li>
-                </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu__li">Seguridad</li>
+                        <li class="footer__menu__li">Promoción</li>
+                    </ul>
 
-                <ul class="footer__menu">
-                    <li class="footer__menu__li">Ayuda</li>
-                    <li class="footer__menu__li">Cookies</li>
-                </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu__li">Ayuda</li>
+                        <li class="footer__menu__li">Cookies</li>
+                    </ul>
 
-                <ul class="footer__menu">
-                    <li class="footer__menu__li">Eventos</li>
-                    <li class="footer__menu__li">Terminos</li>
-                </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu__li">Eventos</li>
+                        <li class="footer__menu__li">Terminos</li>
+                    </ul>
+                </div>
+                <div class="footer__copyright__cont">
+                    <p class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</p>
+                </div>
             </div>
-            <span class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</span>
+
+            
+            
         </div>
     </footer>
     

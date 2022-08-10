@@ -30,7 +30,7 @@ contenido.addEventListener("click", e=>{
 //------------------------------------------------------------------------------------------------------------------//
 
 const menuHambur = document.getElementById("menu__hamb");
-const navMenu = document.getElementById("nav__menu");
+const navMenu = document.getElementById("menu");
 
 menuHambur.addEventListener("click", animacionBar);
 
@@ -42,7 +42,7 @@ function animacionBar(){
     lineTop.classList.toggle("active--top");
     lineMiddle.classList.toggle("active--middle");
     lineBottom.classList.toggle("active--bottom");
-    navMenu.classList.toggle("nav__menu--transladar");
+    navMenu.classList.toggle("menu--transladar");
 }
 
 //------------------------------------------------------------------------------------------------------------------//
