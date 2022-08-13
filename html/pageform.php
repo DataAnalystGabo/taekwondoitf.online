@@ -239,9 +239,10 @@
         </section>
     </main>
 
-    <footer class="footer__cover">
-        <div class="footer">
-            <div class="footer__cabecera">
+    <footer class="footer">
+        <div class="footer__contenedor">
+
+            <div class="footer__box footer__box--cabecera">
                 <h2 class="footer__logo">infotkd</h2>
                 <div class="footer__iconos">
                     <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
@@ -249,39 +250,30 @@
                     <a href="#" title="Twitter" class="footer__a"><i class="footer__i fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="footer__conten__links">
-                <div class="footer__links">
-                    <ul class="footer__menu">
-                        <li class="footer__menu__li">Home</li>
-                        <li class="footer__menu__li">Contacto</li>   
-                    </ul>
 
-                    <ul class="footer__menu">
-                        <li class="footer__menu__li">Seguridad</li>
-                        <li class="footer__menu__li">Promoción</li>
-                    </ul>
-
-                    <ul class="footer__menu">
-                        <li class="footer__menu__li">Ayuda</li>
-                        <li class="footer__menu__li">Cookies</li>
-                    </ul>
-
-                    <ul class="footer__menu">
-                        <li class="footer__menu__li">Eventos</li>
-                        <li class="footer__menu__li">Terminos</li>
-                    </ul>
-                </div>
-                <div class="footer__copyright__cont">
-                    <p class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</p>
-                </div>
+            <div class="footer__box footer__box--links">
+                <ul class="footer__menu">
+                    <li class="footer__menu__li">Home</li>
+                    <li class="footer__menu__li">Contacto</li> 
+                    <li class="footer__menu__li">Seguridad</li>
+                    <li class="footer__menu__li">Promoción</li>
+                    <li class="footer__menu__li">Ayuda</li>
+                    <li class="footer__menu__li">Cookies</li>
+                    <li class="footer__menu__li">Eventos</li>
+                    <li class="footer__menu__li">Terminos</li>
+                    <li class="footer__menu__li">Servicios</li>
+                </ul>
+            </div>  
+            
+            <div class="footer__box footer__box--copy">
+                <p class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</p>
             </div>
-
-            
-            
         </div>
     </footer>
     
-    <script src="../js/appForm.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/ventanaModal.js"></script>
+    <script src="../js/contClonar.js"></script>
 
 </body>
 </html>
