@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="../../infotkd_web_site/css/normalize.css">
-    <link rel="stylesheet" href="../../infotkd_web_site/css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Infotkd - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +17,8 @@
 <body>
     <header class="header">
         <nav class="nav container">
-
             <figure class="nav__logo">
-                <img class="nav__logo__img" src="../../infotkd_web_site/image/infotkd-logo.png" href="../../infotkd_web_site/html/index.html">
+                <img class="nav__logo__img" src="../image/infotkd-logo.png" href="../html/index.html">
             </figure>
 
             <div class="menu" id="menu">
@@ -27,29 +26,29 @@
                     <h3 class="menu__titulo">infotkd</h3>
                     <ul class="menu__links">
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/index.html" class="menu__a" title="Home">Home<i class="menu__i fa-solid fa-house"></i></a>
+                            <a href="../html/index.html" class="menu__a" title="Home">Home<i class="menu__i fa-solid fa-house"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Noticias">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Noticias">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Eventos">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Eventos">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
                         </li>
                         
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Base de datos">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Base de datos">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Contacto">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Contacto">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                         </li>
                     </ul>
                     <div class="menu__redes">
-                        <a class="menu__redes__link" href="#" title="Facebook"><i class="redes__i fa-brands fa-facebook"></i></a>
-                        <a class="menu__redes__link" href="#" title="Instagram"><i class="redes__i fa-brands fa-instagram"></i></a>
-                        <a class="menu__redes__link" href="#" title="Twitter"><i class="redes__i fa-brands fa-twitter"></i></a>
+                        <a class="menu__redes__link" href="#" title="Facebook"><i class="menu__redes__i fa-brands fa-facebook"></i></a>
+                        <a class="menu__redes__link" href="#" title="Instagram"><i class="menu__redes__i fa-brands fa-instagram"></i></a>
+                        <a class="menu__redes__link" href="#" title="Twitter"><i class="menu__redes__i fa-brands fa-twitter"></i></a>
                     </div>
                 </div> 
             </div>  
@@ -64,29 +63,29 @@
     </header> 
     
 
-    <main>
+    <main class="main">
         
         <section class="section section--banner">
             <div class="banner container">
 
-                <div class="titulos">
-                    <h1 class="titulos--h1"><span class="titulo--span1">CAMPEONATO MUNDIAL</span><br/>
+                <div class="banner__titulos">
+                    <h1 class="banner__h1"><span class="banner__span1">CAMPEONATO MUNDIAL</span><br/>
                                                                 FINLANDIA 2023 <br/>
-                                                                <span class="titulo--span2">1° RANQUEABLE</span></h1>
+                                                                <span class="banner__span2">1° RANQUEABLE</span></h1>
                 </div>
 
                 <div class="sponsors">
                     <h3 class="sponsors__h3">AUSPICIA</h3>
                     <div class="sponsors__logos">
-                        <div class="logo--1"></div>
-                        <div class="logo--2"></div>
-                        <div class="logo--3"></div>
+                        <div class="sponsor__logo sponsor__logo--1"></div>
+                        <div class="sponsor__logo sponsor__logo--2"></div>
+                        <div class="sponsor__logo sponsor__logo--3"></div>
                     </div>
                 </div>
 
                
-                <div clas="action">
-                    <button class="btca" onclick="window.location.href='../html/pageform.php'" target="_blank">
+                <div class="acciones acciones--inscribite">
+                    <button class="btca" onclick="window.location.href='../html/pageform.php'">
                         <span class="btca__label">INSCRIBITE</span>
                         <div class="btca__icon">
                             <i class="btca__i fa-solid fa-arrow-right-long"></i>
@@ -94,13 +93,145 @@
                     </button>
                 </div>
 
-               
-                
-                
             </div>
 
             
         </section>
+
+        <article class="article">
+            <div class="portada">
+                <img class="portada__img" src="../image/card1Optimizado.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="resumen container">
+
+                <header class="encabezado">
+                    <h2 class="encabezado__titulo">Nuevas actividades en el estadio deportivo de Lanús</h2>
+    
+                    <div class="data">
+                        <div class="data__autor">
+                            <img class="data__fotoperfil" src="../image/autor1.jfif" alt="Imagen del autor del artículo">
+                        </div>
+                       
+                        <p class="data__nombre">Marcos Galperín 
+                            <i class="data__i fa-solid fa-calendar-days"></i><time class="data__time" datatime="2022-08-14">12 de Agosto del 2022</time>
+                        </p>
+                    </div>
+                </header>
+    
+                <p class="resumen__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis laoreet tortor sed sollicitudin volutpat. Donec pharetra, augue sed i
+                    nterdum ornare, felis libero varius ligula, non blandit tortor elit sit am
+                    et leo. Cras ac felis nec felis iaculis bibendum. Nullam mauris dolor, vari
+                    us eget ullamcorper nec, posuere eget sem. Nam facilisis purus nisl, vel ti
+                    ncidunt ex tincidunt sed. Cras id dapibus purus. Etiam a enim congue, sagit ...
+                </p>
+
+                <div class="acciones acciones--leermas">
+                    <button class="btca" onclick="window.location.href='../html/pageform.php'" target="_blank">
+                        <span class="btca__label">Leer más</span>
+                        <div class="btca__icon">
+                            <i class="btca__i fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </button>
+                    
+                    <div class="compartir">
+                        <p class="compartir__p">Compartir</p>
+                        <i class="compartir__i fa-regular fa-share-from-square"></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <div class="portada">
+                <img class="portada__img" src="../image/card2Optimizado.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="resumen container">
+
+                <header class="encabezado">
+                    <h2 class="encabezado__titulo">La neurociencia y el Taekwon-do</h2>
+    
+                    <div class="data">
+                        <div class="data__autor">
+                            <img class="data__fotoperfil" src="../image/autor2.jfif" alt="Imagen del autor del artículo">
+                        </div>
+                       
+                        <p class="data__nombre">Ricardo López
+                            <i class="data__i fa-solid fa-calendar-days"></i><time class="data__time" datatime="2022-08-14">12 de Agosto del 2022</time>
+                        </p>
+                    </div>
+                </header>
+    
+                <p class="resumen__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis laoreet tortor sed sollicitudin volutpat. Donec pharetra, augue sed i
+                    nterdum ornare, felis libero varius ligula, non blandit tortor elit sit am
+                    et leo. Cras ac felis nec felis iaculis bibendum. Nullam mauris dolor, vari
+                    us eget ullamcorper nec, posuere eget sem. Nam facilisis purus nisl, vel ti
+                    ncidunt ex tincidunt sed. Cras id dapibus purus. Etiam a enim congue, sagit ...
+                </p>
+
+                <div class="acciones acciones--leermas">
+                    <button class="btca" onclick="window.location.href='../html/pageform.php'" target="_blank">
+                        <span class="btca__label">Leer más</span>
+                        <div class="btca__icon">
+                            <i class="btca__i fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </button>
+                    
+                    <div class="compartir">
+                        <p class="compartir__p">Compartir</p>
+                        <i class="compartir__i fa-regular fa-share-from-square"></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <div class="portada">
+                <img class="portada__img" src="../image/card3Optimizado.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="resumen container">
+
+                <header class="encabezado">
+                    <h2 class="encabezado__titulo">Torneo Nacional de Taekwon-do | Mar del Plata 2023</h2>
+    
+                    <div class="data">
+                        <div class="data__autor">
+                            <img class="data__fotoperfil" src="../image/autor3.jfif" alt="Imagen del autor del artículo">
+                        </div>
+                       
+                        <p class="data__nombre">Julio López
+                            <i class="data__i fa-solid fa-calendar-days"></i><time class="data__time" datatime="2022-08-14">14 de Agosto del 2022</time>
+                        </p>
+                    </div>
+                </header>
+    
+                <p class="resumen__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis laoreet tortor sed sollicitudin volutpat. Donec pharetra, augue sed i
+                    nterdum ornare, felis libero varius ligula, non blandit tortor elit sit am
+                    et leo. Cras ac felis nec felis iaculis bibendum. Nullam mauris dolor, vari
+                    us eget ullamcorper nec, posuere eget sem. Nam facilisis purus nisl, vel ti
+                    ncidunt ex tincidunt sed. Cras id dapibus purus. Etiam a enim congue, sagit ...
+                </p>
+
+                <div class="acciones acciones--leermas">
+                    <button class="btca" onclick="window.location.href='../html/pageform.php'" target="_blank">
+                        <span class="btca__label">Leer más</span>
+                        <div class="btca__icon">
+                            <i class="btca__i fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </button>
+                    
+                    <div class="compartir">
+                        <p class="compartir__p">Compartir</p>
+                        <i class="compartir__i fa-regular fa-share-from-square"></i>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
     
 

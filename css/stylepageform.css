@@ -6,12 +6,14 @@
     --black: #030E1A;
     --black2: #051626;
     --black3: #071D33;
-    --blue-light: #0A2B4D;
+    --blue: #0A2B4D;
+    --blue-light: #1DA1F2;
     --yellow-dark: #FFC300;
     --yellow-light: #FFD60A;
-    --white: #fffdf7;
+    --white: #F5F8FA;
     --red: #d90429;
-    --green: #83e377;
+    --grey: #95a5a6;
+    --green: #27ae60;
 }
 
 *{
@@ -193,7 +195,7 @@ body{
 
 .active--bottom{
     transform: rotate(-45deg)
-    translate(-1px, 0px);
+    translate(-1px, 1px);
 }
 
 
@@ -327,7 +329,7 @@ body{
 }
 
 .botones__accion:hover{
-    background: var(--blue-light);
+    background: var(--blue);
 }
 
 
@@ -394,7 +396,7 @@ body{
 }
 
 .modal__boton:hover{
-    background: var(--blue-light);
+    background: var(--blue);
     color: var(--white);
 }
 /*-------------------------------------------------------------------------------------------*/

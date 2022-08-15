@@ -24,7 +24,7 @@ or empty($competidor) or empty($dni) or empty($genero) or empty($categoria) or e
 or empty($peso)){
 
     $error .= '<p class="modal__parrafo">¡Se deben completar todos los campos!</p>';
-    require '../../infotkd_web_site/html/pageform.php';
+    require '../html/pageform.php';
 
 }else{
 
@@ -43,7 +43,7 @@ or empty($peso)){
         
         if(mysqli_num_rows($verificador_dni) > 0){   
             $alerta_dni .= '<p class="modal__parrafo">Error: ¡El dni '.$dni[$i].' ya se encuentra registrado! Contáctese a infotkd@gmail.com</p>';
-            require '../../infotkd_web_site/html/pageform.php';
+            require '../html/pageform.php';
             exit();
             mysqli_close($con);
         }else{
@@ -53,7 +53,7 @@ or empty($peso)){
      
     if($ejecutar){
         $exitoso .= '<p class="modal__parrafo">¡Todos los datos se han enviado exitosamente!</p>';
-        require '../../infotkd_web_site/html/pageform.php';
+        require '../html/pageform.php';
     };
         
     mysqli_close($con);

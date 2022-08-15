@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="../../infotkd_web_site/css/normalize.css">
-    <link rel="stylesheet" href="../../infotkd_web_site/css/stylepageform.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/stylepageform.css">
     <title>Infotkd</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
         <nav class="nav container">
 
             <figure class="nav__logo">
-                <img class="nav__logo__img" src="../../infotkd_web_site/image/infotkd-logo.png" href="../../infotkd_web_site/html/index.html">
+                <img class="nav__logo__img" src="../image/infotkd-logo.png" href="../html/index.html">
             </figure>
 
             <div class="menu" id="menu">
@@ -28,23 +28,23 @@
                     <h3 class="menu__titulo">infotkd</h3>
                     <ul class="menu__links">
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/index.html" class="menu__a" title="Home">Home<i class="menu__i fa-solid fa-house"></i></a>
+                            <a href="../html/index.html" class="menu__a" title="Home">Home<i class="menu__i fa-solid fa-house"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Noticias">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Noticias">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Eventos">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Eventos">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
                         </li>
                         
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Base de datos">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Base de datos">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../../infotkd_web_site/html/pagina_en_construccion.html" class="menu__a" title="Contacto">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Contacto">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                         </li>
                     </ul>
                     <div class="menu__redes">
@@ -105,7 +105,7 @@
                 
     <main class="main container">
         <section class="section">   
-                <form class="form" name="form1" action="../../infotkd_web_site/php/form.php" method="POST">
+                <form class="form" name="form1" action="../php/form.php" method="POST">
                     <div class="form__titulos">
                         <h1 class="titulo__primario">Torneo Nacional</h1>
                         <h2 class="titulo_secundario">¡Inscribite ya!</h2>
