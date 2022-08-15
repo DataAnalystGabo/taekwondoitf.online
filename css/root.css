@@ -1,0 +1,16 @@
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open-Sans', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --black: #030E1A;
+    --black2: #051626;
+    --black3: #071D33;
+    --blue: #0A2B4D;
+    --blue-light: #1DA1F2;
+    --yellow-dark: #FFC300;
+    --yellow-light: #FFD60A;
+    --white: #F5F8FA;
+    --red: #d90429;
+    --green: #83e377;
+    --grey: #95a5a6;
+}
