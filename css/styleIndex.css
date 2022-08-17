@@ -8,7 +8,7 @@ body{
     color: var(--white);
     font-family: var(--roboto);
     font-size: 15px;
-    background: linear-gradient(90deg, hsla(211, 79%, 6%, 1) 0%, hsla(210, 76%, 11%, 1) 70%);
+    background: var(--background);
 }
 
 .container{
@@ -109,11 +109,13 @@ body{
                 height: 90px;
             }
 
-    .btca--inscribite{
-        margin: auto;
-    }
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    .btca{
+    .action__btca{
         display: flex;
         align-items: center;
         width: 10em;
@@ -127,18 +129,18 @@ body{
         cursor: pointer;
     }
 
-        .btca__label{
+        .action__label{
             color: var(--white);
             position: relative;
             left: 14%;
             transition: all .5s ease-in-out;
         }
 
-        .btca:hover .btca__label{
+        .action__btca:hover .action__label{
             left: 3%;
         }
 
-        .btca__icon{
+        .action__icon{
             font-size: 1.2em;
             display: flex;
             align-items: center;
@@ -148,7 +150,7 @@ body{
             opacity: 0;
         }
 
-        .btca:hover .btca__icon{
+        .action__btca:hover .action__icon{
             left: 0%;
             opacity: 1;
         }
@@ -222,25 +224,14 @@ body{
         color: var(--grey);
     }
 
-    .acciones{
-        display: flex;
-        justify-content: space-between;
-        margin: 2em auto;
-        align-items: center;
+    .action__btca--share{
+        border: none;
     }
 
-    .compartir{
-        display: flex;
-        margin: 1em;
-        cursor: pointer;
-        gap: 1em;
-        
+    .action__btca--share:hover .action__label--share, .action__icon--share{
+        color: var(--blue-light);
     }
 
-        .compartir:hover{
-            color: var(--blue-light);
-            opacity: .9;
-        }
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
                             /*Responsive Desing*/ 
@@ -291,8 +282,16 @@ body{
                     margin: 0;
                 }
 
-                .acciones{
+                .actions--inscription{
+                    justify-content: center;
+                }
+
+                .actions{
                     margin: 0;
+                }
+
+                .action__btca--share{
+                    border: none;
                 }
     }
 
@@ -316,6 +315,11 @@ body{
                 width: 80%;
                 padding: 0;
                 margin: 0 auto 2em;
+            }
+
+            .action__btca--share{
+                background-color: rgba(10, 43, 77, .3)
+                ;
             }
 }
 

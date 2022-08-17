@@ -152,7 +152,7 @@
 
                             <div class="fila2__titulos">
                                 <h3 class="fila2__titulo_principal">Datos del competidor </h3>
-                                <span class="fila2__puntero puntero--ocultar">Eliminar</span>
+                                <span class="fila2__puntero fila2__puntero--ocultar">Eliminar</span>
                             </div>
 
                             <div class="fila2__columna">
@@ -257,6 +257,7 @@
             <div class="footer__box footer__box--links">
                 <ul class="footer__menu">
                     <li class="footer__menu__li"><a class="footer__menu__a" href="../html/index.html">Home</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Contacto</a></li>
                     <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Seguridad</a></li>
                     <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Promoción</a></li>
                     <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Ayuda</a></li>

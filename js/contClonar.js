@@ -10,7 +10,7 @@ agregar.addEventListener("click", e =>{
     contenido.appendChild(clon).classList.remove("clonar");
 
     const removerPuntero = contenido.lastChild.childNodes[1].querySelectorAll("span");
-    removerPuntero[0].classList.remove("puntero--ocultar"); 
+    removerPuntero[0].classList.remove("fila2__puntero--ocultar"); 
              
 });
 

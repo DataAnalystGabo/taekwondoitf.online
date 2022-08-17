@@ -2,6 +2,7 @@
     --poppins: 'Poppins', sans-serif;
     --open-sans: 'Open-Sans', sans-serif;
     --roboto: 'Roboto', sans-serif;
+    --background: linear-gradient(90deg, hsla(211, 79%, 6%, 1) 0%, hsla(210, 76%, 11%, 1) 70%);
     --black: #030E1A;
     --black2: #051626;
     --black3: #071D33;
