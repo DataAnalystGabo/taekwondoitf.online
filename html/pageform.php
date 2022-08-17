@@ -256,15 +256,14 @@
 
             <div class="footer__box footer__box--links">
                 <ul class="footer__menu">
-                    <li class="footer__menu__li">Home</li>
-                    <li class="footer__menu__li">Contacto</li> 
-                    <li class="footer__menu__li">Seguridad</li>
-                    <li class="footer__menu__li">Promoción</li>
-                    <li class="footer__menu__li">Ayuda</li>
-                    <li class="footer__menu__li">Cookies</li>
-                    <li class="footer__menu__li">Eventos</li>
-                    <li class="footer__menu__li">Terminos</li>
-                    <li class="footer__menu__li">Servicios</li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/index.html">Home</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Seguridad</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Promoción</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Ayuda</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Cookies</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Eventos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Terminos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Servicios</a></li>
                 </ul>
             </div>  
             

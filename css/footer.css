@@ -64,7 +64,12 @@
     cursor: pointer;
 }
 
-.footer__menu__li:hover{
+.footer__menu__a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer__menu__a:hover{
     color: var(--yellow-dark);
 }
 
