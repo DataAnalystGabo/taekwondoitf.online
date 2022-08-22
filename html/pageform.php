@@ -31,23 +31,23 @@
                     <h3 class="menu__titulo">infotkd</h3>
                     <ul class="menu__links">
                         <li class="menu__li">
-                            <a href="../html/index.html" class="menu__a" title="Home">Home<i class="menu__i fa-solid fa-house"></i></a>
+                            <a href="../index.html" class="menu__a" title="Home">Home<i class="menu__i fa-solid fa-house"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Noticias">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                            <a href="pageConstruccion.html" class="menu__a" title="Noticias">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Eventos">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                            <a href="pageConstruccion.html" class="menu__a" title="Eventos">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
                         </li>
                         
                         <li class="menu__li">
-                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Base de datos">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                            <a href="pageConstruccion.html" class="menu__a" title="Base de datos">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="../html/pagina_en_construccion.html" class="menu__a" title="Contacto">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                            <a href="pageConstruccion.html" class="menu__a" title="Contacto">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                         </li>
                     </ul>
                     <div class="menu__redes">
@@ -109,77 +109,78 @@
     <main class="main container">
         <section class="section">   
                 <form class="form" name="form1" action="../php/form.php" method="POST">
-                    <div class="form__titulos">
-                        <h1 class="titulo__primario">Torneo Nacional</h1>
-                        <h2 class="titulo_secundario">¡Inscribite ya!</h2>
+                    <div class="form__header">
+                        <h1 class="header__tittle header__tittle--primary">Torneo Nacional</h1>
+                        <h2 class="header__tittle header__tittle--second">¡Inscribite ya!</h2>
                     </div>
 
-                    <div class="fila1">
-                            <div class="fila1__titulos">
-                                <h3 class="fila1_titulo_princ">Datos del Coach/Instructor</h3>
+                    <div class="row row--coach">
+                            <div class="row__header row__header--coach">
+                                <h3 class="row__tittle">Datos del Coach/Instructor</h3>
                             </div>
 
-                            <div class="fila1__inputs__cont">
-                                <div class="fila1__inputs">
-                                    <input class="inputs__texto" type="text" name="escuela" id="" placeholder="Escuela" require>
+                            <div class="row__inputs">
+
+                                <div class="input">
+                                    <input class="input__texto" type="text" name="escuela" id="" placeholder="Escuela" require>
                                 </div>
             
-                                <div class="fila1__inputs">
-                                    <input class="inputs__texto" type="text" name="instructor" id="" placeholder="Instructor (Nombre y Apellido)" require> 
+                                <div class="input">
+                                    <input class="input__texto" type="text" name="instructor" id="" placeholder="Instructor (Nombre y Apellido)" require> 
                                 </div>
             
-                                <div class="fila1__inputs">
-                                    <input class="inputs__texto" type="text" name="coach" id="" placeholder="Coach (Nombre y Apellido)" require>
+                                <div class="input">
+                                    <input class="input__texto" type="text" name="coach" id="" placeholder="Coach (Nombre y Apellido)" require>
                                 </div>
                         
-                                <div class="fila1__inputs">
-                                    <input class="inputs__texto" type="text" name="email" id="" placeholder="E-mail: xxxxxxx@gmail.com" require>
+                                <div class="input">
+                                    <input class="input__texto" type="text" name="email" id="" placeholder="E-mail: xxxxxxx@gmail.com" require>
                                 </div>
             
-                                <div class="fila1__inputs">
-                                    <input class="inputs__texto" type="tel" name="celular" id="" placeholder="Celular/Whatsapp" require>
+                                <div class="input">
+                                    <input class="input__texto" type="tel" name="celular" id="" placeholder="Celular/Whatsapp" require>
                                 </div>
 
-                                <div class="fila1__inputs">
-                                    <input class="inputs__texto" type="text" name="othercamp" id="" placeholder="Othercamp">
+                                <div class="input">
+                                    <input class="input__texto" type="text" name="othercamp" id="" placeholder="Othercamp">
                                 </div>  
                             </div>
 
                             
                     </div>
                         
-                    <div class="fila2 clonar">
+                    <div class="row row--competitor row--toclone">
 
-                            <div class="fila2__titulos">
-                                <h3 class="fila2__titulo_principal">Datos del competidor </h3>
-                                <span class="fila2__puntero fila2__puntero--ocultar">Eliminar</span>
+                            <div class="row__header row__header--competitor">
+                                <h3 class="tittle tittle--competitor">Datos del competidor </h3>
+                                <span class="pointer pointer--hidden">Eliminar</span>
                             </div>
 
-                            <div class="fila2__columna">
+                            <div class="row__selectors">
                 
-                                <div class="fila2__inputs__cont">
-                                    <div class="fila2__inputs">
-                                        <input class="inputs__texto" type="text" name="competidor[]" id="" placeholder="Nombre y Apellido del competidor" require>
+                                <div class="inputs inputs--row2">
+                                    <div class="input">
+                                        <input class="input__texto" type="text" name="competidor[]" id="" placeholder="Nombre y Apellido del competidor" require>
                                     </div>
             
-                                    <div class="fila2__inputs">
-                                        <input class="inputs__texto" type="tel" name="dni[]" id="" placeholder="DNI (sin puntos ni comas)" require>
+                                    <div class="input">
+                                        <input class="input__texto" type="tel" name="dni[]" id="" placeholder="DNI (sin puntos ni comas)" require>
                                     </div>
                                 </div>
 
-                                <div class="fila2__selectores">
-                                    <p class="fila2__selector_titulo">Género</p>
-                                    <select class="fila2__selector" name="genero[]" id="">
-                                        <option value=""></option>
+                                <div class="selectors">
+                                    <p class="selectors--label">Género</p>
+                                    <select class="selector" name="genero[]" id="">
+                                        <option value="Seleccione una opción"></option>
                                         <option value="M">Masculino</option>
                                         <option value="F">Femenino</option>
                                     </select>  
                                 </div>
                 
-                                <div class="fila2__selectores">
-                                    <p class="fila2__selector_titulo">Categoría</p>
-                                    <select class="fila2__selector" name="categoria[]" id="">
-                                        <option value=""></option>
+                                <div class="selectors">
+                                    <p class="selectors--label">Categoría</p>
+                                    <select class="selector" name="categoria[]" id="">
+                                        <option value="Seleccione una opción"></option>
                                         <option value="Blanco - Blanco P. Amarilla">Blanco - Blanco P. Amarilla</option>
                                         <option value="Verde - Verde P. Azul">Verde - Verde P. Azul</option>  
                                         <option value="Amarillo - Amarillo P. Verde">Amarillo - Amarillo P. Verde</option>
@@ -197,10 +198,10 @@
                                     </select>
                                 </div> 
                             
-                                <div class="fila2__selectores">
-                                <p class="fila2__selector_titulo">Edad</p>
-                                    <select class="fila2__selector" name="edad[]" id="inputEdad">
-                                        <option value=""></option>
+                                <div class="selectors">
+                                <p class="selectors--label">Edad</p>
+                                    <select class="selector" name="edad[]" id="inputEdad">
+                                        <option value="Seleccione una opción"></option>
                                         <option value="2-5 años">2 a 5 años</option>
                                         <option value="6-9 años">6 a 9 años</option>
                                         <option value="10-13 años">10 a 13 años</option>
@@ -210,10 +211,10 @@
                                     </select>                        
                                 </div>
                 
-                                <div class="fila2__selectores">
-                                    <p class="fila2__selector_titulo">Peso*</p>
-                                    <select class="fila2__selector" name="peso[]" id="">
-                                        <option value=""></option>
+                                <div class="selectors">
+                                    <p class="selectors--label">Peso*</p>
+                                    <select class="selector" name="peso[]" id="">
+                                        <option value="Seleccione una opción"></option>
                                         <option value="hasta 45kg">hasta 45kg</option>
                                         <option value="hasta 50kg">hasta 50kg</option>
                                         <option value="hasta 55kg">hasta 55kg</option>
@@ -224,18 +225,18 @@
                                         <option value="No Aplica">No Aplica</option>
                                     </select>
                                 </div> 
-                                <div class="fila2__aclaracion"><p class="aclaracion__p">*Tenga en cuenta que aquellos competidores menores a 13 años
+                                <div class="aclaration"><p class="aclaration__p">*Aquellos competidores menores a 13 años
                                     deben elegir la opción 'No Aplica' para su peso.
                                 </p></div>
                             </div>
                     </div>
 
-                    <div class="contenedorClonado" id="contenedorClonado"></div>
+                    <div class="containerCloned" id="containerCloned"></div>
 
-                    <div class="form__botones">
-                        <div class="botones__contenedor">
-                            <button class="botones__accion" id="agregar">Agregar competidor</button>
-                            <button class="botones__accion" id="enviar" name="enviar">Enviar</button>
+                    <div class="form__buttons">
+                        <div class="buttons__container">
+                            <button class="button" id="add">Agregar competidor</button>
+                            <button class="button" id="submit" name="enviar">Enviar</button>
                         </div>
                     </div>
                 </form>
@@ -256,15 +257,15 @@
 
             <div class="footer__box footer__box--links">
                 <ul class="footer__menu">
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/index.html">Home</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Contacto</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Seguridad</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Promoción</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Ayuda</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Cookies</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Eventos</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Terminos</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="../html/pageConstruccion.html" target="_blank">Servicios</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="../index.html">Home</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Contacto</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Seguridad</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Promoción</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Ayuda</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Cookies</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Eventos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Terminos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pageConstruccion.html" target="_blank">Servicios</a></li>
                 </ul>
             </div>  
             
@@ -276,7 +277,7 @@
     
     <script src="../js/menu.js"></script>
     <script src="../js/ventanaModal.js"></script>
-    <script src="../js/contClonar.js"></script>
+    <script src="../js/contClon.js"></script>
 
 </body>
 </html>

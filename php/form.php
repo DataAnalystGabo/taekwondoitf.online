@@ -42,7 +42,7 @@ or empty($peso)){
         $verificador_dni = mysqli_query($con, "SELECT * FROM competidores WHERE dni='".$dni[$i]."' ");
         
         if(mysqli_num_rows($verificador_dni) > 0){   
-            $alerta_dni .= '<p class="modal__parrafo">Error: ¡El dni '.$dni[$i].' ya se encuentra registrado! Contáctese a infotkd@gmail.com</p>';
+            $alerta_dni .= '<p class="modal__parrafo">Error: ¡El dni '.$dni[$i].' ya se encuentra registrado! Contáctese a support@infotkd.online</p>';
             require '../html/pageform.php';
             exit();
             mysqli_close($con);

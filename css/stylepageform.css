@@ -10,6 +10,11 @@ body{
     background: var(--background);
 }
 
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
 .container{
     width: 90%;
     max-width: 75em;
@@ -36,7 +41,7 @@ body{
 
     }
 
-        .form__titulos{
+        .form__header{
             display: flex;
             flex-direction: column;
             width: 80%;
@@ -46,22 +51,22 @@ body{
             margin: 1em auto 1em auto;
         }
 
-    .fila1{
+    .row--coach{
         width: 80%;
         height: 32em;
         margin-top: 2em;
         margin-bottom: 2em;
     }
 
-        .fila1__titulos{
+        .row__header--coach{
             margin-bottom: 2em;
         }
 
-        .fila1__inputs, .fila2__input, .fila2__selectores, .fila2__aclaracion{
+        .input, .fila2__selectores, .fila2__aclaracion{
             padding-bottom: 1.5em;
         }
 
-        .inputs__texto{
+        .input__texto{
             color: var(--white);
             display: flex;
             width: 100%;
@@ -75,60 +80,71 @@ body{
             outline: none;
         }
 
-    .fila2{
+    .row--competitor{
         width: 80%;
-        height: 36em;
+        height: 39em;
         margin-top: 2em;
         margin-bottom: 2em;
     }
 
-        .fila2__titulos{
+        .row__header--competitor{
             display: flex;
             flex-direction: column;
             margin-bottom: 2em;
             gap: .8em;
         }
 
-            .fila2__titulo_principal{
+            .tittle--competitor{
                 margin:0;
             }
 
-            .fila2__puntero{
+            .pointer{
                 margin:0;
                 cursor: pointer;
                 color: var(--yellow-dark);
             }
 
-            .fila2__puntero--ocultar{
+            .pointer--hidden{
                 display: none;
             }
 
-            .fila2__selector {
+            .row__selectors {
                 width: 100%;
                 height: 1.8em;
-                background: var(--black3);
                 color: var(--white);
                 outline: none;
                 font-size: 1em;
             }
 
-            .fila2__selector_titulo{
+            .selectors--label{
                 margin-bottom: 1em;
             }
 
-.contenedorClonado{
+            .selector{
+                width: 100%;
+                margin-bottom: 1em;
+                height: 2em;
+                background-color: var(--black3);
+                color: var(--white);
+            }
+
+            .aclaration{
+                margin: 1em auto;
+            }
+
+.containerCloned{
     display: flex;
     flex-direction: column;
+    height: max-content;
 }
 
-.form__botones{
+.form__buttons{
     display: flex;
     width: 80%;
     margin-bottom: 2em;
-    margin-top: 2em;
 }
 
-    .botones__contenedor{
+    .buttons__container{
         width: 100%;
         height: 8em;
         display: flex;
@@ -137,7 +153,7 @@ body{
         gap: 1em;
     }
 
-        .botones__accion{
+        .button{
             height: 2.2em;
             background: transparent;
             color: var(--white);
@@ -145,7 +161,7 @@ body{
             cursor: pointer;
         }
 
-        .botones__accion:hover{
+        .button:hover{
             background: var(--blue);
         }
 
@@ -240,29 +256,29 @@ body{
 }*/
 
 @media screen and (min-width: 992px){
-    .fila1{
+    .row--coach{
         width: 80%;
         height: 18em;
     }
 
-    .fila1__inputs__cont{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5em;
-    }
+        .row__inputs{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5em;
+        }
 
-    .fila1__inputs, .fila2__inputs{
-        width: 100%;
-        margin-left: 0;
-    }
+            .input{
+                width: 100%;
+                margin-left: 0;
+            }
 
-    .fila2{
+    .row--competitor{
         width: 80%;
-        height: auto;
+        *height: 39em;
     }
 
-    .fila2__inputs__cont{
+    .inputs--row2{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
@@ -270,17 +286,17 @@ body{
         gap: 1.5em;
     }
 
-    .contenedorClonado{
+    .containerCloned{
         width: 100%;
     }
     
-    .botones__contenedor{
+    .buttons__container{
         flex-direction: row;
     }
     
-    .botones__accion{
-        width: 100%;
-    }
+        .button{
+            width: 100%;
+        }
 
     .menu__hamb{
         display: none;
