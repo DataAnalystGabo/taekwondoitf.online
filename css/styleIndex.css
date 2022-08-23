@@ -49,7 +49,7 @@ body{
         font-family: var(--poppins);
         font-style: italic;
         text-align: start;
-        line-height: 33px;
+        line-height: 1.7em;
     }
 
         .banner__h1{
@@ -60,7 +60,6 @@ body{
         .banner__span1{
             font-weight: 300;
             font-size: 1.2rem;
-            margin-bottom: 33px;
         }
 
         .banner__span2{
@@ -161,6 +160,36 @@ body{
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 
+.divisor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    margin: 3em auto 1em;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+
+    .divisor__tittle{
+        font-family: var(--poppins);
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .divisor__tittle--span{
+        color: var(--yellow-dark);
+    }
+
+    .divisor__i{
+        padding: 1em;
+        font-size: 1.6em;
+        margin: 0;
+        color: var(--grey);
+    }
+
+
 .article{
     display: flex;
     flex-direction: column;
@@ -228,11 +257,11 @@ body{
         border: none;
         width: 8em;
         background-color: transparent;
-        color: var(--blue-light);
+        color: var(--white);
     }
 
     .action__btca--share:hover{
-        color: var(--white);
+        color: var(--blue-light);
     }
 
 .modal--container{
@@ -359,6 +388,19 @@ body{
     }
 
 @media screen and (min-width : 1200px){
+
+    .banner__titulos{
+        line-height: 4.6em;
+    }
+
+        .banner__h1{
+            font-size: 7em;
+        }
+
+        .banner__span1{
+            margin-left: 1em;
+        }
+
     .articles--container{
         grid-template-columns: repeat(3, 33%);
     }
