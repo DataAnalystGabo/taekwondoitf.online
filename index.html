@@ -25,7 +25,7 @@
     <header class="header">
         <nav class="nav container">
             <figure class="nav__logo">
-                <img class="nav__logo__img" src="image/infotkd-logo.png" href="index.html">
+                <img class="nav__logo__img" src="image/infotkd-logo.png" alt="Logotipo de infotkd.online">
             </figure>
 
             <div class="menu" id="menu">
@@ -105,11 +105,6 @@
             
         </section>
 
-        <div class="divisor">
-            <h2 class="divisor__tittle">Lo <span class="divisor__tittle--span">más</span> leído</h2>
-            <i class="divisor__i fa-solid fa-glasses"></i>
-        </div>
-        
         <div class="articles articles--container">
             <article class="article">
                 <div class="portada">
@@ -127,7 +122,7 @@
                             </div>
                            
                             <p class="data__nombre">Marcos Galp 
-                                <i class="data__i fa-solid fa-calendar-days"></i><time class="data__time" datatime="2022-08-14">12 de Agosto del 2022</time>
+                                <i class="data__i fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14">12 de Agosto del 2022</time>
                             </p>
                         </div>
                     </header>
@@ -172,7 +167,7 @@
                             </div>
                            
                             <p class="data__nombre">Ricardo López
-                                <i class="data__i fa-solid fa-calendar-days"></i><time class="data__time" datatime="2022-08-14">12 de Agosto del 2022</time>
+                                <i class="data__i fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14">12 de Agosto del 2022</time>
                             </p>
                         </div>
                     </header>
@@ -216,7 +211,7 @@
                             </div>
                            
                             <p class="data__nombre">Julio López
-                                <i class="data__i fa-solid fa-calendar-days"></i><time class="data__time" datatime="2022-08-14">14 de Agosto del 2022</time>
+                                <i class="data__i fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14">14 de Agosto del 2022</time>
                             </p>
                         </div>
                     </header>
@@ -245,6 +240,53 @@
                 </div>
             </article>
         </div>
+        <hr class="divisor"/>
+        <section class="bbl container">
+            <h3 class="bbl__h3">¡Proximamente BBL!</h3>
+            <picture class="bbl__picture">
+                <img class="bbl__img" src="image/dataBase.png" alt="Ilustración de banner BBL">
+            </picture>
+            <h2 class="bbl__h2">¿Qué es BBL?</h2>
+            <p class="bbl__p"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
+                que pretende reunir a todos los cinturones negros de la República Argentina
+                en una base de datos abierta a todo el público. 
+            </p>        
+            
+            <h2 class="bbl__h2">¿Cómo puede ayudarme BBL?</h2>
+            <p class="bbl__p">Podrás registrarte en <strong>Black Belt List</strong> y 
+                de esta forma, cualquier persona podrá encontrarte en línea y verificar
+                tus credenciales como cinturón negro de Taekwon-do ITF.
+            </p>
+
+            <h2 class="bbl__h2">¿Cúanto va a costarme?</h2>
+            <p class="bbl__p">Será ¡totalmente gratis! Habrán requisitos 
+                que tendrás que cumplir para validar tus documentos pero
+                no te costará nada.
+            </p>
+
+            <form action="POST" class="form">
+                <div class="form__group">
+                    
+                    <h2 for="E-mail" class="form__tittle">¡Subscribite a las novedades de BBL!</h2>
+                    <p class="form__p">Te estaremos avisando sobre la fecha de lanzamiento de <strong>Black Belt List.</strong>
+                    <div class="form__group--input">
+                        <input type="email" class="form__input" name="email" id="formBBL__input" placeholder="ejemplo@gmail.com">
+                        <i class="form__i fa-solid fa-circle-xmark"></i>
+                        <p class="form__alert"><strong>Error: </strong>complete correctamente el e-mail.</p>
+                    </div>
+
+                    <button class="action__btca action__btca--form" onclick="window.location.href='html/pageform.php'">
+                        <span class="action__label action__label--form">Subscribirme</span>
+                        <div class="action__icon">
+                            <i class="action__i fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </button>
+
+                    </p>
+                </div>
+            </form>
+
+        </section>
 
         <div class="modal modal--container" id="modal--container">
             <div class="modal__share" id="modal__share">
