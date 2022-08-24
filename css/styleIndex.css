@@ -315,6 +315,16 @@ body{
         margin: 2em auto 0;
     }
 
+    .gem{
+        width: 22em;
+        height: 20em;
+    }
+
+    .gem__img{
+        width: 100%;
+        object-fit: fill;
+    }
+
     .bbl__picture{
         width: 80%;
     }
@@ -349,6 +359,15 @@ body{
         padding: 1em;
         margin-top: 2em;
     }
+
+        .calendar{
+            width: 13em;
+        }
+
+        .calendar__img{
+            width: 100%;
+            object-fit: fill;
+        }
 
         .form__tittle{
             display: block;
@@ -403,7 +422,7 @@ body{
                 display: none;
                 position: absolute;
                 right: 1em;
-                top: .5em;
+                top: .65em;
                 color: var(--red);
                 font-size: 1.2em;
             }
@@ -428,8 +447,7 @@ body{
             .form__alert--active{
                 display: block;
             }
-
-        
+    
     .action__btca--form{
         margin: 1em auto;
     }
