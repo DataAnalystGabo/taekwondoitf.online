@@ -359,11 +359,7 @@ body{
             color: var(--grey);
             margin-bottom: 2em;
         }
-
-        .form__group--input--active .form__input{
-            border-color: var(--red);
-        }
-
+        
         .form__group--input{
             position: relative;
             width: 100%;
@@ -386,17 +382,39 @@ body{
                 outline: none;
             }
 
+            .form__input--error{
+                border: 2px solid var(--red);
+            }
+
+            .form__input--error:focus{
+                border: 2px solid var(--red);
+            }
+
+            .form__input--check{
+                border: 2px solid var(--green);
+                outline: none;
+            }
+
+            .form__input--check:focus{
+                border: 2px solid var(--green);
+            }
+
             .form__i{
                 display: none;
                 position: absolute;
                 right: 1em;
-                top: .65em;
+                top: .5em;
                 color: var(--red);
                 font-size: 1.2em;
             }
 
-            .form__i--active{
+            .form__i--error{
                 display: block;
+            }
+
+            .form__i--check{
+                display: block;
+                color: var(--green);
             }
 
             .form__alert{
