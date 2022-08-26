@@ -30,7 +30,7 @@ or empty($peso)){
 
     for ($i=0; $i < count($competidor); $i++){
 
-        $InserData =("INSERT INTO competidores (escuela, instructor, coach, email, celular, othercamp,
+        $insertData =("INSERT INTO competidores (escuela, instructor, coach, email, celular, othercamp,
         competidor, dni, genero, categoria, edad, peso) VALUES ('".$escuela."','".$instructor."','".$coach."','".$email."','".$celular."',
         '".$othercamp."','".$competidor[$i]."','".$dni[$i]."','".$genero[$i]."','".$categoria[$i]."','".$edad[$i]."','".$peso[$i]."')");
         
@@ -47,7 +47,7 @@ or empty($peso)){
             exit();
             mysqli_close($con);
         }else{
-            $ejecutar = mysqli_query($con, $InserData);    
+            $ejecutar = mysqli_query($con, $insertData);    
         };
     };
      

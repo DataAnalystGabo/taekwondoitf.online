@@ -310,9 +310,21 @@ body{
     font-family: var(--poppins);
 }
 
+    .bbl__banner{
+        width: 100%;
+        height: 20em;
+        overflow: hidden;
+    }
+
+        .bbl__banner__img{
+            width: 100%;
+            object-fit: cover;
+        }
+
     .bbl__h3{
         font-size: 2em;
-        margin: 2em auto 0;
+        margin: 2em auto;
+        color: var(--yellow-dark);
     }
 
     .gem{
@@ -325,21 +337,11 @@ body{
         object-fit: fill;
     }
 
-    .bbl__picture{
-        width: 80%;
-    }
-
-        .bbl__img{
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
-
-    .bbl__h2{
+    .questionfreq__h2{
         margin-bottom: 1em;
     }
 
-    .bbl__p{
+    .questionfreq__p{
         top: -5em;
         width: 90%;
         font-family: var(--roboto);
@@ -349,7 +351,7 @@ body{
         line-height: 1.5em;
     }
     
-    .form__group{
+    .form__cont{
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -361,11 +363,13 @@ body{
     }
 
         .calendar{
-            width: 13em;
+            width: 15em;
+            height: 15em;
         }
 
         .calendar__img{
             width: 100%;
+            margin-left: 1em;
             object-fit: fill;
         }
 
@@ -447,6 +451,21 @@ body{
             .form__alert--active{
                 display: block;
             }
+
+        .notification{
+            display: none;
+            height: 3em;
+            width: 100%;
+            text-align: start;
+        }
+
+            .notification__p{
+                color: var(--red);
+            }
+        
+        .notification--active{
+            display: block;
+        }
     
     .action__btca--form{
         margin: 1em auto;
@@ -549,6 +568,23 @@ body{
                 padding: 0;
                 margin: 0 auto 2em;
             }
+
+    .questionfreq{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .form__cont{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 3em;
+        width: 100%;
+    }
+
+        .calendar__img{
+            margin-left: 0;
+        }
+
 }
 
 
