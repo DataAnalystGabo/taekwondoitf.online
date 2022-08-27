@@ -466,6 +466,18 @@ body{
         .notification--active{
             display: block;
         }
+
+        .alert{
+            text-align: start;
+            color: var(--red);
+            font-weight: bold;
+        }
+
+        .confirmation{
+            text-align: start;
+            color: var(--green);
+            font-weight:600;
+        }
     
     .action__btca--form{
         margin: 1em auto;
