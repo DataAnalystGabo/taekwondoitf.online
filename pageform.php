@@ -21,46 +21,7 @@
 <body>
 
     <?php require ('layout/header.php') ?>
-
-    <div class="alertas">
-        <?php if(!empty($error)): ?>
-            <div class="modal" id="cont_modal">
-                <div class="modal__ventana">
-                    <div class="modal__mensaje">
-                        <i class="modal__i fa-solid fa-triangle-exclamation"></i>
-                        <?php echo $error; ?>
-                    </div>
-                    <div class="modal__contenedor__botones"><button class="modal__boton" id="modal__boton">Aceptar</button></div>
-                </div>    
-            </div>
-        <?php endif; ?>
-
-        <?php if(!empty($exitoso)): ?>
-            <div class="modal" id="cont_modal">
-                <div class="modal__ventana">
-                    <div class="modal__mensaje">
-                        <i class="modal__i modal__i--exitoso fa-solid fa-circle-check"></i>
-                        <?php echo $exitoso; ?>
-                    </div>
-                    <div class="modal__contenedor__botones"><button class="modal__boton" id="modal__boton">Aceptar</button></div>
-                </div>    
-            </div>
-        <?php endif; ?>
-                
-        <?php if(!empty($alerta_dni)): ?>
-            <div class="modal" id="cont_modal">
-                <div class="modal__ventana">
-                    <div class="modal__mensaje">
-                        <i class="modal__i fa-solid fa-triangle-exclamation"></i>
-                        <?php echo $alerta_dni; ?>
-                    </div>
-                    <div class="modal__contenedor__botones"><button class="modal__boton" id="modal__boton">Aceptar</button></div>
-                </div>    
-            </div>
-        <?php endif; ?>
-    </div>
-
-                
+          
     <main class="main container">
         <section class="section">   
                 <form class="form" method="POST" id="pageform">
@@ -199,11 +160,21 @@
         </section>
     </main>
 
+    <div class="modal modal--cover modal--cover--disabled" id="modal--cover">
+        <div class="modal__window modal__window--disabled" id="modal__window">
+            <picture class="modal__picture"> 
+                <img class="modal__img" src="image/bannerOptimizado.jpg" alt="banner de ventana modal formulario de inscripción">
+            </picture>
+            <p class="modal__message" id="modal__message"></p>
+            <!-- <i class="close fa-solid fa-circle-xmark" id="close"></i> -->
+            <button class="modal__button" id="modal__button">Aceptar</button>
+        </div>
+    </div>
+
     <?php require ('layout/footer.php') ?>
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
-    <script src="js/ventanaModal.js"></script>
     <script src="js/contClon.js"></script>
     <script src="js/validatorFormPage.js"></script>
 
