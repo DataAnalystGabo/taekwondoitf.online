@@ -478,6 +478,10 @@ body{
             color: var(--green);
             font-weight:600;
         }
+
+        .action__label--form{
+            left: 12%;
+        }
     
     .action__btca--form{
         margin: 1em auto;

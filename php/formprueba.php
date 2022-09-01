@@ -14,17 +14,13 @@ $genero = $_POST['genero'];
 $categoria = $_POST['categoria'];
 $edad = $_POST['edad'];
 $peso = $_POST['peso'];
-$error = '';
-$exitoso = '';
-$alerta_dni = '';
-                                                                                   
+
 
 if(empty($escuela) or empty($instructor) or empty($coach) or empty($email) or empty ($celular)
 or empty($competidor) or empty($dni) or empty($genero) or empty($categoria) or empty($edad)
 or empty($peso)){
 
-    $error .= '<p class="modal__parrafo">¡Se deben completar todos los campos!</p>';
-    require '../pageform.php';
+    echo '1';
 
 }else{
 
@@ -42,52 +38,18 @@ or empty($peso)){
         $verificador_dni = mysqli_query($con, "SELECT * FROM competidores WHERE dni='".$dni[$i]."' ");
         
         if(mysqli_num_rows($verificador_dni) > 0){   
-            $alerta_dni .= '<p class="modal__parrafo">Error: ¡El dni '.$dni[$i].' ya se encuentra registrado! Contáctese a support@infotkd.online</p>';
-            require './pageform.php';
-            exit();
-            mysqli_close($con);
+
+            echo '2';
+
         }else{
             $ejecutar = mysqli_query($con, $insertData);    
+
+            echo '3';
         };
     };
-     
-    if($ejecutar){
-        $exitoso .= '<p class="modal__parrafo">¡Todos los datos se han enviado exitosamente!</p>';
-        require './pageform.php';
-    };
-        
-    mysqli_close($con);
 };
+    
+mysqli_close($con);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*Validación: verificamos que $ejecutar se haya ejecutado y enviado los datos*/
-/*if($ejecutar){
-    echo '
-        <script>
-            alert("¡Los datos han sido enviados con éxito!");
-            window.location = "../../infotkd_web_site/html/pageform.html";
-        </script>
-    ';
-}else{
-    echo '
-        <script>
-            alert("¡Inténtalo de nuevo, algo ha fallado!");
-            window.location = "../../infotkd_web_site/html/pageform.html";
-        </script>
-    ';
-}*/
-
-/*header('Location: ./');*/
 ?>
