@@ -85,7 +85,7 @@
                     </p>
     
                     <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='news.php'">
+                        <button class="action__btca" onclick="window.location.href='pageNews.php'">
                             <span class="action__label">Leer más</span>
                             <div class="action__icon">
                                 <i class="action__i fa-solid fa-arrow-right-long"></i>
@@ -122,7 +122,7 @@
                         (con sus funciones corticales) el órgano encargado de controlar todo el...</p>
     
                     <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='news.php'">
+                        <button class="action__btca" onclick="window.location.href='pageNews.php'">
                             <span class="action__label">Leer más</span>
                             <div class="action__icon">
                                 <i class="action__i fa-solid fa-arrow-right-long"></i>
@@ -160,7 +160,7 @@
                     </p>
     
                     <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='news.php'">
+                        <button class="action__btca" onclick="window.location.href='pageNews.php'">
                             <span class="action__label">Leer más</span>
                             <div class="action__icon">
                                 <i class="action__i fa-solid fa-arrow-right-long"></i>
