@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/footer.css">
-
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css"/>
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
-
     <title>Infotkd - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,17 +85,10 @@
                     </p>
     
                     <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='page404.html'">
+                        <button class="action__btca" onclick="window.location.href='news.php'">
                             <span class="action__label">Leer más</span>
                             <div class="action__icon">
                                 <i class="action__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
-   
-                        <button class="action__btca action__btca--share">
-                            <span class="action__label--share">Compartir</span>
-                            <div class="action__icon--share">
-                                <i class="action__i--share fa-solid fa-share"></i>
                             </div>
                         </button>
                     </div>
@@ -133,17 +122,10 @@
                         (con sus funciones corticales) el órgano encargado de controlar todo el...</p>
     
                     <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='page404.html'">
+                        <button class="action__btca" onclick="window.location.href='news.php'">
                             <span class="action__label">Leer más</span>
                             <div class="action__icon">
                                 <i class="action__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
-                       
-                        <button class="action__btca action__btca--share">
-                            <span class="action__label--share">Compartir</span>
-                            <div class="action__icon--share">
-                                <i class="action__i--share fa-solid fa-share"></i>
                             </div>
                         </button>
                     </div>
@@ -178,17 +160,10 @@
                     </p>
     
                     <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='page404.html'">
+                        <button class="action__btca" onclick="window.location.href='news.php'">
                             <span class="action__label">Leer más</span>
                             <div class="action__icon">
                                 <i class="action__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
-
-                        <button class="action__btca action__btca--share">
-                            <span class="action__label--share">Compartir</span>
-                            <div class="action__icon--share">
-                                <i class="action__i--share fa-solid fa-share"></i>
                             </div>
                         </button>
                     </div>
@@ -204,10 +179,6 @@
             </div>
 
             <h3 class="bbl__h3">¡Próximamente BBL!</h3>
-
-        <!--<picture class="gem">
-                <img class="gem__img" src="image/gemOptimizado.png" alt="Imagen de calendario sección BBL">
-            </picture> -->
 
             <section class="questionfreq">
 
@@ -269,14 +240,6 @@
                 </div>
 
         </section>
-
-        <div class="modal modal--container" id="modal--container">
-            <div class="modal__share" id="modal__share">
-                <i class="close fa-solid fa-circle-xmark" id="close"></i>
-                <h3 class="modal__tittle">¡Compartir en redes!</h3>
-                <div class="redes__container" id="share"></div>
-            </div>
-        </div>
     </main>
 
     <?php require ('layout/footer.php') ?>
@@ -284,8 +247,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
-    <script src="js/shareNews.js"></script>
     <script src="js/validatorEmail.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@ $(document).ready(function(){
                 if(r == 1){
                     console.log(r);
                     submit();
-                    $('#modal__message').html('Los campos están vacíos');
+                    $('#modal__message').html('Debe completar todos los campos, sin excepción.');
 
                 }else if(r == 2){
                     console.log(r);

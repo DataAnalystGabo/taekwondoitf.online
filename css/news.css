@@ -1,0 +1,112 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 15px;
+    background: var(--background);
+}
+
+.container{
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                            /*Main*/ 
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+
+.blog{
+    display: grid;
+    grid-template-rows: 2fr 1fr; /*en responsive cambiar a columns*/
+    *background-color: aqua;
+    grid-gap: 2em;
+}
+
+    .new{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5em;
+        *background-color: brown;
+    }
+
+        .article{
+            width: 100%;
+            *background-color: bisque;
+        }
+
+            .article__header{
+                *background-color: blueviolet;
+                width: 100%;
+                padding: 2em 0;
+            }
+
+                .article__tittle{
+                    margin-bottom: 1em;
+                }
+
+                .article__section{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 5em;
+                    *background-color: aqua;
+                }
+
+                    .article__time{
+                        color: var(--grey);
+                        margin: 0;
+                    }
+
+                    .article__barshare{
+                        display: inline-block;
+                        width: max-content;
+                        height: 3em;
+                        margin: 0;
+                        *background-color:blueviolet;
+                    }
+
+                .divisor{
+                    width: 100%;
+                    height: .1em;
+                    margin-top: 2em;
+                    background-color: var(--grey);
+                }
+            
+            .article__banner{
+                width: 100%;
+                height: 15em;
+                margin-bottom: 1em;
+                overflow: hidden;
+            }
+
+                .banner__img{
+                    width: 100%;
+                }
+
+    .aside{
+        width: 100%;
+        background-color: blue;
+    }
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                            /*Responsive Desing*/ 
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+@media screen and (min-width : 1200px){
+    .blog{
+        grid-template-columns: 2fr 1fr; /*en responsive cambiar a columns*/
+    }
+}

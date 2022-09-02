@@ -162,9 +162,7 @@
 
     <div class="modal modal--cover modal--cover--disabled" id="modal--cover">
         <div class="modal__window modal__window--disabled" id="modal__window">
-            <picture class="modal__picture"> 
-                <img class="modal__img" src="image/bannerOptimizado.jpg" alt="banner de ventana modal formulario de inscripción">
-            </picture>
+            <div class="modal__picture"></div>
             <p class="modal__message" id="modal__message"></p>
             <!-- <i class="close fa-solid fa-circle-xmark" id="close"></i> -->
             <button class="modal__button" id="modal__button">Aceptar</button>
