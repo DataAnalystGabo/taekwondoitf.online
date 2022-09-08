@@ -66,20 +66,85 @@ button, input, select, textarea {
             padding-bottom: 1.5em;
         }
 
-        .input__texto{
-            color: var(--white);
-            display: flex;
-            width: 100%;
-            padding: 0.625em 0;
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid #fffdf7;
-            box-sizing: border-box;
-            margin-bottom: 0.625em;
-            font-size: 1em;
-            outline: none;
+        .input__text:focus{
+           *border-bottom: 1px solid var(--blue-light);
         }
 
+        .input{
+            position: relative;
+        }
+        /*------------------------------------------------------------------*/
+        /*Seccion de estilos para validar campos*/
+            .input__text{
+                color: var(--white);
+                display: flex;
+                width: 100%;
+                padding: 0.625em 0;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #fffdf7;
+                box-sizing: border-box;
+                margin-bottom: 0.625em;
+                font-size: 1em;
+                outline: none;
+            }
+
+            .input__text--error{
+                border-bottom: 1px solid var(--red);
+            }
+
+            .input__text--error:focus{
+                border-bottom: 1px solid var(--red);
+            }
+
+            .input__text--checked{
+                border-bottom: 1px solid var(--green);
+            }
+
+            .input__text--checked:focus{
+                border-bottom: 1px solid var(--green);
+            }
+            
+            .input__alerts{
+                display: none;
+                flex-direction: row;
+                gap: 1em;
+            }
+
+            .input__alerts--active{
+                display: flex;
+            }
+
+                .input__alerts__i{
+                    margin: 0;
+                    color: var(--red);
+                }
+
+                .input__alerts__i--checked{
+                    color: var(--green);
+                }
+
+                .input__alerts__error{
+                    margin: 0;
+                    display: none;
+                    color: var(--red);
+                }
+
+                .input__alerts__error--active{
+                    display: flex;
+                }
+
+                .input__alerts__checked{
+                    margin: 0;
+                    display: none;
+                    color: var(--green);
+                }
+
+                .input__alerts__checked--active{
+                    display: flex;
+                }
+            
+/*-----------------------------------------------------------------*/
     .row--competitor{
         width: 80%;
         height: 39em;

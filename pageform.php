@@ -24,7 +24,7 @@
           
     <main class="main container">
         <section class="section">   
-                <form class="form" method="POST" id="pageform">
+                <form class="form" method="POST" id="form">
                     <!-- name="form1" action="../php/form.php" -->
                     <div class="form__header">
                         <h1 class="header__tittle header__tittle--primary">Torneo Nacional</h1>
@@ -39,27 +39,38 @@
                             <div class="row__inputs">
 
                                 <div class="input">
-                                    <input class="input__texto" type="text" name="escuela" placeholder="Escuela">
+                                    <input class="input__text" type="text" name="escuela" placeholder="Escuela" id="input__escuela">
+                                    <div class="input__alerts" id="input__alerts">
+                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i"></i>
+                                        <p class="input__alerts__error" id="input__alerts__error">Sólo se permite letras y espacios</p>
+                                        <p class="input__alerts__checked" id="input__alerts__checked">Campo completo</p>
+                                    </div>
+                                    
                                 </div>
             
                                 <div class="input">
-                                    <input class="input__texto" type="text" name="instructor" placeholder="Instructor (Nombre y Apellido)"> 
+                                    <input class="input__text" type="text" name="instructor" placeholder="Instructor (Nombre y Apellido)" id="input__instructor"> 
+                                    <i class="input__i fa-solid fa-circle-xmark" id="input__i"></i>
                                 </div>
             
                                 <div class="input">
-                                    <input class="input__texto" type="text" name="coach" placeholder="Coach (Nombre y Apellido)">
+                                    <input class="input__text" type="text" name="coach" placeholder="Coach (Nombre y Apellido)" id="input__coach">
+                                    <i class="input__i fa-solid fa-circle-xmark" id="input__i"></i>
                                 </div>
                         
                                 <div class="input">
-                                    <input class="input__texto" type="text" name="email" placeholder="E-mail: xxxxxxx@gmail.com">
+                                    <input class="input__text" type="text" name="email" placeholder="E-mail: xxxxxxx@gmail.com" id="input__email">
+                                    <i class="input__i fa-solid fa-circle-xmark" id="input__i"></i>
                                 </div>
             
                                 <div class="input">
-                                    <input class="input__texto" type="tel" name="celular" placeholder="Celular/Whatsapp">
+                                    <input class="input__text" type="tel" name="celular" placeholder="Celular/Whatsapp" id="input__celular">
+                                    <i class="input__i fa-solid fa-circle-xmark" id="input__i"></i>
                                 </div>
 
                                 <div class="input">
-                                    <input class="input__texto" type="text" name="othercamp" placeholder="Othercamp">
+                                    <input class="input__text" type="text" name="othercamp" placeholder="Othercamp" id="input__othercamp">
+                                    <i class="input__i fa-solid fa-circle-xmark" id="input__i"></i>
                                 </div>  
                             </div>
 
@@ -77,17 +88,19 @@
                 
                                 <div class="inputs inputs--row2">
                                     <div class="input">
-                                        <input class="input__texto" type="text" name="competidor[]" placeholder="Nombre y Apellido del competidor">
+                                        <input class="input__text" type="text" name="competidor[]" placeholder="Nombre y Apellido del competidor" id="input__competidor">
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i"></i>
                                     </div>
             
                                     <div class="input">
-                                        <input class="input__texto" type="tel" name="dni[]" placeholder="DNI (sin puntos ni comas)">
+                                        <input class="input__text" type="tel" name="dni[]" placeholder="DNI (sin puntos ni comas)" id="input__dni">
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i"></i>
                                     </div>
                                 </div>
 
                                 <div class="selectors">
                                     <p class="selectors--label">Género</p>
-                                    <select class="selector" name="genero[]">
+                                    <select class="selector" name="genero[]" id="select__genero">
                                         <option value=""></option>
                                         <option value="M">Masculino</option>
                                         <option value="F">Femenino</option>
@@ -96,7 +109,7 @@
                 
                                 <div class="selectors">
                                     <p class="selectors--label">Categoría</p>
-                                    <select class="selector" name="categoria[]">
+                                    <select class="selector" name="categoria[]" id="select__categoria">
                                         <option value=""></option>
                                         <option value="Blanco - Blanco P. Amarilla">Blanco - Blanco P. Amarilla</option>
                                         <option value="Verde - Verde P. Azul">Verde - Verde P. Azul</option>  
@@ -117,7 +130,7 @@
                             
                                 <div class="selectors">
                                 <p class="selectors--label">Edad</p>
-                                    <select class="selector" name="edad[]">
+                                    <select class="selector" name="edad[]" id="select__edad">
                                         <option value=""></option>
                                         <option value="2-5 años">2 a 5 años</option>
                                         <option value="6-9 años">6 a 9 años</option>
@@ -130,7 +143,7 @@
                 
                                 <div class="selectors">
                                     <p class="selectors--label">Peso*</p>
-                                    <select class="selector" name="peso[]">
+                                    <select class="selector" name="peso[]" id="select__peso">
                                         <option value=""></option>
                                         <option value="hasta 45kg">hasta 45kg</option>
                                         <option value="hasta 50kg">hasta 50kg</option>
