@@ -10,8 +10,21 @@ const expresiones = {
     dni: /^\d{7,8}$/ // 7 a 14 numeros.
 }
 
-const inputs        = document.querySelectorAll('#form input');
-const selectors     = document.querySelectorAll('#form select');
+const inputs    = document.querySelectorAll('#form input');
+const selectors = document.querySelectorAll('#form select');
+const campos    = {
+    escuela :    false,
+    instructor : false,
+    coach:       false,
+    email:       false,
+    celular:     false,
+    othercamp:   false,
+    competidor:  false,
+    dni:         false,
+    categoria:   false,
+    edad:        false,
+    peso:        false
+}
 
 const validatorInput = (expresion, input, camp)=>{
     if(expresion.test(input.value)){
@@ -22,6 +35,8 @@ const validatorInput = (expresion, input, camp)=>{
         document.querySelector(`#input__i--${camp}`).classList.add('input__alerts__i--checked');
         document.querySelector(`#input__alerts__checked--${camp}`).classList.add('input__alerts__checked--active');
         document.querySelector(`#input__alerts__error--${camp}`).classList.remove('input__alerts__error--active');
+        campos[camp] = true;
+
     }else if(input.value == ''){
         document.getElementById(`input__${camp}`).classList.remove('input__text--checked');
         document.querySelector(`#input__alerts--${camp} `).classList.remove('input__alerts--active');
@@ -31,6 +46,8 @@ const validatorInput = (expresion, input, camp)=>{
         document.getElementById(`input__${camp}`).classList.remove('input__text--error');
         document.querySelector(`#input__i--${camp}`).classList.remove('fa-circle-xmark');
         document.querySelector(`#input__alerts__error--${camp}`).classList.remove('input__alerts__error--active');
+        campos[camp] = false;
+
     }else{
         document.getElementById(`input__${camp}`).classList.remove('input__text--checked');
         document.getElementById(`input__${camp}`).classList.add('input__text--error');
@@ -40,14 +57,13 @@ const validatorInput = (expresion, input, camp)=>{
         document.querySelector(`#input__i--${camp}`).classList.remove('input__alerts__i--checked');
         document.querySelector(`#input__alerts__checked--${camp}`).classList.remove('input__alerts__checked--active');
         document.querySelector(`#input__alerts__error--${camp}`).classList.add('input__alerts__error--active');
+        campos[camp] = false;
     }
 }
 
 
 const validatorInputs = (e)=>{
-    console.log(e.target.name);
     switch (e.target.name) {
-        
         case 'escuela':
             validatorInput(expresiones.nombre, e.target, 'escuela');
         break;
@@ -85,9 +101,11 @@ const validatorInputs = (e)=>{
 const validatorSelector = (input, camp)=>{
     if(input === ''){
         document.getElementById(`select__${camp}`).classList.add('selector--error');
+        campos[camp] = false;
     }else{
         document.getElementById(`select__${camp}`).classList.remove('selector--error');
         document.getElementById(`select__${camp}`).classList.add('selector--checked');
+        campos[camp] = true;
     };
 }
 
@@ -118,6 +136,7 @@ inputs.forEach((input)=>{
 
 selectors.forEach((select)=>{
     select.addEventListener('click', validatorSelectors);
+    select.addEventListener('blur', validatorSelectors);
 });
 
 
@@ -129,92 +148,42 @@ $(document).ready(function(){
 
         e.preventDefault();
 
-       //const datos = $('#pageform').serialize();
+        if(campos.escuela && campos.instructor && campos.coach
+        && campos.email && campos.celular && campos.othercamp
+        && campos.competidor && campos.dni && campos.genero
+        && campos.categoria && campos.edad && campos.peso){
 
-       const escuela    = $('#escuela').val();
-       const instructor = $('#instructor').val();
-       const coach      = $('#coach').val();
-       const email      = $('#email').val();
-       const celular    = $('#celular').val();
-       const othercamp  = $('#othercamp').val();
-
-       const competidor = $('input[name=competidor]').val();
-
-       const dni        = $('#dni').val();
-       const genero     = $('#genero').val();
-       const categoria  = $('#categoria').val();
-       const edad       = $('#edad').val();
-       const peso       = $('#peso').val();
-
-       console.log(competidor);
-
-
-
-       /* $.each(competidor,function(){
-            console.log($(this).val());
-
-            if( $(this).val() === undefined ){
-                console.log('Hay valores vacíos');
-            }else{
-                console.log('No hay valores vacíos');
-            }
-        }); */
-
-        if( escuela     == '' ||
-            instructor  == '' ||
-            coach       == '' ||
-            email       == '' ||
-            celular     == '' ||
-            othercamp   == '' || 
-            dni         == '' ||
-            genero      == '' ||
-            categoria   == '' ||
-            edad        == '' ||
-            peso        == '' ){
-
-            submit();
-            $('#modal__message').html('Debe completar todos los campos, sin excepción.');
-        }else{
-            console.log('El campo esta lleno');
+            const datos = $('#form').serialize();
 
             $.ajax({
                 url: './php/prueba.php',
                 type: 'post',
-                data: {
-                    escuela,
-                    instructor,
-                    coach,
-                    email,
-                    celular,
-                    othercamp,
-                    competidor,
-                    dni,
-                    genero,
-                    categoria,
-                    edad,
-                    peso
-                },
+                data: datos,
                 success: function(r){
                     if(r == 1){
                         console.log(r);
-                        submit();
                         $('#modal__message').html('Se enviaron todos los datos con éxito');
     
-                        $('.input__texto').val('');
-                        $('.selector').val('');
+                        $('#form').trigger('reset');
     
                     }else if(r == 2){
                         console.log(r);
-                        submit();
                         $('#modal__message').html('Un DNI ingresado ya se encuentra registrado. Contactese con support@infotkd.com');
                         
                     }else{
                         console.log(r);
-                        submit();
                         $('#modal__message').html('Ocurrió un error. Contáctese con support@infotkd.com');
                     }
                 }
-            }); 
+            });
+
+
+            console.log('Todos los campos están completos y listos para enviar');
+            
+        }else{
+            console.log('Uno o varios campos están vacíos');
+
+             
         } 
     });
 });

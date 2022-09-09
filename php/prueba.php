@@ -9,11 +9,11 @@ $email      = '';
 $celular    = '';
 $othercamp  = '';
 $competidor = '';
-$dni        = array();
-$genero     = array();
-$categoria  = array();
-$edad       = array();
-$peso       = array();
+$dni        = '';
+$genero     = '';
+$categoria  = '';
+$edad       = '';
+$peso       = '';
 
 
 if($_POST){
@@ -23,18 +23,58 @@ if($_POST){
     $email      = (isset($_POST['email']))?$_POST['email']:'';
     $celular    = (isset($_POST['celular']))?$_POST['celular']:'';
     $othercamp  = (isset($_POST['othercamp']))?$_POST['othercamp']:'';
-    $competidor = (isset($_POST['competidor[]']))?$_POST['competidor[]']:'';
-    $dni        = (isset($_POST['dni[]']))?$_POST['dni[]']:'';
-    $genero     = (isset($_POST['genero[]']))?$_POST['genero[]']:'';
-    $categoria  = (isset($_POST['categoria[]']))?$_POST['categoria[]']:'';
-    $edad       = (isset($_POST['edad[]']))?$_POST['edad[]']:'';
-    $peso       = (isset($_POST['peso[]']))?$_POST['peso[]']:'';
+    $competidor = (isset($_POST['competidor']))?$_POST['competidor']:'';
+    $dni        = (isset($_POST['dni']))?$_POST['dni']:'';
+    $genero     = (isset($_POST['genero']))?$_POST['genero']:'';
+    $categoria  = (isset($_POST['categoria']))?$_POST['categoria']:'';
+    $edad       = (isset($_POST['edad']))?$_POST['edad']:'';
+    $peso       = (isset($_POST['peso']))?$_POST['peso']:'';
 
-    print_r($_POST);
+    $insertData = ("INSERT INTO competidores (escuela, instructor, coach, email, celular, othercamp,
+    competidor, dni, genero, categoria, edad, peso) VALUES ('".$escuela."', '".$instructor."', '".$coach."',
+    '".$email."', '".$celular."', '".$othercamp."', '".$competidor."', '".$dni."', '".$genero."',
+    '".$categoria."', '".$edad."', '".$peso."')");
 
-    echo '1';
+    $validatorDni = mysqli_query($con, " SELECT * FROM competidores WHERE dni='".$dni."' ");
+
+        if(mysqli_num_rows($validatorDni) > 0){   
+
+            echo '2';
+
+            mysqli_close($con);
+
+            exit();
+        }else{
+
+            $ejecutar = mysqli_query($con, $insertData);
+
+            echo'1';
+        }
+
+    mysqli_close($con);
+
+    exit();
     
-}
+    
+    /*else(mysqli_num_rows($validatorDni) === 0){
+
+        $ejecutar = mysqli_query($con, $insertData)
+
+       //mysqli_close($con);
+
+        //echo '1';
+
+       //exit();
+
+    };else{
+
+        echo '3';
+
+        mysqli_close($con);
+
+        exit();
+    }; */
+};
 
 
 /*
