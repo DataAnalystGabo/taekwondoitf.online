@@ -156,7 +156,7 @@ $(document).ready(function(){
             const datos = $('#form').serialize();
 
             $.ajax({
-                url: './php/prueba.php',
+                url: './php/pageFormSubmit.php',
                 type: 'post',
                 data: datos,
                 success: function(r){
