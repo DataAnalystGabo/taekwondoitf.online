@@ -39,6 +39,7 @@
                             <div class="row__inputs">
 
                                 <div class="input">
+                                    <label class="input__label" for="escuela" id="input__label--escuela">Escuela</label>
                                     <input class="input__text" type="text" name="escuela" placeholder="Escuela" id="input__escuela">
                                     <div class="input__alerts" id="input__alerts--escuela">
                                         <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--escuela"></i>
@@ -48,6 +49,7 @@
                                 </div>
             
                                 <div class="input">
+                                    <label class="input__label" for="instructor" id="input__label--instructor">Instructor</label>
                                     <input class="input__text" type="text" name="instructor" placeholder="Instructor (Nombre y Apellido)" id="input__instructor"> 
                                     <div class="input__alerts" id="input__alerts--instructor">
                                         <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--instructor"></i>
@@ -57,6 +59,7 @@
                                 </div>
             
                                 <div class="input">
+                                    <label class="input__label" for="coach" id="input__label--coach">Coach</label>
                                     <input class="input__text" type="text" name="coach" placeholder="Coach (Nombre y Apellido)" id="input__coach">
                                     <div class="input__alerts" id="input__alerts--coach">
                                         <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--coach"></i>
@@ -66,6 +69,7 @@
                                 </div>
                         
                                 <div class="input">
+                                    <label class="input__label" for="email" id="input__label--email">E-mail</label>
                                     <input class="input__text" type="text" name="email" placeholder="E-mail: xxxxxxx@gmail.com" id="input__email">
                                     <div class="input__alerts" id="input__alerts--email">
                                         <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--email"></i>
@@ -75,6 +79,7 @@
                                 </div>
             
                                 <div class="input">
+                                    <label class="input__label" for="celular" id="input__label--celular">Celular/Whatsapp</label>
                                     <input class="input__text" type="tel" name="celular" placeholder="Celular/Whatsapp" id="input__celular">
                                     <div class="input__alerts" id="input__alerts--celular">
                                         <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--celular"></i>
@@ -84,6 +89,7 @@
                                 </div>
 
                                 <div class="input">
+                                    <label class="input__label" for="othercamp" id="input__label--othercamp">Othercamp</label>
                                     <input class="input__text" type="text" name="othercamp" placeholder="Othercamp" id="input__othercamp">
                                     <div class="input__alerts" id="input__alerts--othercamp">
                                         <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--othercamp"></i>
@@ -107,6 +113,7 @@
                 
                                 <div class="inputs inputs--row2">
                                     <div class="input">
+                                        <label class="input__label" for="competidor" id="input__label--competidor">Nombre y Apellido del competidor</label>
                                         <input class="input__text input__competidor" type="text" name="competidor" placeholder="Nombre y Apellido del competidor" id="input__competidor">
                                         <div class="input__alerts" id="input__alerts--competidor">
                                             <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--competidor"></i>
@@ -116,6 +123,7 @@
                                     </div>
             
                                     <div class="input">
+                                        <label class="input__label" for="dni" id="input__label--dni">DNI (sin puntos ni comas)</label>
                                         <input class="input__text" type="tel" name="dni" placeholder="DNI (sin puntos ni comas)" id="input__dni">
                                         <div class="input__alerts" id="input__alerts--dni">
                                             <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--dni"></i>

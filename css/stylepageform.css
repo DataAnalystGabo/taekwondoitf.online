@@ -66,15 +66,29 @@ button, input, select, textarea {
             padding-bottom: 1.5em;
         }
 
-        .input__text:focus{
-           *border-bottom: 1px solid var(--blue-light);
-        }
-
         .input{
             position: relative;
         }
-        /*------------------------------------------------------------------*/
-        /*Seccion de estilos para validar campos*/
+
+        .input__text:focus::placeholder{
+           opacity: 0;
+           transition: all 100ms ease-in-out;
+        }
+
+        .input__label{
+            display: flex;
+            visibility: hidden;
+            position: relative;
+            color: var(--grey);
+            transform: translateY(1.8em);
+            transition: all 200ms ease-in-out;
+        }
+
+        .input__label--active{
+            visibility: visible;
+            transform: translateY(.5em);
+        }
+
             .input__text{
                 color: var(--white);
                 display: flex;

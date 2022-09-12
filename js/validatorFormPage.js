@@ -187,3 +187,82 @@ $(document).ready(function(){
         } 
     });
 });
+
+
+//---------------------------------------------------------------//
+//-----------------Activando el label de los inputs texts--------//
+const showLabel = (campo)=>{
+    document.getElementById(`input__label--${campo}`).classList.add('input__label--active');  
+};
+
+const hiddenLabel = (campo)=>{
+    document.getElementById(`input__label--${campo}`).classList.remove('input__label--active');
+};
+
+
+const activeLabels = (e)=>{
+    switch (e.target.name) {
+        case 'escuela':
+                showLabel('escuela');
+            break;
+        case 'instructor':
+                showLabel('instructor');
+            break;
+        case 'coach':
+                showLabel('coach');
+            break;
+        case 'email':
+                showLabel('email');
+            break;
+        case 'celular':
+                showLabel('celular');
+            break;
+        case 'othercamp':
+                showLabel('othercamp');
+            break;
+        case 'competidor':
+                showLabel('competidor');
+            break;
+        case 'dni':
+                showLabel('dni');
+            break;
+   }
+};
+
+
+const disableLabels = (e)=>{
+    switch (e.target.name) {
+        case 'escuela':
+                hiddenLabel('escuela');
+            break;
+        case 'instructor':
+                hiddenLabel('instructor');
+            break;
+        case 'coach':
+                hiddenLabel('coach');
+            break;
+        case 'email':
+                hiddenLabel('email');
+            break;
+        case 'celular':
+                hiddenLabel('celular');
+            break;
+        case 'othercamp':
+                hiddenLabel('othercamp');
+            break;
+        case 'competidor':
+                hiddenLabel('competidor');
+            break;
+        case 'dni':
+                hiddenLabel('dni');
+            break;
+   }
+}
+
+
+
+inputs.forEach((input)=>{
+    input.addEventListener('focus', activeLabels);
+    input.addEventListener('blur', disableLabels);
+});
+
