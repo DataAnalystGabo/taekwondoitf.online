@@ -159,32 +159,51 @@ $(document).ready(function(){
                 url: './php/pageFormSubmit.php',
                 type: 'post',
                 data: datos,
-                success: function(r){
+                success: (r)=>{
                     if(r == 1){
-                        console.log(r);
-                        $('#modal__message').html('Se enviaron todos los datos con éxito');
-    
+                        $('#messages').addClass('messages--active');
+                        $('#messages').addClass('messages--checked');
+                        $('#messages__p').html('¡Todos los datos se enviaron con éxito!');
                         $('#form').trigger('reset');
+
+                        //programar borrado automatico de los mensajes de confirmación de los inputs
+                        document.querySelectorAll('.input__alerts').forEach((alert)=>{
+                            alert.classList.remove('input__alerts--active');
+                        });
+
+                        document.querySelectorAll('.input__text').forEach((input)=>{
+                            input.classList.remove('input__text--checked');
+                            input.classList.remove('input__text--error');
+                        });
+
+                        document.querySelectorAll('.selector').forEach((selector)=>{
+                            selector.classList.remove('selector--checked');
+                            selector.classList.remove('selector--error');
+                        });
+
+                        setTimeout(function(){
+                            $('#messages').removeClass('messages--active');
+                        },5000);
     
                     }else if(r == 2){
-                        console.log(r);
-                        $('#modal__message').html('Un DNI ingresado ya se encuentra registrado. Contactese con support@infotkd.com');
-                        
+                        $('#messages').addClass('messages--active');
+                        $('#messages').addClass('messages--error');
+                        $('#messages__p').html('El dni ingresado ya se encuentra registrado. Contáctese con <strong>support@infotkd.com</strong>');
                     }else{
                         console.log(r);
-                        $('#modal__message').html('Ocurrió un error. Contáctese con support@infotkd.com');
+                        $('#messages').addClass('messages--active');
+                        $('#messages').addClass('messages--error');
+                        $('#messages__p').html('Ocurrió un error');
                     }
                 }
             });
-
-
-            console.log('Todos los campos están completos y listos para enviar');
-            
         }else{
-            console.log('Uno o varios campos están vacíos');
-
-             
-        } 
+            $('#messages').addClass('messages--active');
+            $('#messages').html('¡Debe completar todos los campos!');
+            setTimeout(function(){
+                $('#messages').removeClass('messages--active');
+            },3000);
+        };
     });
 });
 

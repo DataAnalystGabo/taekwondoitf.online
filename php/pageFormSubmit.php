@@ -49,10 +49,10 @@ if($_POST){
             $ejecutar = mysqli_query($con, $insertData);
 
             echo'1';
-        }
+        };
 
     mysqli_close($con);
 
     exit();
-
+}
 ?>
