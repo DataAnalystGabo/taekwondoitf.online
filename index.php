@@ -188,7 +188,7 @@
                         <img class="questionfreq__picture__img" src="image/bbl__database.png" alt="Imagen de Base de Datos">
                     </div>
                     <h2 class="questionfreq__h2">¿Qué es BBL?</h2>
-                    <p class="questionfreq__p"><strong>Probando GIT2</strong> (Lista de cinturones negros) es un proyecto
+                    <p class="questionfreq__p"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
                         que pretende reunir a todos los cinturones negros de la República Argentina
                         en una base de datos abierta a todo el público. 
                     </p>
