@@ -72,7 +72,7 @@ button, input, select, textarea {
 
         .input__text:focus::placeholder{
            opacity: 0;
-           transition: all 400ms ease-in-out;
+           transition: all 900ms ease-in-out;
         }
 
         .input__label{

@@ -311,32 +311,46 @@ body{
 }
 
     .bbl__banner{
+        display: flex;
         width: 100%;
-        height: 20em;
+        margin-top: 3em;
+        padding: .5em;
         overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        *background-color: aqua;
     }
 
-        .bbl__banner__img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .bbl__banner__tittle{
+            font-size: 5.5em;
+            font-family: var(--bebas-neue);
+        }
+
+        .bbl__banner__tittle--registred{
+            display: inline-block;
+            position: relative;
+            font-size: 1.5rem;
+            top: -3.5rem;
         }
 
     .bbl__h3{
         font-size: 2em;
-        margin: 2em auto;
+        margin-top: 0;
+        margin-bottom: 2em;
         color: var(--yellow-dark);
     }
 
-    .gem{
-        width: 22em;
+    .questionfreq__picture{
+        width: 25em;
         height: 20em;
+        *background-color: brown;
     }
 
-    .gem__img{
-        width: 100%;
-        object-fit: fill;
-    }
+        .questionfreq__picture__img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
 
     .questionfreq__h2{
         margin-bottom: 1em;

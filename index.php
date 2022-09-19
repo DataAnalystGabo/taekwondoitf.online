@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
      
@@ -173,16 +174,19 @@
 
         <hr class="divisor"/>
 
-        <section class="bbl container">
+        <section class="bbl container" id="bbl">
             <div class="bbl__banner">
-                <img class="bbl__banner__img" src="image/card3Optimizado.jpg" alt="Imagen banner de la seccion BBL">
+                <h1 class="bbl__banner__tittle">BLACK BELT LIST <span class="bbl__banner__tittle--registred">®</span></h1>
             </div>
 
-            <h3 class="bbl__h3">¡Próximamente BBL!</h3>
+            <h3 class="bbl__h3">¡Próximamente!</h3>
 
             <section class="questionfreq">
 
                 <div class="questionfreq__cont">
+                    <div class="questionfreq__picture">
+                        <img class="questionfreq__picture__img" src="image/bbl__database.png" alt="Imagen de Base de Datos">
+                    </div>
                     <h2 class="questionfreq__h2">¿Qué es BBL?</h2>
                     <p class="questionfreq__p"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
                         que pretende reunir a todos los cinturones negros de la República Argentina
@@ -191,6 +195,9 @@
                 </div>
 
                 <div class="questionfreq__cont">
+                    <div class="questionfreq__picture">
+                        <img class="questionfreq__picture__img" src="image/bbl__benefits.png" alt="Imagen de Base de Datos">
+                    </div>
                     <h2 class="questionfreq__h2">¿Cómo puede ayudarme BBL?</h2>
                     <p class="questionfreq__p">Podrás registrarte en <strong>Black Belt List</strong> y 
                         de esta forma, cualquier persona podrá encontrarte en línea y verificar
