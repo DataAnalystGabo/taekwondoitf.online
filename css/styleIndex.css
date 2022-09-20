@@ -39,31 +39,18 @@ body{
     .banner{
         display: flex;
         flex-direction: column;
-        gap: 3em;
+        gap: 2em;
     }
 
-    .banner__titles{
-        width: max-content;
-        font-family: var(--poppins);
-        font-style: italic;
-        text-align: start;
-        line-height: 1.7em;
+    .banner__title{
+        width: 23em;
     }
 
-        .banner__h1{
-            font-weight: 800;
-            font-size: 2.7em;
+        .banner__img{
+            width: 100%;
+            object-fit: scale-down;
         }
-
-        .banner__span1{
-            font-weight: 300;
-            font-size: 1.2rem;
-        }
-
-        .banner__span2{
-            color: var(--yellow-dark);
-        }
-
+   
     .sponsors{
         display: grid;
         grid-template-rows: repeat(2, max-content);
@@ -425,6 +412,16 @@ body{
 /*-------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 780px){
+
+
+    .banner{
+        margin-top: 3em;
+    }
+
+        .banner__title{
+            width: 40em;
+        }
+
     .actions--inscription{
         justify-content: center;
         margin: 0;
@@ -485,17 +482,9 @@ body{
 
 @media screen and (min-width : 1200px){
 
-    .banner__titles{
-        line-height: 4.6em;
+    .banner__title{
+        width: 50em;
     }
-
-        .banner__h1{
-            font-size: 7em;
-        }
-
-        .banner__span1{
-            margin-left: 1em;
-        }
 
     .articles{
         grid-template-columns: repeat(3, 33%);

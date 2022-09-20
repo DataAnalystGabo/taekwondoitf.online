@@ -31,8 +31,8 @@
         <section class="front-page">
             <div class="banner container">
 
-                <div class="banner__titles">
-                    <h1 class="banner__h1"><span class="banner__span1">CAMPEONATO MUNDIAL</span><br/>FINLANDIA 2023 <br/><span class="banner__span2">1° RANQUEABLE</span></h1>
+                <div class="banner__title">
+                   <img class="banner__img" src="image/finlandia2023Optimizado.png" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
                 </div>
 
                 <div class="sponsors">

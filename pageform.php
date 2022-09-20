@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/stylePageform.css">
+    <link rel="stylesheet" href="css/stylePageForm.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -25,11 +25,10 @@
     <main class="main container">
         <section class="section">   
                 <form class="form" method="POST" id="form">
-                    <div class="form__header">
-                        <h1 class="header__tittle header__tittle--primary">Torneo Nacional</h1>
-                        <h2 class="header__tittle header__tittle--second">¡Inscribite ya!</h2>
+                    <div class="banner__title">
+                        <img class="banner__img" src="image/finlandia2023Optimizado.png" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
                     </div>
-
+               
                     <div class="row row--coach">
                             <div class="row__header row__header--coach">
                                 <h3 class="row__tittle">Datos del Coach/Instructor</h3>
@@ -195,10 +194,13 @@
                         </div>
                     </div>
 
-                    <div class="form__buttons">
-                        <div class="buttons__container">
-                            <button class="button" id="submit" name="enviar">Enviar</button>
-                        </div>
+                    <div class="actions">
+                        <button class="actions__btca" id="submit" name="enviar">
+                            <span class="actions__label">ENVIAR</span>
+                            <div class="actions__icon">
+                                <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </button>
                     </div>
 
                     <div class="messages" id="messages">

@@ -161,7 +161,10 @@ $(document).ready(function(){
                 data: datos,
                 success: (r)=>{
                     if(r == 1){
+                        console.log(r);
                         $('#messages').addClass('messages--active');
+                        $('#messages__p').html('');
+                        $('#messages').removeClass('messages--error');
                         $('#messages').addClass('messages--checked');
                         $('#messages__p').html('¡Todos los datos se enviaron con éxito!');
                         $('#form').trigger('reset');
@@ -199,7 +202,9 @@ $(document).ready(function(){
             });
         }else{
             $('#messages').addClass('messages--active');
-            $('#messages').html('¡Debe completar todos los campos!');
+            $('#messages').removeClass('messages--checked');
+            $('#messages').addClass('messages--error');
+            $('#messages__p').html('¡Debe completar todos los campos!');
             setTimeout(function(){
                 $('#messages').removeClass('messages--active');
             },3000);

@@ -41,14 +41,14 @@ button, input, select, textarea {
 
     }
 
-        .form__header{
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            height: 7em;
-            justify-content: space-evenly;
-            text-align: center;
-            margin: 1em auto 1em auto;
+    .banner__title{
+        width: 18em;
+        margin-top: 1em;
+    }
+
+        .banner__img{
+            width: 100%;
+            object-fit: scale-down;
         }
 
     .row--coach{
@@ -218,30 +218,51 @@ button, input, select, textarea {
                 margin: 1em auto;
             }
 
-.form__buttons{
+.actions{
     display: flex;
-    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 2em;
 }
 
-    .buttons__container{
-        width: 100%;
+    .actions__btca{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1em;
+        align-items: center;
+        width: 10em;
+        height: 3em;
+        background-color: rgba(255, 255, 255, .02);
+        backdrop-filter: blur(4px);
+        border: 1px solid var(--white);
+        color: var(--white);
+        font-family: var(--roboto);
+        font-size: 1em;
+        cursor: pointer;
     }
 
-        .button{
-            height: 2.2em;
-            background: transparent;
+        .actions__label{
             color: var(--white);
-            border: 1px solid var(--white);
-            cursor: pointer;
+            position: relative;
+            left: 14%;
+            transition: all .5s ease-in-out;
         }
 
-        .button:hover{
-            background: var(--blue);
+        .actions__btca:hover .actions__label{
+            left: 3%;
+        }
+
+        .actions__icon{
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -30%;
+            transition: all .5s ease-in-out;
+            opacity: 0;
+        }
+
+        .actions__btca:hover .actions__icon{
+            left: 0%;
+            opacity: 1;
         }
 
 .messages{
