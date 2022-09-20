@@ -1,3 +1,7 @@
+
+<?php include('php/news.php'); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,13 +28,11 @@
 
     <main class="main">
 
-        <section class="section section--banner">
+        <section class="front-page">
             <div class="banner container">
 
-                <div class="banner__titulos">
-                    <h1 class="banner__h1"><span class="banner__span1">CAMPEONATO MUNDIAL</span><br/>
-                                                                FINLANDIA 2023 <br/>
-                                                                <span class="banner__span2">1° RANQUEABLE</span></h1>
+                <div class="banner__titles">
+                    <h1 class="banner__h1"><span class="banner__span1">CAMPEONATO MUNDIAL</span><br/>FINLANDIA 2023 <br/><span class="banner__span2">1° RANQUEABLE</span></h1>
                 </div>
 
                 <div class="sponsors">
@@ -44,208 +46,152 @@
 
                
                 <div class="actions actions--inscription">
-                    <button class="action__btca" onclick="window.location.href='pageform.php'">
-                        <span class="action__label">INSCRIBITE</span>
-                        <div class="action__icon">
-                            <i class="action__i fa-solid fa-arrow-right-long"></i>
+                    <button class="actions__btca" onclick="window.location.href='pageform.php'">
+                        <span class="actions__label">INSCRIBITE</span>
+                        <div class="actions__icon">
+                            <i class="actions__i fa-solid fa-arrow-right-long"></i>
                         </div>
                     </button>
                 </div>
 
-            </div>
-
-            
+            </div>        
         </section>
 
-        <div class="articles articles--container">
-            <article class="article">
-                <div class="portada">
-                    <img class="portada__img" src="image/card1Optimizado.jpg" alt="" loading="lazy">
-                </div>
-    
-                <div class="resumen container">
-    
-                    <header class="encabezado">
-                        <h2 class="encabezado__titulo">Nuevas actividades en el estadio de Lanús</h2>
+        <section class="articles">
 
-                        <div class="data">
-                            <div class="data__autor">
-                                <img class="data__fotoperfil" src="image/autor1.jfif" alt="Imagen del autor del artículo">
+            <?php foreach($query as $q){?>
+                <article class="article">
+                    <div class="cover">
+                        <img class="cover__img" src="image/card1Optimizado.jpg" alt="" loading="lazy">
+                    </div>
+        
+                    <div class="resumen container">
+        
+                        <header class="resumen__header">
+
+                            <h2 class="resumen__title">
+
+                                <?php 
+                                for($i=0; $i<40; $i++)
+                                    echo $q['titulo'][$i];
+                                    echo '...'; 
+                                ?>
+                            
+                            </h2>
+
+                            <div class="autor">
+                                <div class="autor__profile-picture">
+                                    <img class="autor__profile-picture__img" src="image/autor1.jfif" alt="Imagen del autor del artículo">
+                                </div>
+                            
+                                <p class="autor__name"><?php echo $q['autor']; ?>
+                                    <i class="autor__icon fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14"><?php echo $q['fecha_publicacion']; ?></time>
+                                </p>
                             </div>
-                           
-                            <p class="data__nombre">Marcos Galp 
-                                <i class="data__i fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14">12 de Agosto del 2022</time>
+
+                        </header>
+
+                        <div class="resumen__preview">
+                            <p class="resumen__preview__p">
+                                
+                                <?php 
+                                for($i = 0; $i < 500; $i++)
+                                    echo $q['contenido'][$i];
+                                    echo '...';
+
+                                ?>
+
                             </p>
                         </div>
-                    </header>
+                        
         
-                    <p class="resumen__p">La Federación Internacional de Taekwon-do logró concensuar un
-                        acuerdo con el municipio de la localidad de Lanús para impartir clases de dicho arte marcial,
-                        en el polideportivo de Lanús ubicado en Somellera 345.
-                        El instructor a cargo será Jorge Bagglieto, cituron negro 5° Dan...
-                    </p>
-    
-                    <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='pageNews.php'">
-                            <span class="action__label">Leer más</span>
-                            <div class="action__icon">
-                                <i class="action__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="portada">
-                    <img class="portada__img" src="image/card2Optimizado.jpg" alt="" loading="lazy">
-                </div>
-    
-                <div class="resumen container">
-    
-                    <header class="encabezado">
-                        <h2 class="encabezado__titulo">La neurociencia y el Taekwon-do</h2>
-
-                        <div class="data">
-                            <div class="data__autor">
-                                <img class="data__fotoperfil" src="image/autor2.jfif" alt="Imagen del autor del artículo">
-                            </div>
-                           
-                            <p class="data__nombre">Ricardo López
-                                <i class="data__i fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14">12 de Agosto del 2022</time>
-                            </p>
+                        <div class="actions">
+                            <button class="actions__btca" onclick="window.location.href='pageNews.php'">
+                                <span class="actions__label">Leer más</span>
+                                <div class="actions__icon">
+                                    <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </button>
                         </div>
-                    </header>
-        
-                    <p class="resumen__p">Cada vez se recurre más a las neurociencias dentro 
-                        del proceso de educación y enseñanza de los alumnos, sin importar la materia 
-                        que corresponda. Esa es una decisión muy acertada, por cuanto, al ser el cerebro 
-                        (con sus funciones corticales) el órgano encargado de controlar todo el...</p>
-    
-                    <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='pageNews.php'">
-                            <span class="action__label">Leer más</span>
-                            <div class="action__icon">
-                                <i class="action__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
                     </div>
-                </div>
-            </article>
+                </article>
+            <?php }?>
 
-            <article class="article">
-                <div class="portada">
-                    <img class="portada__img" src="image/card3Optimizado.jpg" alt="" loading="lazy">
-                </div>
-    
-                <div class="resumen container">
-    
-                    <header class="encabezado">
-                        <h2 class="encabezado__titulo">Torneo Nacional | Mar del Plata 2023</h2>
-
-                        <div class="data">
-                            <div class="data__autor">
-                                <img class="data__fotoperfil" src="image/autor3.jfif" alt="Imagen del autor del artículo">
-                            </div>
-                           
-                            <p class="data__nombre">Julio López
-                                <i class="data__i fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14">14 de Agosto del 2022</time>
-                            </p>
-                        </div>
-                    </header>
-        
-                    <p class="resumen__p">Este domingo se realizará el tercer y último Selectivo Nacional de 
-                        Taekwondo ITF clasificatorio al Mundial Netherlands 2022. Desde las 19 en el canal público 
-                        de deportes. El Tercer Selectivo Nacional de Taekwondo ITF clasificatorio al Mundial Netherlands 
-                        2022 se desarrollará el próximo domingo 10 de abril y se podrá ver a través de la pantalla y...
-                    </p>
-    
-                    <div class="actions">
-                        <button class="action__btca" onclick="window.location.href='pageNews.php'">
-                            <span class="action__label">Leer más</span>
-                            <div class="action__icon">
-                                <i class="action__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </article>
-        </div>
+        </section>
 
         <hr class="divisor"/>
 
         <section class="bbl container" id="bbl">
-            <div class="bbl__banner">
-                <h1 class="bbl__banner__tittle">BLACK BELT LIST <span class="bbl__banner__tittle--registred">®</span></h1>
-            </div>
 
-            <h3 class="bbl__h3">¡Próximamente!</h3>
+            <h1 class="bbl__title">BLACK BELT LIST</h1>
+            <h3 class="bbl__subtitle">¡Próximamente!</h3>
 
             <section class="questionfreq">
 
-                <div class="questionfreq__cont">
+                <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__picture__img" src="image/bbl__database.png" alt="Imagen de Base de Datos">
+                        <img class="questionfreq__picture__img" src="image/boltOptimizado.png" alt="Icono 3d de Rayo Dorado">
                     </div>
-                    <h2 class="questionfreq__h2">¿Qué es BBL?</h2>
-                    <p class="questionfreq__p"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
+                    <h2 class="questionfreq__title">¿Qué es BBL?</h2>
+                    <p class="questionfreq__resumen"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
                         que pretende reunir a todos los cinturones negros de la República Argentina
                         en una base de datos abierta a todo el público. 
                     </p>
                 </div>
 
-                <div class="questionfreq__cont">
+                <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__picture__img" src="image/bbl__benefits.png" alt="Imagen de Base de Datos">
+                        <img class="questionfreq__picture__img" src="image/targetOptimizado.png" alt="Icono 3d de Blanco con flecha clavada">
                     </div>
-                    <h2 class="questionfreq__h2">¿Cómo puede ayudarme BBL?</h2>
-                    <p class="questionfreq__p">Podrás registrarte en <strong>Black Belt List</strong> y 
+                    <h2 class="questionfreq__title">¿Cómo puede ayudarme BBL?</h2>
+                    <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
                         de esta forma, cualquier persona podrá encontrarte en línea y verificar
                         tus credenciales como cinturón negro de Taekwon-do ITF.
                     </p>
                 </div>
             
-                <div class="questionfreq__cont">
-                    <h2 class="questionfreq__h2">¿Cuánto va a costarme?</h2>
-                    <p class="questionfreq__p">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
+                <div class="questionfreq__group">
+                    <div class="questionfreq__picture">
+                        <img class="questionfreq__picture__img" src="image/presentOptimizado.png" alt="Icono 3d de Regalo color rojo">
+                    </div>
+                    <h2 class="questionfreq__title">¿Cuánto va a costarme?</h2>
+                    <p class="questionfreq__resumen">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
                         que tendrás que cumplir para validar tus documentos pero
                         no te costará nada.
                     </p>
-                </div>
-                
+                </div>    
             </section>                    
             
             <form class="form">
-                <div class="form__cont">
+                <div class="form__group">
 
-                    <picture class="calendar">
-                        <img class="calendar__img" src="image/calendarOptimizado.png" alt="Imagen de calendario sección BBL">
-                    </picture>
+                    <div class="form__icon">
+                        <img class="form__icon__img" src="image/calendarOptimizado.png" alt="Icono 3d de Calendario">
+                    </div>
                     
-                    <div class="form__group">
-                        <h2 for="email" class="form__tittle">¡Subscribite a las novedades de BBL!</h2>
-                        <p class="form__p">Te estaremos avisando sobre la fecha de lanzamiento de <strong>Black Belt List.</strong></p>
-                        <div class="form__group--input">
+                    <div class="form__area">
+                        <h3 class="form__title">¡Subscribite a las novedades de BBL!</h3>
+                        <p class="form__resumen">Te estaremos avisando sobre la fecha de lanzamiento de <strong>Black Belt List.</strong></p>
+
+                        <div class="form__inputs form__input--group">
                             <input type="email" class="form__input" name="email" id="form__input" placeholder="ejemplo@gmail.com">
                             <i class="form__i fa-solid fa-circle-xmark" id="form__i"></i>
                         </div>
 
-                        <div class="notification" id="notification">
-                            <p class="notification__p"><strong>El e-mail debe contener :</strong> letras, puntos, arrobas y números.</p>
+                        <div class="form__notification" id="form__notification">
+                            <p class="form__notification__resumen"><strong>El e-mail debe contener :</strong> letras, puntos, arrobas y números.</p>
                         </div>
 
-                        <div class="alert" id="alert"><strong></strong></div>
-                        <div class="confirmation" id="confirmation"><strong></strong></div>
+                        <div class="form__confirmation" id="form__confirmation"><strong></strong></div>
 
-                        <button class="action__btca action__btca--form" id="submit">
-                            <span class="action__label action__label--form">Subscribirme</span>
-                            <div class="action__icon">
-                                <i class="action__i fa-solid fa-arrow-right-long"></i>
+                        <button class="actions__btca actions__btca--form" id="form__submit">
+                            <span class="actions__label actions__label--form">Subscribirme</span>
+                            <div class="actions__icon">
+                                <i class="actions__i fa-solid fa-arrow-right-long"></i>
                             </div>
                         </button>
-                    </div>    
+                    </div>
                 </div>
-
         </section>
     </main>
 

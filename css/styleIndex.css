@@ -23,13 +23,11 @@ body{
                             /*section--banner*/ 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
-.section{
+
+.front-page{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.section--banner{
     width: 100%;
     height: 100vh;
     background: rgba(3, 14, 26, 0.7) url(../image/bannerOptimizado.jpg);
@@ -38,13 +36,13 @@ body{
     background-blend-mode: darken;
 }
 
-.banner{
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-}
+    .banner{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
 
-    .banner__titulos{
+    .banner__titles{
         width: max-content;
         font-family: var(--poppins);
         font-style: italic;
@@ -108,51 +106,51 @@ body{
                 height: 90px;
             }
 
-.actions{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-    .action__btca{
+    .actions{
         display: flex;
-        align-items: center;
-        width: 10em;
-        height: 3em;
-        background-color: rgba(255, 255, 255, .02);
-        backdrop-filter: blur(4px);
-        border: 1px solid var(--white);
-        color: var(--white);
-        font-family: var(--roboto);
-        font-size: 1em;
-        cursor: pointer;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-        .action__label{
-            color: var(--white);
-            position: relative;
-            left: 14%;
-            transition: all .5s ease-in-out;
-        }
-
-        .action__btca:hover .action__label{
-            left: 3%;
-        }
-
-        .action__icon{
-            font-size: 1.2em;
+        .actions__btca{
             display: flex;
             align-items: center;
-            position: relative;
-            left: -30%;
-            transition: all .5s ease-in-out;
-            opacity: 0;
+            width: 10em;
+            height: 3em;
+            background-color: rgba(255, 255, 255, .02);
+            backdrop-filter: blur(4px);
+            border: 1px solid var(--white);
+            color: var(--white);
+            font-family: var(--roboto);
+            font-size: 1em;
+            cursor: pointer;
         }
 
-        .action__btca:hover .action__icon{
-            left: 0%;
-            opacity: 1;
-        }
+            .actions__label{
+                color: var(--white);
+                position: relative;
+                left: 14%;
+                transition: all .5s ease-in-out;
+            }
+
+            .actions__btca:hover .actions__label{
+                left: 3%;
+            }
+
+            .actions__icon{
+                font-size: 1.2em;
+                display: flex;
+                align-items: center;
+                position: relative;
+                left: -30%;
+                transition: all .5s ease-in-out;
+                opacity: 0;
+            }
+
+            .actions__btca:hover .actions__icon{
+                left: 0%;
+                opacity: 1;
+            }
 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
@@ -168,129 +166,78 @@ body{
     border-top: 1px solid var(--grey);
 }
 
-    .portada{
+    .cover{
         width: 100%;
     }
 
-        .portada__img{
+        .cover__img{
             width: 100%;
         }
 
-    .encabezado{
+    .resumen__header{
         display: flex;
         flex-direction: column;
         margin-top: 2em;
     }
 
-        .encabezado__titulo{
+        .resumen__title{
             margin: .5em 0;
         }
 
-        .data{
+        .autor{
             display: flex;
             align-items: center;
             margin: 0;
             color: var(--grey);
         }
 
-            .data__autor{
+            .autor__profile-picture{
                 display: flex;
                 width: 2.2em;
                 height: 2.2em;
                 margin: 0;
             }
 
-                .data__fotoperfil{
+                .autor__profile-picture__img{
                     width: 100%;
                     border-radius: 100%;
                 }
 
-                .data__i{
+            .autor__name{
+                font-size: 0.8em;
+                margin-left: 1rem;
+            }
+                
+                .autor__icon{
                     font-size: 1em;
                     color: var(--white);
                     margin: 0 .8em 0 1.5em;
                     opacity: .5;
                 }
 
-            .data__nombre{
-                font-size: 0.8em;
-                margin-left: 1rem;
-            }
-
-    .resumen__p{
-        margin: 1.2em 0;
-        color: var(--grey);
+    .resumen__preview{
+        width: 100%;
+        overflow: hidden;
+        margin: 1em 0 1em 0;
+        *background-color: blueviolet;
     }
 
-    .action__btca--share{
+        .resumen__preview__p{
+            padding: 1em 0 1em 0;
+            color: var(--grey);
+        }
+
+    .actions__btca--share{
         border: none;
         width: 8em;
         background-color: transparent;
         color: var(--white);
     }
 
-    .action__btca--share:hover{
+    .actions__btca--share:hover{
         color: var(--blue-light);
     }
 
-.modal--container{
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-.modal--show{
-    visibility: visible;
-    opacity: 1;
-}
-
-    .modal__share{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 85%;
-        max-width: 30em;
-        height: 12em;
-        border-radius: 1em;
-        background: var(--white);
-        transform: translateY(300%);
-        transition: transform .8s;
-    }
-
-    .modal__share--show{
-        transform: translateY(0%);
-    }
-
-    .close{
-        display: inline-block;
-        position: absolute;
-        top: 1em;
-        right: 1em;
-        font-size: 1.5em;
-        cursor: pointer;
-        color: var(--red);
-    }
-
-    .modal__tittle{
-        color: var(--grey);
-        padding: 1em;
-    }
-
-    .redes__container{
-        width: max-content;
-    }
 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
@@ -310,30 +257,19 @@ body{
     font-family: var(--poppins);
 }
 
-    .bbl__banner{
+    .bbl__title{
         display: flex;
         width: 100%;
-        margin-top: 3em;
-        padding: .5em;
+        padding: .5em 0;
         overflow: hidden;
         justify-content: center;
         align-items: center;
+        font-size: 5.5em;
+        font-family: var(--bebas-neue);
         *background-color: aqua;
     }
 
-        .bbl__banner__tittle{
-            font-size: 5.5em;
-            font-family: var(--bebas-neue);
-        }
-
-        .bbl__banner__tittle--registred{
-            display: inline-block;
-            position: relative;
-            font-size: 1.5rem;
-            top: -3.5rem;
-        }
-
-    .bbl__h3{
+    .bbl__subtitle{
         font-size: 2em;
         margin-top: 0;
         margin-bottom: 2em;
@@ -341,9 +277,8 @@ body{
     }
 
     .questionfreq__picture{
-        width: 25em;
-        height: 20em;
-        *background-color: brown;
+        width: 10em;
+        height: 10em;
     }
 
         .questionfreq__picture__img{
@@ -352,11 +287,11 @@ body{
             object-fit: contain;
         }
 
-    .questionfreq__h2{
+    .questionfreq__title{
         margin-bottom: 1em;
     }
 
-    .questionfreq__p{
+    .questionfreq__resumen{
         top: -5em;
         width: 90%;
         font-family: var(--roboto);
@@ -366,7 +301,7 @@ body{
         line-height: 1.5em;
     }
     
-    .form__cont{
+    .form__group{
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -377,28 +312,27 @@ body{
         margin-top: 2em;
     }
 
-        .calendar{
-            width: 15em;
-            height: 15em;
+        .form__icon{
+            width: 10em;
+            height: 10em;
         }
 
-        .calendar__img{
+        .form__icon__img{
             width: 100%;
-            margin-left: 1em;
             object-fit: fill;
         }
 
-        .form__tittle{
-            display: block;
+        .form__title{
+            font-family: var(--poppins);
             margin-bottom: .5em;
         }
 
-        .form__p{
+        .form__resumen{
             color: var(--grey);
             margin-bottom: 2em;
         }
         
-        .form__group--input{
+        .form__input--group{
             position: relative;
             width: 100%;
         }
@@ -455,50 +389,32 @@ body{
                 color: var(--green);
             }
 
-            .form__alert{
-                display: none;
-                font-size: 15px;
-                margin-bottom: 1em;
-                padding: .5em;
-                background-color: var(--red);
-            }
-
-            .form__alert--active{
-                display: block;
-            }
-
-        .notification{
+        .form__notification{
             display: none;
             height: 3em;
             width: 100%;
             text-align: start;
         }
 
-            .notification__p{
+            .form__notification__resumen{
                 color: var(--red);
             }
         
-        .notification--active{
+        .form__notification--active{
             display: block;
         }
 
-        .alert{
-            text-align: start;
-            color: var(--red);
-            font-weight: bold;
-        }
-
-        .confirmation{
+        .form__confirmation{
             text-align: start;
             color: var(--green);
             font-weight:600;
         }
 
-        .action__label--form{
+        .actions__label--form{
             left: 12%;
         }
     
-    .action__btca--form{
+    .actions__btca--form{
         margin: 1em auto;
     }
 
@@ -509,7 +425,13 @@ body{
 /*-------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 780px){
-    .articles--container{
+    .actions--inscription{
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .articles{
         width: 90%;
         margin: 0 auto;
         overflow: hidden;
@@ -523,13 +445,13 @@ body{
             margin: 2em 0;
         }
 
-            .portada{
+            .cover{
                 display: flex;
                 width: 90%;
                 height: 100%;
             }
 
-                .portada__img{
+                .cover__img{
                     object-fit: cover;
                 }
 
@@ -542,32 +464,28 @@ body{
                 gap: 1.5em;
 
             }
-                .encabezado{
+                .resumen__header{
                     margin: 0;
                 }
 
-                .resumen__p{
-                    height: 4.5em;
+                .resumen__preview{
+                    height: 22em;
+                    margin: 0;
                     overflow: hidden;
-                    margin: 0;
                 }
 
-                .actions--inscription{
-                    justify-content: center;
-                }
-
+                    .resumen__preview__p{
+                        margin: 0;
+                    }
+                
                 .actions{
-                    margin: 0;
+                    margin-left: 0;
                 }
-
-                .action__btca--share{
-                    border: none;
-                }
-    }
+}
 
 @media screen and (min-width : 1200px){
 
-    .banner__titulos{
+    .banner__titles{
         line-height: 4.6em;
     }
 
@@ -579,7 +497,7 @@ body{
             margin-left: 1em;
         }
 
-    .articles--container{
+    .articles{
         grid-template-columns: repeat(3, 33%);
     }
 
@@ -589,7 +507,7 @@ body{
             margin: 2em 1em;
         }
 
-            .portada{
+            .cover{
                 width: 80%;
                 margin: 2em auto;
             }
@@ -600,20 +518,28 @@ body{
                 margin: 0 auto 2em;
             }
 
+                .resumen__preview{
+                    height: max-content;
+                }
+
     .questionfreq{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .form__cont{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-gap: 3em;
+    .form{
         width: 100%;
     }
 
-        .calendar__img{
-            margin-left: 0;
+    .form__group{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-gap: 3em;
+        width: 90%;
+    }
+
+        .form__icon{
+            width: 15em;
         }
 
 }
