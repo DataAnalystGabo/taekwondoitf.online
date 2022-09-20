@@ -25,7 +25,6 @@
     <main class="main container">
         <section class="section">   
                 <form class="form" method="POST" id="form">
-                    <!-- name="form1" action="../php/form.php" -->
                     <div class="form__header">
                         <h1 class="header__tittle header__tittle--primary">Torneo Nacional</h1>
                         <h2 class="header__tittle header__tittle--second">¡Inscribite ya!</h2>
