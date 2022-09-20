@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="nav container">
         <figure class="nav__logo">
-            <img class="nav__logo__img" src="./image/infotkd-logo.png" alt="Logotipo de infotkd.online">
+            <img class="nav__logo__img" src="../image/infotkd-logo.png" alt="Logotipo de infotkd.online">
         </figure>
 
         <div class="menu" id="menu">
@@ -9,23 +9,23 @@
                 <h3 class="menu__titulo">infotkd</h3>
                 <ul class="menu__links">
                     <li class="menu__li">
-                        <a href="./index.php" class="menu__a">Home<i class="menu__i fa-solid fa-house"></i></a>
+                        <a href="../index.php" class="menu__a">Home<i class="menu__i fa-solid fa-house"></i></a>
                     </li>
 
                     <li class="menu__li">
-                        <a href="./page404.html" target="_blank" class="menu__a">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                        <a href="../pages/pageSectionNews.php" class="menu__a">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
                     </li>
 
                     <li class="menu__li">
-                        <a href="./page404.html" target="_blank" class="menu__a">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                        <a href="../pages/page404.html" target="_blank" class="menu__a">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
                     </li>
                     
                     <li class="menu__li">
-                        <a href="./page404.html" target="_blank" class="menu__a">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                        <a href="../pages/page404.html" target="_blank" class="menu__a">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
                     </li>
 
                     <li class="menu__li">
-                        <a href="./page404.html" target="_blank" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                        <a href="../pages/page404.html" target="_blank" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                     </li>
                 </ul>
                 <div class="menu__redes">

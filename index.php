@@ -9,11 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styleIndex.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/footer.css">
+
     <title>Infotkd - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +26,52 @@
 </head>
 <body>
      
-    <?php require ('layout/header.php') ?>
+    <header class="header">
+        <nav class="nav container">
+            <figure class="nav__logo">
+                <img class="nav__logo__img" src="image/infotkd-logo.png" alt="Logotipo de infotkd.online">
+            </figure>
+
+            <div class="menu" id="menu">
+                <div class="menu__contenedor">
+                    <h3 class="menu__titulo">infotkd</h3>
+                    <ul class="menu__links">
+                        <li class="menu__li">
+                            <a href="./index.php" class="menu__a">Home<i class="menu__i fa-solid fa-house"></i></a>
+                        </li>
+
+                        <li class="menu__li">
+                            <a href="pages/pageSectionNews.php" class="menu__a">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                        </li>
+
+                        <li class="menu__li">
+                            <a href="pages/page404.html" target="_blank" class="menu__a">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                        </li>
+                        
+                        <li class="menu__li">
+                            <a href="pages/page404.html" target="_blank" class="menu__a">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                        </li>
+
+                        <li class="menu__li">
+                            <a href="pages/page404.html" target="_blank" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                        </li>
+                    </ul>
+                    <div class="menu__redes">
+                        <a class="menu__redes__link" href="#" title="Facebook"><i class="menu__redes__i fa-brands fa-facebook"></i></a>
+                        <a class="menu__redes__link" href="#" title="Instagram"><i class="menu__redes__i fa-brands fa-instagram"></i></a>
+                        <a class="menu__redes__link" href="#" title="Twitter"><i class="menu__redes__i fa-brands fa-twitter"></i></a>
+                    </div>
+                </div> 
+            </div>  
+
+            <div class="menu__hamb" id="menu__hamb">
+                <span class="menu__hamb--line" id="line--top"></span>
+                <span class="menu__hamb--line" id="line--middle"></span>
+                <span class="menu__hamb--line" id="line--bottom"></span>
+            </div>
+            
+        </nav>
+    </header>
 
     <main class="main">
 
@@ -46,7 +93,7 @@
 
                
                 <div class="actions actions--inscription">
-                    <button class="actions__btca" onclick="window.location.href='pageform.php'">
+                    <button class="actions__btca" onclick="window.location.href='pages/pageForm.php'">
                         <span class="actions__label">INSCRIBITE</span>
                         <div class="actions__icon">
                             <i class="actions__i fa-solid fa-arrow-right-long"></i>
@@ -106,7 +153,7 @@
                         
         
                         <div class="actions">
-                            <button class="actions__btca" onclick="window.location.href='pageNews.php'">
+                            <button class="actions__btca" onclick="window.location.href='pageNew.php'">
                                 <span class="actions__label">Leer más</span>
                                 <div class="actions__icon">
                                     <i class="actions__i fa-solid fa-arrow-right-long"></i>
@@ -195,8 +242,37 @@
         </section>
     </main>
 
-    <?php require ('layout/footer.php') ?>
+    <footer class="footer">
+        <div class="footer__contenedor">
 
+            <div class="footer__box footer__box--cabecera">
+                <h2 class="footer__logo">infotkd</h2>
+                <div class="footer__iconos">
+                    <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
+                    <a href="#"title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Twitter" class="footer__a"><i class="footer__i fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__box footer__box--links">
+                <ul class="footer__menu">
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="index.php">Home</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Contacto</a></li> 
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Seguridad</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Promoción</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Ayuda</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Cookies</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Eventos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Terminos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Servicios</a></li>
+                </ul>
+            </div>  
+            
+            <div class="footer__box footer__box--copy">
+                <p class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
