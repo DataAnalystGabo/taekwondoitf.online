@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/Index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -53,7 +53,7 @@
                         </li>
 
                         <li class="menu__li">
-                            <a href="pages/page404.html" target="_blank" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                            <a href="pages/pageContact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                         </li>
                     </ul>
                     <div class="menu__redes">

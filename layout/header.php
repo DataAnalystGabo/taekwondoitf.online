@@ -25,7 +25,7 @@
                     </li>
 
                     <li class="menu__li">
-                        <a href="../pages/page404.html" target="_blank" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                        <a href="../pages/pageContact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                     </li>
                 </ul>
                 <div class="menu__redes">

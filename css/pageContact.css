@@ -1,0 +1,347 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 15px;
+    background: var(--background);
+}
+
+.container{
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                            /*Main*/ 
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.3;
+    background: rgba(10, 43, 77, 0.4) url(../image/Francia-final-png.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-blend-mode: soft-light;
+}
+
+    .hero{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+        font-family: var(--roboto);
+        margin-top: 5em;
+    }
+
+        .hero__title{
+            padding-bottom: 1em;
+            margin: auto;
+        }
+
+            .contact{
+                width: 100%;
+            }
+
+                .form{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .form__inputs{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-bottom: 2em;
+
+                    }
+
+                        
+                        .form__box{
+                            width: 100%;
+                            margin: 0;
+                            position: relative;
+                        }
+
+                            .form__label{
+                                position: absolute;
+                                top: .5em;
+                                color: var(--grey);
+                                transition: all .3s ease;
+                            }
+                        
+                    
+                            .form__input{
+                                color: var(--white);
+                                display: flex;
+                                width: 100%;
+                                padding: 0.625em 0;
+                                background: transparent;
+                                border: none;
+                                border-bottom: 1px solid var(--grey);
+                                box-sizing: border-box;
+                                margin-bottom: .5em;
+                                font-size: 1em;
+                                outline: none;
+                            }
+
+                            .form__input:focus + .form__label{
+                                transform: translateY(-1.5em);
+                                font-size: .85em;
+                                color: var(--blue-light);
+                            }
+
+                            .form__input:not(:placeholder-shown) + .form__label{
+                                transform: translateY(-1.5em);
+                                font-size: .85em;
+                                color: var(--grey);
+                            }
+
+                        .form__input--checked{
+                            border-bottom: 1px solid var(--green);
+                        }
+
+                        .form__input--error{
+                            border-bottom: 1px solid var(--red);
+                        }
+
+                        .alerts{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            text-align: start;
+                            font-size: .9em;
+                            *background-color: blueviolet;
+                        }
+
+                            .alerts__i{
+                                display: none;
+                                margin: 0;
+                                color: var(--red);
+                            }
+
+                            .alerts__i--active{
+                                display: block;
+                            }
+
+                            .alerts__i--checked{
+                                display: block;
+                                color: var(--green);
+                            }
+
+                                .alerts__error{
+                                    display: none;
+                                    margin: 0 0 0 1em;
+                                    color: var(--red);
+                                }
+
+                                .alerts__error--active{
+                                    display: block;
+                                }
+
+                                .alerts__checked{
+                                    display: none;
+                                    margin: 0 0 0 1em;
+                                    color: var(--green);
+                                }
+
+                                .alerts__checked--active{
+                                    display: block;
+                                }
+
+                    .actions{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                        .actions__btca{
+                            display: flex;
+                            align-items: center;
+                            width: 10em;
+                            height: 3em;
+                            background-color: rgba(255, 255, 255, .02);
+                            backdrop-filter: blur(4px);
+                            border: 1px solid var(--white);
+                            color: var(--white);
+                            font-family: var(--roboto);
+                            font-size: 1em;
+                            cursor: pointer;
+                        }
+
+                            .actions__label{
+                                color: var(--white);
+                                position: relative;
+                                left: 14%;
+                                transition: all .5s ease-in-out;
+                            }
+
+                            .actions__btca:hover .actions__label{
+                                left: 3%;
+                            }
+
+                            .actions__icon{
+                                font-size: 1.2em;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                left: -30%;
+                                transition: all .5s ease-in-out;
+                                opacity: 0;
+                            }
+
+                            .actions__btca:hover .actions__icon{
+                                left: 0%;
+                                opacity: 1;
+                            }           
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                            /*Media Query*/ 
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 650px){
+    .main:before {
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+    }
+        .contact{
+            width: 80%;
+        }
+}
+
+@media screen and (min-width: 700px){
+    .main:before {
+        background-size: 130%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .main:before {
+        background-size: 120%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .main:before {
+        background-size: 110%;
+    }
+}
+
+@media screen and (min-width: 950px){
+    .main:before {
+        background-size: 80%;
+        background-position: 120% 0%;
+    }
+
+        .contact{
+            width: 70%;
+        }
+}
+
+@media screen and (min-width: 1100px){
+    .main:before {
+        background-size: 70%;
+        background-position: 120% -5%;
+    }
+
+        .contact{
+            width: 50%;
+        }
+}
+
+/*.main{
+    height: 100vh;
+}
+
+.main:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.2;
+    background: rgba(10, 43, 77, 0.4) url(../image/Francia-final-png.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 20% 0;
+    background-blend-mode: soft-light;
+
+    background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+    .hero{
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 20em;
+        margin-top: 4em;
+        font-family: var(--roboto);
+    }
+
+        .hero__title{
+            font-family: var(--poppins);
+            font-size: 2em;
+            padding-bottom: 2em;
+        }
+
+        .contact{
+            width: 30em;
+            height: 30em;
+            *background-color: brown;
+        }
+
+            .contact__form{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+                .contact__input{
+                    color: var(--white);
+                    display: flex;
+                    width: 100%;
+                    padding: 0.625em 0;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #fffdf7;
+                    box-sizing: border-box;
+                    margin-bottom: 0.625em;
+                    font-size: 1em;
+                    outline: none;
+                }
