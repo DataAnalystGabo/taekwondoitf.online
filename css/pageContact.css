@@ -226,7 +226,7 @@ body{
                     }
 
                     .form__alerts--checked{
-                        display: block;
+                        display: flex;
                         background-color: var(--green);
                     }
 /*-------------------------------------------------------------------------------------------*/

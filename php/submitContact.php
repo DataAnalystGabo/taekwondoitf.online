@@ -5,6 +5,7 @@ if(isset($_POST)){
     $name         = $_POST['name'];
     $email        = $_POST['email'];
     $message      = $_POST['message'];
+    $asunto       = 'Contacto de infotkd.online';
     $header       = 'Enviado desde la website infotkd.online';
     $messageFull  = $message . '\nAtentamente: ' . $name ;
 
