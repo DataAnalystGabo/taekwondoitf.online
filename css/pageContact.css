@@ -119,25 +119,23 @@ body{
                         }
 
                         .alerts{
+                            display: none;
                             width: 100%;
-                            display: flex;
                             flex-direction: row;
                             text-align: start;
                             font-size: .9em;
                         }
 
+                        .alerts--active{
+                            display: flex;
+                        }
+
                             .alerts__i{
-                                display: none;
                                 margin: 0;
                                 color: var(--red);
                             }
 
-                            .alerts__i--active{
-                                display: block;
-                            }
-
                             .alerts__i--checked{
-                                display: block;
                                 color: var(--green);
                             }
 

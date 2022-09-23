@@ -14,32 +14,33 @@ const validatorInput = (expresion, input, camp)=>{
     if(expresion.test(input.value)){
         document.getElementById(`form__input--${camp}`).classList.remove('form__input--error');
         document.getElementById(`form__input--${camp}`).classList.add('form__input--checked');
-        document.getElementById(`input__i--${camp}`).classList.add('alerts__i--checked');
-        document.getElementById(`input__i--${camp}`).classList.remove('fa-circle-xmark');
-        document.getElementById(`input__i--${camp}`).classList.add('fa-circle-check');
+        document.getElementById(`alerts--${camp}`).classList.add('alerts--active');
+        document.getElementById(`alerts__i--${camp}`).classList.add('alerts__i--checked');
+        document.getElementById(`alerts__i--${camp}`).classList.remove('fa-circle-xmark');
+        document.getElementById(`alerts__i--${camp}`).classList.add('fa-circle-check');
         document.getElementById(`alerts__checked--${camp}`).classList.add('alerts__checked--active');
         document.getElementById(`alerts__error--${camp}`).classList.remove('alerts__error--active');
+  
 
         campos[camp] = true;
 
     } else if (input.value == ""){
         document.getElementById(`form__input--${camp}`).classList.remove('form__input--checked');
         document.getElementById(`form__input--${camp}`).classList.remove('form__input--error');
-        document.getElementById(`input__i--${camp}`).classList.remove('alerts__i--checked');
-        document.getElementById(`input__i--${camp}`).classList.remove('alerts__i--active');
-        document.getElementById(`alerts__checked--${camp}`).classList.remove('alerts__checked--active');
-        document.getElementById(`alerts__error--${camp}`).classList.remove('alerts__error--active');
+        document.getElementById(`alerts--${camp}`).classList.remove('alerts--active');
+     
         
         campos[camp] = false;
     } else {
         document.getElementById(`form__input--${camp}`).classList.remove('form__input--checked');
         document.getElementById(`form__input--${camp}`).classList.add('form__input--error');
-        document.getElementById(`input__i--${camp}`).classList.remove('alerts__i--checked');
-        document.getElementById(`input__i--${camp}`).classList.add('alerts__i--active');
-        document.getElementById(`input__i--${camp}`).classList.add('fa-circle-xmark');
-        document.getElementById(`input__i--${camp}`).classList.remove('fa-circle-check');
+        document.getElementById(`alerts--${camp}`).classList.add('alerts--active');
+        document.getElementById(`alerts__i--${camp}`).classList.remove('alerts__i--checked');
+        document.getElementById(`alerts__i--${camp}`).classList.remove('fa-circle-check');
+        document.getElementById(`alerts__i--${camp}`).classList.add('fa-circle-xmark');
         document.getElementById(`alerts__checked--${camp}`).classList.remove('alerts__checked--active');
         document.getElementById(`alerts__error--${camp}`).classList.add('alerts__error--active');
+     
 
         campos[camp] = false;
     }
@@ -48,7 +49,6 @@ const validatorInput = (expresion, input, camp)=>{
 const validatorTextArea = (input, camp)=>{
     if(input.value == ""){
         document.getElementById(`form__input--${camp}`).classList.remove('form__input--checked');
-        //document.getElementById(`form__input--${camp}`).classList.add('form__input--error');
 
         campos[camp] = false;
     } else{
@@ -104,16 +104,12 @@ $(document).ready(()=>{
                         $('#box-alerts').addClass('form__alerts--checked');
                         $('#alert').html('¡Tu mensaje se ha enviado!');
 
+                        document.querySelectorAll('.alerts').forEach((alert)=>{
+                            alert.classList.remove('alerts--active');
+                        });
+
                         document.querySelectorAll('.form__input').forEach((input)=>{
                             input.classList.remove('form__input--checked');
-                        });
-
-                        document.querySelectorAll('.alerts__i').forEach((icon)=>{
-                            icon.classList.remove('alerts__i--checked');
-                        });
-
-                        document.querySelectorAll('.alerts__checked').forEach((p)=>{
-                            p.classList.remove('alerts__checked--active');
                         });
                         
                         setTimeout(()=>{

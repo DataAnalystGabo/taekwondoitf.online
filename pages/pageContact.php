@@ -38,8 +38,8 @@
                             <label class="form__label" for="name">Nombre</label>
                         </div>
 
-                        <div class="alerts" id="alerts--name">
-                            <i class="alerts__i fa-solid fa-circle-xmark" id="input__i--name"></i>
+                        <div class="alerts alerts--name" id="alerts--name">
+                            <i class="alerts__i fa-solid fa-circle-xmark" id="alerts__i--name"></i>
                             <p class="alerts__error" id="alerts__error--name">Sólo se permite letras y espacios</p>
                             <p class="alerts__checked" id="alerts__checked--name">¡Válido!</p>
                         </div>
@@ -51,8 +51,8 @@
                             <label class="form__label" for="name">Email</label>
                         </div>
 
-                        <div class="alerts" id="alerts--email">
-                            <i class="alerts__i fa-solid fa-circle-xmark" id="input__i--email"></i>
+                        <div class="alerts alerts--email" id="alerts--email">
+                            <i class="alerts__i fa-solid fa-circle-xmark" id="alerts__i--email"></i>
                             <p class="alerts__error" id="alerts__error--email">Formato válido example@email.com</p>
                             <p class="alerts__checked" id="alerts__checked--email">¡Válido!</p>
                         </div>
