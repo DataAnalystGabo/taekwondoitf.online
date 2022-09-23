@@ -124,7 +124,6 @@ body{
                             flex-direction: row;
                             text-align: start;
                             font-size: .9em;
-                            *background-color: blueviolet;
                         }
 
                             .alerts__i{
@@ -217,7 +216,6 @@ body{
                         height: 4em;
                         margin: 1em 0;
                         color: var(--white);
-                        background-color: brown;
                     }
 
                     .form__alerts--error{

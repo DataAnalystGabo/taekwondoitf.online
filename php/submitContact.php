@@ -1,15 +1,15 @@
 <?php 
 
 if(isset($_POST)){
-    $destinatario = 'gonzaloramirez.sagitario@gmail.com';
+    $destinatario = 'support@infotkd.online';
     $name         = $_POST['name'];
     $email        = $_POST['email'];
     $message      = $_POST['message'];
-    $asunto       = 'Contacto de infotkd.online';
+    $asunto       = 'Enviado desde la website infotkd.online';
     $header       = 'Enviado desde la website infotkd.online';
-    $messageFull  = $message . '\nAtentamente: ' . $name ;
+    $messageFull  = $message . '\n Atentamente: ' . $name ;
 
-    mail($destinatario, $messageFull, $header);
+    mail($destinatario, $header, $asunto, $messageFull, );
 
     echo '1';
 } else {

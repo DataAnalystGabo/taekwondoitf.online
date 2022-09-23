@@ -99,13 +99,23 @@ $(document).ready(()=>{
                 success: function (response) {
                     if(response == '1'){
 
-                        console.log(response);
-
-                        $('#alert').html('');
+                        $('#form').trigger('reset');
                         $('#box-alerts').removeClass('form__alerts--error');
                         $('#box-alerts').addClass('form__alerts--checked');
                         $('#alert').html('¡Tu mensaje se ha enviado!');
 
+                        document.querySelectorAll('.form__input').forEach((input)=>{
+                            input.classList.remove('form__input--checked');
+                        });
+
+                        document.querySelectorAll('.alerts__i').forEach((icon)=>{
+                            icon.classList.remove('alerts__i--checked');
+                        });
+
+                        document.querySelectorAll('.alerts__checked').forEach((p)=>{
+                            p.classList.remove('alerts__checked--active');
+                        });
+                        
                         setTimeout(()=>{
                             $('#box-alerts').removeClass('form__alerts--checked');
                         }, 5000);
