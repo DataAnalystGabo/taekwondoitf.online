@@ -115,6 +115,11 @@ $(document).ready(()=>{
                         setTimeout(()=>{
                             $('#box-alerts').removeClass('form__alerts--checked');
                         }, 5000);
+
+                        campos['name'] = false;
+                        campos['email'] = false;
+                        campos['message'] = false;
+
                     } else {
 
                         console.log(response);
