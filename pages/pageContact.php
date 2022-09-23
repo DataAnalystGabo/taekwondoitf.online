@@ -24,19 +24,19 @@
 <body>
     <?php require ('../layout/header.php') ?>
 
-    <main class="main container">
+    <main class="main">
+        <div class="hero container">
 
-        <div class="hero">
             <h1 class="hero__title">Contacto</h1>
 
             <div class="contact">
                 <form class="form" action="" id="form">
 
                     <div class="form__inputs">
-                       <div class="form__box">
+                        <div class="form__box">
                             <input class="form__input" id="form__input--name" type="text" name="name" placeholder=" ">
                             <label class="form__label" for="name">Nombre</label>
-                       </div>
+                        </div>
 
                         <div class="alerts" id="alerts--name">
                             <i class="alerts__i fa-solid fa-circle-xmark" id="input__i--name"></i>
@@ -49,7 +49,7 @@
                         <div class="form__box">
                             <input class="form__input" id="form__input--email" type="text" name="email" placeholder=" ">
                             <label class="form__label" for="name">Email</label>
-                       </div>
+                        </div>
 
                         <div class="alerts" id="alerts--email">
                             <i class="alerts__i fa-solid fa-circle-xmark" id="input__i--email"></i>
@@ -60,28 +60,32 @@
                     
                     <div class="form__inputs">
                         <div class="form__box">
-                            <textarea class="form__input" id="form__input--message" name="message" placeholder=" "cols="30" rows="10"></textarea>
+                            <textarea style="resize : none" class="form__input" id="form__input--message" name="message" placeholder=" "cols="30" rows="10"></textarea>
                             <label class="form__label" for="message">Mensaje</label>
-                       </div>     
+                        </div>     
                     </div>
                     
-
                     <div class="actions">
-                        <button class="actions__btca">
+                        <button class="actions__btca" id="submit">
                             <span class="actions__label">ENVIAR</span>
                             <div class="actions__icon">
                                 <i class="actions__i fa-solid fa-arrow-right-long"></i>
                             </div>
                         </button>
                     </div>
+
+                    <div class="form__alerts" id="box-alerts">
+                        <p class="form__alerts__p" id="alert"></p>
+                    </div>
+                    
                 </form>
             </div>
         </div>
-
     </main>
 
     <?php require ('../layout/footer.php') ?>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/pageContact.js"></script>
 </body>

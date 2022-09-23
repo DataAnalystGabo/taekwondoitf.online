@@ -23,36 +23,21 @@ body{
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 .main{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.main:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    opacity: 0.3;
-    background: rgba(10, 43, 77, 0.4) url(../image/Francia-final-png.png);
-    background-size: 150%;
+    background: url(../image/lyliandoulay40.png);
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: 0% 0%;
-    background-blend-mode: soft-light;
 }
 
     .hero{
-        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        z-index: 1;
         position: relative;
         font-family: var(--roboto);
         margin-top: 5em;
@@ -65,6 +50,7 @@ body{
 
             .contact{
                 width: 100%;
+                height: 36em;
             }
 
                 .form{
@@ -115,7 +101,7 @@ body{
                             .form__input:focus + .form__label{
                                 transform: translateY(-1.5em);
                                 font-size: .85em;
-                                color: var(--blue-light);
+                                color: var(--grey);
                             }
 
                             .form__input:not(:placeholder-shown) + .form__label{
@@ -220,14 +206,36 @@ body{
                             .actions__btca:hover .actions__icon{
                                 left: 0%;
                                 opacity: 1;
-                            }           
+                            }    
+                            
+                    .form__alerts{
+                        display: none;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 4em;
+                        margin: 1em 0;
+                        color: var(--white);
+                        background-color: brown;
+                    }
+
+                    .form__alerts--error{
+                        display: flex;
+                        background-color: var(--red);
+                    }
+
+                    .form__alerts--checked{
+                        display: block;
+                        background-color: var(--green);
+                    }
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
                             /*Media Query*/ 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 650px){
-    .main:before {
+    .cover:before {
         background-size: 140%;
         background-repeat: no-repeat;
         background-position: 0% 0%;
@@ -238,25 +246,25 @@ body{
 }
 
 @media screen and (min-width: 700px){
-    .main:before {
+    .cover:before {
         background-size: 130%;
     }
 }
 
 @media screen and (min-width: 800px){
-    .main:before {
+    .cover:before {
         background-size: 120%;
     }
 }
 
 @media screen and (min-width: 900px){
-    .main:before {
+    .cover:before {
         background-size: 110%;
     }
 }
 
 @media screen and (min-width: 950px){
-    .main:before {
+    .cover:before {
         background-size: 80%;
         background-position: 120% 0%;
     }
@@ -267,8 +275,8 @@ body{
 }
 
 @media screen and (min-width: 1100px){
-    .main:before {
-        background-size: 70%;
+    .cover:before {
+        background-size: 60%;
         background-position: 120% -5%;
     }
 
@@ -277,71 +285,3 @@ body{
         }
 }
 
-/*.main{
-    height: 100vh;
-}
-
-.main:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    opacity: 0.2;
-    background: rgba(10, 43, 77, 0.4) url(../image/Francia-final-png.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: 20% 0;
-    background-blend-mode: soft-light;
-
-    background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-}
-    .hero{
-        z-index: 1;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        left: 20em;
-        margin-top: 4em;
-        font-family: var(--roboto);
-    }
-
-        .hero__title{
-            font-family: var(--poppins);
-            font-size: 2em;
-            padding-bottom: 2em;
-        }
-
-        .contact{
-            width: 30em;
-            height: 30em;
-            *background-color: brown;
-        }
-
-            .contact__form{
-                display: flex;
-                flex-direction: column;
-                gap: 1em;
-            }
-
-                .contact__input{
-                    color: var(--white);
-                    display: flex;
-                    width: 100%;
-                    padding: 0.625em 0;
-                    background: transparent;
-                    border: none;
-                    border-bottom: 1px solid #fffdf7;
-                    box-sizing: border-box;
-                    margin-bottom: 0.625em;
-                    font-size: 1em;
-                    outline: none;
-                }

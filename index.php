@@ -226,7 +226,7 @@
                         </div>
 
                         <div class="form__notification" id="form__notification">
-                            <p class="form__notification__resumen"><strong>El e-mail debe contener :</strong> letras, puntos, arrobas y números.</p>
+                            <p class="form__notification__resumen"><strong>Formato inválido </strong>(example@email.com)</p>
                         </div>
 
                         <div class="form__confirmation" id="form__confirmation"><strong></strong></div>

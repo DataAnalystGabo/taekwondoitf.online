@@ -5,9 +5,9 @@ const expresiones = {
 
 const inputs    = document.querySelectorAll('.form__input');
 const campos    = {
-    nombre  : false,
+    name    : false,
     email   : false,
-    mensaje : false
+    message : false
 }
 
 const validatorInput = (expresion, input, camp)=>{
@@ -82,3 +82,58 @@ inputs.forEach((input)=>{
 
 
 //-----------------------------------------------------------------------------------------------------------//
+
+
+$(document).ready(()=>{
+    $('#submit').click((e)=>{
+        e.preventDefault();
+        
+        if(campos.name && campos.email && campos.message){
+
+            const datos =  $('#form').serialize();
+
+            $.ajax({
+                type: "POST",
+                url: "../php/submitContact.php",
+                data: datos,
+                success: function (response) {
+                    if(response == '1'){
+
+                        console.log(response);
+
+                        $('#alert').html('');
+                        $('#box-alerts').removeClass('form__alerts--error');
+                        $('#box-alerts').addClass('form__alerts--checked');
+                        $('#alert').html('¡Tu mensaje se ha enviado!');
+
+                        setTimeout(()=>{
+                            $('#box-alerts').removeClass('form__alerts--checked');
+                        }, 5000);
+                    } else {
+
+                        console.log(response);
+
+                        $('#alert').html('');
+                        $('#box-alerts').removeClass('form__alerts--checked');
+                        $('#box-alerts').addClass('form__alerts--error');
+                        $('#alert').html('¡Ha ocurrido un erro! Intenta nuevamente');
+
+                        setTimeout(()=>{
+                            $('#box-alerts').removeClass('form__alerts--error');
+                        }, 5000);
+                    }
+                }
+            });
+            
+        } else {
+            $('#alert').html('');
+            $('#box-alerts').removeClass('form__alerts--checked');
+            $('#box-alerts').addClass('form__alerts--error');
+            $('#alert').html('¡Los campos están vacíos!');
+
+            setTimeout(()=>{
+                $('#box-alerts').removeClass('form__alerts--error');
+            }, 2000);
+        }
+    });
+});
