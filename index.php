@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/Index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -104,9 +104,13 @@
             </div>        
         </section>
 
+        <div class="article__box container">
+            <h1 class="articles__title"><strong>Taekwondo ITF</strong> - Noticias</h1>
+        </div>
+
         <section class="articles">
 
-            <?php foreach($query as $q){?>
+            <?php foreach($news as $n){?>
                 <article class="article">
                     <div class="cover">
                         <img class="cover__img" src="image/card1Optimizado.jpg" alt="" loading="lazy">
@@ -120,20 +124,30 @@
 
                                 <?php 
                                 for($i=0; $i<40; $i++)
-                                    echo $q['titulo'][$i];
+                                    echo $n['title'][$i];
                                     echo '...'; 
                                 ?>
                             
                             </h2>
 
-                            <div class="autor">
-                                <div class="autor__profile-picture">
-                                    <img class="autor__profile-picture__img" src="image/autor1.jfif" alt="Imagen del autor del artículo">
+                            <div class="hashtags">
+                                <p class="hashtag">#Taekwondo</p>
+                                <p class="hashtag">#Niños</p>
+                                <p class="hashtag">#ITF</p>
+                                <p class="hashtag">#Beneficios</p>
+                                <p class="hashtag">#Cinturones</p>
+                            </div>
+
+                            <div class="resumen__box">
+                                <div class="picture">
+                                    <img class="picture__img" src="image/autor1.jfif" alt="Imagen del autor del artículo">
                                 </div>
                             
-                                <p class="autor__name"><?php echo $q['autor']; ?>
-                                    <i class="autor__icon fa-solid fa-calendar-days"></i><time class="date__time" datetime="2022-08-14"><?php echo $q['fecha_publicacion']; ?></time>
-                                </p>
+                                <div class="data">
+                                    <p class="data__name"><?php echo $n['author']; ?></p>
+                                    <i class="data__icon fa-solid fa-calendar-days"></i>
+                                    <time class="data__datetime" datetime="2022-08-14">2022-08-14</time>
+                                </div>
                             </div>
 
                         </header>
@@ -143,7 +157,7 @@
                                 
                                 <?php 
                                 for($i = 0; $i < 500; $i++)
-                                    echo $q['contenido'][$i];
+                                    echo $n['new'][$i];
                                     echo '...';
 
                                 ?>
@@ -170,7 +184,7 @@
 
         <section class="bbl container" id="bbl">
 
-            <h1 class="bbl__title">BLACK BELT LIST</h1>
+            <h2 class="bbl__title">BLACK BELT LIST</h2>
             <h3 class="bbl__subtitle">¡Próximamente!</h3>
 
             <section class="questionfreq">

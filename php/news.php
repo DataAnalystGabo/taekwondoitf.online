@@ -7,7 +7,6 @@ if(!$con){
 }
 
 
-$sql = "SELECT * FROM noticias";
-$query = mysqli_query($con, $sql); 
-
+$sentencesSQL = ("SELECT * FROM noticias LIMIT 3");
+$news= mysqli_query($con, $sentencesSQL);
 ?>

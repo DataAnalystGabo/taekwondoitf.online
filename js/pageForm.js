@@ -187,6 +187,18 @@ $(document).ready(function(){
                         setTimeout(function(){
                             $('#messages').removeClass('messages--active');
                         },5000);
+
+                        campos['escuela']    = false;
+                        campos['instructor'] = false;
+                        campos['coach']      = false;
+                        campos['email']      = false;
+                        campos['celular']    = false;
+                        campos['othercamp']  = false;
+                        campos['competidor'] = false;
+                        campos['dni']        = false;
+                        campos['categoria']  = false;
+                        campos['edad']       = false;
+                        campos['peso']       = false;
     
                     }else if(r == 2){
                         $('#messages').addClass('messages--active');

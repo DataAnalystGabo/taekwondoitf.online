@@ -153,6 +153,13 @@ body{
     border-top: 1px solid var(--grey);
 }
 
+    .article__box{
+        padding: 1em 0;
+        margin: .5em auto;
+        color: var(--yellow-dark);
+        text-align: center;
+    }
+
     .cover{
         width: 100%;
     }
@@ -171,42 +178,50 @@ body{
             margin: .5em 0;
         }
 
-        .autor{
+        .hashtags{
             display: flex;
+            flex-direction: row;
+            gap: .5em;
+            color: var(--grey);
+            font-size: 0.8em;
+            margin-left: 0;
+            margin-bottom: 1em;
+        }
+
+        .resumen__box{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
             align-items: center;
             margin: 0;
             color: var(--grey);
+            font-size: 0.8em;
         }
 
-            .autor__profile-picture{
+            .picture{
                 display: flex;
                 width: 2.2em;
                 height: 2.2em;
                 margin: 0;
             }
 
-                .autor__profile-picture__img{
+                .picture__img{
                     width: 100%;
                     border-radius: 100%;
                 }
 
-            .autor__name{
-                font-size: 0.8em;
-                margin-left: 1rem;
+            .data{
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                margin-left: 1em;
             }
-                
-                .autor__icon{
-                    font-size: 1em;
-                    color: var(--white);
-                    margin: 0 .8em 0 1.5em;
-                    opacity: .5;
-                }
 
     .resumen__preview{
         width: 100%;
         overflow: hidden;
         margin: 1em 0 1em 0;
-        *background-color: blueviolet;
     }
 
         .resumen__preview__p{
@@ -411,6 +426,13 @@ body{
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 
+@media screen and (min-width: 768px){
+    .banner__title{
+        width: 45em;
+    }
+}
+
+
 @media screen and (min-width: 780px){
 
 
@@ -458,8 +480,6 @@ body{
                 height: 100%;
                 justify-content: space-between;
                 padding: 1em 2em;
-                gap: 1.5em;
-
             }
                 .resumen__header{
                     margin: 0;
@@ -506,6 +526,18 @@ body{
                 padding: 0;
                 margin: 0 auto 2em;
             }
+
+            .resumen__box{
+                flex-wrap: wrap;
+            }
+
+                .data{
+                    margin-left: 1em;
+                }
+
+                .hashtags{
+                    margin: 1em 0;
+                }
 
                 .resumen__preview{
                     height: max-content;
