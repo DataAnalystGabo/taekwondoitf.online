@@ -93,6 +93,12 @@ body{
                 height: 90px;
             }
 
+    .actions__link{
+        text-decoration: none;
+        margin: 0;
+    }
+
+
     .actions{
         display: flex;
         flex-direction: row;
@@ -555,7 +561,7 @@ body{
         }
     }
 
-    .actions{
+    .actions--inscription{
         animation: desc2 2s ease-in;
     }
 

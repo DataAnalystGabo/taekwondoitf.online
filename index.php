@@ -1,5 +1,16 @@
 
-<?php include('php/news.php'); ?>
+<?php 
+
+include('php/conexion.php');
+
+if(!$con){
+    die('La conexión ha fallado: ' . mysqli_connect_error());
+}
+
+
+$sentencesSQL = ("SELECT * FROM noticias LIMIT 3");
+$news         = mysqli_query($con, $sentencesSQL);
+?>
 
 
 <!DOCTYPE html>
@@ -106,12 +117,14 @@
 
                
                 <div class="actions actions--inscription">
-                    <button class="actions__btca" onclick="window.location.href='pages/pageForm.php'">
-                        <span class="actions__label">INSCRIBITE</span>
-                        <div class="actions__icon">
-                            <i class="actions__i fa-solid fa-arrow-right-long"></i>
-                        </div>
-                    </button>
+                    <a class="actions__link" href="pages/pageForm.php">
+                        <button class="actions__btca">
+                            <span class="actions__label">INSCRIBITE</span>
+                            <div class="actions__icon">
+                                <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </button>
+                    </a>
                 </div>
 
             </div>        
@@ -180,12 +193,14 @@
                         
         
                         <div class="actions">
-                            <button class="actions__btca" onclick="window.location.href='pageNew.php'">
-                                <span class="actions__label">Leer más</span>
-                                <div class="actions__icon">
-                                    <i class="actions__i fa-solid fa-arrow-right-long"></i>
-                                </div>
-                            </button>
+                            <a class="actions__link" href="pages/pageNew.php?id=<?php echo $n['id']; ?>">
+                                <button class="actions__btca">
+                                    <span class="actions__label">Leer más</span>
+                                    <div class="actions__icon">
+                                        <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </article>
