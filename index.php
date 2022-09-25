@@ -126,7 +126,7 @@
             <?php foreach($news as $n){?>
                 <article class="article">
                     <div class="cover">
-                        <img class="cover__img" src="image/card1Optimizado.jpg" alt="" loading="lazy">
+                        <img class="cover__img" src="admi/images/<?php echo $n['image_new'];?>" alt="<?php echo $n['title']; ?>" loading="lazy">
                     </div>
         
                     <div class="resumen container">
@@ -153,13 +153,13 @@
 
                             <div class="resumen__box">
                                 <div class="picture">
-                                    <img class="picture__img" src="image/autor1.jfif" alt="Imagen del autor del artículo">
+                                    <img class="picture__img" src="admi/images/<?php echo $n['image_author'];?>" alt="Imagen del autor del artículo">
                                 </div>
                             
                                 <div class="data">
                                     <p class="data__name"><?php echo $n['author']; ?></p>
                                     <i class="data__icon fa-solid fa-calendar-days"></i>
-                                    <time class="data__datetime" datetime="2022-08-14">2022-08-14</time>
+                                    <time class="data__datetime"><?php echo $n['publication_date']; ?></time>
                                 </div>
                             </div>
 

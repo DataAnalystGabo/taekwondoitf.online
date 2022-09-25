@@ -30,13 +30,13 @@
 
             <input class="form__input" type="text" name="author" placeholder="Autor">
 
-            <label class="form__label" for="author_picture">Selecciona una imagen para el perfil del autor</label>
-            <input class="form__input form__input--file" type="file" name="author_picture">
+            <label class="form__label" for="image_author">Selecciona una imagen para el perfil del autor</label>
+            <input class="form__input form__input--file" type="file" name="image_author">
             
             <textarea class="form__input form__input--textarea" name="new" id="" cols="30" rows="40" placeholder="Noticia"></textarea>
 
-            <label class="form__label" for="frontpage_picture">Selecciona una imagen para la portada</label>
-            <input class="form__input form__input--file" type="file" name="frontpage_picture">
+            <label class="form__label" for="image_new">Selecciona una imagen para la portada</label>
+            <input class="form__input form__input--file" type="file" name="image_new">
         
             <button class="form__btn" type="submit">Enviar</button>
         </form>

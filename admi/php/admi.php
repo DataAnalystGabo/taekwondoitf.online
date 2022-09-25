@@ -2,16 +2,35 @@
 
 include('../../php/conexion.php');
 
-$title             = (isset($_POST['title']))?$_POST['title']:'';
-$subtitle          = (isset($_POST['subtitle']))?$_POST['subtitle']:'';
-$author            = (isset($_POST['author']))?$_POST['author']:'';
-$author_picture    = (isset($_FILES['author_picture']['name']))?$_FILES['author_picture']['name']:'';
-$new               = (isset($_POST['new']))?$_POST['new']:'';
-$frontpage_picture = (isset($_FILES['frontpage_picture']['name']))?$_FILES['frontpage_picture']['name']:'';
+if($_POST){
 
-$insertData = ("INSERT INTO noticias (title, subtitle, author, author_picture, new, frontpage_picture) VALUES ('".$title."', '".$subtitle."', '".$author."', '".$author_picture."', '".$new."', '".$frontpage_picture."')");
-$execute    = mysqli_query($con, $insertData);
+    $title                = (isset($_POST['title']))?$_POST['title']:'';
+    $subtitle             = (isset($_POST['subtitle']))?$_POST['subtitle']:'';
+    $author               = (isset($_POST['author']))?$_POST['author']:'';
+    $ImageAuthor          = (isset($_FILES['image_author']['name']))?$_FILES['image_author']['name']:'';
+    $new                  = (isset($_POST['new']))?$_POST['new']:'';
+    $ImageNew             = (isset($_FILES['image_new']['name']))?$_FILES['image_new']['name']:'';
 
-mysqli_close($con);
+    $fecha                = new DateTime();
+    $random               = $fecha->getTimestamp();
+
+    $nameImageAuthor      = $random.'_'.$_FILES['image_author']['name'];
+    $nameImageNew         = $random.'_'.$_FILES['image_new']['name'];
+
+    $tmpImageAuthor       = $_FILES['image_author']['tmp_name'];
+    $tmpImageNew          = $_FILES['image_new']['tmp_name'];
+
+    move_uploaded_file($tmpImageAuthor, '../images/'.$nameImageAuthor);
+    move_uploaded_file($tmpImageNew, '../images/'.$nameImageNew);
+
+    $insertData = ("INSERT INTO noticias (title, subtitle, author, image_author, new, image_new) VALUES ('".$title."', '".$subtitle."', '".$author."', '".$nameImageAuthor."', '".$new."', '".$nameImageNew."')");
+    $execute    = mysqli_query($con, $insertData);
+    mysqli_close($con);
+
+    header('location:../index.php');
+
+}
+
+
 
 ?>
