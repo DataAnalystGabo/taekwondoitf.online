@@ -153,12 +153,17 @@ body{
     border-top: 1px solid var(--grey);
 }
 
-    .article__box{
-        padding: 1em 0;
-        margin: .5em auto;
+    .title{
+        padding: 1em;
         color: var(--yellow-dark);
         text-align: center;
+        font-family: var(--bebas-neue);
+        font-size: 1.3em;
     }
+
+        .title__span{
+            color: var(--white);
+        }
 
     .cover{
         width: 100%;
@@ -168,13 +173,14 @@ body{
 
         .cover__img{
             width: 100%;
+            height: 100%;
             object-fit: cover;
         }
 
     .resumen__header{
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
         .resumen__title{
@@ -551,6 +557,11 @@ body{
 
     .actions{
         animation: desc2 2s ease-in;
+    }
+
+    .title{
+        font-size: 2em;
+        padding-top: 1em;
     }
 
     .articles{

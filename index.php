@@ -117,8 +117,8 @@
             </div>        
         </section>
 
-        <div class="article__box container">
-            <h1 class="articles__title"><strong>Taekwondo ITF</strong> - Noticias</h1>
+        <div class="title container">
+            <h1 class="title__h1">#NOTICIAS<span class="title__span">TAEKWONDO</span>ITF</h1>
         </div>
 
         <section class="articles">
