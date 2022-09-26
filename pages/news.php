@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/pageSectionNews.css">
+    <link rel="stylesheet" href="../css/news.css">
     
     <title>Infotkd</title>
     

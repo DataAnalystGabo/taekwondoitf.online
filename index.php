@@ -65,19 +65,19 @@ $news         = mysqli_query($con, $sentencesSQL);
                         </li>
 
                         <li class="menu__li">
-                            <a href="pages/pageSectionNews.php" class="menu__a">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                            <a href="pages/news.php" class="menu__a">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="pages/page404.html" target="_blank" class="menu__a">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                            <a href="pages/404.html" target="_blank" class="menu__a">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
                         </li>
                         
                         <li class="menu__li">
-                            <a href="pages/page404.html" target="_blank" class="menu__a">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                            <a href="pages/404.html" target="_blank" class="menu__a">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
                         </li>
 
                         <li class="menu__li">
-                            <a href="pages/pageContact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                            <a href="pages/contact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                         </li>
                     </ul>
                     <div class="menu__redes">
@@ -117,7 +117,7 @@ $news         = mysqli_query($con, $sentencesSQL);
 
                
                 <div class="actions actions--inscription">
-                    <a class="actions__link" href="pages/pageForm.php">
+                    <a class="actions__link" href="pages/form.php">
                         <button class="actions__btca">
                             <span class="actions__label">INSCRIBITE</span>
                             <div class="actions__icon">
@@ -193,7 +193,7 @@ $news         = mysqli_query($con, $sentencesSQL);
                         
         
                         <div class="actions">
-                            <a class="actions__link" href="pages/pageNew.php?id=<?php echo $n['id']; ?>">
+                            <a class="actions__link" href="pages/new.php?id=<?php echo $n['id']; ?>">
                                 <button class="actions__btca">
                                     <span class="actions__label">Leer más</span>
                                     <div class="actions__icon">
@@ -299,14 +299,14 @@ $news         = mysqli_query($con, $sentencesSQL);
             <div class="footer__box footer__box--links">
                 <ul class="footer__menu">
                     <li class="footer__menu__li"><a class="footer__menu__a" href="index.php">Home</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Contacto</a></li> 
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Seguridad</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Promoción</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Ayuda</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Cookies</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Eventos</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Terminos</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/page404.html" target="_blank">Servicios</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Contacto</a></li> 
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Seguridad</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Promoción</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Ayuda</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Cookies</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Eventos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Terminos</a></li>
+                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Servicios</a></li>
                 </ul>
             </div>  
             

@@ -13,6 +13,9 @@ if(!isset($_GET['id'])){
     $newPrimary      = mysqli_fetch_array($newPrimarySQL);
 }
 
+$sentencesSQL   = ("SELECT * FROM noticias LIMIT 6");
+$relatedNews    = mysqli_query($con, $sentencesSQL);
+
 ?>
 
 
@@ -28,7 +31,7 @@ if(!isset($_GET['id'])){
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/pageNew.css">
+    <link rel="stylesheet" href="../css/new.css">
     
     <title>Infotkd</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,60 +108,20 @@ if(!isset($_GET['id'])){
                     <h2 class="aside__tittle">MÁS NOTICIAS</h2>
                 </header>
 
-                <div class="aside__relatednews">
-                    <div class="relatednews__banner">
-                        <img class="relatednews__img" src="image/card2Optimizado.jpg" alt="Imagen de noticias relacionadas">
-                    </div>
-                    <h2 class="relatednews__tittle">La neurociencia y el Taekwon-do</h2>
-                    <p class="relatednews__p">Cada vez se recurre más a las neurociencias dentro del proceso de 
-                        educación y enseñanza de los alumnos, sin importar la materia que 
-                        corresponda. Esa es una decisión muy acertada, por cuanto, al ser 
-                        el cerebro (con sus funciones corticales) el órgano encargado de 
-                        controlar todo el...
-                    </p>
-                </div>
-
-                <div class="aside__relatednews">
-                    <div class="relatednews__banner">
-                        <img class="relatednews__img" src="image/card3Optimizado.jpg" alt="Imagen de noticias relacionadas">
-                    </div>
-                    <h2 class="relatednews__tittle">La neurociencia y el Taekwon-do</h2>
-                    <p class="relatednews__p">Cada vez se recurre más a las neurociencias dentro del proceso de 
-                        educación y enseñanza de los alumnos, sin importar la materia que 
-                        corresponda. Esa es una decisión muy acertada, por cuanto, al ser 
-                        el cerebro (con sus funciones corticales) el órgano encargado de 
-                        controlar todo el...
-                    </p>
-                </div>
-
-                <div class="aside__relatednews">
-                    <div class="relatednews__banner">
-                        <img class="relatednews__img" src="image/card4Optimizado.jpg" alt="Imagen de noticias relacionadas">
-                    </div>
-                    <h2 class="relatednews__tittle">La neurociencia y el Taekwon-do</h2>
-                    <p class="relatednews__p">Cada vez se recurre más a las neurociencias dentro del proceso de 
-                        educación y enseñanza de los alumnos, sin importar la materia que 
-                        corresponda. Esa es una decisión muy acertada, por cuanto, al ser 
-                        el cerebro (con sus funciones corticales) el órgano encargado de 
-                        controlar todo el...
-                    </p>
-                </div>
-
-                <div class="aside__relatednews">
-                    <div class="relatednews__banner">
-                        <img class="relatednews__img" src="image/card1Optimizado.jpg" alt="Imagen de noticias relacionadas">
-                    </div>
-                    <h2 class="relatednews__tittle">La neurociencia y el Taekwon-do</h2>
-                    <p class="relatednews__p">Cada vez se recurre más a las neurociencias dentro del proceso de 
-                        educación y enseñanza de los alumnos, sin importar la materia que 
-                        corresponda. Esa es una decisión muy acertada, por cuanto, al ser 
-                        el cerebro (con sus funciones corticales) el órgano encargado de 
-                        controlar todo el...
-                    </p>
-                </div>
+                <?php foreach ($relatedNews as $r) { ?>
+                    <a class="aside__link" href="new.php?id=<?php echo $r['id']; ?>">
+                        <div class="aside__relatednews">
+                            <div class="relatednews__banner">
+                                <img class="relatednews__img" src="../admi/images/<?php echo $r['image_new']; ?>">
+                            </div>
+                            
+                            <h2 class="relatednews__tittle"> <?php echo $r['title']; ?> </h2>
+                            <p class="relatednews__p"> <?php echo $r['subtitle']; ?> </p>
+                        </div>
+                    </a>  
+                <?php } ?>
             </div>
         </div>
-        
     </main>
 
 

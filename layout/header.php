@@ -13,19 +13,19 @@
                     </li>
 
                     <li class="menu__li">
-                        <a href="../pages/pageSectionNews.php" class="menu__a">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
+                        <a href="../pages/news.php" class="menu__a">Noticias<i class="menu__i fa-solid fa-newspaper"></i></a>
                     </li>
 
                     <li class="menu__li">
-                        <a href="../pages/page404.html" target="_blank" class="menu__a">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
+                        <a href="../pages/404.html" target="_blank" class="menu__a">Eventos<i class="menu__i fa-solid fa-calendar-check"></i></a>
                     </li>
                     
                     <li class="menu__li">
-                        <a href="../pages/page404.html" target="_blank" class="menu__a">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
+                        <a href="../pages/404.html" target="_blank" class="menu__a">BBL<i class="menu__i fa-solid fa-barcode"></i></a>
                     </li>
 
                     <li class="menu__li">
-                        <a href="../pages/pageContact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
+                        <a href="../pages/contact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                     </li>
                 </ul>
                 <div class="menu__redes">

@@ -13,14 +13,14 @@
         <div class="footer__box footer__box--links">
             <ul class="footer__menu">
                 <li class="footer__menu__li"><a class="footer__menu__a" href="../index.php">Home</a></li>
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Contacto</a></li> 
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Seguridad</a></li>
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Promoción</a></li>
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Ayuda</a></li>
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Cookies</a></li>
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Eventos</a></li>
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Terminos</a></li>
-                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/page404.html" target="_blank">Servicios</a></li>
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Contacto</a></li> 
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Seguridad</a></li>
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Promoción</a></li>
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Ayuda</a></li>
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Cookies</a></li>
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Eventos</a></li>
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Terminos</a></li>
+                <li class="footer__menu__li"><a class="footer__menu__a" href="../pages/404.html" target="_blank">Servicios</a></li>
             </ul>
         </div>  
         
