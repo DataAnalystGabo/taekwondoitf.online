@@ -28,7 +28,7 @@ body{
     .main__container{
         display: grid;
         grid-template-areas: "article"
-                             "article"
+                             "advertising"
                              "aside";
         width: 90%;
         max-width: 75em;
@@ -37,7 +37,27 @@ body{
         .article{
             margin-top: 7em;
             width: 100%;
+            height: max-content;
+            grid-area: article;
         }
+
+        .advertising{
+            width: 100%;
+            height: 20em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--white);
+            text-align: center;
+            grid-area: advertising;
+        }
+
+            .advertising__title{
+                color: var(--black);
+                font-family: var(--poppins);
+                font-size: 2em;
+            }
 
             .article__header{
                 width: 100%;
@@ -129,6 +149,7 @@ body{
             flex-direction: column;
             width: 100%;
             color: var(--grey);
+            grid-area: aside;
         }
 
             .aside__header{
@@ -216,9 +237,19 @@ body{
 
 
 @media screen and (min-width : 1200px){
-    .main__container{
+ /*   .main__container{
         display: grid;
         grid-template-columns: 50em 25em;
+        width: 90%;
+        max-width: 75em;
+    } */
+
+    .main__container{
+        display: grid;
+        grid-template-areas: "article aside"
+                             "advertising aside";
+        grid-template-columns: 50em 25em ;
+        grid-template-rows: max-content 1fr;
         width: 90%;
         max-width: 75em;
     }
@@ -226,6 +257,11 @@ body{
         .article{
             padding: 1em;
         }
+
+        .advertising{
+            height: 95%;
+        }
+
             .article__section{
                 flex-direction: row;
                 align-items: center;

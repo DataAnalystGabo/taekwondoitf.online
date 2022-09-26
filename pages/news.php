@@ -1,3 +1,20 @@
+<?php
+
+include('../php/conexion.php');
+
+$sentencesSQL    = ("SELECT * FROM noticias LIMIT 1");
+$newPrincipalSQL = mysqli_query($con, $sentencesSQL);
+$newPrincipal    = mysqli_fetch_array($newPrincipalSQL);
+
+$sentencesSQL    = ("SELECT * FROM  noticias WHERE id != '".$newPrincipal['id']."' LIMIT 2");
+$newsColumn      = mysqli_query($con, $sentencesSQL);
+
+$sentencesSQL    = ("SELECT * FROM noticias");
+$newsRow         = mysqli_query($con, $sentencesSQL);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,103 +53,64 @@
     <?php require ('../layout/header.php'); ?>
 
     <section class="news container">
+
         <div class="aside">
+
             <div class="new-principal">
                 <div class="new">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
+                    <a  class="new__link">
+                        <article class="article">
+                            <h2 class="article__title"> <?php echo $newPrincipal['title']; ?> </h2>
+                            <p class="article__resum"> <?php echo $newPrincipal['subtitle']; ?> </p>
+                            <div class="article__portada">
+                                <img class="article__img" src="../admi/images/<?php echo $newPrincipal['image_new']; ?>" alt="Portada de noticia">
+                            </div>
+                        </article>
+                    </a>
                 </div>
             </div>
             
             <div class="news-column">
-                <div class="new">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
-                </div>
 
-                <div class="new">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
-                </div>
+                <?php foreach ($newsColumn as $col) {?>
+                    <div class="new">
+                        <a class="new__link" href="new.php?id=<?php echo $col['id']; ?>">
+                            <article class="article">
+                                <h2 class="article__title"> <?php echo $col['title']; ?> </h2>
+                                <p class="article__resum article__resum--column"> <?php echo $col['subtitle']; ?> </p>
+                                <div class="article__portada">
+                                    <img class="article__img" src="../admi/images/<?php echo $col['image_new']; ?>" alt="Portada de noticia">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                <?php  } ?>
+
             </div>
 
             <div class="news-row">
-                <div class="new new--wrap">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
-                </div>
 
-                <div class="new new--wrap">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
+                <?php foreach ($newsRow as $row) { ?>
+                    <a class="new__link" href="new.php?id=<?php echo $row['id']; ?>">
+                        <div class="new new--wrap">
+                            <article class="article">
+                                <h2 class="article__title"> 
+                                    <?php 
+                                    for($i=0; $i<40; $i++)
+                                        echo $row['title'][$i];
+                                        echo '...'; 
+                                    ?>
+                                </h2>
+                                <p class="article__resum article__resum--row"> <?php echo $row['subtitle']; ?></p>
+                                <div class="article__portada">
+                                    <img class="article__img" src="../admi/images/<?php echo $row['image_new']; ?>" alt="Portada de noticia">
+                                </div>
+                            </article>
                         </div>
-                    </article>
-                </div>
+                    </a>
+                <?php } ?>
 
-                <div class="new new--wrap">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
-                </div>
-
-                <div class="new new--wrap">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
-                </div>
-
-                <div class="new new--wrap">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
-                </div>
-
-                <div class="new new--wrap">
-                    <article class="article">
-                        <h2 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        <p class="article__resum article__resum--row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem aliquid iusto officiis tenetur unde magnam deleniti, nam magni maiores adipisci iste nihil</p>
-                        <div class="article__portada">
-                            <img class="article__img" src="../image/bannerOptimizado.jpg" alt="Portada de noticia">
-                        </div>
-                    </article>
-                </div>
             </div>
-        </div>
     </section>
 
     <?php require ('../layout/footer.php'); ?>

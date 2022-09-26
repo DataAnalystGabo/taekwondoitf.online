@@ -103,6 +103,10 @@ $relatedNews    = mysqli_query($con, $sentencesSQL);
                 <div class="divisor"></div>
             </article>
 
+            <div class="advertising">
+                <h2 class="advertising__title">¡Publicite aquí con nosotros!</h2>
+            </div>
+
             <div class="aside">
                 <header class="aside__header">
                     <h2 class="aside__tittle">MÁS NOTICIAS</h2>

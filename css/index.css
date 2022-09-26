@@ -269,7 +269,6 @@ body{
     text-align: center;
     width: 100%;
     height: max-content;
-    *background-color: var(--white);
     color: var(--white);
     font-family: var(--poppins);
 }
@@ -283,7 +282,6 @@ body{
         align-items: center;
         font-size: 5.5em;
         font-family: var(--bebas-neue);
-        *background-color: aqua;
     }
 
     .bbl__subtitle{
