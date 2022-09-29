@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="nav container">
         <figure class="nav__logo">
-            <img class="nav__logo__img" src="../image/infotkd-logo.png" alt="Logotipo de infotkd.online">
+            <img class="nav__img" src="../image/infotkd-logo.png" alt="Logotipo de infotkd.online">
         </figure>
 
         <div class="menu" id="menu">
@@ -28,10 +28,10 @@
                         <a href="../pages/contact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                     </li>
                 </ul>
-                <div class="menu__redes">
-                    <a class="menu__redes__link" href="#" title="Facebook"><i class="menu__redes__i fa-brands fa-facebook"></i></a>
-                    <a class="menu__redes__link" href="#" title="Instagram"><i class="menu__redes__i fa-brands fa-instagram"></i></a>
-                    <a class="menu__redes__link" href="#" title="Twitter"><i class="menu__redes__i fa-brands fa-twitter"></i></a>
+                <div class="redes">
+                    <a class="redes__link" href="#" title="Facebook"><i class="redes__i fa-brands fa-facebook"></i></a>
+                    <a class="redes__link" href="#" title="Instagram"><i class="redes__i fa-brands fa-instagram"></i></a>
+                    <a class="redes__link" href="#" title="Twitter"><i class="redes__i fa-brands fa-twitter"></i></a>
                 </div>
             </div> 
         </div>  

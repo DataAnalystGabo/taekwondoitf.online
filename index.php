@@ -14,7 +14,7 @@ $news         = mysqli_query($con, $sentencesSQL);
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,12 +48,11 @@ $news         = mysqli_query($con, $sentencesSQL);
 
 
 
-<body>
-     
+<body>  
     <header class="header">
         <nav class="nav container">
             <figure class="nav__logo">
-                <img class="nav__logo__img" src="image/infotkd-logo.png" alt="Logotipo de infotkd.online">
+                <img class="nav__img" src="image/infotkd-logo.png" alt="Logotipo de infotkd.online">
             </figure>
 
             <div class="menu" id="menu">
@@ -80,10 +79,10 @@ $news         = mysqli_query($con, $sentencesSQL);
                             <a href="pages/contact.php" class="menu__a">Contacto<i class="menu__i fa-solid fa-paper-plane"></i></a>
                         </li>
                     </ul>
-                    <div class="menu__redes">
-                        <a class="menu__redes__link" href="#" title="Facebook"><i class="menu__redes__i fa-brands fa-facebook"></i></a>
-                        <a class="menu__redes__link" href="#" title="Instagram"><i class="menu__redes__i fa-brands fa-instagram"></i></a>
-                        <a class="menu__redes__link" href="#" title="Twitter"><i class="menu__redes__i fa-brands fa-twitter"></i></a>
+                    <div class="redes">
+                        <a class="redes__link" href="#" title="Facebook"><i class="redes__i fa-brands fa-facebook"></i></a>
+                        <a class="redes__link" href="#" title="Instagram"><i class="redes__i fa-brands fa-instagram"></i></a>
+                        <a class="redes__link" href="#" title="Twitter"><i class="redes__i fa-brands fa-twitter"></i></a>
                     </div>
                 </div> 
             </div>  
@@ -115,15 +114,14 @@ $news         = mysqli_query($con, $sentencesSQL);
                     </div>
                 </div>
 
-               
                 <div class="actions actions--inscription">
                     <a class="actions__link" href="pages/form.php">
-                        <button class="actions__btca">
-                            <span class="actions__label">INSCRIBITE</span>
-                            <div class="actions__icon">
+                        <div class="actions__btca" >
+                            <span class="actions__label">INSCRIPCION</span>
+                            <div class="actions__icon actions__icon--inscription">
                                 <i class="actions__i fa-solid fa-arrow-right-long"></i>
                             </div>
-                        </button>
+                        </div>
                     </a>
                 </div>
 
@@ -179,7 +177,7 @@ $news         = mysqli_query($con, $sentencesSQL);
                         </header>
 
                         <div class="resumen__preview">
-                            <p class="resumen__preview__p">
+                            <p class="resumen__p">
                                 
                                 <?php 
                                 for($i = 0; $i < 500; $i++)
@@ -194,14 +192,15 @@ $news         = mysqli_query($con, $sentencesSQL);
         
                         <div class="actions">
                             <a class="actions__link" href="pages/new.php?id=<?php echo $n['id']; ?>">
-                                <button class="actions__btca">
-                                    <span class="actions__label">Leer más</span>
-                                    <div class="actions__icon">
+                                <div class="actions__btca" >
+                                    <span class="actions__label actions__label--readmore">LEER MAS</span>
+                                    <div class="actions__icon actions__icon--readmore">
                                         <i class="actions__i fa-solid fa-arrow-right-long"></i>
                                     </div>
-                                </button>
+                                </div>
                             </a>
                         </div>
+
                     </div>
                 </article>
             <?php }?>
@@ -219,7 +218,7 @@ $news         = mysqli_query($con, $sentencesSQL);
 
                 <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__picture__img" src="image/boltOptimizado.png" alt="Icono 3d de Rayo Dorado">
+                        <img class="questionfreq__img" src="image/boltOptimizado.png" alt="Icono 3d de Rayo Dorado">
                     </div>
                     <h2 class="questionfreq__title">¿Qué es BBL?</h2>
                     <p class="questionfreq__resumen"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
@@ -230,7 +229,7 @@ $news         = mysqli_query($con, $sentencesSQL);
 
                 <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__picture__img" src="image/targetOptimizado.png" alt="Icono 3d de Blanco con flecha clavada">
+                        <img class="questionfreq__img" src="image/targetOptimizado.png" alt="Icono 3d de Blanco con flecha clavada">
                     </div>
                     <h2 class="questionfreq__title">¿Cómo puede ayudarme BBL?</h2>
                     <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
@@ -241,7 +240,7 @@ $news         = mysqli_query($con, $sentencesSQL);
             
                 <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__picture__img" src="image/presentOptimizado.png" alt="Icono 3d de Regalo color rojo">
+                        <img class="questionfreq__img" src="image/presentOptimizado.png" alt="Icono 3d de Regalo color rojo">
                     </div>
                     <h2 class="questionfreq__title">¿Cuánto va a costarme?</h2>
                     <p class="questionfreq__resumen">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
@@ -255,7 +254,7 @@ $news         = mysqli_query($con, $sentencesSQL);
                 <div class="form__group">
 
                     <div class="form__icon">
-                        <img class="form__icon__img" src="image/calendarOptimizado.png" alt="Icono 3d de Calendario">
+                        <img class="form__img" src="image/calendarOptimizado.png" alt="Icono 3d de Calendario">
                     </div>
                     
                     <div class="form__area">
@@ -268,14 +267,14 @@ $news         = mysqli_query($con, $sentencesSQL);
                         </div>
 
                         <div class="form__notification" id="form__notification">
-                            <p class="form__notification__resumen"><strong>Formato inválido </strong>(example@email.com)</p>
+                            <span class="form__span"><strong class="from__strong">Formato inválido </strong>(example@email.com)</span>
                         </div>
 
                         <div class="form__confirmation" id="form__confirmation"><strong></strong></div>
 
                         <button class="actions__btca actions__btca--form" id="form__submit">
-                            <span class="actions__label actions__label--form">Subscribirme</span>
-                            <div class="actions__icon">
+                            <span class="actions__label actions__label--form">SUSCRIBIRME</span>
+                            <div class="actions__icon actions__icon--form">
                                 <i class="actions__i fa-solid fa-arrow-right-long"></i>
                             </div>
                         </button>
@@ -298,20 +297,20 @@ $news         = mysqli_query($con, $sentencesSQL);
 
             <div class="footer__box footer__box--links">
                 <ul class="footer__menu">
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="index.php">Home</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Contacto</a></li> 
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Seguridad</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Promoción</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Ayuda</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Cookies</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Eventos</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Terminos</a></li>
-                    <li class="footer__menu__li"><a class="footer__menu__a" href="pages/404.html" target="_blank">Servicios</a></li>
+                    <li class="footer__li"><a class="footer__a" href="index.php">Home</a></li>
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Contacto</a></li> 
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Seguridad</a></li>
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Promoción</a></li>
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Ayuda</a></li>
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Cookies</a></li>
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Eventos</a></li>
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Terminos</a></li>
+                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Servicios</a></li>
                 </ul>
             </div>  
             
             <div class="footer__box footer__box--copy">
-                <p class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</p>
+                <span class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</span>
             </div>
         </div>
     </footer>

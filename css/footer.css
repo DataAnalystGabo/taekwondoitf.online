@@ -29,6 +29,7 @@
                 font-family: var(--poppins);
                 font-style: italic;
                 font-size: 2.8em;
+                margin: 0 auto;
             }
 
             .footer__iconos{
@@ -58,12 +59,12 @@
                 list-style: none;
             }
 
-                .footer__menu__li{
+                .footer__li{
                     margin: 1em;
                     cursor: pointer;
                 }
 
-                .footer__menu__a{
+                .footer__a{
                     text-decoration: none;
                     color: var(--grey);
                 }
@@ -78,6 +79,13 @@
             text-align: center;
         }
 
+            .footer__copyright{
+                display: block;
+                margin: 0 auto;
+            }
+
+/* Responsive Desing
+     ========================================================================== */
 
 @media screen and (min-width: 992px){
    .footer__menu{
