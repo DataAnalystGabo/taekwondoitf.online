@@ -58,13 +58,25 @@ $newsRow         = mysqli_query($con, $sentencesSQL);
 
             <div class="new-principal">
                 <div class="new">
-                    <a  class="new__link">
+                    <a  class="new__link" href="new.php?id=<?php echo $newPrincipal['id']; ?>">
                         <article class="article">
-                            <h2 class="article__title"> <?php echo $newPrincipal['title']; ?> </h2>
-                            <p class="article__resum"> <?php echo $newPrincipal['subtitle']; ?> </p>
+
+                            <h2 class="article__title article__title--principal"> <?php echo $newPrincipal['title']; ?> </h2>
+                            <p class="article__subtitle"> <?php echo $newPrincipal['subtitle']; ?> </p>
+
+                            <div class="summary">
+                                <div class="summary__profile">
+                                    <img class="summary__img" src="../admi/images/<?php echo $newPrincipal['image_author']; ?>" alt="">
+                                </div>
+                                <span class="summary__authorname"> <?php echo $newPrincipal['author']; ?> </span>
+                                <i class="summary__icon fa-solid fa-calendar-days"></i>
+                                <span class="summary__date"> <?php echo $newPrincipal['publication_date']; ?> </span>
+                            </div>
+
                             <div class="article__portada">
                                 <img class="article__img" src="../admi/images/<?php echo $newPrincipal['image_new']; ?>" alt="Portada de noticia">
                             </div>
+
                         </article>
                     </a>
                 </div>
@@ -77,7 +89,7 @@ $newsRow         = mysqli_query($con, $sentencesSQL);
                         <a class="new__link" href="new.php?id=<?php echo $col['id']; ?>">
                             <article class="article">
                                 <h2 class="article__title"> <?php echo $col['title']; ?> </h2>
-                                <p class="article__resum article__resum--column"> <?php echo $col['subtitle']; ?> </p>
+                                <p class="article__subtitle article__subtitle--column"> <?php echo $col['subtitle']; ?> </p>
                                 <div class="article__portada">
                                     <img class="article__img" src="../admi/images/<?php echo $col['image_new']; ?>" alt="Portada de noticia">
                                 </div>
@@ -95,7 +107,7 @@ $newsRow         = mysqli_query($con, $sentencesSQL);
                         <div class="new new--row">
                             <article class="article">
                                 <h2 class="article__title"><?php echo $row['title']; ?></h2>
-                                <p class="article__resum article__resum--row"><?php echo $row['subtitle']; ?></p>
+                                <p class="article__subtitle article__subtitle--row"><?php echo $row['subtitle']; ?></p>
                                 <div class="article__portada article__portada--row">
                                     <img class="article__img" src="../admi/images/<?php echo $row['image_new']; ?>" alt="Portada de noticia">
                                 </div>

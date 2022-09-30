@@ -206,6 +206,7 @@ body{
                 width: 100%;
                 margin-bottom: 2em;
                 border-bottom: 1px solid var(--grey);
+                gap: 1em;
             }
 
                 .relatednews__banner{
@@ -221,7 +222,6 @@ body{
                     }
             
             .relatednews__tittle{
-                margin: .5em 0;
                 color: var(--white);
             }
 
