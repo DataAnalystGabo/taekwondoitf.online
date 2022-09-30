@@ -64,7 +64,13 @@ $relatedNews    = mysqli_query($con, $sentencesSQL);
                     <h1 class="article__tittle"><?php echo $newPrimary['title']; ?></h1>
 
                     <div class="article__section">
-                        <time class="article__time" datetime="2014-10-05"><?php echo $newPrimary['publication_date']; ?></time>
+
+                        <div class="resumen">
+                            <div class="resumen__profile"><img class="resumen__img" src="../admi/images/<?php echo $newPrimary['image_author'] ?>" alt=""></div>
+                            <span class="resumen__author"><?php echo $newPrimary['author']; ?></span>
+                            <i class="resumen__icon fa-solid fa-calendar-days"></i>
+                            <time class="resumen__time"><?php echo $newPrimary['publication_date']; ?></time>
+                        </div>
 
                         <div class="article__barshare">
                             <div class="barshare__container barshare__container--facebook" id="barshare__facebook" title="Facebook">

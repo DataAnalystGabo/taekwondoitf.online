@@ -92,17 +92,11 @@ $newsRow         = mysqli_query($con, $sentencesSQL);
 
                 <?php foreach ($newsRow as $row) { ?>
                     <a class="new__link" href="new.php?id=<?php echo $row['id']; ?>">
-                        <div class="new new--wrap">
+                        <div class="new new--row">
                             <article class="article">
-                                <h2 class="article__title"> 
-                                    <?php 
-                                    for($i=0; $i<40; $i++)
-                                        echo $row['title'][$i];
-                                        echo '...'; 
-                                    ?>
-                                </h2>
-                                <p class="article__resum article__resum--row"> <?php echo $row['subtitle']; ?></p>
-                                <div class="article__portada">
+                                <h2 class="article__title"><?php echo $row['title']; ?></h2>
+                                <p class="article__resum article__resum--row"><?php echo $row['subtitle']; ?></p>
+                                <div class="article__portada article__portada--row">
                                     <img class="article__img" src="../admi/images/<?php echo $row['image_new']; ?>" alt="Portada de noticia">
                                 </div>
                             </article>

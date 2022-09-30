@@ -53,6 +53,7 @@
                 top: 5em;
                 width: 75%;
                 height: 75%;
+                margin: 0 auto;
             }
 
             .menu__titulo{
@@ -61,6 +62,7 @@
                 font-style: italic;
                 -webkit-text-stroke: 1.5px var(--black3);
                 color: transparent;
+                margin: 0 auto;
             }
 
             .menu__links{
@@ -68,6 +70,7 @@
                 list-style: none;
                 padding: 0;
                 text-align:start;
+                margin: 0 auto;
             }
 
                 .menu__li{
@@ -109,6 +112,8 @@
                 flex-direction: row;
                 list-style: none;
                 font-size: 2em; 
+                margin: 0 auto;
+                justify-content: space-evenly;
             }
 
                 .redes__link{

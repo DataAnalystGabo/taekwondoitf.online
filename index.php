@@ -183,7 +183,6 @@ $news         = mysqli_query($con, $sentencesSQL);
                                 for($i = 0; $i < 500; $i++)
                                     echo $n['new'][$i];
                                     echo '...';
-
                                 ?>
 
                             </p>

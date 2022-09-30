@@ -73,11 +73,41 @@ body{
                     width: 100%;
                     gap: .5em;
                 }
-
-                    .article__time{
+                    .resumen{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        width: 100%;
                         color: var(--grey);
-                        margin: 0;
+                        *background-color: blueviolet;
                     }
+
+                        .resumen__profile{
+                            width: 2em;
+                            height: 2em;
+                            margin: 0;
+                        }
+
+                            .resumen__img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 100%;
+                                object-fit: cover;
+                            }
+                        
+                        .resumen__author{
+                            display: block;
+                            margin: 0 1em;
+                        }
+                        
+                        .resumen__icon{
+                            margin: 0 1em;
+                            line-height: 1em;
+                        }
+
+                        .resumen__time{
+                            margin: 0;
+                        }
 
                     .article__barshare{
                         display: flex;
