@@ -132,10 +132,11 @@ $news         = mysqli_query($con, $sentencesSQL);
             <h1 class="title__h1">#NOTICIAS<span class="title__span">TAEKWONDO</span>ITF</h1>
         </div>
 
-        <section class="articles">
+        <section class="articles container">
 
             <?php foreach($news as $n){?>
                 <article class="article">
+
                     <div class="cover">
                         <img class="cover__img" src="admi/images/<?php echo $n['image_new'];?>" alt="<?php echo $n['title']; ?>" loading="lazy">
                     </div>
@@ -144,23 +145,15 @@ $news         = mysqli_query($con, $sentencesSQL);
         
                         <header class="resumen__header">
 
-                            <h2 class="resumen__title">
+                            <h2 class="resumen__title"> <?php echo $n['title']; ?> </h2>
 
-                                <?php 
-                                for($i=0; $i<40; $i++)
-                                    echo $n['title'][$i];
-                                    echo '...'; 
-                                ?>
-                            
-                            </h2>
-
-                            <div class="hashtags">
-                                <p class="hashtag">#Taekwondo</p>
-                                <p class="hashtag">#Niños</p>
-                                <p class="hashtag">#ITF</p>
-                                <p class="hashtag">#Beneficios</p>
-                                <p class="hashtag">#Cinturones</p>
-                            </div>
+                            <ul class="hashtags">
+                                <li class="hashtag">#Taekwondo</li>
+                                <li class="hashtag">#Niños</li>
+                                <li class="hashtag">#ITF</li>
+                                <li class="hashtag">#Beneficios</li>
+                                <li class="hashtag">#Cinturones</li>
+                            </ul>
 
                             <div class="resumen__box">
                                 <div class="picture">
@@ -177,18 +170,9 @@ $news         = mysqli_query($con, $sentencesSQL);
                         </header>
 
                         <div class="resumen__preview">
-                            <p class="resumen__p">
-                                
-                                <?php 
-                                for($i = 0; $i < 500; $i++)
-                                    echo $n['new'][$i];
-                                    echo '...';
-                                ?>
-
-                            </p>
+                            <p class="resumen__p"> <?php echo $n['new']; ?> </p>
                         </div>
                         
-        
                         <div class="actions">
                             <a class="actions__link" href="pages/new.php?id=<?php echo $n['id']; ?>">
                                 <div class="actions__btca" >
