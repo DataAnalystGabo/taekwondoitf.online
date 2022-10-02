@@ -129,6 +129,10 @@ body{
                     left: 15%;
                 }
 
+                .actions__label--bbl{
+                    left: 32%;
+                }
+
                 .actions__btca:hover .actions__label{
                     left: 10%;
                 }
@@ -139,6 +143,10 @@ body{
 
                 .actions__btca:hover .actions__label--form{
                     left: 5%;
+                }
+
+                .actions__btca:hover .actions__label--bbl{
+                    left: 20%;
                 }
 
                 .actions__icon{
@@ -167,6 +175,10 @@ body{
 
                 .actions__btca:hover .actions__icon--form{
                     left: 14%;
+                }
+
+                .actions__btca:hover .actions__icon--bbl{
+                    left: 30%;
                 }
 
 /* Articulos
@@ -350,125 +362,132 @@ body{
                 font-family: var(--roboto);
                 color: var(--grey);
                 margin: 0 auto;
-                font-size: 16px;
                 line-height: 1.5em;
             }
     
-    .form__group{
-        width: 90%;
+    .form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: var(--roboto);
-        font-size: 16px;
-        line-height: 1.5em;
-        padding: 1em;
-        margin: 2em auto;
+        *background-color: blueviolet;
     }
 
         .form__icon{
             width: 10em;
             height: 10em;
+            *background-color: azure;
         }
 
-        .form__img{
-            width: 100%;
-            object-fit: fill;
-        }
-
-        .form__title{
-            font-family: var(--poppins);
-            margin-bottom: .5em;
-        }
-
-        .form__resumen{
-            color: var(--grey);
-            margin-bottom: 2em;
-        }
-        
-        .form__input--group{
-            position: relative;
-            width: 100%;
-        }
-
-            .form__input{
+            .form__img{
                 width: 100%;
-                height: 2.7em;
-                line-height: 2.7em;
-                padding: 0 1em;
-                border: 2px solid var(--grey);
-                transition: .3s ease all;
-                background-color: var(--black);
-                color: var(--white);
-                margin-bottom: 1em;
+                object-fit: cover;
             }
 
-            .form__input:focus{
-                border: 2px solid var(--blue-light);
-                outline: none;
-            }
-
-            .form__input--error{
-                border: 2px solid var(--red);
-            }
-
-            .form__input--error:focus{
-                border: 2px solid var(--red);
-            }
-
-            .form__input--check{
-                border: 2px solid var(--green);
-                outline: none;
-            }
-
-            .form__input--check:focus{
-                border: 2px solid var(--green);
-            }
-
-            .form__i{
-                display: none;
-                position: absolute;
-                right: 1em;
-                top: .65em;
-                color: var(--red);
-                font-size: 1.2em;
-            }
-
-            .form__i--error{
-                display: block;
-            }
-
-            .form__i--check{
-                display: block;
-                color: var(--green);
-            }
-
-        .form__notification{
-            display: none;
-            height: 3em;
+        .form__group{
+            display: flex;
+            flex-direction: column;
             width: 100%;
-            text-align: start;
+            height: 20em;
+            margin-top: 2em;
+            gap: 1em;
+            *background-color: blue;
         }
 
-            .form__span{
-                display: block;
-                color: var(--red);
+            .form__title{
+                font-size: 1.7em;
             }
-        
-        .form__notification--active{
-            display: block;
-        }
 
-        .form__confirmation{
-            text-align: start;
-            color: var(--green);
-            font-weight:600;
-        }
+            .form__resum{
+                font-family: var(--roboto);
+                display: block;
+                color: var(--grey);
+            }
 
-    .actions__btca--form{
-        margin: 1em auto;
-    }
+            .form__inputs{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                *background-color: brown;
+            }
+
+                .form__input{
+                    width: 100%;
+                    height: 2.7em;
+                    background-color: transparent;
+                    border: 1px solid var(--grey);
+                    padding: 0 1em;
+                    color: var(--white);
+                }
+
+                .form__input--error{
+                    border: 1px solid var(--red);
+                }
+
+                .form__input--check{
+                    border: 1px solid var(--green);
+                }
+
+                .form__input:focus{
+                    outline: none;
+                    *border: 1px solid var(--blue-light);
+                }
+
+                .form__i{
+                    display: none;
+                    position: absolute;
+                    right: 1em;
+                }
+
+                .form__i--error{
+                    display: block;
+                    color: var(--red);
+                }
+
+                .form__i--check{
+                    display: block;
+                    color: var(--green);
+                }
+
+            .alert{
+                width: 100%;
+                text-align: start;
+                font-family: var(--roboto);
+            }
+
+                .alert--error{
+                    display: none;
+                    color: var(--red);
+                }
+
+                .alert--error--active{
+                    display: block;
+                }
+
+                .alert--check{
+                    display: none;
+                    color: var(--green);
+                }
+
+                .alert--check--active{
+                    display: block;
+                }
+
+                .alert--notification{
+                    display: block;
+                    font-weight: bold;
+                }
+
+                .alert--notification--error{
+                    color: var(--red);
+                }
+
+                .alert--notification--check{
+                    color: var(--green);
+                }
+
 
 /* Responsive Desing
      ========================================================================== */
@@ -533,6 +552,10 @@ body{
                 .actions{
                     margin-left: 0;
                 }
+
+                .actions--bbl{
+                    margin: 0 auto;
+                }
 }
 
 @media screen and (min-width : 1200px){
@@ -592,27 +615,28 @@ body{
         width: 100%;
     }
 
-    .form__group{
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-gap: 3em;
-        width: 90%;
-    }
-
-        .form__icon{
-            width: 15em;
-            height: 15em;
-        }
-
-        .form__input--group{
+        .form__group{
             width: 70%;
-            margin: 0 auto;
         }
 
-            .form__notification{
-                width: 70%;
+            .form__icon{
+                width: 15em;
+                height: 15em;
+            }
+
+            .form__inputs, .alert{
+                width: 90%;
                 margin: 0 auto;
             }
+
+            .actions--bbl{
+                margin: 0 auto;
+            }
+
+                .form__notification{
+                    width: 70%;
+                    margin: 0 auto;
+                }
 }
 
 

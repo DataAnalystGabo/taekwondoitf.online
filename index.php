@@ -233,9 +233,60 @@ $news         = mysqli_query($con, $sentencesSQL);
                         no te costará nada.
                     </p>
                 </div>    
-            </section>                    
+            </section>   
             
-            <form class="form">
+
+            <form class="form container">
+                <div class="form__icon">
+                    <img class="form__img" src="image/calendarOptimizado.png" alt="Icono 3d de Calendario">
+                </div>
+
+                <div class="form__group">
+                    <h3 class="form__title">¡Subscribite a las novedades de Black Belt List!</h3>
+                    <span class="form__resum">Te estaremos avisando sobre la fecha de lanzamiento</span>
+                    
+                    <div class="form__inputs form__input--group">
+                        <input type="email" class="form__input" name="email" id="form__input" placeholder="example@gmail.com">
+                        <i class="form__i fa-solid fa-circle-xmark" id="form__i"></i>
+                    </div>
+                        
+                    <span class="alert alert--error">
+                        <strong class="alert__strong">
+                            El formato válido de e-mail es: example@email.com
+                        </strong>
+                    </span>
+
+                    <span class="alert alert--check">
+                        <strong class="alert__strong">
+                            ¡E-mail válido!
+                        </strong>
+                    </span>
+
+                    <span class="alert alert--notification">
+                    </span>
+
+                    <div class="form__notification" id="notification"><strong></strong></div>
+
+                    <div class="actions actions--bbl">
+                        <a class="actions__link" id="submit">
+                            <div class="actions__btca">
+                                <span class="actions__label actions__label--bbl">ENVIAR</span>
+                                <div class="actions__icon actions__icon--bbl">
+                                    <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+
+            </form>
+            
+
+            
+    <!--        <form class="form">
                 <div class="form__group">
 
                     <div class="form__icon">
@@ -264,7 +315,7 @@ $news         = mysqli_query($con, $sentencesSQL);
                             </div>
                         </button>
                     </div>
-                </div>
+                </div> -->
         </section>
     </main>
 
