@@ -21,11 +21,13 @@ $news         = mysqli_query($con, $sentencesSQL);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
 
+    
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/footer.css">
+    
 
     <title>Infotkd - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -129,10 +131,10 @@ $news         = mysqli_query($con, $sentencesSQL);
         </section>
 
         <div class="title container">
-            <h1 class="title__h1">#NOTICIAS<span class="title__span">TAEKWONDO</span>ITF</h1>
+            <h1 class="title__h1">NOTICIAS<span class="title__span"> TAEKWONDO </span>ITF</h1>
         </div>
 
-        <section class="articles container">
+        <section class="articles">
 
             <?php foreach($news as $n){?>
                 <article class="article">
@@ -173,7 +175,7 @@ $news         = mysqli_query($con, $sentencesSQL);
                             <p class="resumen__p"> <?php echo $n['new']; ?> </p>
                         </div>
                         
-                        <div class="actions">
+                        <div class="actions actions--readmore">
                             <a class="actions__link" href="pages/new.php?id=<?php echo $n['id']; ?>">
                                 <div class="actions__btca" >
                                     <span class="actions__label actions__label--readmore">LEER MAS</span>
@@ -267,35 +269,37 @@ $news         = mysqli_query($con, $sentencesSQL);
     </main>
 
     <footer class="footer">
-        <div class="footer__contenedor">
 
-            <div class="footer__box footer__box--cabecera">
+        <div class="footer__elements container">
+
+            <div class="footer__hero">
                 <h2 class="footer__logo">infotkd</h2>
-                <div class="footer__iconos">
+                <div class="footer__icons">
                     <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
                     <a href="#"title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>
                     <a href="#" title="Twitter" class="footer__a"><i class="footer__i fa-brands fa-twitter"></i></a>
                 </div>
             </div>
 
-            <div class="footer__box footer__box--links">
-                <ul class="footer__menu">
-                    <li class="footer__li"><a class="footer__a" href="index.php">Home</a></li>
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Contacto</a></li> 
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Seguridad</a></li>
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Promoción</a></li>
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Ayuda</a></li>
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Cookies</a></li>
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Eventos</a></li>
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Terminos</a></li>
-                    <li class="footer__li"><a class="footer__a" href="pages/404.html" target="_blank">Servicios</a></li>
+            <div class="links">
+                <ul class="links__ul">
+                    <li class="links__li"><a class="links__a" href="index.php">Home</a></li>
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Contacto</a></li> 
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Seguridad</a></li>
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Promoción</a></li>
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Ayuda</a></li>
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Cookies</a></li>
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Eventos</a></li>
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Terminos</a></li>
+                    <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Servicios</a></li>
                 </ul>
             </div>  
             
-            <div class="footer__box footer__box--copy">
-                <span class="footer__copyright">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</span>
+            <div class="copyright">
+                <span class="copyright__span">&copy; Gonzalo Ramirez - Todos los derechos reservados, bitch.</span>
             </div>
         </div>
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

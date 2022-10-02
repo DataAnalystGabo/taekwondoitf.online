@@ -28,10 +28,11 @@ $relatedNews    = mysqli_query($con, $sentencesSQL);
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
 
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/root.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/new.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
     
     <title>Infotkd</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">

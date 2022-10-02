@@ -272,7 +272,7 @@ body{
                 color: var(--grey);
             }
 
-        .actions{
+        .actions--readmore{
             margin-left: 0;
         }
 
@@ -601,6 +601,7 @@ body{
 
         .form__icon{
             width: 15em;
+            height: 15em;
         }
 
         .form__input--group{
