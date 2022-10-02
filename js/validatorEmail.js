@@ -86,13 +86,6 @@ $(document).ready(function(){
                         setTimeout(()=>{
 
                             $('.alert--notificacion').html('');
-
-                            //inputEmail.classList.remove("form__input--check");
-                            //inputEmail.classList.remove("form__input--error");
-                            //circleConfirmation.classList.remove("form__i--check");
-                            //circleConfirmation.classList.remove("form__i--error");
-                            //circleConfirmation.classList.add("form__i");
-
                             $('#form__input').removeClass('form__input--check');
                             $('#form__input').removeClass('form__input--error');
                             $('#form__i').removeClass('form__i--check');

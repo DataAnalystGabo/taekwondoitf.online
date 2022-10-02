@@ -101,7 +101,7 @@ $news         = mysqli_query($con, $sentencesSQL);
     <main class="main">
 
         <section class="front-page">
-            <div class="banner container">
+            <div class="banner">
 
                 <div class="banner__title">
                    <img class="banner__img" src="image/finlandia2023Optimizado.png" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">

@@ -35,7 +35,7 @@ body{
     }
 
     .banner__title{
-        width: 23em;
+        width: 26em;
         margin: 0 auto;
     }
 
@@ -178,7 +178,7 @@ body{
                 }
 
                 .actions__btca:hover .actions__icon--bbl{
-                    left: 30%;
+                    left: 0%;
                 }
 
 /* Articulos
@@ -311,7 +311,7 @@ body{
     width: 100%;
     height: max-content;
     color: var(--white);
-    font-family: var(--poppins);
+    font-family: var(--roboto);
 }
 
     .bbl__title{
@@ -353,6 +353,7 @@ body{
                 }
 
             .questionfreq__title{
+                font-family: var(--poppins);
                 margin-bottom: 1em;
             }
 
@@ -370,13 +371,11 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        *background-color: blueviolet;
     }
 
         .form__icon{
             width: 10em;
             height: 10em;
-            *background-color: azure;
         }
 
             .form__img{
@@ -396,10 +395,10 @@ body{
 
             .form__title{
                 font-size: 1.7em;
+                font-family: var(--poppins);
             }
 
             .form__resum{
-                font-family: var(--roboto);
                 display: block;
                 color: var(--grey);
             }
@@ -410,7 +409,6 @@ body{
                 align-items: center;
                 position: relative;
                 width: 100%;
-                *background-color: brown;
             }
 
                 .form__input{
@@ -428,11 +426,6 @@ body{
 
                 .form__input--check{
                     border: 1px solid var(--green);
-                }
-
-                .form__input:focus{
-                    outline: none;
-                    *border: 1px solid var(--blue-light);
                 }
 
                 .form__i{
@@ -454,7 +447,6 @@ body{
             .alert{
                 width: 100%;
                 text-align: start;
-                font-family: var(--roboto);
             }
 
                 .alert--error{
@@ -492,22 +484,19 @@ body{
 /* Responsive Desing
      ========================================================================== */
 
-@media screen and (min-width: 768px){
-    .banner__title{
-        width: 45em;
-    }
-}
-
-
-@media screen and (min-width: 780px){
+@media screen and (min-width: 700px){
 
     .banner{
         margin-top: 3em;
     }
 
         .banner__title{
-            width: 40em;
+            width: 34em;
         }
+}
+
+
+@media screen and (min-width: 780px){
 
     .actions--inscription{
         justify-content: center;
