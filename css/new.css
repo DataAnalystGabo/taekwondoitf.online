@@ -79,7 +79,6 @@ body{
                         align-items: center;
                         width: 100%;
                         color: var(--grey);
-                        *background-color: blueviolet;
                     }
 
                         .resumen__profile{
