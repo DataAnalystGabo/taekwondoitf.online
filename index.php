@@ -49,13 +49,12 @@ $news         = mysqli_query($con, $sentencesSQL);
 </head>
 
 
-
 <body>  
     <header class="header">
         <nav class="nav container">
-            <figure class="nav__logo">
-                <img class="nav__img" src="image/infotkd-logo.png" alt="Logotipo de infotkd.online">
-            </figure>
+            <a class="nav__logo">
+                <h1 class="nav__h1">taekwondoitf<span class="nav__span">.online</span></h1>
+            </a>
 
             <div class="menu" id="menu">
                 <div class="menu__contenedor">
