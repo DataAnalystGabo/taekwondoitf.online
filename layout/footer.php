@@ -3,7 +3,10 @@
         <div class="footer__elements container">
 
             <div class="footer__hero">
-                <h2 class="footer__logo">infotkd</h2>
+                <a class="footer__logo" href="index.php">
+                    <img class="footer__img" src="../image/taekwondoitfonline-grey.webp" alt="Logotipo de taekwondoitf.online">
+                </a>
+
                 <div class="footer__icons">
                     <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
                     <a href="#"title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>

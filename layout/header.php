@@ -1,8 +1,8 @@
 <header class="header">
     <nav class="nav container">
-        <figure class="nav__logo">
-            <img class="nav__img" src="../image/infotkd-logo.png" alt="Logotipo de infotkd.online">
-        </figure>
+        <a class="nav__logo" href="../index.php">
+            <img class="nav__img" src="../image/taekwondoitfonline.webp" alt="Logotipo de taekwondoitf.online">
+        </a>
 
         <div class="menu" id="menu">
             <div class="menu__contenedor">

@@ -1,8 +1,3 @@
-*{
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
 body{
     color: var(--white);
     font-family: var(--roboto);
@@ -25,7 +20,7 @@ body{
 .main{
     *background-color: aqua;
 }
-    .main__container{
+    .box{
         display: grid;
         grid-template-areas: "article"
                              "advertising"
@@ -266,14 +261,8 @@ body{
 
 
 @media screen and (min-width : 1200px){
- /*   .main__container{
-        display: grid;
-        grid-template-columns: 50em 25em;
-        width: 90%;
-        max-width: 75em;
-    } */
 
-    .main__container{
+    .box{
         display: grid;
         grid-template-areas: "article aside"
                              "advertising aside";

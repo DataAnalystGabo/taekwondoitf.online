@@ -52,8 +52,8 @@ $news         = mysqli_query($con, $sentencesSQL);
 <body>  
     <header class="header">
         <nav class="nav container">
-            <a class="nav__logo">
-                <img class="nav__img" src="image/taekwondoitf.online.webp" alt="Logotipo de taekwondoitf.online">
+            <a class="nav__logo" href="index.php">
+                <img class="nav__img" src="image/taekwondoitfonline.webp" alt="Logotipo de taekwondoitf.online">
             </a>
 
             <div class="menu" id="menu">
@@ -278,43 +278,7 @@ $news         = mysqli_query($con, $sentencesSQL);
                     </div>
 
                 </div>
-
-                
-
             </form>
-            
-
-            
-    <!--        <form class="form">
-                <div class="form__group">
-
-                    <div class="form__icon">
-                        <img class="form__img" src="image/calendarOptimizado.png" alt="Icono 3d de Calendario">
-                    </div>
-                    
-                    <div class="form__area">
-                        <h3 class="form__title">¡Subscribite a las novedades de BBL!</h3>
-                        <p class="form__resumen">Te estaremos avisando sobre la fecha de lanzamiento de <strong>Black Belt List.</strong></p>
-
-                        <div class="form__inputs form__input--group">
-                            <input type="email" class="form__input" name="email" id="form__input" placeholder="ejemplo@gmail.com">
-                            <i class="form__i fa-solid fa-circle-xmark" id="form__i"></i>
-                        </div>
-
-                        <div class="form__notification" id="form__notification">
-                            <span class="form__span"><strong class="from__strong">Formato inválido </strong>(example@email.com)</span>
-                        </div>
-
-                        <div class="form__confirmation" id="form__confirmation"><strong></strong></div>
-
-                        <button class="actions__btca actions__btca--form" id="form__submit">
-                            <span class="actions__label actions__label--form">SUSCRIBIRME</span>
-                            <div class="actions__icon actions__icon--form">
-                                <i class="actions__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div> -->
         </section>
     </main>
 
@@ -323,7 +287,10 @@ $news         = mysqli_query($con, $sentencesSQL);
         <div class="footer__elements container">
 
             <div class="footer__hero">
-                <h2 class="footer__logo">infotkd</h2>
+                <a class="footer__logo" href="index.php">
+                    <img class="footer__img" src="image/taekwondoitfonline-grey.webp" alt="Logotipo de taekwondoitf.online">
+                </a>
+                
                 <div class="footer__icons">
                     <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
                     <a href="#"title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>

@@ -18,6 +18,7 @@
         .nav__logo{
             display: inline-block;
             width: 17em;
+            cursor: pointer;
         }
 
             .nav__img{

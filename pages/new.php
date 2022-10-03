@@ -59,7 +59,7 @@ $relatedNews    = mysqli_query($con, $sentencesSQL);
 
     <main class="main">
 
-        <div class="main__container">
+        <div class="box container">
             <article class="article">
                 <header class="article__header">
                     <h1 class="article__tittle"><?php echo $newPrimary['title']; ?></h1>
