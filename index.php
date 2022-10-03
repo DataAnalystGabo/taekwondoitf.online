@@ -53,7 +53,7 @@ $news         = mysqli_query($con, $sentencesSQL);
     <header class="header">
         <nav class="nav container">
             <a class="nav__logo">
-                <h1 class="nav__h1">taekwondoitf<span class="nav__span">.online</span></h1>
+                <img class="nav__img" src="image/taekwondoitf.online.webp" alt="Logotipo de taekwondoitf.online">
             </a>
 
             <div class="menu" id="menu">

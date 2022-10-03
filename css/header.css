@@ -16,19 +16,12 @@
     }
 
         .nav__logo{
-            cursor: pointer;
+            display: flex;
+            width: 15em;
         }
 
-            .nav__h1{
-                font-size: 1.5em;
-                font-family: var(--poppins);
-                *font-style: italic;
-                font-weight: 800;
-                color: var(--black);
-            }
-
-            .nav__span{
-                font-weight: 400;
+            .nav__img{
+                width: 100%;
             }
 
         .menu{
