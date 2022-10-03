@@ -16,11 +16,12 @@
     }
 
         .nav__logo{
-            display: flex;
-            width: 15em;
+            display: inline-block;
+            width: 17em;
         }
 
             .nav__img{
+                display: block;
                 width: 100%;
             }
 
