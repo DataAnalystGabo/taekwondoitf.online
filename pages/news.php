@@ -2,15 +2,16 @@
 
 include('../php/conexion.php');
 
-$sentencesSQL    = ("SELECT * FROM noticias LIMIT 1");
-$newPrincipalSQL = mysqli_query($con, $sentencesSQL);
-$newPrincipal    = mysqli_fetch_array($newPrincipalSQL);
+$statementSQL1    = $con->query("SELECT * FROM noticias LIMIT 1");
+$newPrincipal     = $statementSQL1->fetchAll(PDO::FETCH_ASSOC);
 
-$sentencesSQL    = ("SELECT * FROM  noticias WHERE id != '".$newPrincipal['id']."' LIMIT 2");
-$newsColumn      = mysqli_query($con, $sentencesSQL);
 
-$sentencesSQL    = ("SELECT * FROM noticias");
-$newsRow         = mysqli_query($con, $sentencesSQL);
+$statementSQL2    = $con->query("SELECT * FROM  noticias WHERE id != '".$newPrincipal[0]['id']."' LIMIT 2");
+$newsColumn       = $statementSQL2->fetchAll(PDO::FETCH_ASSOC);
+
+
+$statementSQL3    = $con->query("SELECT * FROM noticias");
+$newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -59,23 +60,23 @@ $newsRow         = mysqli_query($con, $sentencesSQL);
 
             <div class="new-principal">
                 <div class="new">
-                    <a  class="new__link" href="new.php?id=<?php echo $newPrincipal['id']; ?>">
+                    <a  class="new__link" href="new.php?id=<?php echo $newPrincipal[0]['id']; ?>">
                         <article class="article">
 
-                            <h2 class="article__title article__title--principal"> <?php echo $newPrincipal['title']; ?> </h2>
-                            <p class="article__subtitle"> <?php echo $newPrincipal['subtitle']; ?> </p>
+                            <h2 class="article__title article__title--principal"> <?php echo $newPrincipal[0]['title']; ?> </h2>
+                            <p class="article__subtitle"> <?php echo $newPrincipal[0]['subtitle']; ?> </p>
 
                             <div class="summary">
                                 <div class="summary__profile">
-                                    <img class="summary__img" src="../admi/images/<?php echo $newPrincipal['image_author']; ?>" alt="">
+                                    <img class="summary__img" src="../admi/images/<?php echo $newPrincipal[0]['image_author']; ?>" alt="">
                                 </div>
-                                <span class="summary__authorname"> <?php echo $newPrincipal['author']; ?> </span>
+                                <span class="summary__authorname"> <?php echo $newPrincipal[0]['author']; ?> </span>
                                 <i class="summary__icon fa-solid fa-calendar-days"></i>
-                                <span class="summary__date"> <?php echo $newPrincipal['publication_date']; ?> </span>
+                                <span class="summary__date"> <?php echo $newPrincipal[0]['publication_date']; ?> </span>
                             </div>
 
                             <div class="article__portada">
-                                <img class="article__img" src="../admi/images/<?php echo $newPrincipal['image_new']; ?>" alt="Portada de noticia">
+                                <img class="article__img" src="../admi/images/<?php echo $newPrincipal[0]['image_new']; ?>" alt="Portada de noticia">
                             </div>
 
                         </article>

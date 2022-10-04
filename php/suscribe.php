@@ -1,7 +1,7 @@
 <?php
 include('conexion.php');
 
-$email = $_POST['email'];
+$email = isset($_POST['email'])?$_POST['email']:'';
 
 if(empty($email)){
 
@@ -9,12 +9,12 @@ if(empty($email)){
 
 }else{
 
-    $insertData = ("INSERT INTO dbemails (email) VALUES ('".$email."')");
-
-    $ejecutar = mysqli_query($con, $insertData);
+    $insertData = $con->prepare("INSERT INTO dbemails (email) VALUES (:email)");
+    $insertData->bindParam(':email', $email);
+    $insertData->execute();
 }
 
-if($ejecutar){
+if($insertData->execute()){
 
     echo '1';
 
@@ -23,8 +23,7 @@ if($ejecutar){
     echo '2';
 }
 
-
-
-mysqli_close($con);
+$con = null;
+$insertData = null;
 
 ?>

@@ -8,13 +8,13 @@ if(!isset($_GET['id'])){
 } else {
 
     $id = $_GET['id'] ;
-    $sentencesSQL = ("SELECT * FROM noticias WHERE id = '".$id."'");
-    $newPrimarySQL   = mysqli_query($con, $sentencesSQL);
-    $newPrimary      = mysqli_fetch_array($newPrimarySQL);
+    $statementSQL = $con->query("SELECT * FROM noticias WHERE id = '".$id."'");
+    $newPrimary   = $statementSQL->fetchAll(PDO::FETCH_ASSOC);
+    
 }
 
-$sentencesSQL   = ("SELECT * FROM noticias LIMIT 6");
-$relatedNews    = mysqli_query($con, $sentencesSQL);
+$newsRelated = $con->query("SELECT * FROM noticias LIMIT 6");
+$newsRelated->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -58,19 +58,20 @@ $relatedNews    = mysqli_query($con, $sentencesSQL);
     <?php require ('../layout/header.php'); ?>
 
     <main class="main">
-
         <div class="box container">
             <article class="article">
                 <header class="article__header">
-                    <h1 class="article__tittle"><?php echo $newPrimary['title']; ?></h1>
+                    <h1 class="article__tittle"><?php echo $newPrimary[0]['title']; ?></h1>
 
                     <div class="article__section">
 
                         <div class="resumen">
-                            <div class="resumen__profile"><img class="resumen__img" src="../admi/images/<?php echo $newPrimary['image_author'] ?>" alt=""></div>
-                            <span class="resumen__author"><?php echo $newPrimary['author']; ?></span>
+                            <div class="resumen__profile">
+                                <img class="resumen__img" src="../admi/images/<?php echo $newPrimary[0]['image_author']; ?>" alt="Imagen sobre el autor del articulo Taekwondo">
+                            </div>
+                            <span class="resumen__author"><?php echo $newPrimary[0]['author']; ?></span>
                             <i class="resumen__icon fa-solid fa-calendar-days"></i>
-                            <time class="resumen__time"><?php echo $newPrimary['publication_date']; ?></time>
+                            <time class="resumen__time"><?php echo $newPrimary[0]['publication_date']; ?></time>
                         </div>
 
                         <div class="article__barshare">
@@ -96,14 +97,13 @@ $relatedNews    = mysqli_query($con, $sentencesSQL);
                 <div class="divisor"></div>
 
                 <div class="article__banner">
-                    <img class="banner__img" src="../admi/images/<?php echo $newPrimary['image_new']; ?>" alt="Imagen del articulo">
+                    <img class="banner__img" src="../admi/images/<?php echo $newPrimary[0]['image_new']; ?>" alt="Imagen del articulo sobre Taekwondo">
                 </div>
-                <p class="banner__footer"><?php echo $newPrimary['subtitle']; ?></p>
+                <p class="banner__footer"><?php echo $newPrimary[0]['subtitle']; ?></p>
             
                 <div class="article__paragraph">
-                    <p> <?php echo $newPrimary['new']; ?>
-                        <br><br>
-                        <strong>Fuente: <?php echo $newPrimary['author']; ?></strong>
+                    <p> 
+                        <?php echo $newPrimary[0]['new']; ?>
                     </p>
                 <div/>
 
@@ -119,7 +119,7 @@ $relatedNews    = mysqli_query($con, $sentencesSQL);
                     <h2 class="aside__tittle">MÁS NOTICIAS</h2>
                 </header>
 
-                <?php foreach ($relatedNews as $r) { ?>
+                <?php foreach ($newsRelated as $r) { ?>
                     <a class="aside__link" href="new.php?id=<?php echo $r['id']; ?>">
                         <div class="aside__relatednews">
                             <div class="relatednews__banner">

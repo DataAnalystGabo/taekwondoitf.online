@@ -3,13 +3,9 @@
 
 include('php/conexion.php');
 
-if(!$con){
-    die('La conexión ha fallado: ' . mysqli_connect_error());
-}
-
-
-$sentencesSQL = ("SELECT * FROM noticias LIMIT 3");
-$news         = mysqli_query($con, $sentencesSQL);
+$statementSQL = $con->query("SELECT * FROM noticias LIMIT 3");
+$statementSQL->setFetchMode(PDO::FETCH_ASSOC);
+  
 ?>
 
 
@@ -29,7 +25,7 @@ $news         = mysqli_query($con, $sentencesSQL);
     <link rel="stylesheet" href="css/footer.css">
     
 
-    <title>Infotkd - Home</title>
+    <title>Taekwondo ITF</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -98,7 +94,6 @@ $news         = mysqli_query($con, $sentencesSQL);
     </header>
 
     <main class="main">
-
         <section class="front-page">
             <div class="banner">
 
@@ -129,13 +124,13 @@ $news         = mysqli_query($con, $sentencesSQL);
             </div>        
         </section>
 
-        <div class="title container">
-            <h1 class="title__h1">NOTICIAS<span class="title__span"> TAEKWONDO </span>ITF</h1>
-        </div>
+
+        <h1 class="title">NOTICIAS TAEKWONDO ITF</h1> <!-- Posicionar keywords con SEO -->
+
 
         <section class="articles">
 
-            <?php foreach($news as $n){?>
+            <?php foreach($statementSQL as $n){?>
                 <article class="article">
 
                     <div class="cover">
@@ -323,4 +318,8 @@ $news         = mysqli_query($con, $sentencesSQL);
     <script src="js/menu.js"></script>
     <script src="js/validatorEmail.js"></script>
 </body>
+
+<?php $con = null; ?>
+<?php $statementSQL = null; ?>
+
 </html>

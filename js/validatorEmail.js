@@ -98,8 +98,10 @@ $(document).ready(function(){
                         }, 3000);
     
                     }else if(r==2){
-    
+
                         $('.alert--notification').html('Algo falló, intenta nuevamente');
+                    }else{
+                        console.log(r);
                     }
                 }
             });

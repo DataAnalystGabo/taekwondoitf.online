@@ -3,7 +3,7 @@
         <div class="footer__elements container">
 
             <div class="footer__hero">
-                <a class="footer__logo" href="index.php">
+                <a class="footer__logo" href="../index.php">
                     <img class="footer__img" src="../image/taekwondoitfonline-grey.webp" alt="Logotipo de taekwondoitf.online">
                 </a>
 
@@ -16,7 +16,7 @@
 
             <div class="links">
                 <ul class="links__ul">
-                    <li class="links__li"><a class="links__a" href="index.php">Home</a></li>
+                    <li class="links__li"><a class="links__a" href="../index.php">Home</a></li>
                     <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Contacto</a></li> 
                     <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Seguridad</a></li>
                     <li class="links__li"><a class="links__a" href="pages/404.html" target="_blank">Promoción</a></li>

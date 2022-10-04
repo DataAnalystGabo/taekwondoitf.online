@@ -159,6 +159,10 @@ body{
                     opacity: 0;
                 }
 
+                .actions__icon--bbl{
+                    left: 0%;
+                }
+
                 .actions__btca:hover .actions__icon{
                     left: 15%;
                     opacity: 1;
@@ -177,7 +181,7 @@ body{
                 }
 
                 .actions__btca:hover .actions__icon--bbl{
-                    left: 0%;
+                    left: 35%;
                 }
 
 /* Articulos
@@ -194,16 +198,13 @@ body{
 }
 
     .title{
-        padding: 1em;
-        color: var(--yellow-dark);
-        text-align: center;
+        font-size: 3em;
+        color: var(--white);
         font-family: var(--bebas-neue);
-        font-size: 1.3em;
+        padding-top: 5px;
+        text-align: center;
+        margin: .5em 0;
     }
-
-        .title__span{
-            color: var(--white);
-        }
 
     .cover{
         width: 100%;
@@ -389,7 +390,6 @@ body{
             height: 20em;
             margin-top: 2em;
             gap: 1em;
-            *background-color: blue;
         }
 
             .form__title{
@@ -417,6 +417,7 @@ body{
                     border: 1px solid var(--grey);
                     padding: 0 1em;
                     color: var(--white);
+                    outline: none;
                 }
 
                 .form__input--error{
@@ -552,11 +553,6 @@ body{
         width: 50em;
     }
 
-    .title{
-        font-size: 2em;
-        padding-top: 1em;
-    }
-
     .articles{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2em;
@@ -581,7 +577,7 @@ body{
 
                 .resumen__title{
                     display: -webkit-box;
-                    -webkit-line-clamp: 3;
+                    -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                 }
