@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="nav container">
         <a class="nav__logo" href="../index.php">
-            <img class="nav__img" src="../image/taekwondoitfonline.webp" alt="Logotipo de taekwondoitf.online">
+            <img class="nav__img" src="../image/taekwondoitfonline.svg" alt="Logotipo de taekwondoitf.online">
         </a>
 
         <div class="menu" id="menu">

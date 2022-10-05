@@ -41,7 +41,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
     <header class="header">
         <nav class="nav container">
             <a class="nav__logo" href="index.php">
-                <img class="nav__img" src="image/taekwondoitfonline.webp" alt="Logotipo de taekwondoitf.online">
+                <img class="nav__img" src="image/taekwondoitfonline.svg" alt="Logotipo de taekwondoitf.online">
             </a>
 
             <div class="menu" id="menu">
@@ -94,11 +94,11 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                 </div>
 
                 <div class="sponsors">
-                    <h3 class="sponsors__h3">AUSPICIA</h3>
-                    <div class="sponsors__logos">
-                        <div class="sponsor__logo sponsor__logo--1"></div>
-                        <div class="sponsor__logo sponsor__logo--2"></div>
-                        <div class="sponsor__logo sponsor__logo--3"></div>
+                    <span class="sponsors__span">AUSPICIA</span>
+                    <div class="sponsors__box">
+                        <div class="sponsor__logo"><img class="sponsor__img" src="image/fetra.svg" alt="Logotipo de la Federacion de Taekwondo de la Republica Argentina"></div>
+                        <div class="sponsor__logo sponsor__logo--itf2"><img class="sponsor__img sponsor__img--itf2" src="image/itf2.svg" alt="Logotipo de la Federacion Internacional de Taekwondo"></div>
+                        <div class="sponsor__logo"><img class="sponsor__img" src="image/itf.svg" alt="Logotipo de International Federation Taekwondo"></div>
                     </div>
                 </div>
 
@@ -275,7 +275,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
             <div class="footer__hero">
                 <a class="footer__logo" href="index.php">
-                    <img class="footer__img" src="image/taekwondoitfonline-grey.webp" alt="Logotipo de taekwondoitf.online">
+                    <img class="footer__img" src="image/taekwondoitfonline-grey.svg" alt="Logotipo de taekwondoitf.online">
                 </a>
                 
                 <div class="footer__icons">
