@@ -3,12 +3,12 @@
 
 include('php/conexion.php');
 
-$statementSQL = $con->query("SELECT * FROM noticias LIMIT 3");
+$statementSQL = $con->query("SELECT * FROM noticias ORDER BY id DESC LIMIT 3");
 $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
   
 ?>
 
-
+<strong></strong>
 <!DOCTYPE html>
 <html lang="es">
 <head>
