@@ -16,14 +16,12 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
-
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    
 
     <title>Taekwondo ITF</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,13 +33,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SEL162DE"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-W0SEL162DE');
-    </script>
+    <!-- Google tag (gtag.js) -->
 </head>
 
 

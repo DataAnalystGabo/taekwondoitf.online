@@ -41,14 +41,7 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SEL162DE"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-W0SEL162DE');
-    </script>
-
+    <!-- Google tag (gtag.js) -->
 </head>
 
 <body>
