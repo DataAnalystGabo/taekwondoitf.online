@@ -21,7 +21,7 @@ body{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: rgba(3, 14, 26, 0.7) url(../image/bannerOptimizado.jpg);
+    background: rgba(3, 14, 26, 0.7) url(../image/bannerFinlandia2023.webp);
     background-size: cover;
     background-position: center center;
     background-blend-mode: darken;
@@ -63,7 +63,7 @@ body{
         }
 
             .sponsor__logo--1{
-                background-image: url(../image/itf.png);
+                background-image: url(../image/itf.webp);
                 background-size: cover;
                 background-position: center center;
                 width: 90px;
@@ -71,7 +71,7 @@ body{
             }
 
             .sponsor__logo--2{
-                background-image: url(../image/itf2.png);
+                background-image: url(../image/itf2.webp);
                 background-size: cover;
                 background-position: center center;
                 width: 100px;
@@ -79,7 +79,7 @@ body{
             }
 
             .sponsor__logo--3{
-                background-image: url(../image/fetra.png);
+                background-image: url(../image/fetra.webp);
                 background-size: cover;
                 background-position: center center;
                 width: 90px;

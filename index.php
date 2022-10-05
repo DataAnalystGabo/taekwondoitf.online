@@ -98,7 +98,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
             <div class="banner">
 
                 <div class="banner__title">
-                   <img class="banner__img" src="image/finlandia2023Optimizado.png" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
+                   <img class="banner__img" src="image/finlandia2023.webp" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
                 </div>
 
                 <div class="sponsors">
@@ -197,7 +197,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                 <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__img" src="image/boltOptimizado.png" alt="Icono 3d de Rayo Dorado">
+                        <img class="questionfreq__img" src="image/boltIcon.webp" alt="Icono 3d de Rayo Dorado">
                     </div>
                     <h2 class="questionfreq__title">¿Qué es BBL?</h2>
                     <p class="questionfreq__resumen"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
@@ -208,7 +208,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                 <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__img" src="image/targetOptimizado.png" alt="Icono 3d de Blanco con flecha clavada">
+                        <img class="questionfreq__img" src="image/targetIcon.webp" alt="Icono 3d de Blanco con flecha clavada">
                     </div>
                     <h2 class="questionfreq__title">¿Cómo puede ayudarme BBL?</h2>
                     <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
@@ -219,7 +219,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
             
                 <div class="questionfreq__group">
                     <div class="questionfreq__picture">
-                        <img class="questionfreq__img" src="image/presentOptimizado.png" alt="Icono 3d de Regalo color rojo">
+                        <img class="questionfreq__img" src="image/giftIcon.webp" alt="Icono 3d de Regalo color rojo">
                     </div>
                     <h2 class="questionfreq__title">¿Cuánto va a costarme?</h2>
                     <p class="questionfreq__resumen">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
@@ -232,7 +232,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
             <form class="form container">
                 <div class="form__icon">
-                    <img class="form__img" src="image/calendarOptimizado.png" alt="Icono 3d de Calendario">
+                    <img class="form__img" src="image/calendarIcon.webp" alt="Icono 3d de Calendario">
                 </div>
 
                 <div class="form__group">
