@@ -309,6 +309,7 @@ body{
     height: max-content;
     color: var(--white);
     font-family: var(--roboto);
+    border-top: 1px solid var(--grey);
 }
 
     .bbl__title{

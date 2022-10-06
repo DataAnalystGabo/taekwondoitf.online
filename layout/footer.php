@@ -9,7 +9,7 @@
 
                 <div class="footer__icons">
                     <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
-                    <a href="#"title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>
                     <a href="#" title="Twitter" class="footer__a"><i class="footer__i fa-brands fa-twitter"></i></a>
                 </div>
             </div>

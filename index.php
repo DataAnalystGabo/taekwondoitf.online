@@ -83,7 +83,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         </header>
 
         <main class="main">
-            <section class="front-page">
+            <div class="front-page">
                 <div class="banner">
 
                     <div class="banner__title">
@@ -111,17 +111,16 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     </div>
 
                 </div>        
-            </section>
+            </div>
 
 
             <h1 class="title">NOTICIAS TAEKWONDO ITF</h1> <!-- Posicionar keywords con SEO -->
 
 
-            <section class="articles">
+            <div class="articles">
 
                 <?php foreach($statementSQL as $n){?>
                     <article class="article">
-
                         <div class="cover">
                             <img class="cover__img" src="admi/images/<?php echo $n['image_new'];?>" alt="<?php echo $n['title']; ?>" loading="lazy">
                         </div>
@@ -173,14 +172,12 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     </article>
                 <?php }?>
 
-            </section>
-
-            <hr class="divisor"/>
+            </div>
 
             <section class="bbl container" id="bbl">
 
                 <h2 class="bbl__title">BLACK BELT LIST</h2>
-                <h3 class="bbl__subtitle">¡Próximamente!</h3>
+                <span class="bbl__subtitle">¡Próximamente!</span>
 
                 <section class="questionfreq">
 
@@ -277,7 +274,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                     <div class="footer__icons">
                         <a href="#" title="Facebook" class="footer__a"><i class="footer__i fa-brands fa-facebook"></i></a>
-                        <a href="#"title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>
+                        <a href="#" title="Instagram" class="footer__a"><i class="footer__i fa-brands fa-instagram"></i></a>
                         <a href="#" title="Twitter" class="footer__a"><i class="footer__i fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
