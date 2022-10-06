@@ -1,8 +1,3 @@
-*{
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
 body{
     color: var(--white);
     font-family: var(--roboto);
@@ -38,6 +33,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         position: relative;
         font-family: var(--roboto);
         margin-top: 9em;
@@ -182,12 +178,12 @@ body{
                             .actions__label{
                                 color: var(--white);
                                 position: relative;
-                                left: 14%;
+                                left: 30%;
                                 transition: all .5s ease-in-out;
                             }
 
                             .actions__btca:hover .actions__label{
-                                left: 3%;
+                                left: 15%;
                             }
 
                             .actions__icon{
@@ -195,13 +191,13 @@ body{
                                 display: flex;
                                 align-items: center;
                                 position: relative;
-                                left: -30%;
+                                left: 0%;
                                 transition: all .5s ease-in-out;
                                 opacity: 0;
                             }
 
                             .actions__btca:hover .actions__icon{
-                                left: 0%;
+                                left: 35%;
                                 opacity: 1;
                             }    
                             
