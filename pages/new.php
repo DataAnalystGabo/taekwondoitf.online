@@ -54,7 +54,7 @@ $newsRelated->setFetchMode(PDO::FETCH_ASSOC);
         <div class="box container">
             <article class="article">
                 <header class="article__header">
-                    <h1 class="article__tittle"><?php echo $newPrimary[0]['title']; ?></h1>
+                    <h2 class="article__title"><?php echo $newPrimary[0]['title']; ?></h2>
 
                     <div class="article__section">
 

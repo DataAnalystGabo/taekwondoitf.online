@@ -1,17 +1,3 @@
-body{
-    color: var(--white);
-    font-family: var(--roboto);
-    font-size: 15px;
-    background: var(--background);
-}
-
-.container{
-    width: 90%;
-    max-width: 75em;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
 /* Section Banner
      ========================================================================== */
 
@@ -328,6 +314,7 @@ body{
         margin-top: 0;
         margin-bottom: 2em;
         color: var(--yellow-dark);
+        font-family: var(--poppins);
     }
 
     .questionfreq{
@@ -345,14 +332,15 @@ body{
             }
 
                 .questionfreq__img{
-                    width: 100%;
-                    height: 100%;
+                    width: 90%;
+                    height: 90%;
                     object-fit: contain;
                 }
 
             .questionfreq__title{
                 font-family: var(--poppins);
                 margin-bottom: 1em;
+                font-size: 1.5em;
             }
 
             .questionfreq__resumen{

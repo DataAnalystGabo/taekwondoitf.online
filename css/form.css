@@ -1,32 +1,5 @@
-*{
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-body{
-    color: var(--white);
-    font-family: var(--roboto);
-    font-size: 15px;
-    background: var(--background);
-}
-
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-}
-
-.container{
-    width: 90%;
-    max-width: 75em;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-                            /*Main*/ 
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
+  /* Main (Todo esto comenzó aquí, con un formulario)
+     ========================================================================== */
 .main{
     padding-top: 5em;
 }
@@ -34,16 +7,13 @@ button, input, select, textarea {
     .form{
         display: flex;
         flex-direction: column;
-        *row-gap: 2em;
         border: 1px solid var(--white);
-        border-radius: .5em;
         margin: 1.5em 0 3em 0;
-
     }
 
     .banner__title{
         width: 18em;
-        margin-top: 1em;
+        margin: 1em auto;
     }
 
         .banner__img{
@@ -54,8 +24,7 @@ button, input, select, textarea {
     .row--coach{
         width: 80%;
         height: max-content;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin: 2em auto;
     }
 
         .row__header--coach{
@@ -134,40 +103,39 @@ button, input, select, textarea {
                 display: flex;
             }
 
-                .input__alerts__i{
+                .input__i{
                     margin: 0;
                     color: var(--red);
                 }
 
-                .input__alerts__i--checked{
+                .input__i--checked{
                     color: var(--green);
                 }
 
-                .input__alerts__error{
+                .input__error{
                     margin: 0;
                     display: none;
                     color: var(--red);
                 }
 
-                .input__alerts__error--active{
+                .input__error--active{
                     display: flex;
                 }
 
-                .input__alerts__checked{
+                .input__checked{
                     margin: 0;
                     display: none;
                     color: var(--green);
                 }
 
-                .input__alerts__checked--active{
+                .input__checked--active{
                     display: flex;
                 }
 
     .row--competitor{
         width: 80%;
         height: max-content;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin: 2em auto;
     }
 
         .row__header--competitor{
@@ -227,7 +195,7 @@ button, input, select, textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 2em;
+    margin: 2em auto;
 }
 
     .actions__btca{
@@ -247,12 +215,12 @@ button, input, select, textarea {
         .actions__label{
             color: var(--white);
             position: relative;
-            left: 14%;
+            left: 31%;
             transition: all .5s ease-in-out;
         }
 
         .actions__btca:hover .actions__label{
-            left: 3%;
+            left: 20%;
         }
 
         .actions__icon{
@@ -260,13 +228,13 @@ button, input, select, textarea {
             display: flex;
             align-items: center;
             position: relative;
-            left: -30%;
+            left: 5%;
             transition: all .5s ease-in-out;
             opacity: 0;
         }
 
         .actions__btca:hover .actions__icon{
-            left: 0%;
+            left: 30%;
             opacity: 1;
         }
 
@@ -274,7 +242,7 @@ button, input, select, textarea {
     display: none;
     width: 80%;
     height: 4em;
-    margin-bottom: 2em;
+    margin: 0 auto 2em;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -297,11 +265,8 @@ button, input, select, textarea {
     background-color: var(--green);
 }
 
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-                            /*Responsive Desing*/ 
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
+  /* Responsive Desing
+     ========================================================================== */
 
 /*Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {

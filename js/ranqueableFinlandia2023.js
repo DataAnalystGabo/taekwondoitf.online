@@ -32,20 +32,20 @@ const validatorInput = (expresion, input, camp)=>{
         document.querySelector(`#input__alerts--${camp} `).classList.add('input__alerts--active');
         document.querySelector(`#input__i--${camp}`).classList.remove('fa-circle-xmark');
         document.querySelector(`#input__i--${camp}`).classList.add('fa-circle-check');
-        document.querySelector(`#input__i--${camp}`).classList.add('input__alerts__i--checked');
-        document.querySelector(`#input__alerts__checked--${camp}`).classList.add('input__alerts__checked--active');
-        document.querySelector(`#input__alerts__error--${camp}`).classList.remove('input__alerts__error--active');
+        document.querySelector(`#input__i--${camp}`).classList.add('input__i--checked');
+        document.querySelector(`#input__checked--${camp}`).classList.add('input__checked--active');
+        document.querySelector(`#input__error--${camp}`).classList.remove('input__error--active');
         campos[camp] = true;
 
     }else if(input.value == ''){
         document.getElementById(`input__${camp}`).classList.remove('input__text--checked');
         document.querySelector(`#input__alerts--${camp} `).classList.remove('input__alerts--active');
         document.querySelector(`#input__i--${camp}`).classList.remove('fa-circle-check');
-        document.querySelector(`#input__i--${camp}`).classList.remove('input__alerts__i--checked');
-        document.querySelector(`#input__alerts__checked--${camp}`).classList.remove('input__alerts__checked--active');
+        document.querySelector(`#input__i--${camp}`).classList.remove('input__i--checked');
+        document.querySelector(`#input__checked--${camp}`).classList.remove('input__checked--active');
         document.getElementById(`input__${camp}`).classList.remove('input__text--error');
         document.querySelector(`#input__i--${camp}`).classList.remove('fa-circle-xmark');
-        document.querySelector(`#input__alerts__error--${camp}`).classList.remove('input__alerts__error--active');
+        document.querySelector(`#input__error--${camp}`).classList.remove('input__error--active');
         campos[camp] = false;
 
     }else{
@@ -54,9 +54,9 @@ const validatorInput = (expresion, input, camp)=>{
         document.querySelector(`#input__alerts--${camp} `).classList.add('input__alerts--active');
         document.querySelector(`#input__i--${camp}`).classList.remove('fa-circle-check');
         document.querySelector(`#input__i--${camp}`).classList.add('fa-circle-xmark');
-        document.querySelector(`#input__i--${camp}`).classList.remove('input__alerts__i--checked');
-        document.querySelector(`#input__alerts__checked--${camp}`).classList.remove('input__alerts__checked--active');
-        document.querySelector(`#input__alerts__error--${camp}`).classList.add('input__alerts__error--active');
+        document.querySelector(`#input__i--${camp}`).classList.remove('input__i--checked');
+        document.querySelector(`#input__checked--${camp}`).classList.remove('input__checked--active');
+        document.querySelector(`#input__error--${camp}`).classList.add('input__error--active');
         campos[camp] = false;
     }
 }
@@ -156,7 +156,7 @@ $(document).ready(function(){
             const datos = $('#form').serialize();
 
             $.ajax({
-                url: '../php/pageFormSubmit.php',
+                url: '../php/submitRanqueable.php',
                 type: 'post',
                 data: datos,
                 success: (r)=>{

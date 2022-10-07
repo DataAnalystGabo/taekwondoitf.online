@@ -1,16 +1,3 @@
-body{
-    color: var(--white);
-    font-family: var(--roboto);
-    font-size: 15px;
-    background: var(--background);
-}
-
-.container{
-    width: 90%;
-    max-width: 75em;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
@@ -30,7 +17,7 @@ body{
     }
 
         .article{
-            margin-top: 7em;
+            margin-top: 6em;
             width: 100%;
             height: max-content;
             grid-area: article;
@@ -58,8 +45,9 @@ body{
                 width: 100%;
             }
 
-                .article__tittle{
+                .article__title{
                     margin-bottom: .5em;
+                    font-size: 3em;
                 }
 
                 .article__section{

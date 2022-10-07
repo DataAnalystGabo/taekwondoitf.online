@@ -1,63 +1,48 @@
-*{
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
+/* Section Main
+     ========================================================================== */
 body{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    color: var(--white);
-    font-family: var(--roboto);
-    font-size: 15px;
-    background: linear-gradient(90deg, hsla(211, 79%, 6%, 1) 0%, hsla(210, 76%, 11%, 1) 70%);
 }
 
-.container{
-    width: 90%;
-    max-width: 75em;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.astro{
-    width: 100%;
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-    .astro__img{
-        width: 15em;
-        height: 15em;
+    .astro{
+        width: 100%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    .astro__titulo{
-        margin: 1rem auto 0;
-        font-size: 3.5em;
-        font-family: var(--poppins);
-    }
+        .astro__img{
+            width: 15em;
+            height: 15em;
+            margin: 0 auto;
+        }
 
-    .astro__p{
-        margin-top: 1em;
-        text-align: center;
-        font-size: 1.2em;
-        color: var(--grey);
-    }
+        .astro__titulo{
+            margin: 1rem auto 0;
+            font-size: 3.5em;
+            font-family: var(--poppins);
+        }
 
-    .astro__logo{
-        font-family: var(--poppins);
-        font-style: italic;
-        margin: 2rem auto 0;
-    }
+        .astro__p{
+            margin-top: 1em;
+            text-align: center;
+            font-size: 1.2em;
+            color: var(--grey);
+        }
 
-    .astro__logo--span{
-        color: var(--yellow-dark);
-    }
+        .astro__logo{
+            width: 15em;
+            margin: 3em auto;
+        }
 
+
+/* Responsive Desing
+     ========================================================================== */
 @media screen and (min-width : 992px){
     .astro__titulo{
         font-size: 5em;

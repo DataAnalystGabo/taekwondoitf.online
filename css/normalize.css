@@ -25,12 +25,24 @@
   /**
    * Remove the margin in all browsers.
    */
-  
+  /** Propiedades generales que he agregado al body**/
   body {
     margin: 0;
-   
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 100%;
+    background: var(--background);
   }
   
+  /** Clase container **/
+
+  .container{
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
   /**
    * Render the `main` element consistently in IE.
    */

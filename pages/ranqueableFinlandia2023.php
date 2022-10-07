@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <title>Infotkd</title>
+    <title>Taekwondo ITF</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -34,7 +35,7 @@
         <section class="section">   
                 <form class="form" method="POST" id="form">
                     <div class="banner__title">
-                        <img class="banner__img" src="../image/finlandia2023Optimizado.png" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
+                        <img class="banner__img" src="../image/finlandia2023.webp" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
                     </div>
                
                     <div class="row row--coach">
@@ -52,9 +53,9 @@
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--escuela">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--escuela"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--escuela">Sólo se permite letras y espacios</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--escuela">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--escuela"></i>
+                                        <p class="input__error" id="input__error--escuela">Sólo se permite letras y espacios</p>
+                                        <p class="input__checked" id="input__checked--escuela">¡Válido!</p>
                                     </div>  
                                 </div>
             
@@ -65,9 +66,9 @@
                                     </div>
  
                                     <div class="input__alerts" id="input__alerts--instructor">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--instructor"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--instructor">Sólo se permite letras y espacios</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--instructor">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--instructor"></i>
+                                        <p class="input__error" id="input__error--instructor">Sólo se permite letras y espacios</p>
+                                        <p class="input__checked" id="input__checked--instructor">¡Válido!</p>
                                     </div>
                                 </div>
             
@@ -78,9 +79,9 @@
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--coach">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--coach"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--coach">Sólo se permite letras y espacios</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--coach">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--coach"></i>
+                                        <p class="input__error" id="input__error--coach">Sólo se permite letras y espacios</p>
+                                        <p class="input__checked" id="input__checked--coach">¡Válido!</p>
                                     </div>
                                 </div>
                         
@@ -91,9 +92,9 @@
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--email">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--email"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--email">Formato permitido: example@correo.com</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--email">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--email"></i>
+                                        <p class="input__error" id="input__error--email">Formato permitido: example@correo.com</p>
+                                        <p class="input__checked" id="input__checked--email">¡Válido!</p>
                                     </div>
                                 </div>
             
@@ -104,9 +105,9 @@
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--celular">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--celular"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--celular">Sólo se permiten números (de 7 a 14 números)</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--celular">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--celular"></i>
+                                        <p class="input__error" id="input__error--celular">Sólo se permiten números (de 7 a 14 números)</p>
+                                        <p class="input__checked" id="input__checked--celular">¡Válido!</p>
                                     </div>
                                 </div>
 
@@ -117,9 +118,9 @@
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--othercamp">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--othercamp"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--othercamp">Sólo se permiten números (de 7 a 14 números)</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--othercamp">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--othercamp"></i>
+                                        <p class="input__error" id="input__error--othercamp">Sólo se permiten números (de 7 a 14 números)</p>
+                                        <p class="input__checked" id="input__checked--othercamp">¡Válido!</p>
                                     </div>
                                 </div>  
                             </div>
@@ -127,7 +128,7 @@
                             
                     </div>
                         
-                    <div class="row row--competitor row--toclone">
+                    <div class="row row--competitor">
 
                         <div class="row__header row__header--competitor">
                             <h3 class="tittle tittle--competitor">Datos del competidor </h3>
@@ -144,9 +145,9 @@
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--competidor">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--competidor"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--competidor">Sólo se permite letras y espacios</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--competidor">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--competidor"></i>
+                                        <p class="input__error" id="input__error--competidor">Sólo se permite letras y espacios</p>
+                                        <p class="input__checked" id="input__checked--competidor">¡Válido!</p>
                                     </div>
                                 </div>
         
@@ -157,9 +158,9 @@
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--dni">
-                                        <i class="input__alerts__i fa-solid fa-circle-xmark" id="input__i--dni"></i>
-                                        <p class="input__alerts__error" id="input__alerts__error--dni">¡Ingrese 7 u 8 números sin puntos!</p>
-                                        <p class="input__alerts__checked" id="input__alerts__checked--dni">¡Válido!</p>
+                                        <i class="input__i fa-solid fa-circle-xmark" id="input__i--dni"></i>
+                                        <p class="input__error" id="input__error--dni">¡Ingrese 7 u 8 números sin puntos!</p>
+                                        <p class="input__checked" id="input__checked--dni">¡Válido!</p>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +249,7 @@
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="../js/menu.js"></script>
-    <script src="../js/form.js"></script>
+    <script src="../js/ranqueableFinlandia2023.js"></script>
 
 </body>
 </html>

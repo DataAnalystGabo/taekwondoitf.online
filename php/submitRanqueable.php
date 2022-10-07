@@ -35,20 +35,7 @@ if($_POST){
    // '".$email."', '".$celular."', '".$othercamp."', '".$competidor."', '".$dni."', '".$genero."',
    // '".$categoria."', '".$edad."', '".$peso."')");
 
-   $insertData = $con->prepare("INSERT INTO competidores (escuela, instructor, coach, email, celular, othercamp, competidor,
-   dni, genero, categoria, edad, peso) VALUES (:escuela, :instructor, :coach, :email, :celular, :othercamp, :competidor,
-   :dni, :genero)");
-   $insertData->bindParam(':escuela', $escuela);
-   $insertData->bindParam(':instructor', $instructor);
-   $insertData->bindParam(':coach', $coach);
-   $insertData->bindParam(':email', $email);
-   $insertData->bindParam(':celular', $celular);
-   $insertData->bindParam(':othercamp', $othercamp);
-   $insertData->bindParam(':dni', $dni);
-   $insertData->bindParam(':genero', $genero);
-   $insertData->bindParam(':categoria', $categoria);
-   $insertData->bindParam(':edad', $edad);
-   $insertData->bindParam(':peso', $peso);
+   
 
    $validatorDNI = $con->query("SELECT * FROM competidores WHERE dni ='".$dni."' ");
 
@@ -58,33 +45,30 @@ if($_POST){
 
    } else{
 
-    $insertData->execute();
+   $insertData = $con->prepare("INSERT INTO competidores (escuela, instructor, coach, email, celular, othercamp, competidor,
+   dni, genero, categoria, edad, peso) VALUES (:escuela, :instructor, :coach, :email, :celular, :othercamp, :competidor,
+   :dni, :genero, :categoria, :edad, :peso)");
+   $insertData->bindParam(':escuela', $escuela);
+   $insertData->bindParam(':instructor', $instructor);
+   $insertData->bindParam(':coach', $coach);
+   $insertData->bindParam(':email', $email);
+   $insertData->bindParam(':celular', $celular);
+   $insertData->bindParam(':competidor', $competidor);
+   $insertData->bindParam(':othercamp', $othercamp);
+   $insertData->bindParam(':dni', $dni);
+   $insertData->bindParam(':genero', $genero);
+   $insertData->bindParam(':categoria', $categoria);
+   $insertData->bindParam(':edad', $edad);
+   $insertData->bindParam(':peso', $peso);
+
+   if($insertData->execute()){
     echo 1;
+   }
 
     $con = null;
     $insertData = null;
 
-   }
+  }
 
-
-   // $validatorDni = mysqli_query($con, " SELECT * FROM competidores WHERE dni='".$dni."' ");
-
-     //   if(mysqli_num_rows($validatorDni) > 0){   
-
-       //     echo '2';
-
-         //   mysqli_close($con);
-
-           // exit();
-        //}else{
-
-          //  $ejecutar = mysqli_query($con, $insertData);
-
-            //echo'1';
-        //};
-
-    //mysqli_close($con);
-
-    //exit();
 }
 ?>
