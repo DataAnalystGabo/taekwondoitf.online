@@ -23,6 +23,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
         <title>▷ Taekwondo ITF - ¡Todo lo que tenés que saber está aquí!</title>
         <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá la teoría en pdf, Verificá si un instructor está afederado y mucho más.">
+        <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
