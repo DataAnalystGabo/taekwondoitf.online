@@ -83,19 +83,24 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         </header>
 
         <main class="main">
-            <div class="front-page">
-                <div class="banner">
-
-                    <div class="banner__title">
-                    <img class="banner__img" src="image/finlandia2023.webp" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
+            <div class="background">
+                <div class="event">
+                    <div class="event__title">
+                        <img class="event__img" src="image/finlandia2023.webp" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
                     </div>
 
                     <div class="sponsors">
                         <span class="sponsors__span">AUSPICIA</span>
                         <div class="sponsors__box">
-                            <div class="sponsor__logo"><img class="sponsor__img" src="image/fetra.svg" alt="Logotipo de la Federacion de Taekwondo de la Republica Argentina"></div>
-                            <div class="sponsor__logo sponsor__logo--itf2"><img class="sponsor__img sponsor__img--itf2" src="image/itf2.svg" alt="Logotipo de la Federacion Internacional de Taekwondo"></div>
-                            <div class="sponsor__logo"><img class="sponsor__img" src="image/itf.svg" alt="Logotipo de International Federation Taekwondo"></div>
+                            <div class="sponsor__logo">
+                                <img class="sponsor__img" src="image/fetra.svg" alt="Logotipo de la Federacion de Taekwondo de la Republica Argentina">
+                            </div>
+                            <div class="sponsor__logo sponsor__logo--itf2">
+                                <img class="sponsor__img sponsor__img--itf2" src="image/itf2.svg" alt="Logotipo de la Federacion Internacional de Taekwondo">
+                            </div>
+                            <div class="sponsor__logo">
+                                <img class="sponsor__img" src="image/itf.svg" alt="Logotipo de International Federation Taekwondo">
+                            </div>
                         </div>
                     </div>
 
@@ -109,7 +114,6 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             </div>
                         </a>
                     </div>
-
                 </div>        
             </div>
 

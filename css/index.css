@@ -1,171 +1,174 @@
-/* Section Banner
+/* Section Event
      ========================================================================== */
-
-.front-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: rgba(3, 14, 26, 0.7) url(../image/bannerFinlandia2023.webp);
-    background-size: cover;
-    background-position: center center;
-    background-blend-mode: darken;
+.main{
+    margin-bottom: 2em;
 }
 
-    .banner{
+    .background{
         display: flex;
-        flex-direction: column;
-        gap: 2em;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rgba(3, 14, 26, 0.7) url(../image/bannerFinlandia2023.webp);
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: darken;
     }
 
-    .banner__title{
-        width: 26em;
-        margin: 0 auto;
-    }
-
-        .banner__img{
-            width: 100%;
-            object-fit: scale-down;
-        }
-   
-    .sponsors{
-        display: grid;
-        grid-template-rows: repeat(2, max-content);
-        opacity: .8;
-    }
-
-        .sponsors__span{
-            display: block;
-            padding: .5em 1em;
-            margin: 0 auto;
-        }
-
-        .sponsors__box{
+        .event{
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: auto;
-            gap: 1em;
+            flex-direction: column;
+            gap: 2em;
         }
 
-            .sponsor__logo{
-                width: 6em;
-                height: 6em;
+            .event__title{
+                max-width: 100vw;
             }
 
-            .sponsor__logo--itf2{
-                width: 9em;
-                height: 6em;
-            }
-
-                .sponsor__img{
+                .event__img{
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    object-fit: scale-down;
                 }
-
-                .sponsor__img--itf2{
-                    object-fit: contain;
-                }
-
-    .actions{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-
-        .actions__link{
-            text-decoration: none;
-            margin: 0;
-        }
-
-            .actions__btca{
-                display: flex;
-                align-items: center;
-                width: 10em;
-                height: 3em;
-                background-color: rgba(255, 255, 255, .02);
-                backdrop-filter: blur(4px);
-                border: 1px solid var(--white);
-                color: var(--white);
-                font-family: var(--roboto);
-                font-size: 1em;
-                line-height: 1em;
-                cursor: pointer;
+        
+            .sponsors{
+                display: grid;
+                grid-template-rows: repeat(2, max-content);
+                opacity: .8;
             }
 
-                .actions__label{
-                    color: var(--white);
-                    position: relative;
-                    left: 19%;
-                    transition: all .5s ease-in-out;
+                .sponsors__span{
+                    display: block;
+                    padding: .5em 1em;
+                    margin: 0 auto;
                 }
 
-                .actions__label--readmore{
-                    left: 26.5%;
-                }
-
-                .actions__label--form{
-                    left: 15%;
-                }
-
-                .actions__label--bbl{
-                    left: 32%;
-                }
-
-                .actions__btca:hover .actions__label{
-                    left: 10%;
-                }
-
-                .actions__btca:hover .actions__label--readmore{
-                    left: 15%;
-                }
-
-                .actions__btca:hover .actions__label--form{
-                    left: 5%;
-                }
-
-                .actions__btca:hover .actions__label--bbl{
-                    left: 20%;
-                }
-
-                .actions__icon{
-                    font-size: 1.2em;
-                    line-height: 1.2em;
+                .sponsors__box{
                     display: flex;
+                    flex-direction: row;
                     align-items: center;
-                    position: relative;
-                    left: -30%;
-                    transition: all .5s ease-in-out;
-                    opacity: 0;
+                    margin: auto;
+                    gap: 1em;
                 }
 
-                .actions__icon--bbl{
-                    left: 0%;
+                    .sponsor__logo{
+                        width: 6em;
+                        height: 6em;
+                    }
+
+                    .sponsor__logo--itf2{
+                        width: 9em;
+                        height: 6em;
+                    }
+
+                        .sponsor__img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        .sponsor__img--itf2{
+                            object-fit: contain;
+                        }
+
+            .actions{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+
+                .actions__link{
+                    text-decoration: none;
+                    margin: 0;
                 }
 
-                .actions__btca:hover .actions__icon{
-                    left: 15%;
-                    opacity: 1;
-                }
+                    .actions__btca{
+                        display: flex;
+                        align-items: center;
+                        width: 10em;
+                        height: 3em;
+                        background-color: rgba(255, 255, 255, .02);
+                        backdrop-filter: blur(4px);
+                        border: 1px solid var(--white);
+                        color: var(--white);
+                        font-family: var(--roboto);
+                        font-size: 1em;
+                        line-height: 1em;
+                        cursor: pointer;
+                    }
 
-                .actions__btca:hover .actions__icon--readmore{
-                    left: 25%;
-                }
+                        .actions__label{
+                            color: var(--white);
+                            position: relative;
+                            left: 19%;
+                            transition: all .5s ease-in-out;
+                        }
 
-                .actions__btca:hover .actions__icon--inscription{
-                    left: 17%;
-                }
+                        .actions__label--readmore{
+                            left: 26.5%;
+                        }
 
-                .actions__btca:hover .actions__icon--form{
-                    left: 14%;
-                }
+                        .actions__label--form{
+                            left: 15%;
+                        }
 
-                .actions__btca:hover .actions__icon--bbl{
-                    left: 35%;
-                }
+                        .actions__label--bbl{
+                            left: 32%;
+                        }
+
+                        .actions__btca:hover .actions__label{
+                            left: 10%;
+                        }
+
+                        .actions__btca:hover .actions__label--readmore{
+                            left: 15%;
+                        }
+
+                        .actions__btca:hover .actions__label--form{
+                            left: 5%;
+                        }
+
+                        .actions__btca:hover .actions__label--bbl{
+                            left: 20%;
+                        }
+
+                        .actions__icon{
+                            font-size: 1.2em;
+                            line-height: 1.2em;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            left: -30%;
+                            transition: all .5s ease-in-out;
+                            opacity: 0;
+                        }
+
+                        .actions__icon--bbl{
+                            left: 0%;
+                        }
+
+                        .actions__btca:hover .actions__icon{
+                            left: 15%;
+                            opacity: 1;
+                        }
+
+                        .actions__btca:hover .actions__icon--readmore{
+                            left: 25%;
+                        }
+
+                        .actions__btca:hover .actions__icon--inscription{
+                            left: 17%;
+                        }
+
+                        .actions__btca:hover .actions__icon--form{
+                            left: 14%;
+                        }
+
+                        .actions__btca:hover .actions__icon--bbl{
+                            left: 35%;
+                        }
 
 /* Articulos
      ========================================================================== */
@@ -291,11 +294,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
     color: var(--white);
     font-family: var(--roboto);
     border-top: 1px solid var(--grey);
-    margin-bottom: 2em;
 }
 
     .bbl__title{
@@ -472,11 +473,11 @@
 
 @media screen and (min-width: 700px){
 
-    .banner{
+    .event{
         margin-top: 3em;
     }
 
-        .banner__title{
+        .event__title{
             width: 34em;
         }
 }
@@ -535,7 +536,7 @@
 
 @media screen and (min-width : 1200px){
     
-    .banner__title{
+    .event__title{
         width: 50em;
     }
 
