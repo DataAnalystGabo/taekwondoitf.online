@@ -86,12 +86,19 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         </header>
 
         <main class="main">
-            <div class="background">
-                <div class="event">
+
+            <div class="event">
+
+                <picture class="event__background">
+                    <img class="event__cover" src="image/cover-mobile.webp" alt="Primer ranqueable de Taekwondo ITF Finlandia 2023">
+                </picture>
+                
+
+                <div class="event__group">
                     <div class="event__title">
                         <img class="event__img" src="image/finlandia2023.webp" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
                     </div>
-
+                    
                     <div class="sponsors">
                         <span class="sponsors__span">AUSPICIA</span>
                         <div class="sponsors__box">
@@ -106,7 +113,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="actions actions--inscription">
                         <a class="actions__link" href="pages/ranqueableFinlandia2023.php">
                             <div class="actions__btca" >
@@ -117,8 +124,10 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             </div>
                         </a>
                     </div>
-                </div>        
-            </div>
+                </div>
+
+            </div>        
+
 
 
             <h1 class="title">NOTICIAS TAEKWONDO ITF</h1> <!-- Posicionar keywords con SEO -->
