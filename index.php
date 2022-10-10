@@ -138,14 +138,6 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                                 <h2 class="resumen__title"> <?php echo $n['title']; ?> </h2>
 
-                                <ul class="hashtags">
-                                    <li class="hashtag">#Taekwondo</li>
-                                    <li class="hashtag">#Niños</li>
-                                    <li class="hashtag">#ITF</li>
-                                    <li class="hashtag">#Beneficios</li>
-                                    <li class="hashtag">#Cinturones</li>
-                                </ul>
-
                                 <div class="resumen__box">
                                     <div class="picture">
                                         <img class="picture__img" src="admi/images/<?php echo $n['image_author'];?>" alt="Imagen del autor del artículo">
@@ -181,92 +173,93 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
             </div>
 
-            <section class="bbl container" id="bbl">
-
-                <h2 class="bbl__title">BLACK BELT LIST</h2>
-                <span class="bbl__subtitle">¡Próximamente!</span>
-
-                <section class="questionfreq">
-
-                    <div class="questionfreq__group">
-                        <div class="questionfreq__picture">
-                            <img class="questionfreq__img" src="image/boltIcon.svg" alt="Icono 3d de Rayo Dorado">
+            <section class="bbl" id="bbl">
+                <div class="container">
+                    <h2 class="bbl__title">BLACK BELT LIST</h2>
+                    <span class="bbl__subtitle">¡Próximamente!</span>
+                    
+                    <section class="questionfreq">
+                    
+                        <div class="questionfreq__group">
+                            <div class="questionfreq__picture">
+                                <img class="questionfreq__img" src="image/boltIcon.svg" alt="Icono 3d de Rayo Dorado">
+                            </div>
+                            <h3 class="questionfreq__title">¿Qué es BBL?</h3>
+                            <p class="questionfreq__resumen"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
+                                que pretende reunir a todos los cinturones negros de la República Argentina
+                                en una base de datos abierta a todo el público. 
+                            </p>
                         </div>
-                        <h3 class="questionfreq__title">¿Qué es BBL?</h3>
-                        <p class="questionfreq__resumen"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
-                            que pretende reunir a todos los cinturones negros de la República Argentina
-                            en una base de datos abierta a todo el público. 
-                        </p>
-                    </div>
-
-                    <div class="questionfreq__group">
-                        <div class="questionfreq__picture">
-                            <img class="questionfreq__img" src="image/targetIcon.svg" alt="Icono 3d de Blanco con flecha clavada">
+                    
+                        <div class="questionfreq__group">
+                            <div class="questionfreq__picture">
+                                <img class="questionfreq__img" src="image/targetIcon.svg" alt="Icono 3d de Blanco con flecha clavada">
+                            </div>
+                            <h3 class="questionfreq__title">¿Cómo puede ayudarme BBL?</h3>
+                            <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
+                                de esta forma, cualquier persona podrá encontrarte en línea y verificar
+                                tus credenciales como cinturón negro de Taekwon-do ITF.
+                            </p>
                         </div>
-                        <h3 class="questionfreq__title">¿Cómo puede ayudarme BBL?</h3>
-                        <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
-                            de esta forma, cualquier persona podrá encontrarte en línea y verificar
-                            tus credenciales como cinturón negro de Taekwon-do ITF.
-                        </p>
-                    </div>
-                
-                    <div class="questionfreq__group">
-                        <div class="questionfreq__picture">
-                            <img class="questionfreq__img" src="image/giftIcon.svg" alt="Icono 3d de Regalo color rojo">
+                    
+                        <div class="questionfreq__group">
+                            <div class="questionfreq__picture">
+                                <img class="questionfreq__img" src="image/giftIcon.svg" alt="Icono 3d de Regalo color rojo">
+                            </div>
+                            <h3 class="questionfreq__title">¿Cuánto va a costarme?</h3>
+                            <p class="questionfreq__resumen">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
+                                que tendrás que cumplir para validar tus documentos pero
+                                no te costará nada.
+                            </p>
+                        </div>    
+                    </section>   
+                    
+                    
+                    <form class="form container">
+                        <div class="form__icon">
+                            <img class="form__img" src="image/calendarIcon.svg" alt="Icono 3d de Calendario">
                         </div>
-                        <h3 class="questionfreq__title">¿Cuánto va a costarme?</h3>
-                        <p class="questionfreq__resumen">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
-                            que tendrás que cumplir para validar tus documentos pero
-                            no te costará nada.
-                        </p>
-                    </div>    
-                </section>   
-                
-
-                <form class="form container">
-                    <div class="form__icon">
-                        <img class="form__img" src="image/calendarIcon.svg" alt="Icono 3d de Calendario">
-                    </div>
-
-                    <div class="form__group">
-                        <h3 class="form__title">¡Subscribite a las novedades de Black Belt List!</h3>
-                        <span class="form__resum">Te estaremos avisando sobre la fecha de lanzamiento</span>
-                        
-                        <div class="form__inputs form__input--group">
-                            <input type="email" class="form__input" name="email" id="form__input" placeholder="example@gmail.com">
-                            <i class="form__i fa-solid fa-circle-xmark" id="form__i"></i>
-                        </div>
+                    
+                        <div class="form__group">
+                            <h3 class="form__title">¡Subscribite a las novedades de Black Belt List!</h3>
+                            <span class="form__resum">Te estaremos avisando sobre la fecha de lanzamiento</span>
                             
-                        <span class="alert alert--error">
-                            <strong class="alert__strong">
-                                El formato válido de e-mail es: example@email.com
-                            </strong>
-                        </span>
-
-                        <span class="alert alert--check">
-                            <strong class="alert__strong">
-                                ¡E-mail válido!
-                            </strong>
-                        </span>
-
-                        <span class="alert alert--notification">
-                        </span>
-
-                        <div class="form__notification" id="notification"><strong></strong></div>
-
-                        <div class="actions actions--bbl">
-                            <a class="actions__link" id="submit">
-                                <div class="actions__btca">
-                                    <span class="actions__label actions__label--bbl">ENVIAR</span>
-                                    <div class="actions__icon actions__icon--bbl">
-                                        <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                            <div class="form__inputs form__input--group">
+                                <input type="email" class="form__input" name="email" id="form__input" placeholder="example@gmail.com">
+                                <i class="form__i fa-solid fa-circle-xmark" id="form__i"></i>
+                            </div>
+                                
+                            <span class="alert alert--error">
+                                <strong class="alert__strong">
+                                    El formato válido de e-mail es: example@email.com
+                                </strong>
+                            </span>
+                    
+                            <span class="alert alert--check">
+                                <strong class="alert__strong">
+                                    ¡E-mail válido!
+                                </strong>
+                            </span>
+                    
+                            <span class="alert alert--notification">
+                            </span>
+                    
+                            <div class="form__notification" id="notification"><strong></strong></div>
+                    
+                            <div class="actions actions--bbl">
+                                <a class="actions__link" id="submit">
+                                    <div class="actions__btca">
+                                        <span class="actions__label actions__label--bbl">ENVIAR</span>
+                                        <div class="actions__icon actions__icon--bbl">
+                                            <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+                    
                         </div>
-
-                    </div>
-                </form>
+                    </form>
+                </div>
             </section>
         </main>
 

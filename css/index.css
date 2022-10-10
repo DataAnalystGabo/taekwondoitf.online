@@ -178,7 +178,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
+    margin-bottom: 2.25em;
     border-top: 1px solid var(--grey);
     gap: 1em;
 }
@@ -201,7 +201,7 @@
         .cover__img{
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
 
     .resumen{
@@ -215,17 +215,6 @@
             flex-direction: column;
             gap: .5em;
         }
-
-            .hashtags{
-                display: flex;
-                flex-direction: row;
-                gap: .5em;
-                color: var(--grey);
-                font-size: 0.8em;
-                margin-left: 0;
-                padding: 0;
-                list-style: none;
-            }
 
             .resumen__box{
                 display: flex;
@@ -319,7 +308,7 @@
     }
 
     .questionfreq{
-        margin-bottom: 4em;
+        margin: 4em 0;
     }
 
         .questionfreq__group{
