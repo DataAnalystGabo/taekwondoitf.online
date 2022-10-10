@@ -92,11 +92,12 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                 <picture class="event__background">
                     <source srcset="image/cover-desktop.webp" media="(min-width: 1200px)">
                     <source srcset="image/cover-mobile.webp" media="(min-width: 500px)">
-                    <img class="event__cover" src="image/cover-mobile.webp" alt="Julio Carlos compitiendo lucha hasta 63kg - PH: Raimon Bjorndalen">
+                    <img class="event__cover" src="image/cover-desktop.webp" alt="Julio Carlos compitiendo lucha hasta 63kg - PH: Raimon Bjorndalen">
                 </picture>
-                
 
-                <div class="event__group">
+                <div class="event__filter"></div>
+
+                <div class="event__group">        
                     <picture class="event__title">
                         <source srcset="image/title-finlandia2023-desktop.png" media="(min-width: 1200px)">
                         <source srcset="image/title-finlandia2023-mobile.png" media="(min-width: 500px)">
@@ -128,7 +129,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             </div>
                         </a>
                     </div>
-
+                    
                     <span class="event__derechos">Imagen cortesía de <a class="event__inst" href="https://www.instagram.com/burndalen/">Raimon Bjørndalen</a></span>
                 </div>
 
