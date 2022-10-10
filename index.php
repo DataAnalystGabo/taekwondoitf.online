@@ -90,14 +90,18 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
             <div class="event">
 
                 <picture class="event__background">
-                    <img class="event__cover" src="image/cover-mobile.webp" alt="Primer ranqueable de Taekwondo ITF Finlandia 2023">
+                    <source srcset="image/cover-desktop.webp" media="(min-width: 1200px)">
+                    <source srcset="image/cover-mobile.webp" media="(min-width: 500px)">
+                    <img class="event__cover" src="image/cover-desktop.webp" alt="Julio Carlos compitiendo lucha hasta 63kg - PH: Raimon Bjorndalen">
                 </picture>
                 
 
                 <div class="event__group">
-                    <div class="event__title">
-                        <img class="event__img" src="image/finlandia2023.webp" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
-                    </div>
+                    <picture class="event__title">
+                        <source srcset="image/title-finlandia2023-desktop.png" media="(min-width: 1200px)">
+                        <source srcset="image/title-finlandia2023-mobile.png" media="(min-width: 500px)">
+                        <img class="event__img" src="image/title-finlandia2023-desktop.png" alt="Logotipo del Primer Ranqueable a Finlandia 2023 Taekwondo ITF">
+                    </picture>
                     
                     <div class="sponsors">
                         <span class="sponsors__span">AUSPICIA</span>
@@ -124,6 +128,8 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             </div>
                         </a>
                     </div>
+
+                    <span class="event__derechos">Imagen cortesía de <a class="event__inst" href="https://www.instagram.com/burndalen/">Raimon Bjørndalen</a></span>
                 </div>
 
             </div>        
