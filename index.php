@@ -92,38 +92,24 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
         <main class="main">
 
-            <div class="event">
-
-                <picture class="event__background">
-                    <source srcset="image/cover-desktop.webp" media="(min-width: 1200px)">
-                    <source srcset="image/cover-mobile.webp" media="(min-width: 500px)">
-                    <img class="event__cover" src="image/cover-desktop.webp" alt="Julio Carlos compitiendo lucha hasta 63kg - PH: Raimon Bjorndalen">
+            <section class="prime">
+                <picture class="prime__cover">
+                    <source srcset="image/cover-desktop.webp" media="(min-width : 700px)">
+                    <source srcset="image/cover-mobile.webp" media="(min-width : 300px)">
+                    <img class="prime__img" src="image/cover-desktop.webp" alt="Taekwondistas compitiendo en Copa del Mundo">
                 </picture>
 
-                <div class="event__filter"></div>
+                <div class="prime__filter"></div>
 
-                <div class="event__group">        
-                    <picture class="event__title">
-                        <source srcset="image/title-finlandia2023-desktop.webp" media="(min-width: 1200px)">
-                        <source srcset="image/title-finlandia2023-mobile.webp" media="(min-width: 500px)">
-                        <img class="event__img" src="image/title-finlandia2023-desktop.webp" alt="Logotipo del Primer Ranqueable a Finlandia 2023 Taekwondo ITF">
-                    </picture>
-                    
-                    <div class="sponsors">
-                        <span class="sponsors__span">AUSPICIA</span>
-                        <div class="sponsors__box">
-                            <div class="sponsor__logo">
-                                <img class="sponsor__img" src="image/fetra.svg" alt="Logotipo de la Federacion de Taekwondo de la Republica Argentina">
-                            </div>
-                            <div class="sponsor__logo sponsor__logo--itf2">
-                                <img class="sponsor__img sponsor__img--itf2" src="image/itf2.svg" alt="Logotipo de la Federacion Internacional de Taekwondo">
-                            </div>
-                            <div class="sponsor__logo">
-                                <img class="sponsor__img" src="image/itf.svg" alt="Logotipo de International Federation Taekwondo">
-                            </div>
-                        </div>
+                <div class="prime__info container">
+                    <h1 class="prime__h1">
+                        CAMPEONATO NACIONAL DE TAEKWONDO ITF 2023
+                    </h1>
+                    <div class="prime__spans">
+                        <span class="prime__8y9">8 y 9</span>
+                        <span class="prime__nov">NOV</span>
                     </div>
-                    
+
                     <div class="actions actions--inscription">
                         <a class="actions__link" href="pages/ranqueableFinlandia2023.php">
                             <div class="actions__btca" >
@@ -134,16 +120,32 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             </div>
                         </a>
                     </div>
-                    
-                    <span class="event__derechos">Imagen cortesía de <a class="event__inst" href="https://www.instagram.com/burndalen/">Raimon Bjørndalen</a></span>
+
+                    <div class="prime__data">
+                        <span class="prime__location">
+                            <i class="prime__icon fa-solid fa-compass"></i>
+                            Microestadio de Los Pasteleros, Monte Grande.
+                        </span>
+
+                        <span class="prime__organize">
+                            <i class="prime__icon fa-solid fa-gear"></i>
+                            Organiza Master Marcelo Bordiez.
+                        </span>
+
+                        <span class="prime__graduations">
+                            <i class="prime__icon fa-solid fa-circle-user"></i>
+                            Categorías Danes y Gups.
+                        </span>
+
+                        <span class="prime__ph">
+                            <i class="prime__icon fa-solid fa-camera-retro"></i>
+                            Imagen cortesía de Raimon Bjørndalen
+                        </span>
+                    </div>
                 </div>
+            </section>
 
-            </div>        
-
-
-
-            <h1 class="title">NOTICIAS TAEKWONDO ITF</h1> <!-- Posicionar keywords con SEO -->
-
+            <h2 class="title">NOTICIAS TAEKWONDO ITF</h2>
 
             <div class="articles">
 
@@ -177,7 +179,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                                 <p class="resumen__p"> <?php echo $n['new']; ?> </p>
                             </div>
                             
-                            <div class="actions actions--readmore">
+                            <div class="actions">
                                 <a class="actions__link" href="pages/new.php?id=<?php echo $n['id']; ?>">
                                     <div class="actions__btca" >
                                         <span class="actions__label actions__label--readmore">LEER MAS</span>
@@ -216,7 +218,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             <div class="questionfreq__picture">
                                 <img class="questionfreq__img" src="image/targetIcon.webp" alt="Icono 3d de Blanco con flecha clavada">
                             </div>
-                            <h3 class="questionfreq__title">¿Cómo puede ayudarme BBL?</h3>
+                            <h3 class="questionfreq__title">¿Cómo puede ayudarme?</h3>
                             <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
                                 de esta forma, cualquier persona podrá encontrarte en línea y verificar
                                 tus credenciales como cinturón negro de Taekwon-do ITF.

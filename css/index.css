@@ -1,100 +1,74 @@
 /* Section Event
      ========================================================================== */
 .main{
-    margin-bottom: 2em;
+    margin: 4em 0 2em 0;
 }
 
-    .event{
-        width: 100%;
+    .prime{
         display: grid;
-        position: relative;
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh;
-        margin-top: 4em;
+        grid-template-rows: calc(100vh - 4em);
+        *width: 100%;
+        *height: calc(100vh - 4em);
+        background-color: brown;
     }
 
-        .event__background{
+        .prime__cover{
             grid-column: 1/2;
             grid-row: 1/2;
         }
 
-            .event__cover{
+            .prime__img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
 
-        .event__filter{
+        .prime__filter{
             grid-column: 1/2;
             grid-row: 1/2;
-            background-color: #071d33a1;
+            background-color: #030e1a94;
         }
 
-        .event__group{
-            display: grid;
+        .prime__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             grid-column: 1/2;
             grid-row: 1/2;
-            text-align: center;
-            place-content: center;
-            place-items: center;
-            gap: 2em;
-            color: var(--white);
+            padding: 2em 0;
+            font-family: var(--bebas-neue);
+            *background-color: blueviolet;
         }
 
-            .event__title{
-                width: 100%;
+            .prime__h1{
+                line-height: .8em;
+                font-size: 4em;
             }
 
-                .event__img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: scale-down;
-                }
-        
-            .sponsors{
-                display: grid;
-                grid-template-rows: repeat(2, max-content);
+            .prime__spans{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: var(--yellow-dark);
+                *background-color: brown;
             }
 
-                .sponsors__span{
-                    display: block;
-                    padding: .5em 1em;
-                    margin: 0 auto;
+                .prime__8y9{
+                    display: inline;
+                    font-size: 8em;
                 }
 
-                .sponsors__box{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    margin: auto;
-                    gap: 1em;
+                .prime__nov{
+                    display: inline;
+                    font-size: 3em;
                 }
-
-                    .sponsor__logo{
-                        width: 6em;
-                        height: 6em;
-                    }
-
-                    .sponsor__logo--itf2{
-                        width: 9em;
-                        height: 6em;
-                    }
-
-                        .sponsor__img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-
-                        .sponsor__img--itf2{
-                            object-fit: contain;
-                        }
 
             .actions{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                margin: 0 auto;
+                margin-left: 0;
             }
 
                 .actions__link{
@@ -188,19 +162,24 @@
                             left: 35%;
                         }
 
-            .event__derechos{
-                display: block;
+            .prime__data{
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+                margin-top: 2em;
             }
 
-                .event__inst{
-                    text-decoration: none;
-                    color: var(--yellow-dark);
-                    opacity: .8;
+                .prime__location, .prime__organize, .prime__graduations, .prime__ph{
+                    display: block;
+                    font-family: var(--roboto);
+                    *background-color: darkgreen;
                 }
 
-                .event__inst:hover{
-                    opacity: 1;
-                }
+                    .prime__icon{
+                        color: var(--yellow-dark);
+                        margin-right: .5em;
+                    }
+            
 
 /* Articulos
      ========================================================================== */
@@ -221,7 +200,6 @@
         font-family: var(--bebas-neue);
         padding-top: 5px;
         text-align: center;
-        margin: .5em 0;
     }
 
     .cover{
@@ -247,6 +225,10 @@
             flex-direction: column;
             gap: .5em;
         }
+
+            .resumen__title{
+                font-size: 1.7em;
+            }
 
             .resumen__box{
                 display: flex;
@@ -281,19 +263,17 @@
         .resumen__preview{
             width: 100%;
             overflow: hidden;
+            font-size: 1.2em;
+            line-height: 1.3em;
         }
 
             .resumen__p{
                 display: -webkit-box;
-                -webkit-line-clamp : 8;
+                -webkit-line-clamp : 4;
                 -webkit-box-orient : vertical;
                 overflow : hidden;
                 color: var(--grey);
             }
-
-        .actions--readmore{
-            margin-left: 0;
-        }
 
             .actions__btca--share{
                 border: none;
@@ -362,7 +342,7 @@
             .questionfreq__title{
                 font-family: var(--poppins);
                 margin-bottom: 1em;
-                font-size: 1.5em;
+                font-size: 1.7em;
             }
 
             .questionfreq__resumen{
@@ -371,7 +351,8 @@
                 font-family: var(--roboto);
                 color: var(--grey);
                 margin: 0 auto;
-                line-height: 1.5em;
+                font-size: 1.2em;
+                line-height: 1.3em;
             }
     
     .form{
@@ -406,6 +387,7 @@
 
             .form__resum{
                 display: block;
+                font-size: 1.2em;
                 color: var(--grey);
             }
 
@@ -490,13 +472,13 @@
 
 /* Responsive Desing
      ========================================================================== */
+@media screen and (min-width : 360px) and (orientation : landscape){
+    .prime{
+        grid-template-rows: auto;
+    }
+}
 
 @media screen and (min-width: 780px){
-
-    .actions--inscription{
-        justify-content: center;
-        margin: 0;
-    }
 
     .articles{
         width: 90%;
@@ -542,11 +524,30 @@
                 }
 }
 
-@media screen and (min-width : 1200px){
-
-    .event__title{
-        width: 100%;
+@media screen and (min-width : 900px){
+    .prime__info{
+        align-items: center;
     }
+
+        .prime__h1{
+            text-align: center;
+        }
+
+        .prime__spans{
+            flex-direction: column;
+        }
+
+            .prime__8y9{
+                line-height: .6em;
+            }
+
+            .prime__nov{
+                font-size: 5em;
+            }
+}
+
+
+@media screen and (min-width : 1200px){
 
     .articles{
         grid-template-columns: repeat(3, 1fr);
