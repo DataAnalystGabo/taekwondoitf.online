@@ -7,7 +7,7 @@
     .prime{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: calc(100vh - 4em);
+        grid-template-rows: 1fr;
         *width: 100%;
         *height: calc(100vh - 4em);
         background-color: brown;
