@@ -10,15 +10,19 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>▷ Taekwondo ITF - ¡Todo lo que tenés que saber está aquí!</title>
 
-        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá la teoría en pdf, Verificá si un instructor está afederado y mucho más.">
         <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
 
         <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+        <script defer src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script defer src="js/menu.js"></script>
+        <script defer src="js/validatorEmail.js"></script>
         
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/root.css">
@@ -100,9 +104,9 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                 <div class="event__group">        
                     <picture class="event__title">
-                        <source srcset="image/title-finlandia2023-desktop.png" media="(min-width: 1200px)">
-                        <source srcset="image/title-finlandia2023-mobile.png" media="(min-width: 500px)">
-                        <img class="event__img" src="image/title-finlandia2023-desktop.png" alt="Logotipo del Primer Ranqueable a Finlandia 2023 Taekwondo ITF">
+                        <source srcset="image/title-finlandia2023-desktop.webp" media="(min-width: 1200px)">
+                        <source srcset="image/title-finlandia2023-mobile.webp" media="(min-width: 500px)">
+                        <img class="event__img" src="image/title-finlandia2023-desktop.webp" alt="Logotipo del Primer Ranqueable a Finlandia 2023 Taekwondo ITF">
                     </picture>
                     
                     <div class="sponsors">
@@ -199,7 +203,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                         <div class="questionfreq__group">
                             <div class="questionfreq__picture">
-                                <img class="questionfreq__img" src="image/boltIcon.svg" alt="Icono 3d de Rayo Dorado">
+                                <img class="questionfreq__img" src="image/boltIcon.webp" alt="Icono 3d de Rayo Dorado">
                             </div>
                             <h3 class="questionfreq__title">¿Qué es BBL?</h3>
                             <p class="questionfreq__resumen"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
@@ -210,7 +214,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                         <div class="questionfreq__group">
                             <div class="questionfreq__picture">
-                                <img class="questionfreq__img" src="image/targetIcon.svg" alt="Icono 3d de Blanco con flecha clavada">
+                                <img class="questionfreq__img" src="image/targetIcon.webp" alt="Icono 3d de Blanco con flecha clavada">
                             </div>
                             <h3 class="questionfreq__title">¿Cómo puede ayudarme BBL?</h3>
                             <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
@@ -221,7 +225,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                         <div class="questionfreq__group">
                             <div class="questionfreq__picture">
-                                <img class="questionfreq__img" src="image/giftIcon.svg" alt="Icono 3d de Regalo color rojo">
+                                <img class="questionfreq__img" src="image/giftIcon.webp" alt="Icono 3d de Regalo color rojo">
                             </div>
                             <h3 class="questionfreq__title">¿Cuánto va a costarme?</h3>
                             <p class="questionfreq__resumen">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
@@ -234,7 +238,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                     <form class="form container">
                         <div class="form__icon">
-                            <img class="form__img" src="image/calendarIcon.svg" alt="Icono 3d de Calendario">
+                            <img class="form__img" src="image/calendarIcon.webp" alt="Icono 3d de Calendario">
                         </div>
                     
                         <div class="form__group">
@@ -316,10 +320,6 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
             </div>
 
         </footer>
-
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="js/menu.js"></script>
-        <script src="js/validatorEmail.js"></script>
 
         <?php $con = null; ?>
         <?php $statementSQL = null; ?>
