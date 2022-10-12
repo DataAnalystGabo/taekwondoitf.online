@@ -469,12 +469,6 @@
 
 /* Responsive Desing
      ========================================================================== */
-@media screen and (min-width : 360px) and (orientation : landscape){
-    .prime{
-        grid-template-rows: auto;
-    }
-}
-
 @media screen and (min-width: 780px){
 
     .articles{
