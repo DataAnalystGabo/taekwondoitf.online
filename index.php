@@ -94,9 +94,23 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
             <section class="prime">
                 <picture class="prime__cover">
-                    <source srcset="image/cover-desktop.webp" media="(min-width : 700px)">
+                    <!--<source srcset="image/cover-desktop.webp" media="(min-width : 700px)">
                     <source srcset="image/cover-mobile.webp" media="(min-width : 300px)">
-                    <img class="prime__img" src="image/cover-desktop.webp" alt="Taekwondistas compitiendo en Copa del Mundo">
+                    <img class="prime__img" src="image/cover-desktop.webp" alt="Taekwondistas compitiendo en Copa del Mundo"> -->
+                    
+                    <img class="prime__img" srcset="image/cover-prime-480x1000.webp 480w,
+                                                    image/cover-prime-768x1100.webp 768w,
+                                                    image/cover-prime-1024x1200.webp 1024w,
+                                                    image/cover-prime-1200x700.webp 1200w,
+                                                    image/cover-prime-1319x879.webp 1319w"
+
+                                                    size="(max-width : 480px) 100%,
+                                                          (max-width : 768px) 100%,
+                                                          (max-width : 1024px) 100%,
+                                                          (max-width : 1200px) 100%,
+                                                          100%"
+
+                                            src="image/cover-prime-480x1100.webp" alt="Taekwondista ejecutando una forma en un Campeonato Mundial de Taekwondo">
                 </picture>
 
                 <div class="prime__filter"></div>
