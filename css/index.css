@@ -68,6 +68,10 @@
                 margin-left: 0;
             }
 
+            .actions--bbl{
+                margin: 0 auto;
+            }
+
                 .actions__link{
                     text-decoration: none;
                     margin: 0;

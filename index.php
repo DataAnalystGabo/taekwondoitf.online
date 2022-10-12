@@ -99,18 +99,14 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     <img class="prime__img" src="image/cover-desktop.webp" alt="Taekwondistas compitiendo en Copa del Mundo"> -->
                     
                     <img class="prime__img" srcset="image/cover-prime-480x1000.webp 480w,
-                                                    image/cover-prime-768x1100.webp 768w,
-                                                    image/cover-prime-1024x1200.webp 1024w,
                                                     image/cover-prime-1200x700.webp 1200w,
                                                     image/cover-prime-1319x879.webp 1319w"
 
-                                                    size="(max-width : 480px) 100%,
-                                                          (max-width : 768px) 100%,
-                                                          (max-width : 1024px) 100%,
-                                                          (max-width : 1200px) 100%,
-                                                          100%"
+                                                    sizes="(max-width : 500px) 480px,
+                                                          (max-width : 1200px) 1200px,
+                                                          (min-width : 1201px) 1319px"
 
-                                            src="image/cover-prime-480x1100.webp" alt="Taekwondista ejecutando una forma en un Campeonato Mundial de Taekwondo">
+                                            src="image/cover-prime-480x1000.webp" alt="Taekwondista ejecutando una forma en un Campeonato Mundial de Taekwondo">
                 </picture>
 
                 <div class="prime__filter"></div>
@@ -219,7 +215,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                         <div class="questionfreq__group">
                             <div class="questionfreq__picture">
-                                <img class="questionfreq__img" src="image/boltIcon.webp" alt="Icono 3d de Rayo Dorado">
+                                <img class="questionfreq__img" src="image/bolt-144x144.webp" alt="Icono 3d de Rayo Dorado">
                             </div>
                             <h3 class="questionfreq__title">¿Qué es BBL?</h3>
                             <p class="questionfreq__resumen"><strong>Black Belt List</strong> (Lista de cinturones negros) es un proyecto
@@ -230,7 +226,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                         <div class="questionfreq__group">
                             <div class="questionfreq__picture">
-                                <img class="questionfreq__img" src="image/targetIcon.webp" alt="Icono 3d de Blanco con flecha clavada">
+                                <img class="questionfreq__img" src="image/target-144x144.webp" alt="Icono 3d de Blanco con flecha clavada">
                             </div>
                             <h3 class="questionfreq__title">¿Cómo puede ayudarme?</h3>
                             <p class="questionfreq__resumen">Podrás registrarte en <strong>Black Belt List</strong> y 
@@ -241,7 +237,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                         <div class="questionfreq__group">
                             <div class="questionfreq__picture">
-                                <img class="questionfreq__img" src="image/giftIcon.webp" alt="Icono 3d de Regalo color rojo">
+                                <img class="questionfreq__img" src="image/gift-144x144.webp" alt="Icono 3d de Regalo color rojo">
                             </div>
                             <h3 class="questionfreq__title">¿Cuánto va a costarme?</h3>
                             <p class="questionfreq__resumen">Será <strong>¡totalmente gratis!</strong> Habrán requisitos 
@@ -253,9 +249,22 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                     
                     
                     <form class="form container">
-                        <div class="form__icon">
-                            <img class="form__img" src="image/calendarIcon.webp" alt="Icono 3d de Calendario">
-                        </div>
+                        <picture class="form__icon">
+
+                            <img class="form__img" 
+                            srcset="image/calendar-160x160.webp 160w,
+                                    image/calendar-240x240.webp 240w"
+                            sizes="(max-width : 500px) 160px,
+                                  (min-width : 501px) 240px"
+                            src="image/calendar-240x240.webp" alt="Icono con forma de calendario con el numero 26 en el centro">
+
+                            <!-- <img class="form__img" src="image/calendarIcon.webp" alt="Icono 3d de Calendario"> 
+                        size="(max-width : 480px) 100%,
+                                                            (max-width : 768px) 100%,
+                                                            (max-width : 1024px) 100%,
+                                                            (max-width : 1200px) 100%,
+                                                            100%"-->
+                        </picture>
                     
                         <div class="form__group">
                             <h3 class="form__title">¡Subscribite a las novedades de Black Belt List!</h3>
