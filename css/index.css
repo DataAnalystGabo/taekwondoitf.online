@@ -99,10 +99,6 @@
                             left: 26.5%;
                         }
 
-                        .actions__label--form{
-                            left: 15%;
-                        }
-
                         .actions__label--bbl{
                             left: 32%;
                         }
@@ -113,10 +109,6 @@
 
                         .actions__btca:hover .actions__label--readmore{
                             left: 15%;
-                        }
-
-                        .actions__btca:hover .actions__label--form{
-                            left: 5%;
                         }
 
                         .actions__btca:hover .actions__label--bbl{
@@ -271,17 +263,6 @@
                 -webkit-box-orient : vertical;
                 overflow : hidden;
                 color: var(--grey);
-            }
-
-            .actions__btca--share{
-                border: none;
-                width: 8em;
-                background-color: transparent;
-                color: var(--white);
-            }
-
-            .actions__btca--share:hover{
-                color: var(--blue-light);
             }
 
 /* Section BBL
