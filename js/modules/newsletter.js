@@ -1,12 +1,12 @@
-const inputEmail         = document.getElementById('form__input');
-const circleConfirmation = document.getElementById('form__i');
-const buttonSubmit       = document.getElementById('submit');
-const alertError         = document.querySelector('.alert--error');
-const alertCheck         = document.querySelector('.alert--check');
-const expresiones        = { email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, }
+export const inputEmail   = document.getElementById('form__input');
+const circleConfirmation  = document.getElementById('form__i');
+const buttonSubmit        = document.getElementById('submit');
+const alertError          = document.querySelector('.alert--error');
+const alertCheck          = document.querySelector('.alert--check');
+const expresiones         = { email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, }
 
 
-const validarEmail = (e) => {
+export const validarEmail = (e) => {
     e.preventDefault();
 
     if(expresiones.email.test(e.target.value)){
@@ -41,18 +41,16 @@ const validarEmail = (e) => {
     }
 }
 
-inputEmail.addEventListener('blur', validarEmail);
-inputEmail.addEventListener('keyup', validarEmail);
+export const sendAjax = () => {
 
-$(document).ready(function(){
-    $('#submit').click(function(e){
+    $('#submit').click(function (e) {
 
         e.preventDefault();
 
         const email = $('#form__input').val();
-        const data = 'email='+email;
-        
-        if(email == ''){
+        const data = 'email=' + email;
+
+        if (email == '') {
 
             $('#form__input').removeClass('form__input--check');
             $('#form__input').addClass('form__input--error');
@@ -63,27 +61,27 @@ $(document).ready(function(){
             $('.alert--notification').addClass('alert--notification--error');
             $('.alert--notification').html('¡Ingrese un e-mail!');
 
-            setTimeout(()=>{
+            setTimeout(() => {
                 $('#form__input').removeClass('form__input--error');
                 $('#form__i').removeClass('fa-circle-xmark');
                 $('#form__i').removeClass('form__i--error');
                 $('.alert--notification').removeClass('alert--notification--error');
                 $('.alert--notification').html('');
-            },5000);
+            }, 5000);
 
-        }else if(expresiones.email.test(email)) {
+        } else if (expresiones.email.test(email)) {
 
             $.ajax({
-                type    : 'POST',
-                url     : './php/suscribe.php',
-                data    : data,
-                success : function(r){
-                    if(r==1){
+                type: 'POST',
+                url: './php/suscribe.php',
+                data: data,
+                success: function (r) {
+                    if (r == 1) {
                         $('.alert--notification').addClass('alert--notification--check');
                         $('.alert--notification').html('Enviado con exito');
                         $('#form__input').val('');
 
-                        setTimeout(()=>{
+                        setTimeout(() => {
 
                             $('.alert--notificacion').html('');
                             $('#form__input').removeClass('form__input--check');
@@ -96,11 +94,11 @@ $(document).ready(function(){
                             $('.alert--notification').html('');
 
                         }, 3000);
-    
-                    }else if(r==2){
+
+                    } else if (r == 2) {
 
                         $('.alert--notification').html('Algo falló, intenta nuevamente');
-                    }else{
+                    } else {
                         console.log(r);
                     }
                 }
@@ -109,7 +107,8 @@ $(document).ready(function(){
     });
 
     return false;
-});
+}
+
 
 
 
