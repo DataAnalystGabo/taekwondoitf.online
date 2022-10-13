@@ -8,6 +8,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: calc(100vh - 4em);
+        border-bottom: 1px solid var(--grey);
     }
 
         .prime__cover{
@@ -165,7 +166,6 @@
                 .prime__location, .prime__organize, .prime__graduations, .prime__ph{
                     display: block;
                     font-family: var(--roboto);
-                    *background-color: darkgreen;
                 }
 
                     .prime__icon{
@@ -182,7 +182,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.25em;
+    margin: 4em 0;
     border-top: 1px solid var(--grey);
     gap: 1em;
 }

@@ -155,15 +155,23 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                 </div>
             </section>
 
-            <h2 class="title">NOTICIAS TAEKWONDO ITF</h2>
-
             <div class="articles">
 
                 <?php foreach($statementSQL as $n){?>
                     <article class="article">
-                        <div class="cover">
+                        <picture class="cover">  
+                            <img loading='lazy' class="cover__img" 
+
+                            srcset="admi/images/<?php echo $n['image_new_mobile'];?> 483w,
+                                    admi/images/<?php echo $n['image_new'];?>"
+                            sizes="(max-width : 500px) 483px"
+                            src="admi/images/<?php echo $n['image_new_mobile'];?>" alt="<?php echo $n['title']; ?>">
+                            
+                        </picture>
+
+                       <!-- <div class="cover">
                             <img class="cover__img" src="admi/images/<?php echo $n['image_new'];?>" alt="<?php echo $n['title']; ?>" loading="lazy">
-                        </div>
+                        </div> -->
             
                         <div class="resumen container">
             

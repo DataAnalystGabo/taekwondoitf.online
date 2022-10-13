@@ -25,8 +25,11 @@
                 <input class="form__input form__input--file" type="file" name="image_author">
                 
                 <textarea class="form__input form__input--textarea" name="new" id="" cols="30" rows="40" placeholder="Noticia"></textarea>
-                <label class="form__label" for="image_new">Selecciona una imagen para la portada</label>
+                <label class="form__label" for="image_new">Selecciona una imagen para la portada Versión Original</label>
                 <input class="form__input form__input--file" type="file" name="image_new">
+
+                <label class="form__label" for="image_new_mobile">Selecciona una imagen para la portada Versión Mobile 318px heigth x240px width</label>
+                <input class="form__input form__input--file" type="file" name="image_new_mobile">
             
                 <button class="form__btn" type="submit">Enviar</button>
             </form>

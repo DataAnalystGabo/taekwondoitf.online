@@ -6,3 +6,4 @@ inputEmail.addEventListener('blur', validarEmail);
 inputEmail.addEventListener('keyup', validarEmail);
 window.addEventListener('load', sendAjax, false);
 //$('#window').ready(sendAjax); versión jquery
+
