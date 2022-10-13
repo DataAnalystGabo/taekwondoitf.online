@@ -1,9 +1,12 @@
+const form                = document.getElementById('form');
 export const inputEmail   = document.getElementById('form__input');
 const circleConfirmation  = document.getElementById('form__i');
 const buttonSubmit        = document.getElementById('submit');
 const alertError          = document.querySelector('.alert--error');
 const alertCheck          = document.querySelector('.alert--check');
-const expresiones         = { email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, }
+const alertNotif          = document.querySelector('.alert--notification');
+const expresiones         = { email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, };
+const validador           = { email : false};
 
 
 export const validarEmail = (e) => {
@@ -17,6 +20,7 @@ export const validarEmail = (e) => {
         circleConfirmation.classList.add('form__i--check');
         alertError.classList.remove('alert--error--active');
         alertCheck.classList.add('alert--check--active');
+        validador.email = true;
     }
 
     else if(e.target.value == ""){
@@ -27,6 +31,7 @@ export const validarEmail = (e) => {
         circleConfirmation.classList.add('form__i');
         alertCheck.classList.remove('alert--check--active');
         alertError.classList.remove('alert--error--active');
+        validador.email = false;
     }
     
     else{
@@ -38,78 +43,64 @@ export const validarEmail = (e) => {
         circleConfirmation.classList.add('form__i--error');
         alertCheck.classList.remove('alert--check--active');
         alertError.classList.add('alert--error--active');
+        validador.email = false;
     }
 }
 
-export const sendAjax = () => {
 
-    $('#submit').click(function (e) {
+export const sendAjax = buttonSubmit.addEventListener('click', function(e){
+    e.preventDefault();
+    
+    let datos = new FormData(form);
 
-        e.preventDefault();
+    if (datos.get('email') == '') {
 
-        const email = $('#form__input').val();
-        const data = 'email=' + email;
+        inputEmail.classList.remove('form__input--check');
+        inputEmail.classList.add('form__input--error');
+        circleConfirmation.classList.add('fa-circle-xmark');
+        circleConfirmation.classList.remove('fa-circle-check');
+        circleConfirmation.classList.remove('form__i--check');
+        circleConfirmation.classList.add('form__i--error');
+        alertNotif.classList.remove('alert--notification--check');
+        alertNotif.classList.add('alert--notification--error');
+        alertNotif.innerHTML = '¡Ingrese un e-mail!';
 
-        if (email == '') {
+        setTimeout(() => {
+            inputEmail.classList.remove('form__input--error');
+            circleConfirmation.classList.remove('fa-circle-xmark');
+            circleConfirmation.classList.remove('form__i--error');
+            alertNotif.classList.remove('alert--notification--error');
+            alertNotif.innerHTML = '';
+        }, 5000);
 
-            $('#form__input').removeClass('form__input--check');
-            $('#form__input').addClass('form__input--error');
-            $('#form__i').addClass('fa-circle-xmark');
-            $('#form__i').removeClass('fa-circle-check');
-            $('#form__i').removeClass('form__i--check');
-            $('#form__i').addClass('form__i--error');
-            $('.alert--notification').addClass('alert--notification--error');
-            $('.alert--notification').html('¡Ingrese un e-mail!');
+    }else if(validador.email){
 
-            setTimeout(() => {
-                $('#form__input').removeClass('form__input--error');
-                $('#form__i').removeClass('fa-circle-xmark');
-                $('#form__i').removeClass('form__i--error');
-                $('.alert--notification').removeClass('alert--notification--error');
-                $('.alert--notification').html('');
-            }, 5000);
+        fetch('./php/newsletter.php', {
+            method : 'POST',
+            body   : datos
+        }) 
+        .then(res => res.json())
+        .then(echo => {
+            if(echo == 1){
+                alertNotif.classList.add('alert--notification--check');
+                alertNotif.innerHTML = 'Enviado con exito baby';
+                form.reset();
+                validador.email = false;
+                
+                setTimeout(() => {
+                    alertNotif.innerHTML = '';
+                    inputEmail.classList.remove('form__input--check');
+                    inputEmail.classList.remove('form__input--error');
+                    circleConfirmation.classList.remove('form__i--check');
+                    circleConfirmation.classList.remove('form__i--error');
+                    circleConfirmation.classList.add('form__i');
+                    alertError.classList.remove('alert--error--active');
+                    alertCheck.classList.remove('alert--check--active');
+                }, 3000);
 
-        } else if (expresiones.email.test(email)) {
-
-            $.ajax({
-                type: 'POST',
-                url: './php/suscribe.php',
-                data: data,
-                success: function (r) {
-                    if (r == 1) {
-                        $('.alert--notification').addClass('alert--notification--check');
-                        $('.alert--notification').html('Enviado con exito');
-                        $('#form__input').val('');
-
-                        setTimeout(() => {
-
-                            $('.alert--notificacion').html('');
-                            $('#form__input').removeClass('form__input--check');
-                            $('#form__input').removeClass('form__input--error');
-                            $('#form__i').removeClass('form__i--check');
-                            $('#form__i').removeClass('form__i--error');
-                            $('#form__i').addClass('form__i');
-                            $('.alert--error').removeClass('alert--error--active');
-                            $('.alert--check').removeClass('alert--check--active');
-                            $('.alert--notification').html('');
-
-                        }, 3000);
-
-                    } else if (r == 2) {
-
-                        $('.alert--notification').html('Algo falló, intenta nuevamente');
-                    } else {
-                        console.log(r);
-                    }
-                }
-            });
-        }
-    });
-
-    return false;
-}
-
-
-
-
-
+            }else{
+            console.log('hola');
+            }
+        })
+    }
+});

@@ -5,7 +5,7 @@ $email = isset($_POST['email'])?$_POST['email']:'';
 
 if(empty($email)){
 
-    echo '3';
+    echo json_encode('3');
 
 }else{
 
@@ -14,13 +14,13 @@ if(empty($email)){
     $insertData->execute();
 }
 
-if($insertData->execute()){
+if($insertData){
 
-    echo '1';
+    echo json_encode('1');
 
 }else{
     
-    echo '2';
+    echo json_encode('2');
 }
 
 $con = null;
