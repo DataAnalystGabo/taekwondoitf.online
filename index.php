@@ -46,7 +46,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         <header class="header">
             <nav class="nav container">
                 <a class="nav__logo" href="index.php">
-                    <img class="nav__img" src="image/taekwondoitfonline.svg" alt="Logotipo de taekwondoitf.online">
+                    <img loading='lazy' class="nav__img" src="image/taekwondoitfonline.svg" alt="Logotipo de taekwondoitf.online">
                 </a>
 
                 <div class="menu" id="menu">
@@ -93,20 +93,18 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         <main class="main">
 
             <section class="prime">
-                <picture class="prime__cover">
-                    <!--<source srcset="image/cover-desktop.webp" media="(min-width : 700px)">
-                    <source srcset="image/cover-mobile.webp" media="(min-width : 300px)">
-                    <img class="prime__img" src="image/cover-desktop.webp" alt="Taekwondistas compitiendo en Copa del Mundo"> -->
-                    
-                    <img class="prime__img" srcset="image/cover-prime-480x1000.webp 480w,
-                                                    image/cover-prime-1200x700.webp 1200w,
-                                                    image/cover-prime-1319x879.webp 1319w"
+                <picture class="prime__cover">                    
+                    <img class="prime__img" 
+                        srcset="image/cover-prime-480x1000.webp 480w,
+                                image/cover-prime-1200x700.webp 1200w,
+                                image/cover-prime-1319x879.webp 1319w"
 
-                                                    sizes="(max-width : 500px) 480px,
-                                                          (max-width : 1200px) 1200px,
-                                                          (min-width : 1201px) 1319px"
+                        sizes="(max-width : 500px) 480px,
+                               (max-width : 1200px) 1200px,
+                               (min-width : 1201px) 1319px"
 
-                                            src="image/cover-prime-480x1000.webp" alt="Taekwondista ejecutando una forma en un Campeonato Mundial de Taekwondo">
+                        src="image/cover-prime-480x1000.webp" 
+                        alt="Taekwondista ejecutando una forma en un Campeonato Mundial de Taekwondo">
                 </picture>
 
                 <div class="prime__filter"></div>
@@ -159,19 +157,14 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                 <?php foreach($statementSQL as $n){?>
                     <article class="article">
-                        <picture class="cover">  
-                            <img loading='lazy' class="cover__img" 
+                        <picture class="article__cover">  
+                            <img loading='lazy' class="article__img" 
 
                             srcset="admi/images/<?php echo $n['image_new_mobile'];?> 483w,
                                     admi/images/<?php echo $n['image_new'];?>"
                             sizes="(max-width : 500px) 483px"
                             src="admi/images/<?php echo $n['image_new_mobile'];?>" alt="<?php echo $n['title']; ?>">
-                            
                         </picture>
-
-                       <!-- <div class="cover">
-                            <img class="cover__img" src="admi/images/<?php echo $n['image_new'];?>" alt="<?php echo $n['title']; ?>" loading="lazy">
-                        </div> -->
             
                         <div class="resumen container">
             
@@ -181,7 +174,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                                 <div class="resumen__box">
                                     <div class="picture">
-                                        <img class="picture__img" src="admi/images/<?php echo $n['image_author'];?>" alt="Imagen del autor del artículo">
+                                        <img loading='lazy' class="picture__img" src="admi/images/<?php echo $n['image_author'];?>" alt="Imagen del autor del artículo">
                                     </div>
                                 
                                     <div class="data">
@@ -266,12 +259,6 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                                   (min-width : 501px) 240px"
                             src="image/calendar-240x240.webp" alt="Icono con forma de calendario con el numero 26 en el centro">
 
-                            <!-- <img class="form__img" src="image/calendarIcon.webp" alt="Icono 3d de Calendario"> 
-                        size="(max-width : 480px) 100%,
-                                                            (max-width : 768px) 100%,
-                                                            (max-width : 1024px) 100%,
-                                                            (max-width : 1200px) 100%,
-                                                            100%"-->
                         </picture>
                     
                         <div class="form__group">
@@ -323,7 +310,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                 <div class="footer__hero">
                     <a class="footer__logo" href="index.php">
-                        <img class="footer__img" src="image/taekwondoitfonline-grey.svg" alt="Logotipo de taekwondoitf.online">
+                        <img loading='lazy' class="footer__img" src="image/taekwondoitfonline-grey.svg" alt="Logotipo de taekwondoitf.online">
                     </a>
                     
                     <div class="footer__icons">
