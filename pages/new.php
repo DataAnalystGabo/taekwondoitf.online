@@ -21,30 +21,34 @@ $newsRelated->setFetchMode(PDO::FETCH_ASSOC);
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/root.css">
-    <link rel="stylesheet" href="../css/new.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    
-    
-    <title>Infotkd</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SEL162DE"></script>
-    <!-- Google tag (gtag.js) -->
-</head>
+        <title>▷ Taekwondo ITF - ¡Todo lo que tenés que saber está aquí!</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá la teoría en pdf, Verificá si un instructor está afederado y mucho más.">
+        <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
+        
+        <script defer src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+        <script type="module" src="../js/main.js"></script>
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/root.css">
+        <link rel="stylesheet" href="../css/new.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SEL162DE"></script>
+        <!-- Google tag (gtag.js) -->
+    </head>
 
 <body>
 
@@ -89,11 +93,15 @@ $newsRelated->setFetchMode(PDO::FETCH_ASSOC);
 
                 <div class="divisor"></div>
 
-                <div class="article__banner">
-                    <img class="banner__img" src="../admi/images/<?php echo $newPrimary[0]['image_new']; ?>" alt="Imagen del articulo sobre Taekwondo">
-                </div>
-                <p class="banner__footer"><?php echo $newPrimary[0]['subtitle']; ?></p>
-            
+                <picture class="article__banner">  
+                    <img loading='lazy' class="article__img" 
+
+                    srcset="../admi/images/<?php echo $newPrimary[0]['image_new_mobile'];?> 483w,
+                            ../admi/images/<?php echo $newPrimary[0]['image_new'];?>"
+                    sizes="(max-width : 500px) 483px"
+                    src="../admi/images/<?php echo $newPrimary[0]['image_new_mobile'];?>" alt="<?php echo $newPrimary[0]['title']; ?>">
+                </picture>
+     
                 <div class="article__paragraph">
                     <p> 
                         <?php echo $newPrimary[0]['new']; ?>
@@ -131,8 +139,8 @@ $newsRelated->setFetchMode(PDO::FETCH_ASSOC);
 
     <?php require ('../layout/footer.php'); ?>
 
-    <script src="../js/menu.js"></script>
-    <script src="../js/shareNews.js"></script>
+   <!-- <script src="../js/menu.js"></script> -->
+    <script src="../js/modules/shareNews.js"></script>
     
 
 </body>

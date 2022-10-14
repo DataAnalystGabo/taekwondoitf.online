@@ -11,7 +11,7 @@ export function animacionBar(){
     navMenu.classList.toggle("menu--transladar");
 }
 
-
+menuHambur.addEventListener("click", animacionBar);
 
 // Google tag (gtag.js) //
 window.dataLayer = window.dataLayer || [];
