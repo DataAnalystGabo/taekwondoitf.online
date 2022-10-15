@@ -50,63 +50,6 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
 
     <body>
         <?php require ('../layout/header.php'); ?>
-<!--
-        <main class="main">
-            <section class="news container">
-                <div class="aside">
-                    <div class="new-principal">
-                        <div class="new">
-                            <a  class="new__link" href="new.php?id=<?php echo $newPrincipal[0]['id']; ?>">
-                                <article class="article">
-        
-                                    <h2 class="article__title article__title--principal"> <?php echo $newPrincipal[0]['title']; ?> </h2>
-                                    <p class="article__subtitle"> <?php echo $newPrincipal[0]['subtitle']; ?> </p>
-        
-                                    <div class="summary">
-                                        <div class="summary__profile">
-                                            <img class="summary__img" src="../admi/images/<?php echo $newPrincipal[0]['image_author']; ?>" alt="">
-                                        </div>
-                                        <span class="summary__authorname"> <?php echo $newPrincipal[0]['author']; ?> </span>
-                                        <i class="summary__icon fa-solid fa-calendar-days"></i>
-                                        <span class="summary__date"> <?php echo $newPrincipal[0]['publication_date']; ?> </span>
-                                    </div>
-
-                                    <picture class="article__portada article__portada--princ">  
-                                        <img loading='lazy' class="article__img" 
-
-                                        srcset="../admi/images/<?php echo $newPrincipal[0]['image_new_mobile'];?> 483w,
-                                                ../admi/images/<?php echo $newPrincipal[0]['image_new'];?>"
-                                        sizes="(max-width : 500px) 483px"
-                                        src="../admi/images/<?php echo $newPrincipal[0]['image_new_mobile'];?>" alt="<?php echo $newPrincipal[0]['title']; ?>">
-                                    </picture>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="ads">
-    
-        
-                    </div>
-        
-                    <div class="news-row">
-        
-                        <?php foreach ($newsRow as $row) { ?>
-                            <a class="new__link" href="new.php?id=<?php echo $row['id']; ?>">
-                                <div class="new new--row">
-                                    <article class="article">
-                                        <h2 class="article__title"><?php echo $row['title']; ?></h2>
-                                        <p class="article__subtitle article__subtitle--row"><?php echo $row['subtitle']; ?></p>
-                                        <div class="article__portada article__portada--row">
-                                            <img class="article__img" src="../admi/images/<?php echo $row['image_new']; ?>" alt="Portada de noticia">
-                                        </div>
-                                    </article>
-                                </div>
-                            </a>
-                        <?php } ?>
-                    </div>
-            </section>
-        </main> -->
 
         <main class="main">
             <div class="hero container">
@@ -183,24 +126,6 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
                             </article>
                         </a>
                     <?php } ?>
-
-            <!--        <a class="new" href="">
-                        <article class="new__article">
-                            <h2 class="new__title"></h2>
-                            <picture class="new__cover">
-                                <img class="new__img" src="" alt="">
-                            </picture>
-                        </article>
-                    </a>
-
-                    <a class="new" href="">
-                        <article class="new__article">
-                            <h2 class="new__title"></h2>
-                            <picture class="new__cover">
-                                <img class="new__img" src="" alt="">
-                            </picture>
-                        </article>
-                    </a> -->
                 </div>
             </div>
         </main>
