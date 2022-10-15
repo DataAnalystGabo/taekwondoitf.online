@@ -108,7 +108,7 @@
     .aside__cover{
         grid-column: 1/2;
         grid-row: 1/2;
-        width: 15em;
+        width: 10em;
         height: 20em;
     }
 
@@ -141,7 +141,7 @@
         justify-content: center;
         grid-column: 2/3;
         grid-row: 1/2;
-        padding: 1em;
+        padding: 1em 1em 1em 0;
         *background-color: blueviolet;
     }
 
@@ -164,12 +164,12 @@
         }
 
             .aside__icon{
-                font-size: .8em;
+                font-size: .7em;
                 color: var(--green);
             }
 
             .aside__sendfree{
-                font-size: .8em;
+                font-size: .7em;
                 color: var(--green);
             }
 
@@ -182,6 +182,7 @@
         }
 
         .aside__btca{
+            width: 8em;
             text-decoration: none;
             color: var(--black3);
             box-shadow: -2px 5px 5px 0px rgba(0,0,0,0.14);
@@ -207,6 +208,7 @@
                 }
 
                 .button__label{
+                    font-size: .9em;
                     font-weight: 400;
                 }
 
