@@ -131,7 +131,7 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
                         </div>
 
                         <picture class="newprimary__cover">  
-                            <img loading='lazy' class="newprimary__img" 
+                            <img class="newprimary__img" 
 
                             srcset="../admi/images/<?php echo $newPrincipal[0]['image_new_mobile'];?> 483w,
                                     ../admi/images/<?php echo $newPrincipal[0]['image_new'];?>"
@@ -172,8 +172,35 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
                     
                 </aside>
 
-                <div>
-                    <article></article>
+                <div class="grid">
+                    <?php foreach ($newsRow as $row) { ?>
+                        <a class="new" href="new.php?id=<?php echo $row['id']; ?>">
+                            <article class="new__article">
+                                <h2 class="new__title"> <?php echo $row['title']; ?> </h2>
+                                <picture class="new__cover">
+                                    <img class="new__img" src="../admi/images/<?php echo $row['image_new_mobile']; ?>" alt="<?php echo $row['title']; ?>">
+                                </picture>
+                            </article>
+                        </a>
+                    <?php } ?>
+
+            <!--        <a class="new" href="">
+                        <article class="new__article">
+                            <h2 class="new__title"></h2>
+                            <picture class="new__cover">
+                                <img class="new__img" src="" alt="">
+                            </picture>
+                        </article>
+                    </a>
+
+                    <a class="new" href="">
+                        <article class="new__article">
+                            <h2 class="new__title"></h2>
+                            <picture class="new__cover">
+                                <img class="new__img" src="" alt="">
+                            </picture>
+                        </article>
+                    </a> -->
                 </div>
             </div>
         </main>
