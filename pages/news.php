@@ -153,13 +153,15 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
                     </div>
 
                     <div class="aside__info">
-                        <span class="aside__price">$48.300</span>
-                        <div class="aside__shipping">
-                            <i class="aside__icon fa-solid fa-truck"></i>
-                            <span class="aside__sendfree">Envío gratis</span>
-                        </div>
                         <span class="aside__description">Cabezal Fight - Top Ten</span>
-
+                        <div class="aside__price">
+                            <span class="aside__value">$48.300</span>
+                            <div class="aside__shipping">
+                                <i class="aside__icon fa-solid fa-truck"></i>
+                                <span class="aside__sendfree">Envío gratis</span>
+                            </div>
+                        </div>
+                        
                         <a class="aside__btca" href="">
                             <div class="aside__button button">
                                 <i class="button__icon aside__icon--btca fa-solid fa-store"></i>
