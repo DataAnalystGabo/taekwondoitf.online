@@ -21,14 +21,14 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         
         
 
-        <script defer src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+        <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
         <script type="module" src="js/main.js"></script>
         
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/root.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="preload" as="style" href="css/normalize.css">
+        <link rel="preload" as="style" href="css/root.css">
+        <link rel="preload" as="style" href="css/header.css">
+        <link rel="preload" as="style" href="css/index.css">
+        <link rel="preload" as="style" href="css/footer.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

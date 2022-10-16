@@ -28,7 +28,7 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
     <meta name="keyword" content="taekwondo, taekwondo ITF, que significa taekwondo, axel vargas, aristides palopoli, dobok">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <script defer src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+    <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
     <script type="module" src="../js/main.js"></script>
 
     <link rel="stylesheet" href="../css/normalize.css">
@@ -120,7 +120,7 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
                         <a class="new" href="new.php?id=<?php echo $row['id']; ?>">
                             <article class="new__article">
                                 <h2 class="new__title"> <?php echo $row['title']; ?> </h2>
-                                <picture class="new__cover">
+                                <picture loading="lazy" class="new__cover">
                                     <img class="new__img" src="../admi/images/<?php echo $row['image_new_mobile']; ?>" alt="<?php echo $row['title']; ?>">
                                 </picture>
                             </article>

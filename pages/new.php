@@ -30,7 +30,7 @@ $newsRelated->setFetchMode(PDO::FETCH_ASSOC);
         <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá la teoría en pdf, Verificá si un instructor está afederado y mucho más.">
         <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
         
-        <script defer src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+        <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
         <script type="module" src="../js/main.js"></script>
 
         <link rel="stylesheet" href="../css/normalize.css">
