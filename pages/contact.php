@@ -2,8 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>▷ Taekwondo ITF - ¡Todo lo que tenés que saber está aquí!</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
 
     <link rel="stylesheet" href="../css/normalize.css">
@@ -11,19 +15,6 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/footer.css">
-    
-    <title>Infotkd</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SEL162DE"></script>
-    <!-- Google tag (gtag.js) -->
-
 </head>
 
 

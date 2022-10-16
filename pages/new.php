@@ -39,15 +39,12 @@ $newsRelated->setFetchMode(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/footer.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
-        
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SEL162DE"></script>
-        <!-- Google tag (gtag.js) -->
+        <link rel="preconnect"         href="https://fonts.googleapis.com">
+        <link rel="preconnect"         href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap">
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     </head>
 
 <body>

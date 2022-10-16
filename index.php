@@ -19,8 +19,6 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá la teoría en pdf, Verificá si un instructor está afederado y mucho más.">
         <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
         
-        
-
         <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
         <script type="module" src="js/main.js"></script>
         
@@ -30,16 +28,13 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/footer.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet preload">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet preload">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet preload">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet preload">
+        <link rel="preconnect"         href="https://fonts.googleapis.com">
+        <link rel="preconnect"         href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap">
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
         
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SEL162DE"></script>
-        <!-- Google tag (gtag.js) -->
     </head>
 
     <body>  

@@ -38,6 +38,7 @@
             margin: 0 auto;
             right: -200vw;
             font-family: var(--roboto);
+            font-weight:500;
             position: fixed;
             background: var(--yellow-dark);
             transition: all 900ms ease;
