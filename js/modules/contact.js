@@ -93,6 +93,10 @@ export const sendContact = buttonSubmit.addEventListener('click', (
                 if(echo == 1){
 
                     form.reset();
+                    validator.name = false;
+                    validator.email = false;
+                    validator.message = false;
+
                     boxAlerts.classList.remove('form__alerts--error');
                     boxAlerts.classList.add('form__alerts--checked');
                     alert.innerHTML = '¡Tu mensaje se ha enviado con éxito!';
@@ -108,10 +112,6 @@ export const sendContact = buttonSubmit.addEventListener('click', (
                     setTimeout(()=>{
                             boxAlerts.classList.remove('form__alerts--checked');
                     }, 5000);
-
-                    validator.name = false;
-                    validator.email = false;
-                    validator.message = false;
                 } else {
 
                     alert.innerHTML = '';
