@@ -13,8 +13,7 @@
     <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script>
     <script type="module">
         import { menu } from '../js/modules/menu.js';
-        import { validatorInputs } from '../js/modules/contact.js'
-        // importar funcion de envio de formulario
+        import { sendContact } from '../js/modules/contact.js'
     </script>
 
     <link rel="stylesheet" href="../css/normalize.css">
