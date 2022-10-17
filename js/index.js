@@ -1,5 +1,5 @@
 import { menu }     from './modules/menu.js';
-import { sendAjax } from './modules/newsletter.js';
+import { sendNewsletter } from './modules/newsletter.js';
 
 
 

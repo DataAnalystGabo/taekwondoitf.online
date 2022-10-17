@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>▷ Taekwondo ITF - Formulario de inscripción</title>
+
     <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
     
     <link rel="stylesheet" href="../css/normalize.css">
@@ -12,8 +15,6 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <title>Taekwondo ITF</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700;1,900&display=swap">

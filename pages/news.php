@@ -21,12 +21,12 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>▷ Taekwondo ITF - ¡Todo lo que tenés que saber está aquí!</title>
-
+    <title>▷ Taekwondo ITF - Noticias</title>
     <meta name="description" content="Noticias actualizadas todos los días, si hay una novedad seguro esta aquí.">
     <meta name="keyword" content="taekwondo, taekwondo ITF, que significa taekwondo, axel vargas, aristides palopoli, dobok">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     
     <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
     <script type="module" src="../js/index.js"></script>

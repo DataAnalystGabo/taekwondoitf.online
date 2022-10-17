@@ -166,7 +166,7 @@
                             }
 
                             .actions__btca:hover .actions__label{
-                                left: 15%;
+                                left: 20%;
                             }
 
                             .actions__icon{
@@ -180,7 +180,7 @@
                             }
 
                             .actions__btca:hover .actions__icon{
-                                left: 35%;
+                                left: 30%;
                                 opacity: 1;
                             }    
                             

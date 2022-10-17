@@ -48,7 +48,7 @@ export const validarEmail = (e) => {
 }
 
 
-export const sendAjax = buttonSubmit.addEventListener('click', function(e){
+export const sendNewsletter = buttonSubmit.addEventListener('click', function(e){
     e.preventDefault();
     
     let datos = new FormData(form);
@@ -82,6 +82,7 @@ export const sendAjax = buttonSubmit.addEventListener('click', function(e){
         .then(res => res.json())
         .then(echo => {
             if(echo == 1){
+                
                 alertNotif.classList.add('alert--notification--check');
                 alertNotif.innerHTML = 'Enviado con exito baby';
                 form.reset();
@@ -107,6 +108,6 @@ export const sendAjax = buttonSubmit.addEventListener('click', function(e){
 
 inputEmail.addEventListener('blur', validarEmail);
 inputEmail.addEventListener('keyup', validarEmail);
-window.addEventListener('load', sendAjax, false);
+window.addEventListener('load', sendNewsletter, false);
 
 //$('#window').ready(sendAjax); versión jquery 

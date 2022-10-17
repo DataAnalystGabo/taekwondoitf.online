@@ -12,11 +12,10 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>▷ Taekwondo ITF - ¡Todo lo que tenés que saber está aquí!</title>
-
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá la teoría en pdf, Verificá si un instructor está afederado y mucho más.">
+        <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá teoría en pdf, Verificá si un instructor está afederado y mucho más.">
         <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
         
         <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
@@ -33,7 +32,6 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700;1,900&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
-        
     </head>
 
     <body>  
