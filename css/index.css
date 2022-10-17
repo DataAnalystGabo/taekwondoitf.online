@@ -296,6 +296,7 @@
 
     .bbl__subtitle{
         font-size: 2em;
+        font-weight: 700;
         margin-top: 0;
         margin-bottom: 2em;
         color: var(--yellow-dark);

@@ -32,6 +32,8 @@
                 }
 
                 .newprimary__subtitle{
+                    font-size: 1.2em;
+                    line-height: 1.3em;
                     margin-bottom: .5em;
                     color: var(--grey);
                 }
