@@ -109,9 +109,9 @@ export const sendContact = buttonSubmit.addEventListener('click', (
                             boxAlerts.classList.remove('form__alerts--checked');
                     }, 5000);
 
-                    campos.name = false;
-                    campos.email = false;
-                    campos.message = false;
+                    validator.name = false;
+                    validator.email = false;
+                    validator.message = false;
                 } else {
 
                     alert.innerHTML = '';
