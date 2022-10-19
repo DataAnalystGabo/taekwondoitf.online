@@ -28,20 +28,13 @@ if($_POST){
     $genero     = (isset($_POST['genero']))?$_POST['genero']:'';
     $categoria  = (isset($_POST['categoria']))?$_POST['categoria']:'';
     $edad       = (isset($_POST['edad']))?$_POST['edad']:'';
-    $peso       = (isset($_POST['peso']))?$_POST['peso']:'';
-
-   // $insertData = ("INSERT INTO competidores (escuela, instructor, coach, email, celular, othercamp,
-   // competidor, dni, genero, categoria, edad, peso) VALUES ('".$escuela."', '".$instructor."', '".$coach."',
-   // '".$email."', '".$celular."', '".$othercamp."', '".$competidor."', '".$dni."', '".$genero."',
-   // '".$categoria."', '".$edad."', '".$peso."')");
-
-   
+    $peso       = (isset($_POST['peso']))?$_POST['peso']:'';   
 
    $validatorDNI = $con->query("SELECT * FROM competidores WHERE dni ='".$dni."' ");
 
    if($validatorDNI->fetchColumn() > 0){
 
-        echo 2;
+        echo json_encode(2);
 
    } else{
 
@@ -62,7 +55,7 @@ if($_POST){
    $insertData->bindParam(':peso', $peso);
 
    if($insertData->execute()){
-    echo 1;
+    echo json_encode(1);
    }
 
     $con = null;

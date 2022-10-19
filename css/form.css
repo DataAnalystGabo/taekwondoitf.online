@@ -11,9 +11,12 @@
         margin: 1.5em 0 3em 0;
     }
 
-    .banner__title{
-        width: 18em;
+    .form__title{
+        width: 70%;
+        font-size: 3em;
+        font-family: var(--bebas-neue);
         margin: 1em auto;
+        text-align: center;
     }
 
         .banner__img{
@@ -30,6 +33,11 @@
         .row__header--coach{
             margin-bottom: 4em;
         }
+
+            .row__title{
+                font-size: 1.2em;
+                font-weight: 600;
+            }
 
         .fila2__selectores, .fila2__aclaracion{
             padding-bottom: 1.5em;
@@ -50,6 +58,7 @@
                     top: .5em;
                     transition: all .3s ease;
                     color: var(--grey);
+                    pointer-events: none;
                 }
 
             .input__text:focus + .input__label{
@@ -145,20 +154,6 @@
             gap: .8em;
         }
 
-            .tittle--competitor{
-                margin:0;
-            }
-
-            .pointer{
-                margin:0;
-                cursor: pointer;
-                color: var(--yellow-dark);
-            }
-
-            .pointer--hidden{
-                display: none;
-            }
-
             .row__selectors {
                 width: 100%;
                 color: var(--white);
@@ -248,10 +243,6 @@
     align-items: center;
     background-color: var(--red);
 }
-
-    .messages__p{
-        margin: auto;
-    }
 
 .messages--active{
     display: flex;

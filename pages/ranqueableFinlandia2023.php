@@ -8,6 +8,11 @@
     <title>▷ Taekwondo ITF - Formulario de inscripción</title>
 
     <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+    <script type="module">
+        import { menu } from '../js/modules/menu.js';
+    </script>
+
+    <script defer src="../js/modules/form.js"></script>
     
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/root.css">
@@ -20,7 +25,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
-     
 </head>
 
 
@@ -31,14 +35,13 @@
           
     <main class="main container">
         <section class="section">   
-                <form class="form" method="POST" id="form">
-                    <div class="banner__title">
-                        <img class="banner__img" src="../image/finlandia2023.webp" alt="Banner Primer Ranqueable al Campeonato Mundial Finlandia 2023">
-                    </div>
+                <form class="form" id="form">
+
+                    <h2 class="form__title">CAMPEONATO NACIONAL DE TAEKWONDO ITF 2023</h2>
                
                     <div class="row row--coach">
                             <div class="row__header row__header--coach">
-                                <h3 class="row__tittle">Datos del Coach/Instructor</h3>
+                                <span class="row__title">Datos del Coach/Instructor</span>
                             </div>
 
                             <div class="row__inputs">
@@ -47,7 +50,7 @@
 
                                     <div class="input__box">
                                         <input class="input__text" type="text" name="escuela" placeholder=" " id="input__escuela" >
-                                        <label class="input__label" for="escuela" id="input__label--escuela">Escuela</label>
+                                        <label class="input__label" for="escuela">Escuela</label>
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--escuela">
@@ -60,7 +63,7 @@
                                 <div class="input">
                                     <div class="input__box">
                                         <input class="input__text" type="text" name="instructor" placeholder=" " id="input__instructor" >
-                                        <label class="input__label" for="instructor" id="input__label--instructor">Instructor (Nombre y Apellido)</label>
+                                        <label class="input__label" for="instructor">Instructor (Nombre y Apellido)</label>
                                     </div>
  
                                     <div class="input__alerts" id="input__alerts--instructor">
@@ -73,7 +76,7 @@
                                 <div class="input">
                                     <div class="input__box">
                                         <input class="input__text" type="text" name="coach" placeholder=" " id="input__coach" >
-                                        <label class="input__label" for="coach" id="input__label--coach">Coach (Nombre y Apellido)</label>
+                                        <label class="input__label" for="coach">Coach (Nombre y Apellido)</label>
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--coach">
@@ -86,7 +89,7 @@
                                 <div class="input">
                                     <div class="input__box">
                                         <input class="input__text" type="text" name="email" placeholder=" " id="input__email" >
-                                        <label class="input__label" for="email" id="input__label--email">E-mail: xxxxxxx@gmail.com</label>
+                                        <label class="input__label" for="email">E-mail: xxxxxxx@gmail.com</label>
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--email">
@@ -99,7 +102,7 @@
                                 <div class="input">
                                     <div class="input__box">
                                         <input class="input__text" type="tel" name="celular" placeholder=" " id="input__celular" >
-                                        <label class="input__label" for="celular" id="input__label--celular">Celular/Whatsapp</label>
+                                        <label class="input__label" for="celular">Celular/Whatsapp</label>
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--celular">
@@ -112,7 +115,7 @@
                                 <div class="input">
                                     <div class="input__box">
                                         <input class="input__text" type="text" name="othercamp" placeholder=" " id="input__othercamp" >
-                                        <label class="input__label" for="othercamp" id="input__label--othercamp">Otro campo</label>
+                                        <label class="input__label" for="othercamp">Otro campo</label>
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--othercamp">
@@ -129,8 +132,7 @@
                     <div class="row row--competitor">
 
                         <div class="row__header row__header--competitor">
-                            <h3 class="tittle tittle--competitor">Datos del competidor </h3>
-                            <span class="pointer pointer--hidden">Eliminar</span>
+                            <span class="row__title">Datos del competidor </span>
                         </div>
 
                         <div class="row__selectors">
@@ -139,7 +141,7 @@
                                 <div class="input">
                                     <div class="input__box">
                                         <input class="input__text" type="text" name="competidor" placeholder=" " id="input__competidor" >
-                                        <label class="input__label" for="competidor" id="input__label--competidor">Nombre y Apellido del competidor</label>
+                                        <label class="input__label" for="competidor"">Nombre y Apellido del competidor</label>
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--competidor">
@@ -152,7 +154,7 @@
                                 <div class="input">
                                     <div class="input__box">
                                         <input class="input__text" type="tel" name="dni" placeholder=" " id="input__dni" >
-                                        <label class="input__label" for="dni" id="input__label--dni">DNI (sin puntos ni comas)</label>
+                                        <label class="input__label" for="dni">DNI (sin puntos ni comas)</label>
                                     </div>
 
                                     <div class="input__alerts" id="input__alerts--dni">
@@ -226,17 +228,16 @@
                         </div>
                     </div>
 
-                    <div class="actions">
-                        <button class="actions__btca" id="submit" name="enviar">
+                    <div class="actions" id="submit">
+                        <div class="actions__btca">
                             <span class="actions__label">ENVIAR</span>
                             <div class="actions__icon">
                                 <i class="actions__i fa-solid fa-arrow-right-long"></i>
                             </div>
-                        </button>
+                        </div>
                     </div>
 
-                    <div class="messages" id="messages">
-                        <p class="messages__p" id="messages__p"></p>
+                    <div class="messages">
                     </div>
 
                 </form>
@@ -245,9 +246,5 @@
 
     <?php require ('../layout/footer.php') ?>
     
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/ranqueableFinlandia2023.js"></script>
-
 </body>
 </html>

@@ -34,70 +34,70 @@
     <?php require ('../layout/header.php') ?>
 
     <main class="main">
-        <div class="hero container">
+        <div class="hero">
 
-            <h1 class="hero__title">Contacto</h1>
+            <picture class="hero__cover">                    
+                <img class="hero__img" 
+                    srcset="../image/lyliandoulay40-mobile.webp 500w,
+                            ../image/lyliandoulay40.webp 1286w"
 
-            <div class="contact">
-                <form class="form" id="form">
+                    sizes="(max-width : 500px) 500px
+                           (min-width : 501px) 1286px"
 
-                    <div class="form__inputs">
-                        <div class="form__box">
-                            <input class="form__input" id="form__input--name" type="text" name="name" placeholder=" ">
-                            <label class="form__label" for="name">Nombre</label>
-                        </div>
+                    src="../image/lyliandoulay40-mobile.webp" 
+                    alt="Lylian Doulay ejecutando una forma en un Campeonato Mundial de Taekwondo ITF">
+            </picture>
 
-                        <div class="alerts alerts--name" id="alerts--name">
-                            <i class="alerts__i fa-solid fa-circle-xmark" id="alerts__i--name"></i>
-                            <p class="alerts__error" id="alerts__error--name">Sólo se permite letras y espacios</p>
-                            <p class="alerts__checked" id="alerts__checked--name">¡Válido!</p>
-                        </div>
+            <form class="form container" id="form">
+                <span class="form__title">Contacto</span>
+
+                <div class="form__inputs">
+                    <div class="form__box">
+                        <input class="form__input" id="form__input--name" type="text" name="name" placeholder=" ">
+                        <label class="form__label" for="name">Nombre</label>
                     </div>
 
-                    <div class="form__inputs">
-                        <div class="form__box">
-                            <input class="form__input" id="form__input--email" type="text" name="email" placeholder=" ">
-                            <label class="form__label" for="name">Email</label>
-                        </div>
-
-                        <div class="alerts alerts--email" id="alerts--email">
-                            <i class="alerts__i fa-solid fa-circle-xmark" id="alerts__i--email"></i>
-                            <p class="alerts__error" id="alerts__error--email">Formato válido example@email.com</p>
-                            <p class="alerts__checked" id="alerts__checked--email">¡Válido!</p>
-                        </div>
+                    <div class="alerts alerts--name" id="alerts--name">
+                        <i class="alerts__i fa-solid fa-circle-xmark" id="alerts__i--name"></i>
+                        <p class="alerts__error" id="alerts__error--name">Sólo se permite letras y espacios</p>
+                        <p class="alerts__checked" id="alerts__checked--name">¡Válido!</p>
                     </div>
-                    
-                    <div class="form__inputs">
-                        <div class="form__box">
-                            <textarea style="resize : none" class="form__input" id="form__input--message" name="message" placeholder=" "cols="30" rows="10"></textarea>
-                            <label class="form__label" for="message">Mensaje</label>
-                        </div>     
-                    </div>
-                    
-                <!--    <div class="actions">
-                        <button class="actions__btca" id="submit">
-                            <span class="actions__label">ENVIAR</span>
-                            <div class="actions__icon">
-                                <i class="actions__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </button>
-                    </div> -->
+                </div>
 
-                    <div class="actions" id="btca-submit">
-                        <div class="actions__btca">
-                            <span class="actions__label">ENVIAR</span>
-                            <div class="actions__icon">
-                                <i class="actions__i fa-solid fa-arrow-right-long"></i>
-                            </div>
-                        </div>
+                <div class="form__inputs">
+                    <div class="form__box">
+                        <input class="form__input" id="form__input--email" type="text" name="email" placeholder=" ">
+                        <label class="form__label" for="name">Email</label>
                     </div>
 
-                    <div class="form__alerts" id="box-alerts">
-                        <p class="form__alert" id="alert"></p>
+                    <div class="alerts alerts--email" id="alerts--email">
+                        <i class="alerts__i fa-solid fa-circle-xmark" id="alerts__i--email"></i>
+                        <p class="alerts__error" id="alerts__error--email">Formato válido example@email.com</p>
+                        <p class="alerts__checked" id="alerts__checked--email">¡Válido!</p>
                     </div>
-                    
-                </form>
-            </div>
+                </div>
+                
+                <div class="form__inputs">
+                    <div class="form__box">
+                        <textarea style="resize : none" class="form__input" id="form__input--message" name="message" placeholder=" "cols="30" rows="10"></textarea>
+                        <label class="form__label" for="message">Mensaje</label>
+                    </div>     
+                </div>
+
+                <div class="actions" id="btca-submit">
+                    <div class="actions__btca">
+                        <span class="actions__label">ENVIAR</span>
+                        <div class="actions__icon">
+                            <i class="actions__i fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__alerts" id="box-alerts">
+                    <p class="form__alert" id="alert"></p>
+                </div>
+                
+            </form>
         </div>
     </main>
 

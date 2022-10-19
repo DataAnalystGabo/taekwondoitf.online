@@ -1,6 +1,3 @@
-//---------------------------------------------------------------//
-//-----------------Validación de campos con JS Vanilla-----------//
-
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -9,10 +6,12 @@ const expresiones = {
 	celular: /^\d{7,14}$/, // 7 a 14 numeros.
     dni: /^\d{7,8}$/ // 7 a 14 numeros.
 }
-
-const inputs    = document.querySelectorAll('#form input');
-const selectors = document.querySelectorAll('#form select');
-const campos    = {
+const inputs          = document.querySelectorAll('#form input');
+const form            = document.querySelector('#form');
+const buttonSubmit    = document.getElementById('submit');
+const messages        = document.querySelector('.messages');
+const selectors       = document.querySelectorAll('#form select');
+const validator       = {
     escuela :    false,
     instructor : false,
     coach:       false,
@@ -35,7 +34,7 @@ const validatorInput = (expresion, input, camp)=>{
         document.querySelector(`#input__i--${camp}`).classList.add('input__i--checked');
         document.querySelector(`#input__checked--${camp}`).classList.add('input__checked--active');
         document.querySelector(`#input__error--${camp}`).classList.remove('input__error--active');
-        campos[camp] = true;
+        validator[camp] = true;
 
     }else if(input.value == ''){
         document.getElementById(`input__${camp}`).classList.remove('input__text--checked');
@@ -46,7 +45,7 @@ const validatorInput = (expresion, input, camp)=>{
         document.getElementById(`input__${camp}`).classList.remove('input__text--error');
         document.querySelector(`#input__i--${camp}`).classList.remove('fa-circle-xmark');
         document.querySelector(`#input__error--${camp}`).classList.remove('input__error--active');
-        campos[camp] = false;
+        validator[camp] = false;
 
     }else{
         document.getElementById(`input__${camp}`).classList.remove('input__text--checked');
@@ -57,10 +56,20 @@ const validatorInput = (expresion, input, camp)=>{
         document.querySelector(`#input__i--${camp}`).classList.remove('input__i--checked');
         document.querySelector(`#input__checked--${camp}`).classList.remove('input__checked--active');
         document.querySelector(`#input__error--${camp}`).classList.add('input__error--active');
-        campos[camp] = false;
+        validator[camp] = false;
     }
 }
 
+const validatorSelect = (input, camp)=>{
+    if(input === ''){
+        document.getElementById(`select__${camp}`).classList.add('selector--error');
+        validator[camp] = false;
+    }else{
+        document.getElementById(`select__${camp}`).classList.remove('selector--error');
+        document.getElementById(`select__${camp}`).classList.add('selector--checked');
+        validator[camp] = true;
+    };
+}
 
 const validatorInputs = (e)=>{
     switch (e.target.name) {
@@ -98,36 +107,26 @@ const validatorInputs = (e)=>{
     }
 }
 
-const validatorSelector = (input, camp)=>{
-    if(input === ''){
-        document.getElementById(`select__${camp}`).classList.add('selector--error');
-        campos[camp] = false;
-    }else{
-        document.getElementById(`select__${camp}`).classList.remove('selector--error');
-        document.getElementById(`select__${camp}`).classList.add('selector--checked');
-        campos[camp] = true;
-    };
-}
-
-const validatorSelectors = (e)=>{
+const validatorSelects = (e)=>{
     switch (e.target.name) {
         case 'genero':
-            validatorSelector(e.target.value, 'genero');
+            validatorSelect(e.target.value, 'genero');
         break;
 
         case 'categoria':
-            validatorSelector(e.target.value, 'categoria');
+            validatorSelect(e.target.value, 'categoria');
         break;
 
         case 'edad':
-            validatorSelector(e.target.value, 'edad');
+            validatorSelect(e.target.value, 'edad');
         break;
 
         case 'peso':
-            validatorSelector(e.target.value, 'peso');
+            validatorSelect(e.target.value, 'peso');
         break;
     }
 }
+
 
 inputs.forEach((input)=>{
     input.addEventListener('keyup', validatorInputs);
@@ -135,15 +134,77 @@ inputs.forEach((input)=>{
 });
 
 selectors.forEach((select)=>{
-    select.addEventListener('click', validatorSelectors);
-    select.addEventListener('blur', validatorSelectors);
+    select.addEventListener('change', validatorSelects);
+    select.addEventListener('blur', validatorSelects);
+});
+
+const sendForm = buttonSubmit.addEventListener('click', function(e){
+    e.preventDefault();
+
+    if(validator.escuela && validator.instructor && validator.coach
+        && validator.email && validator.celular && validator.othercamp
+        && validator.competidor && validator.dni && validator.genero
+        && validator.categoria && validator.edad && validator.peso){
+
+        const datos = new FormData(form);
+
+        fetch('../php/ranqueable-backend.php', {
+            method : 'POST',
+            body   : datos
+        })
+        .then(res => res.json())
+        .then(echo => {
+
+            if(echo == 1){
+                form.reset();
+                validator.escuela    = false;
+                validator.instructor = false;
+                validator.coach      = false;
+                validator.email      = false;
+                validator.celular    = false;
+                validator.othercamp  = false;
+                validator.competidor = false;
+                validator.dni        = false;
+                validator.categoria  = false;
+                validator.edad       = false;
+                validator.peso       = false;
+                messages.innerHTML = '';
+                messages.classList.add('messages--active');
+                messages.classList.remove('messages--error');
+                messages.classList.add('messages--checked');
+                messages.innerHTML = '¡Todos los datos se enviaron con éxito!';
+
+                //programar borrado automatico de los mensajes de confirmación de los inputs
+                document.querySelectorAll('.input__alerts').forEach((alert)=>{
+                    alert.classList.remove('input__alerts--active');
+                });
+
+                document.querySelectorAll('.input__text').forEach((input)=>{
+                    input.classList.remove('input__text--checked');
+                    input.classList.remove('input__text--error');
+                });
+
+                document.querySelectorAll('.selector').forEach((selector)=>{
+                    selector.classList.remove('selector--checked');
+                    selector.classList.remove('selector--error');
+                });
+
+                setTimeout(function(){
+                    messages.classList.remove('messages--active');
+                },5000);
+            } else if(echo == 2){
+                console.log('El dni ingresado ya se encuentra inscripto');
+           };
+
+        });
+    } else {
+        console.log('los campos estan vacios ');
+    }
 });
 
 
-//---------------------------------------------------------------//
-//-----------------Enviar formulario con Jquery y AJAX-----------//
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('#submit').click(function(e){
 
         e.preventDefault();
@@ -156,13 +217,13 @@ $(document).ready(function(){
             const datos = $('#form').serialize();
 
             $.ajax({
-                url: '../php/submitRanqueable.php',
+                url: '../../php/ranqueable-backend.php',
                 type: 'post',
                 data: datos,
                 success: (r)=>{
                     if(r == 1){
                         console.log(r);
-                        $('#messages').addClass('messages--active');
+                        messages.classList.add('messages--active');
                         $('#messages__p').html('');
                         $('#messages').removeClass('messages--error');
                         $('#messages').addClass('messages--checked');
@@ -222,83 +283,5 @@ $(document).ready(function(){
             },3000);
         };
     });
-});
-
-
-//---------------------------------------------------------------//
-//-----------------Activando el label de los inputs texts--------//
-const showLabel = (campo)=>{
-    document.getElementById(`input__label--${campo}`).classList.add('input__label--active');  
-};
-
-const hiddenLabel = (campo)=>{
-    document.getElementById(`input__label--${campo}`).classList.remove('input__label--active');
-};
-
-
-const activeLabels = (e)=>{
-    switch (e.target.name) {
-        case 'escuela':
-                showLabel('escuela');
-            break;
-        case 'instructor':
-                showLabel('instructor');
-            break;
-        case 'coach':
-                showLabel('coach');
-            break;
-        case 'email':
-                showLabel('email');
-            break;
-        case 'celular':
-                showLabel('celular');
-            break;
-        case 'othercamp':
-                showLabel('othercamp');
-            break;
-        case 'competidor':
-                showLabel('competidor');
-            break;
-        case 'dni':
-                showLabel('dni');
-            break;
-   }
-};
-
-
-const disableLabels = (e)=>{
-    switch (e.target.name) {
-        case 'escuela':
-                hiddenLabel('escuela');
-            break;
-        case 'instructor':
-                hiddenLabel('instructor');
-            break;
-        case 'coach':
-                hiddenLabel('coach');
-            break;
-        case 'email':
-                hiddenLabel('email');
-            break;
-        case 'celular':
-                hiddenLabel('celular');
-            break;
-        case 'othercamp':
-                hiddenLabel('othercamp');
-            break;
-        case 'competidor':
-                hiddenLabel('competidor');
-            break;
-        case 'dni':
-                hiddenLabel('dni');
-            break;
-   }
-}
-
-
-
-inputs.forEach((input)=>{
-    input.addEventListener('focus', activeLabels);
-    input.addEventListener('blur', disableLabels);
-});
+});*/
 
