@@ -194,94 +194,23 @@ const sendForm = buttonSubmit.addEventListener('click', function(e){
                 },5000);
             } else if(echo == 2){
                 console.log('El dni ingresado ya se encuentra inscripto');
+                messages.innerHTML = '';
+                messages.classList.add('messages--active');
+                messages.classList.remove('messages--checked');
+                messages.classList.add('messages--error');
+                messages.innerHTML = 'El DNI ingresado ya se encuentra registrado. Por favor, envíenos un mensaje a través de la página contacto';
            };
 
         });
     } else {
-        console.log('los campos estan vacios ');
+        messages.innerHTML = '';
+        messages.classList.add('messages--active');
+        messages.classList.remove('messages--checked');
+        messages.classList.add('messages--error');
+        messages.innerHTML = '¡Recuerde: debe completar todos los campos!';
+
+        setTimeout(function(){
+            messages.classList.remove('messages--active');
+        },3000);
     }
 });
-
-
-
-/*$(document).ready(function(){
-    $('#submit').click(function(e){
-
-        e.preventDefault();
-
-        if(campos.escuela && campos.instructor && campos.coach
-        && campos.email && campos.celular && campos.othercamp
-        && campos.competidor && campos.dni && campos.genero
-        && campos.categoria && campos.edad && campos.peso){
-
-            const datos = $('#form').serialize();
-
-            $.ajax({
-                url: '../../php/ranqueable-backend.php',
-                type: 'post',
-                data: datos,
-                success: (r)=>{
-                    if(r == 1){
-                        console.log(r);
-                        messages.classList.add('messages--active');
-                        $('#messages__p').html('');
-                        $('#messages').removeClass('messages--error');
-                        $('#messages').addClass('messages--checked');
-                        $('#messages__p').html('¡Todos los datos se enviaron con éxito!');
-                        $('#form').trigger('reset');
-
-                        //programar borrado automatico de los mensajes de confirmación de los inputs
-                        document.querySelectorAll('.input__alerts').forEach((alert)=>{
-                            alert.classList.remove('input__alerts--active');
-                        });
-
-                        document.querySelectorAll('.input__text').forEach((input)=>{
-                            input.classList.remove('input__text--checked');
-                            input.classList.remove('input__text--error');
-                        });
-
-                        document.querySelectorAll('.selector').forEach((selector)=>{
-                            selector.classList.remove('selector--checked');
-                            selector.classList.remove('selector--error');
-                        });
-
-                        setTimeout(function(){
-                            $('#messages').removeClass('messages--active');
-                        },5000);
-
-                        campos['escuela']    = false;
-                        campos['instructor'] = false;
-                        campos['coach']      = false;
-                        campos['email']      = false;
-                        campos['celular']    = false;
-                        campos['othercamp']  = false;
-                        campos['competidor'] = false;
-                        campos['dni']        = false;
-                        campos['categoria']  = false;
-                        campos['edad']       = false;
-                        campos['peso']       = false;
-    
-                    }else if(r == 2){
-                        $('#messages').addClass('messages--active');
-                        $('#messages').addClass('messages--error');
-                        $('#messages__p').html('El dni ingresado ya se encuentra registrado. Contáctese con <strong>support@infotkd.com</strong>');
-                    }else{
-                        console.log(r);
-                        $('#messages').addClass('messages--active');
-                        $('#messages').addClass('messages--error');
-                        $('#messages__p').html('Ocurrió un error');
-                    }
-                }
-            });
-        }else{
-            $('#messages').addClass('messages--active');
-            $('#messages').removeClass('messages--checked');
-            $('#messages').addClass('messages--error');
-            $('#messages__p').html('¡Debe completar todos los campos!');
-            setTimeout(function(){
-                $('#messages').removeClass('messages--active');
-            },3000);
-        };
-    });
-});*/
-
