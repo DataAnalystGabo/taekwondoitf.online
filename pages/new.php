@@ -31,10 +31,16 @@ $newsRelated->setFetchMode(PDO::FETCH_ASSOC);
         Descargá la teoría en pdf, Verificá si un instructor está afederado y mucho más.">
         <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
         
-        <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script>
-
+        <script defer src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script>
         <script type="module">
             import { menu } from '../js/modules/menu.js';
+        </script>
+        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-0PWZ0SZ5KK"></script>
+        <script defer> 
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0PWZ0SZ5KK');
         </script>
 
         <link rel="stylesheet" href="../css/normalize.css">

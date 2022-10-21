@@ -7,12 +7,18 @@
 
     <title>▷ Taekwondo ITF - Formulario de inscripción</title>
 
-    <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+    <script defer src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
     <script type="module">
         import { menu } from '../js/modules/menu.js';
     </script>
-
     <script defer src="../js/modules/form.js"></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-0PWZ0SZ5KK"></script>
+    <script defer> 
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0PWZ0SZ5KK');
+    </script>
     
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/root.css">
