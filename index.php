@@ -18,8 +18,8 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
         <meta name="description" content="Leé noticias, Enterate de los eventos deportivos, Descargá teoría en pdf, Verificá si un instructor está afederado y mucho más.">
         <meta name="keyword" content="Taekwondo, ITF, Eventos, Cinturon negro, Dobok">
         
-        <script async src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PWZ0SZ5KK"></script>
+        <script defer src="https://kit.fontawesome.com/c8757c1678.js" crossorigin="anonymous"></script> 
+        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-0PWZ0SZ5KK"></script>
         <script type="module" src="js/index.js"></script>
         
         <link rel="stylesheet" href="css/normalize.css">
