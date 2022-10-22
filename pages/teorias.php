@@ -63,17 +63,37 @@
 
                             sizes="(max-width : 500px) 435px"
 
-                            src="image/cover-prime-480x1000.webp" 
+                            src="../image/accordion-1-mobile.webp" 
                             alt="Dos competidores de Taekwondo ITF enfrentandose en un torneo">
                     </picture>
                     <div class="accordion__filter"></div>
                     <div class="accordion__textarea">
                         <span class="accordion__title">-13 AÑOS</span>
-                        <span class="accordion__more">+</span>  
-                    </div>                    
+                        <div class="accordion__icon">
+                            <span class="accordion__more">+</span>
+                        </div>  
+                    </div>     
+                    
+                    <!-- Area de items (gups) -->
+                    <div class="accordion__items items">
+                        <div class="items__item"><span class="items__title">Cinturon blanco - 10°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon blanco punta amarilla - 9°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon amarillo - 8°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon amarillo punta verde - 7°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon verde - 6°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon verde punta azul - 5°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon azul - 4°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon azul punta roja - 3°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon rojo - 2°GUP</span></div>
+                        <div class="items__item"><span class="items__title">Cinturon rojo punta negra - 1°GUP</span></div>
+                    </div>
                 </div>
+
+             
             </div>
         </main>
+
+        <?php require('../layout/footer.php') ?>
         
     </body>
 </html>

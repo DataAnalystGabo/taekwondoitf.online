@@ -1,8 +1,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin-top: 4em;
+    margin: 4em auto;
     gap: 4em;
     *background-color: brown;
 }
@@ -40,7 +39,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             width: 100%;
-            height: 5em;
+            height: max-content;
             cursor: pointer;
             *background-color: brown;
         }
@@ -72,17 +71,56 @@
                 gap: 2em;
             }
 
-            .accordion__title, .accordion__more{
-                font-family: var(--poppins);
-                font-size: 2em;
-                font-weight: bold;
-            }
+                .accordion__title, .accordion__more{
+                    font-family: var(--poppins);
+                    font-size: 2em;
+                    font-weight: bold;
+                }
 
-            .accordion__more{
-                font-size: 2.5em;
+                .accordion__icon{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 2em;
+                    height: 2em;
+                    transition: all .5s ease;
+                }
+
+                .accordion__icon--active{
+                    transform: rotate(45deg);
+                }
+            
+            .accordion__items{
+                width: 100%;
+                height: 0;
+                background-color: antiquewhite;
                 transition: all .5s ease;
             }
 
-            .accordion__more--active{
-                transform: rotate(45deg);
+            .accordion__items--hidden{
+                height: 30em;
             }
+
+                .items__item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    width: 100%;
+                    height: 3em;
+                    border-bottom: 1px solid white;
+                    background-color: var(--black3);
+                }
+
+                .items__item:hover{
+                    background-color: var(--blue);
+                }
+
+                    .items__title{
+                        padding-left: 1em;
+                    }
+
+            
+
+            
