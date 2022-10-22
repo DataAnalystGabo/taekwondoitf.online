@@ -75,18 +75,99 @@
                     </div>     
                     
                     <!-- Area de items (gups) -->
-                    <div class="accordion__items items">
-                        <div class="items__item"><span class="items__title">Cinturon blanco - 10°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon blanco punta amarilla - 9°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon amarillo - 8°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon amarillo punta verde - 7°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon verde - 6°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon verde punta azul - 5°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon azul - 4°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon azul punta roja - 3°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon rojo - 2°GUP</span></div>
-                        <div class="items__item"><span class="items__title">Cinturon rojo punta negra - 1°GUP</span></div>
-                    </div>
+                    <ul class="accordion__items">
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon blanco - 10°GUP</span>
+                            </div>
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon blanco punta amarilla - 9°GUP</span>
+                            </div>
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon amarillo - 8°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon amarillo punta verde - 7°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon verde - 6°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon verde punta azul - 5°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon azul - 4°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>   
+                        <div class="items__content"></div>
+    
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon azul punta roja - 3°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon rojo - 2°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">Cinturon rojo punta verde - 1°GUP</span>
+                            </div class="items__header">
+                            <i class="items__icon fa-solid fa-plus"></i>
+                        </li>
+                        <div class="items__content"></div>
+
+                    </ul>
                 </div>
 
              
