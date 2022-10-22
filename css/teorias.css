@@ -1,0 +1,88 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 4em;
+    gap: 4em;
+    *background-color: brown;
+}
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2em;
+        gap: 1em;
+        *background-color: blueviolet;
+    }
+
+        .intro__title{
+            width: 100%;
+            font-size: 2em;
+            *background-color: brown;
+        }
+
+        .intro__paragraph{
+            width: 100%;
+            font-size: 1.2em;
+            line-height: 1.3em;
+            *background-color: brown;
+        }
+
+    .accordion{
+        width: 100%;
+        height: max-content;
+        *background-color: blueviolet;
+    }
+
+        .accordion__card{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            width: 100%;
+            height: 5em;
+            cursor: pointer;
+            *background-color: brown;
+        }
+
+            .accordion__cover{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+                .accordion__img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            .accordion__filter{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                background-color: #030e1ab3;
+            }
+
+            .accordion__textarea{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 2em;
+            }
+
+            .accordion__title, .accordion__more{
+                font-family: var(--poppins);
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            .accordion__more{
+                font-size: 2.5em;
+                transition: all .5s ease;
+            }
+
+            .accordion__more--active{
+                transform: rotate(45deg);
+            }
