@@ -78,7 +78,7 @@
                     <ul class="accordion__items">
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--10"></span>
+                                <span class="items__box "></span>
                                 <span class="items__title">BLANCO</span>
                             </div>
                             <div class="items__icons">
@@ -91,7 +91,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--9"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">BLANCO P. AMARILLA</span>
                             </div>
                             <div class="items__icons">
@@ -104,7 +104,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--8"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">AMARILLO</span>
                             </div class="items__header">
                             <div class="items__icons">
@@ -117,7 +117,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--7"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">AMARILLO P. VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
@@ -130,7 +130,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--6"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
@@ -143,7 +143,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--5"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">VERDE P. AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
@@ -156,7 +156,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--4"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
@@ -169,7 +169,7 @@
     
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--3"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">AZUL P. ROJA</span>
                             </div class="items__header">
                             <div class="items__icons">
@@ -182,7 +182,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--2"></span>
+                                <span class="items__box"></span>
                                 <span class="items__title">ROJO</span>
                             </div class="items__header">
                             <div class="items__icons">
@@ -193,7 +193,7 @@
 
                         <li class="items__item">
                             <div class="items__header">
-                                <span class="items__box items__box--1"></span>
+                                <span class="items__box" ></span>
                                 <span class="items__title">ROJO P. NEGRA</span>
                             </div class="items__header">
                             <div class="items__icons">

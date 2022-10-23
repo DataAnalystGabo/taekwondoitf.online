@@ -132,56 +132,8 @@
                         .items__box{
                             width: 2em;
                             height: 100%;
-                            margin-left: 0;
-                        }
-
-                        .items__box--10{
-                            background-color: var(--white);
-                        }
-
-                        .items__box--9{
-                            background-color: var(--white);
-                            border-right: .8em solid var(--yellow-past);
-                        }
-
-                        .items__box--8{
-                            background-color: var(--yellow-past);
-                        }
-
-                        .items__box--7{
-                            background-color: var(--yellow-past);
-                            border-right: .8em solid var(--green-light);
-                        }
-
-                        .items__box--6{
-                            background-color: var(--green-light);
-                        }
-
-                        .items__box--5{
-                            background-color: var(--green-light);
-                            border-right: .8em solid var(--blue-past);
-                        }
-
-                        .items__box--4{
-                            background-color: var(--blue-past);
-                        }
-
-                        .items__box--3{
-                            background-color: var(--blue-past);
-                            border-right: .8em solid var(--red);
-                        }
-
-                        .items__box--2{
-                            background-color: var(--red);
-                        }
-
-                        .items__box--1{
-                            background-color: var(--red);
-                            border-right: .8em solid var(--black-past);
-                        }
-
-                        .items__title{
-                            padding-left: 1em;
+                            margin: 0 1em 0 0;
+                            background-color: var(--yellow-dark);
                         }
 
                     .items__icons{
