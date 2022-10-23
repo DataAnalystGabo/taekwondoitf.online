@@ -63,6 +63,10 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
                             <li class="menu__li">
                                 <a href="pages/404.html" target="_blank" class="menu__a">EVENTOS</a>
                             </li>
+
+                            <li class="menu__li">
+                                <a href="pages/teoria.php" class="menu__a">TEORIA</a>
+                            </li>
                             
                             <li class="menu__li">
                                 <a href="pages/404.html" target="_blank" class="menu__a">BLACK BELT LIST</a>

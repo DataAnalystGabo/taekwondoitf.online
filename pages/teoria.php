@@ -39,7 +39,7 @@
 
         <main class="main container">
             <div class="intro">
-                <h2 class="intro__title">TEORIAS</h2>
+                <h2 class="intro__title">TEORIA</h2>
                 <p class="intro__paragraph">
                     A continuación, se presenta una guía teórica para el estudio del 
                     Taekwono ITF dividida en dos categorías : -13 años y +13 años.

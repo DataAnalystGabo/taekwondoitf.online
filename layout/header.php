@@ -1,6 +1,6 @@
 <header class="header">
     <nav class="nav container">
-        <a class="nav__logo" href="index.php">
+        <a class="nav__logo" href="../index.php">
             <img loading='lazy' class="nav__img" src="../image/taekwondoitfonline.svg" alt="Logotipo de taekwondoitf.online">
         </a>
 
@@ -17,6 +17,10 @@
 
                     <li class="menu__li">
                         <a href="../pages/404.html" target="_blank" class="menu__a">EVENTOS</a>
+                    </li>
+
+                    <li class="menu__li">
+                        <a href="../pages/teoria.php" class="menu__a">TEORIA</a>
                     </li>
                     
                     <li class="menu__li">
