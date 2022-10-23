@@ -191,11 +191,11 @@
                 <div class="accordion__card">
                     <picture class="accordion__cover">                    
                         <img class="accordion__img" 
-                            srcset="../image/accordion-1-mobile.webp 435w"
+                            srcset="../image/accordion-2-mobile.webp 435w"
 
                             sizes="(max-width : 500px) 435px"
 
-                            src="../image/accordion-1-mobile.webp" 
+                            src="../image/accordion-2-mobile.webp" 
                             alt="Dos competidores de Taekwondo ITF enfrentandose en un torneo">
                     </picture>
                     <div class="accordion__filter"></div>
