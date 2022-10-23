@@ -79,94 +79,244 @@
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon blanco - 10°GUP</span>
+                                <span class="items__title">BLANCO</span>
                             </div>
-                            <i class="items__icon fa-solid fa-plus"></i>
-                        </li>
-                        <div class="items__content"></div>
-
-
-                        <li class="items__item">
-                            <div class="items__header">
-                                <span class="items__box"></span>
-                                <span class="items__title">Cinturon blanco punta amarilla - 9°GUP</span>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
-                            <i class="items__icon fa-solid fa-plus"></i>
                         </li>
-                        <div class="items__content"></div>
 
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon amarillo - 8°GUP</span>
-                            </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                                <span class="items__title">BLANCO P. AMARILLA</span>
+                            </div>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>
-                        <div class="items__content"></div>
 
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon amarillo punta verde - 7°GUP</span>
+                                <span class="items__title">AMARILLO</span>
                             </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>
-                        <div class="items__content"></div>
 
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon verde - 6°GUP</span>
+                                <span class="items__title">AMARILLO P. VERDE</span>
                             </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>
-                        <div class="items__content"></div>
 
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon verde punta azul - 5°GUP</span>
+                                <span class="items__title">VERDE</span>
                             </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>
-                        <div class="items__content"></div>
 
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon azul - 4°GUP</span>
+                                <span class="items__title">VERDE P. AZUL</span>
                             </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">AZUL</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>   
-                        <div class="items__content"></div>
     
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon azul punta roja - 3°GUP</span>
+                                <span class="items__title">AZUL P. ROJA</span>
                             </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>
-                        <div class="items__content"></div>
 
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon rojo - 2°GUP</span>
+                                <span class="items__title">ROJO</span>
                             </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>
-                        <div class="items__content"></div>
 
                         <li class="items__item">
                             <div class="items__header">
                                 <span class="items__box"></span>
-                                <span class="items__title">Cinturon rojo punta verde - 1°GUP</span>
+                                <span class="items__title">ROJO P. NEGRA</span>
                             </div class="items__header">
-                            <i class="items__icon fa-solid fa-plus"></i>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
                         </li>
-                        <div class="items__content"></div>
+                    </ul>
+                </div>
 
+                <div class="accordion__card">
+                    <picture class="accordion__cover">                    
+                        <img class="accordion__img" 
+                            srcset="../image/accordion-1-mobile.webp 435w"
+
+                            sizes="(max-width : 500px) 435px"
+
+                            src="../image/accordion-1-mobile.webp" 
+                            alt="Dos competidores de Taekwondo ITF enfrentandose en un torneo">
+                    </picture>
+                    <div class="accordion__filter"></div>
+                    <div class="accordion__textarea">
+                        <span class="accordion__title">+13 AÑOS</span>
+                        <div class="accordion__icon">
+                            <span class="accordion__more">+</span>
+                        </div>  
+                    </div>     
+                    
+                    <!-- Area de items (gups) -->
+                    <ul class="accordion__items">
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">BLANCO</span>
+                            </div>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">BLANCO P. AMARILLA</span>
+                            </div>
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">AMARILLO</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">AMARILLO P. VERDE</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">VERDE</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">VERDE P. AZUL</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">AZUL</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>   
+    
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">AZUL P. ROJA</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">ROJO</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
+
+                        <li class="items__item">
+                            <div class="items__header">
+                                <span class="items__box"></span>
+                                <span class="items__title">ROJO P. NEGRA</span>
+                            </div class="items__header">
+                            <div class="items__icons">
+                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 

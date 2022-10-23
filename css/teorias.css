@@ -29,6 +29,9 @@
         }
 
     .accordion{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
         width: 100%;
         height: max-content;
         *background-color: blueviolet;
@@ -38,6 +41,7 @@
             display: grid;
             grid-template-columns: minmax(100%, 1200px);
             grid-template-rows: 1fr;
+            overflow: hidden;
         }
 
             .accordion__cover{
@@ -97,8 +101,7 @@
                 width: 100%;
                 height: 0;
                 padding: 0;
-                background-color: #f66060;
-                transition: all .5s ease;
+                transition: all .9s ease;
             }
 
             .accordion__items--show{
@@ -112,7 +115,6 @@
                     align-items: center;
                     width: 100%;
                     height: 3em;
-                    cursor: pointer;
                     background-color: var(--black3);
                 }
 
@@ -131,32 +133,23 @@
                             width: 2em;
                             height: 100%;
                             margin-left: 0;
-                            background-color: #f66060;
+                            background-color: var(--yellow-dark);
                         }
 
                         .items__title{
                             padding-left: 1em;
                         }
 
-                    .items__icon{
+                    .items__icons{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1em;
                         margin-right: 5%;
-                        transition: all .5s ease;
                     }
 
-                    .items__icon--minus{
-                        transform: rotate(45deg);
-                    }
-
-                .items__content{
-                    height: 0;
-                    background-color: aliceblue;
-                    transition: all .5s ease;
-                }
-
-                .items__content--show{
-                    height: 5em;
-                }
-
+                        .items__icon{
+                            cursor: pointer;
+                        }
                    
 
             
