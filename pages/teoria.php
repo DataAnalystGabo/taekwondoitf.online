@@ -47,6 +47,8 @@
                     de fuentes como -fuentes- . Los contenidos son una sugerencia que no pretende 
                     mostrarse como una guía definitiva. Más bien, trata de acercar al practicante de 
                     Taekwondo ITF las bases para el correcto estudio.
+
+                   
                 </p>
                 <p class="intro__paragraph">
                     Es posible que el contenido difiera del de otros autores o recursos ya que, cada 
