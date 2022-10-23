@@ -82,7 +82,7 @@
                                 <span class="items__title">BLANCO</span>
                             </div>
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -93,7 +93,7 @@
                                 <span class="items__title">BLANCO P. AMARILLA</span>
                             </div>
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -104,7 +104,7 @@
                                 <span class="items__title">AMARILLO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -115,7 +115,7 @@
                                 <span class="items__title">AMARILLO P. VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -126,7 +126,7 @@
                                 <span class="items__title">VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -137,7 +137,7 @@
                                 <span class="items__title">VERDE P. AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -148,7 +148,7 @@
                                 <span class="items__title">AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>   
@@ -159,7 +159,7 @@
                                 <span class="items__title">AZUL P. ROJA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -170,7 +170,7 @@
                                 <span class="items__title">ROJO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -181,7 +181,7 @@
                                 <span class="items__title">ROJO P. NEGRA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -214,7 +214,7 @@
                                 <span class="items__title">BLANCO</span>
                             </div>
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -225,7 +225,7 @@
                                 <span class="items__title">BLANCO P. AMARILLA</span>
                             </div>
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -236,7 +236,7 @@
                                 <span class="items__title">AMARILLO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -247,7 +247,7 @@
                                 <span class="items__title">AMARILLO P. VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -258,7 +258,7 @@
                                 <span class="items__title">VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -269,7 +269,7 @@
                                 <span class="items__title">VERDE P. AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -280,7 +280,7 @@
                                 <span class="items__title">AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>   
@@ -291,7 +291,7 @@
                                 <span class="items__title">AZUL P. ROJA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -302,7 +302,7 @@
                                 <span class="items__title">ROJO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
@@ -313,7 +313,7 @@
                                 <span class="items__title">ROJO P. NEGRA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-up-right-from-square"></i>
+                                <i class="items__icon fa-solid fa-glasses"></i>
                                 <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                             </div>
                         </li>
