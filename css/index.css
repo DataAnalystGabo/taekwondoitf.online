@@ -5,13 +5,15 @@
 }
 
     .prime{
+        min-height: 100vh;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: calc(100vh - 4em);
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
         border-bottom: 1px solid var(--grey);
     }
 
         .prime__cover{
+            min-height: 100vh;
             grid-column: 1/2;
             grid-row: 1/2;
         }
@@ -23,12 +25,14 @@
             }
 
         .prime__filter{
+            min-height: 100vh;
             grid-column: 1/2;
             grid-row: 1/2;
             background-color: #030e1a94;
         }
 
         .prime__info{
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
