@@ -3,7 +3,6 @@
     flex-direction: column;
     margin: 4em auto;
     gap: 4em;
-    *background-color: brown;
 }
 
     .intro{
@@ -12,20 +11,17 @@
         width: 100%;
         margin-top: 2em;
         gap: 1em;
-        *background-color: blueviolet;
     }
 
         .intro__title{
             width: 100%;
             font-size: 2em;
-            *background-color: brown;
         }
 
         .intro__paragraph{
             width: 100%;
             font-size: 1.2em;
             line-height: 1.3em;
-            *background-color: brown;
         }
 
     .accordion{
@@ -34,13 +30,12 @@
         gap: 2em;
         width: 100%;
         height: max-content;
-        *background-color: blueviolet;
     }
 
         .accordion__card{
             display: grid;
             grid-template-columns: minmax(100%, 1200px);
-            grid-template-rows: 1fr;
+            grid-template-rows: 5em;
             overflow: hidden;
         }
 
@@ -58,7 +53,7 @@
             .accordion__filter{
                 grid-column: 1/2;
                 grid-row: 1/2;
-                background-color: #030e1ab3;
+                background-color: #030e1a6e;
             }
 
             .accordion__textarea{
@@ -155,8 +150,94 @@
                             .items__icon{
                                 cursor: pointer;
                             }
-                   
 
+    .donations{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1em;
+        padding-top: 2em;
+        font-size: 1.2em;
+        line-height: 1.3em;
+        border-top: 1px solid var(--grey);
+        *background-color: blueviolet;
+    }
+
+        .donations__title{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+        }
+
+            .donations__icon-title{
+                font-size: 1.3em;
+            }
+
+        .donations__buttons{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 100%;
+            gap: 2em;
+            margin-top: 2em;
+            *background-color: brown;
+        }
+
+            .donations__btca{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+                .donations__link{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 4em;
+                    height: 4em;
+                    border-radius: 50%;
+                    gap: .5em;
+                    cursor: pointer;
+                    text-decoration: none;
+                    border: 1px solid var(--grey);
+                    color: var(--grey);
+                    margin-bottom: 1em;
+                    *background-color: var(--green);
+                }
+
+                .donations__link:hover{
+                    background-color: var(--blue);
+                    color: var(--white);
+                    border-color: var(--white);
+                }
+
+                    .donations__icon-btca{
+                        font-size: 1.3em;
+                    }
+
+                    .donations__span{
+                        font-size: .9em;
+                        font-weight: 400;
+                    }
+
+
+                   
+/* Responsive Desing
+     ========================================================================== */
+
+@media screen and (min-width : 900px){
+    .accordion__card{
+        grid-template-rows: 8em;
+    }
+
+    .donations__buttons{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
             
 
             

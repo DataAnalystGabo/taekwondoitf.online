@@ -586,82 +586,86 @@
 
 @media screen and (min-width : 1200px){
 
-    .prime__info{
-        gap: 2em;
+    .prime{
+        grid-template-rows: calc(100vh - 4em);
     }
 
-        .prime__h1{
-            width: 60%;
+        .prime__info{
+            gap: 2em;
         }
 
-        .articles{
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 2em;
-        }
-
-            .article{
-                flex-direction: column;
-                padding: 2em;
+            .prime__h1{
+                width: 60%;
             }
 
-                .cover{
-                    width: 100%;
-                    height: 15em;
-                }
-
-                .resumen{
-                    width: 100%;
-                    height: max-content;
-                    padding: 0;
-                    gap: 1.5em;
-                }
-
-                    .resumen__title{
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                    }
-
-                .resumen__box{
-                    flex-wrap: wrap;
-                }
-
-                    .data{
-                        margin-left: 1em;
-                    }
-
-        .questionfreq{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-        
-        .form{
-            width: 100%;
-        }
-
-            .form__group{
-                width: 70%;
+            .articles{
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 2em;
             }
 
-                .form__icon{
-                    width: 15em;
-                    height: 15em;
+                .article{
+                    flex-direction: column;
+                    padding: 2em;
                 }
 
-                .form__inputs, .alert{
-                    width: 90%;
-                    margin: 0 auto;
+                    .cover{
+                        width: 100%;
+                        height: 15em;
+                    }
+
+                    .resumen{
+                        width: 100%;
+                        height: max-content;
+                        padding: 0;
+                        gap: 1.5em;
+                    }
+
+                        .resumen__title{
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+
+                    .resumen__box{
+                        flex-wrap: wrap;
+                    }
+
+                        .data{
+                            margin-left: 1em;
+                        }
+
+            .questionfreq{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .form{
+                width: 100%;
+            }
+
+                .form__group{
+                    width: 70%;
                 }
 
-                .actions--bbl{
-                    margin: 0 auto;
-                }
+                    .form__icon{
+                        width: 15em;
+                        height: 15em;
+                    }
 
-                    .form__notification{
-                        width: 70%;
+                    .form__inputs, .alert{
+                        width: 90%;
                         margin: 0 auto;
                     }
+
+                    .actions--bbl{
+                        margin: 0 auto;
+                    }
+
+                        .form__notification{
+                            width: 70%;
+                            margin: 0 auto;
+                        }
 }
 
 

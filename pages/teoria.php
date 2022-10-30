@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/root.css">
         <link rel="stylesheet" href="../css/header.css">
-        <link rel="stylesheet" href="../css/teorias.css">
+        <link rel="stylesheet" href="../css/teoria.css">
         <link rel="stylesheet" href="../css/footer.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,7 @@
                 <p class="intro__paragraph">
                     Es posible que el contenido difiera del de otros autores o recursos ya que, cada 
                     línea técnica y/o escuela suele adaptar o presentar la información según sus 
-                    criterios y requirimientos.
+                    criterios y requerimientos.
                 </p>
             </div>
 
@@ -61,9 +61,11 @@
                 <div class="accordion__card">
                     <picture class="accordion__cover">                    
                         <img class="accordion__img" 
-                            srcset="../image/accordion-1-mobile.webp 435w"
+                            srcset="../image/accordion-1-mobile.webp 435w,
+                                    ../image/accordion-1-desktop.webp 1740w,"
 
-                            sizes="(max-width : 500px) 435px"
+                            sizes="(max-width : 500px) 435px,
+                                   (min-width : 501px) 1740px"
 
                             src="../image/accordion-1-mobile.webp" 
                             alt="Dos competidores de Taekwondo ITF enfrentandose en un torneo">
@@ -84,7 +86,10 @@
                                 <span class="items__title">BLANCO</span>
                             </div>
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/10-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+                                
                                 <a download="cinturon_blanco" href="../teorias/10-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -97,7 +102,10 @@
                                 <span class="items__title">BLANCO P. AMARILLA</span>
                             </div>
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/9-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
                                 <a download="cinturon_blanco_punta_amarilla" href="../teorias/9-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -110,7 +118,10 @@
                                 <span class="items__title">AMARILLO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/8-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
                                 <a download="cinturon_amarillo" href="../teorias/8-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -123,7 +134,10 @@
                                 <span class="items__title">AMARILLO P. VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/7-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
                                 <a download="cinturon_amarillo_punta_verde" href="../teorias/7-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -136,7 +150,10 @@
                                 <span class="items__title">VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/6-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
                                 <a download="cinturon_verde" href="../teorias/6-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -149,7 +166,10 @@
                                 <span class="items__title">VERDE P. AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/5-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
                                 <a download="cinturon_verde_punta_azul" href="../teorias/5-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -162,7 +182,10 @@
                                 <span class="items__title">AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/4-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
                                 <a download="cinturon_azul" href="../teorias/4-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -175,7 +198,10 @@
                                 <span class="items__title">AZUL P. ROJA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
+                                <a target="blank" href="../teorias/3-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
                                 <a download="cinturon_azul_punta_roja" href="../teorias/3-gup.pdf" class="items__download">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
@@ -188,8 +214,13 @@
                                 <span class="items__title">ROJO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
-                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                                <a target="blank" href="../teorias/2-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+
+                                <a download="cinturon_azul_punta_roja" href="../teorias/2-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                                </a>
                             </div>
                         </li>
 
@@ -199,8 +230,12 @@
                                 <span class="items__title">ROJO P. NEGRA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <i class="items__icon fa-solid fa-glasses"></i>
-                                <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                                <a target="blank" href="../teorias/1-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-glasses"></i>
+                                </a>
+                                <a download="cinturon_azul_punta_roja" href="../teorias/1-gup.pdf" class="items__download">
+                                    <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -209,9 +244,11 @@
                 <div class="accordion__card">
                     <picture class="accordion__cover">                    
                         <img class="accordion__img" 
-                            srcset="../image/accordion-2-mobile.webp 435w"
+                            srcset="../image/accordion-2-mobile.webp 435w,
+                                    ../image/accordion-2-desktop.webp 1740w"
 
-                            sizes="(max-width : 500px) 435px"
+                            sizes="(max-width : 500px) 435px,
+                                   (min-width : 501px) 1740px"
 
                             src="../image/accordion-2-mobile.webp" 
                             alt="Dos competidores de Taekwondo ITF enfrentandose en un torneo">
@@ -339,6 +376,78 @@
                 </div>
 
              
+            </div>
+
+            <div class="donations">
+                <div class="donations__title">
+                    <h3 class="donations__h3">Donaciones</h3>
+                    <i class="donations__icon-title fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <p class="donations__paragraph">
+                    ¡Hola! Mi nombre es Gonzalo Ramirez, soy 
+                    cinturón negro I Dan en Taekwondo ITF y he
+                    creado este sitio web para vos.
+                    Todo lo que ves lo he construido yo mismo con mucho
+                    esfuerzo. <br>
+                    Mantener en funcionamiento este sitio web me demanda 
+                    muchas horas de trabajo y no recibo patrocinio de ninguna
+                    marca o empresa. <br>
+                    Por eso te cuento que si el contenido te gusta y querés
+                    apoyar este proyecto podés realizar una donación.
+                    Abajo te dejo unos cafecitos. <br><br>
+                    ¡Gracias! <br>
+                    Con 💖​ Gonzalo      
+                </p>
+                <div class="donations__buttons">
+                    <div class="donations__btca">
+                        <a href="https://mpago.la/1nzKtRT" class="donations__link">
+                            <i class="donations__icon-btca fa-solid fa-mug-hot"></i>
+                        </a>
+                        <span class="donations__span">Café Cortado</span>
+                        <span class="donations__span">$100</span>
+                    </div>
+
+                    <div class="donations__btca">
+                        <a href="https://mpago.la/2osWDGL" class="donations__link">
+                            <i class="donations__icon-btca fa-solid fa-mug-hot"></i>
+                        </a>
+                        <span class="donations__span">Cappuccino</span>
+                        <span class="donations__span">$200</span>
+                    </div>
+
+                    <div class="donations__btca">
+                        <a href="https://mpago.la/2dM7vwp" class="donations__link">
+                            <i class="donations__icon-btca fa-solid fa-mug-hot"></i>
+                        </a>
+                        <span class="donations__span">Café Latte</span>
+                        <span class="donations__span">$500</span>
+                    </div>
+
+                    <div class="donations__btca">
+                        <a href="https://mpago.la/2LJwHHg" class="donations__link">
+                            <i class="donations__icon-btca fa-solid fa-mug-hot"></i>
+                        </a>
+                        <span class="donations__span">Café Americano</span>
+                        <span class="donations__span">$1000</span>
+                    </div>
+
+                    <div class="donations__btca">
+                        <a href="https://mpago.la/2oFAcvh" class="donations__link">
+                            <i class="donations__icon-btca fa-solid fa-mug-hot"></i>
+                        </a>
+                        <span class="donations__span">Espresso Lungo</span>
+                        <span class="donations__span">$3000</span>
+                    </div>
+
+                    <div class="donations__btca">
+                        <a href="https://mpago.la/1XXw54z" class="donations__link">
+                            <i class="donations__icon-btca fa-solid fa-mug-hot"></i>
+                        </a>
+                        <span class="donations__span">Latte Macchiato</span>
+                        <span class="donations__span">$5000</span>
+                    </div>
+                    
+                </div>
             </div>
         </main>
 
