@@ -88,7 +88,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
                                 
-                                <a download="cinturon_blanco" href="../teorias/10-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_blanco" href="../teorias/hasta13anios/10-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -104,7 +104,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_blanco_punta_amarilla" href="../teorias/9-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_blanco_punta_amarilla" href="../teorias/hasta13anios/9-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -120,7 +120,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_amarillo" href="../teorias/8-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_amarillo" href="../teorias/hasta13anios/8-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -136,7 +136,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_amarillo_punta_verde" href="../teorias/7-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_amarillo_punta_verde" href="../teorias/hasta13anios/7-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -152,7 +152,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_verde" href="../teorias/6-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_verde" href="../teorias/hasta13anios/6-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -168,7 +168,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_verde_punta_azul" href="../teorias/5-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_verde_punta_azul" href="../teorias/hasta13anios/5-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -184,7 +184,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_azul" href="../teorias/4-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul" href="../teorias/hasta13anios/4-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -200,7 +200,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_azul_punta_roja" href="../teorias/3-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul_punta_roja" href="../teorias/hasta13anios/3-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -216,7 +216,7 @@
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_azul_punta_roja" href="../teorias/2-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul_punta_roja" href="../teorias/hasta13anios/2-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -231,7 +231,7 @@
                                 <a target="blank" href="../teorias/hasta13anios/1-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
-                                <a download="cinturon_azul_punta_roja" href="../teorias/1-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul_punta_roja" href="../teorias/hasta13anios/1-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -265,11 +265,11 @@
                                 <span class="items__title">BLANCO</span>
                             </div>
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/10-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/10-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
                                 
-                                <a download="cinturon_blanco" href="../teorias/10-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_blanco" href="../teorias/mas13anios/10-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -281,11 +281,11 @@
                                 <span class="items__title">BLANCO P. AMARILLA</span>
                             </div>
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/9-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/9-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_blanco_punta_amarilla" href="../teorias/9-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_blanco_punta_amarilla" href="../teorias/mas13anios/9-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -297,11 +297,11 @@
                                 <span class="items__title">AMARILLO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/8-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/8-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_amarillo" href="../teorias/8-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_amarillo" href="../teorias/mas13anios/8-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -313,11 +313,11 @@
                                 <span class="items__title">AMARILLO P. VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/7-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/7-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_amarillo_punta_verde" href="../teorias/7-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_amarillo_punta_verde" href="../teorias/mas13anios/7-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -329,11 +329,11 @@
                                 <span class="items__title">VERDE</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/6-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/6-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_verde" href="../teorias/6-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_verde" href="../teorias/mas13anios/6-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -345,11 +345,11 @@
                                 <span class="items__title">VERDE P. AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/5-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/5-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_verde_punta_azul" href="../teorias/5-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_verde_punta_azul" href="../teorias/mas13anios/5-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -361,11 +361,11 @@
                                 <span class="items__title">AZUL</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/4-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/4-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_azul" href="../teorias/4-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul" href="../teorias/mas13anios/4-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -377,11 +377,11 @@
                                 <span class="items__title">AZUL P. ROJA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/3-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/3-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_azul_punta_roja" href="../teorias/3-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul_punta_roja" href="../teorias/mas13anios/3-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -393,11 +393,11 @@
                                 <span class="items__title">ROJO</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/2-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/2-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
 
-                                <a download="cinturon_azul_punta_roja" href="../teorias/2-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul_punta_roja" href="../teorias/mas13anios/2-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
@@ -409,10 +409,10 @@
                                 <span class="items__title">ROJO P. NEGRA</span>
                             </div class="items__header">
                             <div class="items__icons">
-                                <a target="blank" href="../teorias/1-gup.pdf" class="items__download" title="Ver">
+                                <a target="blank" href="../teorias/mas13anios/1-gup.pdf" class="items__download" title="Ver">
                                     <i class="items__icon fa-solid fa-glasses"></i>
                                 </a>
-                                <a download="cinturon_azul_punta_roja" href="../teorias/1-gup.pdf" class="items__download" title="Descargar pdf">
+                                <a download="cinturon_azul_punta_roja" href="../teorias/mas13anios/1-gup.pdf" class="items__download" title="Descargar pdf">
                                     <i class="items__icon fa-solid fa-cloud-arrow-down"></i>
                                 </a>
                             </div>
