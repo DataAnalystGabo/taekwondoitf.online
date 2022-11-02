@@ -135,7 +135,7 @@ $statementSQL->setFetchMode(PDO::FETCH_ASSOC);
 
                         <span class="prime__organize">
                             <i class="prime__icon fa-solid fa-gear"></i>
-                            Organiza Master Marcelo Bordiez.
+                            Organiza Taekwondoitf.online.
                         </span>
 
                         <span class="prime__graduations">
