@@ -5,9 +5,10 @@ const boxItems     = document.querySelectorAll('.accordion__items')
 
 
 
-boxCards.forEach((card, i)=>{
-    boxCards[i].addEventListener('click', ()=>{
+iconsCards.forEach((icon, i)=>{
+    iconsCards[i].addEventListener('click', ()=>{
        iconsCards[i].classList.toggle('accordion__icon--active');
        boxItems[i].classList.toggle('accordion__items--show');
     })
+    boxItems[i].classList.remove('accordion__items--show');
 });
