@@ -2,17 +2,11 @@
 
 include('../php/conexion.php');
 
-$statementSQL1    = $con->query("SELECT * FROM noticias LIMIT 1");
+$statementSQL1    = $con->query("SELECT * FROM noticias WHERE id='84'");
 $newPrincipal     = $statementSQL1->fetchAll(PDO::FETCH_ASSOC);
 
-
-$statementSQL2    = $con->query("SELECT * FROM  noticias WHERE id != '".$newPrincipal[0]['id']."' LIMIT 2");
-$newsColumn       = $statementSQL2->fetchAll(PDO::FETCH_ASSOC);
-
-
-$statementSQL3    = $con->query("SELECT * FROM noticias");
-$newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
-
+$statementSQL2    = $con->query("SELECT * FROM noticias WHERE id != '".$newPrincipal[0]['id']."' ORDER BY id DESC");
+$newsRow          = $statementSQL2->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -57,10 +51,10 @@ $newsRow          = $statementSQL3->fetchAll(PDO::FETCH_ASSOC);
 
         <main class="main">
             <div class="hero container">
-                
-                <a class="newprimary" href="../pages/404.html">
+            
+                <a class="newprimary" href="new.php?id=<?php echo $newPrincipal[0]['id']; ?>">
                     <article class="newprimary__article">
-                        <h2 class="newprimary__title"> <?php echo $newPrincipal[0]['title']; ?> </h2>
+                        <h2 class="newprimary__title"> <?php echo $newPrincipal[0]['title'];/*echo $newPrincipal[0]['title'];*/ ?> </h2>
                         <p class="newprimary__subtitle"> <?php echo $newPrincipal[0]['subtitle']; ?> </p>
 
                         <div class="newprimary__summary summary">

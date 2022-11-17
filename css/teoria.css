@@ -156,7 +156,6 @@
         font-size: 1.2em;
         line-height: 1.3em;
         border-top: 1px solid var(--grey);
-        *background-color: blueviolet;
     }
 
         .donations__title{

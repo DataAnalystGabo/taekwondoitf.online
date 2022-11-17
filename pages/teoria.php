@@ -42,9 +42,9 @@
                 <h2 class="intro__title">TEORIA</h2>
                 <p class="intro__paragraph">
                     A continuación, se presenta una guía teórica para el estudio del 
-                    Taekwono ITF dividida en dos categorías : -13 años y +13 años.
+                    Taekwondo ITF dividida en dos categorías : -13 años y +13 años.
                     Tenga en cuenta que el contenido que verá es una adaptación y recopilación 
-                    de fuentes como -fuentes- . Los contenidos son una sugerencia que no pretende 
+                    de distintas fuentes. Los contenidos son una sugerencia que no pretende 
                     mostrarse como una guía definitiva. Más bien, trata de acercar al practicante de 
                     Taekwondo ITF las bases para el correcto estudio.
 
